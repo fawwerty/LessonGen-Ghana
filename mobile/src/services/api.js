@@ -1,8 +1,8 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
-// Use machine's local IP for development; update to production URL for EAS builds
-const BASE = 'http://172.20.10.10:4000/api'; 
+// Update to production URL for live testing
+const BASE = 'https://lessongen-ghana.onrender.com/api'; 
 
 const api = axios.create({ baseURL: BASE, timeout: 60000 });
 
