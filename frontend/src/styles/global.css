@@ -32,7 +32,8 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg);
   background-image: linear-gradient(rgba(248, 246, 240, 0.1), rgba(248, 246, 240, 0.05)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
   background-size: 100% auto;
@@ -43,7 +44,9 @@ body {
   line-height: 1.6;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.5s ease, color 0.3s ease;
+  letter-spacing: -0.01em;
 }
 
 .dark body {
@@ -58,7 +61,9 @@ body {
   }
 }
 
-h1, h2, h3, .serif { font-family: 'Fraunces', serif; }
+/* Headings — use Fraunces only when .serif is explicitly applied */
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; }
+.serif, .font-serif { font-family: 'Fraunces', Georgia, serif; }
 
 /* ── Layout ── */
 .page { min-height: 100vh; display: flex; flex-direction: column; }

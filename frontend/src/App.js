@@ -58,7 +58,7 @@ export default function App() {
       <AuthProvider>
         <BrowserRouter>
           <AppRoutes />
-          <Toaster position="bottom-right" toastOptions={{ style: { fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: '14px' } }} />
+          <Toaster position="bottom-right" toastOptions={{ style: { fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', fontSize: '13px', fontWeight: '500', borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.1)' } }} />
         </BrowserRouter>
       </AuthProvider>
     </ThemeProvider>
