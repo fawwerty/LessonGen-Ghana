@@ -15,6 +15,7 @@ import LessonViewPage from './pages/LessonViewPage';
 import AdminPage from './pages/AdminPage';
 import PaymentPage from './pages/PaymentPage';
 import AboutPage from './pages/AboutPage';
+import SchemePage from './pages/SchemePage';
 import Navbar from './components/Navbar';
 
 function PrivateRoute({ children }) {
@@ -45,6 +46,7 @@ function AppRoutes() {
         <Route path="/admin" element={<AdminRoute><AdminPage /></AdminRoute>} />
         <Route path="/payment" element={<PrivateRoute><PaymentPage /></PrivateRoute>} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/scheme" element={<PrivateRoute><SchemePage /></PrivateRoute>} />
       </Routes>
     </>
   );

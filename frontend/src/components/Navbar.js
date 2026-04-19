@@ -98,6 +98,12 @@ export default function Navbar() {
                 Generate
               </button>
               <button 
+                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/scheme' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
+                onClick={() => navigate('/scheme')}
+              >
+                Scheme
+              </button>
+              <button 
                 className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/lessons' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
                 onClick={() => navigate('/lessons')}
               >

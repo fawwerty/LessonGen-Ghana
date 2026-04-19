@@ -62,8 +62,14 @@ export const adminAPI = {
 };
 
 export const schemeAPI = {
-  upload: (formData) => API.post('/scheme/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } }),
-  getWeekly: (classCode, subject, term) => API.get('/scheme/weekly', { params: { classCode, subject, term } }),
+  upload:        (formData) => API.post('/scheme/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  paste:         (data)     => API.post('/scheme/paste', data, { timeout: 120000 }),
+  list:          ()         => API.get('/scheme/list'),
+  getById:       (id)       => API.get(`/scheme/${id}`),
+  getWeekly:     (classCode, subject, term) => API.get('/scheme/weekly', { params: { classCode, subject, term } }),
+  delete:        (id)       => API.delete(`/scheme/${id}`),
+  generateRange: (data)     => API.post('/scheme/generate-range', data, { timeout: 180000 }),
 };
 
 export default API;
+

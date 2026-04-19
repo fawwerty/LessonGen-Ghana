@@ -3,6 +3,7 @@ import {
   View, Text, ScrollView, TouchableOpacity, StyleSheet,
   ActivityIndicator, Alert
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, shadow } from '../utils/theme';
 import { lessonsAPI, exportAPI } from '../services/api';
 import { useAuth } from '../utils/AuthContext';
@@ -10,6 +11,7 @@ import * as FileSystem from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
 
 export default function LessonViewScreen({ route, navigation }) {
+  const insets = useSafeAreaInsets();
   const { lesson: initLesson, isJHS: initJHS } = route.params || {};
   const [lesson, setLesson] = useState(initLesson);
   const [isJHS, setIsJHS] = useState(initJHS || false);
@@ -64,11 +66,11 @@ export default function LessonViewScreen({ route, navigation }) {
         <TouchableOpacity style={s.dlBtn} onPress={handleDownload} disabled={downloading}>
           {downloading
             ? <ActivityIndicator size="small" color={colors.white} />
-            : <Text style={s.dlBtnText}>⬇ Download DOCX</Text>}
+            : <Text style={s.dlBtnText}>↓  Download DOCX</Text>}
         </TouchableOpacity>
       </View>
 
-      <ScrollView contentContainerStyle={s.scroll}>
+      <ScrollView contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 48 }]}>
         {/* Header block */}
         <View style={s.docHeader}>
           <Text style={s.docHeaderTitle}>

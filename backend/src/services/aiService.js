@@ -134,20 +134,51 @@ async function validateLesson(lesson, isJHS, targetDays) {
   return true;
 }
 
-async function generateLesson(params) {
-  const curr = getCurriculum(params.classCode, params.subject, params.term, params.week);
-  const isJHS = ['B7','B8','B9'].includes(params.classCode);
-  const prompt = buildPrompt(params, curr);
+// ── generateLessonFromScheme ──────────────────────────────────────────────────
+// Uses the uploaded scheme's weekly breakdown as the primary curriculum source
+async function generateLessonFromScheme(params, weekData) {
+  const { classCode, subject, term, week, style, teachingDays, periods } = params;
+  const isJHS  = ['B7','B8','B9'].includes(classCode);
+  const today  = new Date();
+  const weekEnd = new Date(today);
+  weekEnd.setDate(today.getDate() + (5 - today.getDay()));
+  const weekEndStr = weekEnd.toLocaleDateString('en-GH', { day:'2-digit', month:'2-digit', year:'numeric' });
+
+  const targetDays = teachingDays ? parseInt(teachingDays, 10) : (isJHS ? 1 : 5);
+
+  const formatHint = isJHS
+    ? `{ "weekEnding": "${weekEndStr}", "day": "Thursday", "strand": "${weekData.strand}", "subStrand": "${weekData.subStrand}", "contentStandard": "${weekData.contentStandard}", "indicator": "${weekData.indicator}", "performanceIndicator": "...", "phase1": "...", "phase2": "...[Assessment: ...]", "phase3": "...[Give learners task...]", "resources": "..." }`
+    : `{ "weekEnding": "${weekEndStr}", "days": [ { "day": "Monday", "phase1": "...", "phase2": "...", "phase3": "..." } ] }`;
+
+  const prompt = `${SYSTEM_PROMPT}
+
+Generate a ${classCode} ${subject} lesson note (Term ${term}, Week ${week}, Style: ${style || 'Standard'}).
+
+USE THIS EXACT SCHEME DATA (from uploaded Termly Scheme of Work):
+- Strand: ${weekData.strand || 'As per curriculum'}
+- Sub-Strand: ${weekData.subStrand || 'As per curriculum'}
+- Content Standard: ${weekData.contentStandard || `${classCode}.${term}.1.1`}
+- Learning Indicator: ${weekData.indicator || `${classCode}.${term}.1.1.1`}
+- Performance Indicator: ${weekData.performanceIndicator || 'Learners demonstrate understanding through activities'}
+- Topics: ${(weekData.topics || []).join(', ') || 'As per scheme'}
+- Key Words: ${(weekData.keyWords || []).join(', ') || ''}
+
+CRITICAL: Generate EXACTLY ${targetDays} teaching day(s).
+${periods ? `Plan content for ${periods} periods.` : ''}
+
+Output ONLY valid JSON:
+${formatHint}`;
 
   for (let i = 0; i < 3; i++) {
     const result = await model.generateContent(prompt);
     const text = result.response.text();
     try {
       const lesson = JSON.parse(text);
-      if (await validateLesson(lesson, isJHS, params.teachingDays)) return { lesson, curriculum: curr, isJHS };
-    } catch (e) { console.error("Gemini JSON error:", e); }
+      if (await validateLesson(lesson, isJHS, targetDays)) return { lesson, isJHS };
+    } catch (e) { console.error('Scheme lesson JSON error:', e); }
   }
-  throw new Error("Failed to generate valid lesson note after 3 attempts.");
+  throw new Error(`Failed to generate lesson for Week ${week} after 3 attempts.`);
 }
 
-module.exports = { generateLesson, getCurriculum, CLASS_LABEL, CLASS_LEVEL };
+module.exports = { generateLesson, generateLessonFromScheme, getCurriculum, CLASS_LABEL, CLASS_LEVEL };
+

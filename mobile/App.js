@@ -2,69 +2,108 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Text, ActivityIndicator, View, TouchableOpacity, Linking, Alert } from 'react-native';
+import {
+  Text, ActivityIndicator, View, TouchableOpacity,
+  Linking, Alert, StyleSheet
+} from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthProvider, useAuth } from './src/utils/AuthContext';
 import { colors } from './src/utils/theme';
 import { paymentAPI } from './src/services/api';
 
+import HomeScreen from './src/screens/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
 import GenerateScreen from './src/screens/GenerateScreen';
 import MyLessonsScreen from './src/screens/MyLessonsScreen';
 import LessonViewScreen from './src/screens/LessonViewScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
+import SchemeScreen from './src/screens/SchemeScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+// ── Minimalistic Tab Icons ────────────────────────────────────────────────────
 function TabIcon({ name, focused }) {
-  const icons = { Generate: '✨', 'My Lessons': '📚', Profile: '👤' };
+  const icons = {
+    Generate: '⬡',
+    Scheme: '≋',
+    'My Lessons': '≡',
+    Profile: '○',
+  };
   return (
-    <View style={{ 
-      alignItems: 'center', 
-      justifyContent: 'center',
-      backgroundColor: focused ? colors.g4 : 'transparent',
-      paddingHorizontal: 16,
-      paddingVertical: 4,
-      borderRadius: 12,
-    }}>
-      <Text style={{ fontSize: 20, opacity: focused ? 1 : 0.6 }}>{icons[name]}</Text>
+    <View style={[ti.wrap, focused && ti.wrapActive]}>
+      <Text style={[ti.icon, focused && ti.iconActive]}>{icons[name]}</Text>
     </View>
   );
 }
 
+const ti = StyleSheet.create({
+  wrap: {
+    width: 44, height: 28, borderRadius: 14,
+    alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'transparent',
+  },
+  wrapActive: { backgroundColor: colors.g4 },
+  icon: { fontSize: 18, color: colors.ink3 },
+  iconActive: { color: colors.g1 },
+});
+
+// ── Main Tab Navigator ────────────────────────────────────────────────────────
 function MainTabs() {
+  const insets = useSafeAreaInsets();
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused }) => <TabIcon name={route.name} focused={focused} />,
         tabBarActiveTintColor: colors.g1,
         tabBarInactiveTintColor: colors.ink3,
-        tabBarStyle: { 
-          backgroundColor: colors.white, 
-          borderTopColor: colors.bg3, 
-          height: 70,
-          paddingBottom: 10,
-          paddingTop: 8,
-          elevation: 10,
+        tabBarStyle: {
+          backgroundColor: colors.white,
+          borderTopColor: colors.bg3,
+          borderTopWidth: 1,
+          height: 60 + insets.bottom,
+          paddingBottom: insets.bottom + 6,
+          paddingTop: 6,
+          elevation: 12,
           shadowColor: colors.g1,
           shadowOffset: { width: 0, height: -4 },
-          shadowOpacity: 0.05,
-          shadowRadius: 10
+          shadowOpacity: 0.06,
+          shadowRadius: 12,
         },
-        tabBarLabelStyle: { fontSize: 10, fontWeight: '800', marginTop: 4 },
-        headerStyle: { backgroundColor: colors.g1, height: 110 },
+        tabBarLabelStyle: { fontSize: 11, fontWeight: '700', marginTop: 2 },
+        headerStyle: { backgroundColor: colors.g1 },
         headerTintColor: colors.white,
-        headerTitleStyle: { fontWeight: '900', fontSize: 22, fontFamily: 'serif' },
+        headerTitleStyle: { fontWeight: '800', fontSize: 18 },
+        headerShadowVisible: false,
       })}
     >
-      <Tab.Screen name="Generate" component={GenerateScreen} options={{ title: 'LessonGen' }} />
-      <Tab.Screen name="My Lessons" component={MyLessonsScreen} options={{ title: 'My Archive' }} />
-      <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Settings' }} />
+      <Tab.Screen
+        name="Generate"
+        component={GenerateScreen}
+        options={{ title: 'LessonGen', tabBarLabel: 'Generate' }}
+      />
+      <Tab.Screen
+        name="Scheme"
+        component={SchemeScreen}
+        options={{ title: 'Scheme', tabBarLabel: 'Scheme' }}
+      />
+      <Tab.Screen
+        name="My Lessons"
+        component={MyLessonsScreen}
+        options={{ title: 'My Archive', tabBarLabel: 'Lessons' }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{ title: 'My Profile', tabBarLabel: 'Profile' }}
+      />
     </Tab.Navigator>
   );
 }
 
+// ── Root Navigator ────────────────────────────────────────────────────────────
 function AppNavigator() {
   const { user, loading } = useAuth();
 
@@ -72,6 +111,7 @@ function AppNavigator() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.g1 }}>
         <ActivityIndicator color={colors.gd} size="large" />
+        <Text style={{ color: colors.gd, marginTop: 16, fontWeight: '700', fontSize: 14 }}>Loading...</Text>
       </View>
     );
   }
@@ -82,19 +122,30 @@ function AppNavigator() {
         screenOptions={{
           headerStyle: { backgroundColor: colors.g1 },
           headerTintColor: colors.white,
-          headerTitleStyle: { fontWeight: '700' },
+          headerTitleStyle: { fontWeight: '800' },
+          headerShadowVisible: false,
+          animation: 'ios',
         }}
       >
         {!user ? (
           <>
+            <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="Register" component={RegisterScreen} options={{ title: 'Create Account' }} />
+            <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
           </>
         ) : (
           <>
             <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
-            <Stack.Screen name="LessonView" component={LessonViewScreen} options={{ title: 'Lesson Note' }} />
-            <Stack.Screen name="Payment" component={PaymentScreen} options={{ title: 'Upgrade to PRO' }} />
+            <Stack.Screen
+              name="LessonView"
+              component={LessonViewScreen}
+              options={{ title: 'Lesson Note', headerBackTitle: 'Back' }}
+            />
+            <Stack.Screen
+              name="Payment"
+              component={PaymentScreen}
+              options={{ title: 'Upgrade to PRO', headerBackTitle: 'Back' }}
+            />
           </>
         )}
       </Stack.Navigator>
@@ -102,41 +153,86 @@ function AppNavigator() {
   );
 }
 
+// ── Root App ─────────────────────────────────────────────────────────────────
 export default function App() {
   return (
-    <AuthProvider>
-      <AppNavigator />
-    </AuthProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider>
+        <AuthProvider>
+          <AppNavigator />
+        </AuthProvider>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
 
-// Inline PaymentScreen for mobile
+// ── Payment Screen (inline) ───────────────────────────────────────────────────
 function PaymentScreen({ navigation }) {
   const [loading, setLoading] = React.useState(false);
   const [plan, setPlan] = React.useState('monthly');
+  const insets = useSafeAreaInsets();
 
   const pay = async () => {
     setLoading(true);
     try {
       const res = await paymentAPI.paystackInit(plan);
       await Linking.openURL(res.data.authorizationUrl);
-    } catch { Alert.alert('Error','Payment failed. Please try again.'); }
-    finally { setLoading(false); }
+    } catch {
+      Alert.alert('Error', 'Payment failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.bg, padding: 20 }}>
-      <Text style={{ fontSize: 22, fontWeight: '700', color: colors.g1, marginBottom: 6 }}>Upgrade to PRO</Text>
-      <Text style={{ fontSize: 13, color: colors.ink3, marginBottom: 20 }}>Unlock unlimited lesson note exports with DOCX download.</Text>
-      {[['monthly','Monthly — GHS 25/month'],['annual','Annual — GHS 200/year (Save GHS 100)']].map(([val, label]) => (
-        <TouchableOpacity key={val} onPress={() => setPlan(val)}
-          style={{ borderWidth: 2, borderColor: plan === val ? colors.g2 : colors.bg3, borderRadius: 12, padding: 16, marginBottom: 10, backgroundColor: plan === val ? colors.g4 : colors.white }}>
-          <Text style={{ fontSize: 15, fontWeight: '700', color: colors.g1 }}>{label}</Text>
+    <View style={[pay_s.container, { paddingBottom: insets.bottom + 20 }]}>
+      <Text style={pay_s.title}>Upgrade to PRO</Text>
+      <Text style={pay_s.sub}>Unlock unlimited lesson note exports with DOCX download.</Text>
+
+      {[
+        ['monthly', 'Monthly', 'GHS 25 / month'],
+        ['annual', 'Annual', 'GHS 200 / year  ·  Save GHS 100'],
+      ].map(([val, label, price]) => (
+        <TouchableOpacity
+          key={val}
+          onPress={() => setPlan(val)}
+          style={[pay_s.planCard, plan === val && pay_s.planCardActive]}
+        >
+          <View style={[pay_s.planRadio, plan === val && pay_s.planRadioActive]} />
+          <View style={{ flex: 1 }}>
+            <Text style={[pay_s.planLabel, plan === val && { color: colors.g1, fontWeight: '800' }]}>{label}</Text>
+            <Text style={pay_s.planPrice}>{price}</Text>
+          </View>
         </TouchableOpacity>
       ))}
-      <TouchableOpacity style={{ backgroundColor: '#0099FF', borderRadius: 10, padding: 16, alignItems: 'center', marginTop: 10 }} onPress={pay} disabled={loading}>
-        {loading ? <ActivityIndicator color="#fff" /> : <Text style={{ color: '#fff', fontSize: 15, fontWeight: '700' }}>💳 Pay with Paystack</Text>}
+
+      <TouchableOpacity style={[pay_s.payBtn, loading && { opacity: 0.6 }]} onPress={pay} disabled={loading}>
+        {loading ? <ActivityIndicator color="#fff" /> : <Text style={pay_s.payBtnText}>Pay with Paystack  →</Text>}
       </TouchableOpacity>
     </View>
   );
 }
+
+const pay_s = StyleSheet.create({
+  container: { flex: 1, backgroundColor: colors.bg, padding: 24, paddingTop: 16 },
+  title: { fontSize: 24, fontWeight: '900', color: colors.g1, marginBottom: 6 },
+  sub: { fontSize: 13, color: colors.ink3, marginBottom: 28, lineHeight: 20 },
+  planCard: {
+    backgroundColor: colors.white, borderRadius: 16, padding: 18, marginBottom: 12,
+    flexDirection: 'row', alignItems: 'center', gap: 14,
+    borderWidth: 2, borderColor: colors.bg3,
+  },
+  planCardActive: { borderColor: colors.g2, backgroundColor: colors.g4 },
+  planRadio: {
+    width: 22, height: 22, borderRadius: 11, borderWidth: 2, borderColor: colors.bg3,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  planRadioActive: { borderColor: colors.g2, backgroundColor: colors.g2 },
+  planLabel: { fontSize: 15, fontWeight: '700', color: colors.ink2, marginBottom: 2 },
+  planPrice: { fontSize: 13, color: colors.ink3, fontWeight: '500' },
+  payBtn: {
+    backgroundColor: '#0099FF', borderRadius: 14, padding: 16, alignItems: 'center', marginTop: 8,
+    shadowColor: '#0099FF', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 10, elevation: 6,
+  },
+  payBtnText: { color: '#fff', fontSize: 16, fontWeight: '800' },
+});

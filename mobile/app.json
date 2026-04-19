@@ -15,8 +15,10 @@
     "android": {
       "package": "com.lessongen.mobile"
     },
-    "web": {} ,
-    "extra": {
-    }
+    "web": {},
+    "extra": {},
+    "plugins": [
+      "expo-secure-store"
+    ]
   }
 }

@@ -1,77 +1,148 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
-import { colors } from '../utils/theme';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuth } from '../utils/AuthContext';
+
+const C = {
+  g1: '#0D3B22', g2: '#1A6B3C', g4: '#D4EDE0', gd: '#C8971A', gl: '#FFF3CC',
+  white: '#FFFFFF', ink: '#1A1814', ink2: '#3D3A30', ink3: '#6B6759', ink4: '#9A9890',
+  bg: '#F8F6F0', bg2: '#F0EDE4', bg3: '#E2DED4', red: '#B83232',
+};
+const shadow = { shadowColor: C.g1, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 8, elevation: 3 };
 
 export default function ProfileScreen({ navigation }) {
   const { user, logout } = useAuth();
+  const insets = useSafeAreaInsets();
   const initials = user?.name?.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase() || 'T';
 
+  const isPro = user?.plan !== 'free';
+
   return (
-    <ScrollView contentContainerStyle={{ padding: 20, backgroundColor: colors.bg, flexGrow: 1 }}>
-      <View style={s.avatarBox}>
-        <View style={s.avatar}><Text style={s.avatarText}>{initials}</Text></View>
+    <ScrollView
+      style={{ flex: 1, backgroundColor: C.bg }}
+      contentContainerStyle={[s.content, { paddingBottom: insets.bottom + 32 }]}
+      showsVerticalScrollIndicator={false}
+    >
+      {/* Avatar Header */}
+      <View style={s.header}>
+        <View style={[s.avatar, isPro && s.avatarPro]}>
+          <Text style={s.avatarText}>{initials}</Text>
+        </View>
         <Text style={s.name}>{user?.name}</Text>
-        <Text style={s.school}>{user?.school}</Text>
-        <View style={[s.planBadge, user?.plan !== 'free' && { backgroundColor: '#ede9fe' }]}>
-          <Text style={[s.planText, user?.plan !== 'free' && { color: '#5b21b6' }]}>
-            {user?.plan === 'free' ? 'FREE PLAN' : '⭐ PRO PLAN'}
+        <Text style={s.school} numberOfLines={2}>{user?.school}</Text>
+        <View style={[s.planBadge, isPro && s.planBadgePro]}>
+          <Text style={[s.planText, isPro && s.planTextPro]}>
+            {isPro ? '+ PRO PLAN' : 'FREE PLAN'}
           </Text>
         </View>
       </View>
 
-      <View style={s.infoCard}>
-        {[['Email', user?.email], ['School', user?.school], ['Role', user?.role],
-          ['Plan', user?.plan?.toUpperCase()]].map(([k, v]) => (
-          <View key={k} style={s.row}>
-            <Text style={s.rowKey}>{k}</Text>
-            <Text style={s.rowVal}>{v || '—'}</Text>
+      {/* Stats Row */}
+      <View style={s.statsRow}>
+        {[['12', 'Subjects'], ['KG-JHS3', 'Levels'], ['NaCCA', 'Standard']].map(([v, l]) => (
+          <View key={l} style={s.statCard}>
+            <Text style={s.statVal}>{v}</Text>
+            <Text style={s.statLbl}>{l}</Text>
           </View>
         ))}
       </View>
 
-      {user?.plan === 'free' && (
-        <TouchableOpacity style={s.upgradeBtn} onPress={() => navigation.navigate('Payment')}>
-          <Text style={s.upgradeText}>⭐ Upgrade to PRO — GHS 25/month</Text>
-          <Text style={{ color: 'rgba(255,255,255,0.8)', fontSize: 12, marginTop: 4 }}>Unlimited DOCX exports · Priority generation</Text>
+      {/* Info Card */}
+      <View style={s.section}>
+        <Text style={s.sectionTitle}>ACCOUNT DETAILS</Text>
+        <View style={s.card}>
+          {[
+            ['Email', user?.email],
+            ['School', user?.school],
+            ['Role', user?.role ? user.role.replace('_', ' ') : '—'],
+            ['Plan', user?.plan?.toUpperCase() || '—'],
+          ].filter(([,v]) => v).map(([k, v], i, arr) => (
+            <View key={k} style={[s.row, i === arr.length - 1 && { borderBottomWidth: 0 }]}>
+              <Text style={s.rowKey}>{k}</Text>
+              <Text style={s.rowVal} numberOfLines={1}>{v}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+
+      {/* Upgrade Banner */}
+      {!isPro && (
+        <TouchableOpacity style={s.upgradeBanner} onPress={() => navigation.navigate('Payment')}>
+          <View>
+            <Text style={s.upgradeTitle}>Upgrade to PRO</Text>
+            <Text style={s.upgradeSub}>Unlimited DOCX exports · Batch generation</Text>
+          </View>
+          <Text style={s.upgradeArrow}>→</Text>
         </TouchableOpacity>
       )}
 
-      <View style={s.infoCard}>
-        <TouchableOpacity style={s.row} onPress={() => navigation.navigate('Generate')}>
-          <Text style={s.rowKey}>✨ Generate</Text><Text style={s.rowLink}>New lesson →</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={s.row} onPress={() => navigation.navigate('My Lessons')}>
-          <Text style={s.rowKey}>📚 My Lessons</Text><Text style={s.rowLink}>View all →</Text>
-        </TouchableOpacity>
+      {/* Quick Actions */}
+      <View style={s.section}>
+        <Text style={s.sectionTitle}>QUICK ACTIONS</Text>
+        <View style={s.card}>
+          <TouchableOpacity style={s.row} onPress={() => navigation.navigate('Generate')}>
+            <Text style={s.rowKey}>Generate</Text>
+            <Text style={s.rowLink}>New lesson →</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={[s.row, { borderBottomWidth: 0 }]} onPress={() => navigation.navigate('My Lessons')}>
+            <Text style={s.rowKey}>My Lessons</Text>
+            <Text style={s.rowLink}>View all →</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
+      {/* Sign Out */}
       <TouchableOpacity style={s.logoutBtn} onPress={logout}>
         <Text style={s.logoutText}>Sign Out</Text>
       </TouchableOpacity>
 
-      <Text style={{ textAlign: 'center', fontSize: 12, color: colors.ink4, marginTop: 20 }}>
-        LessonGen Ghana v1.0.0{'\n'}NaCCA-Aligned AI Lesson Planning
-      </Text>
+      <Text style={s.footer}>LessonGen Ghana · NaCCA-Aligned AI</Text>
     </ScrollView>
   );
 }
 
 const s = StyleSheet.create({
-  avatarBox: { alignItems: 'center', marginBottom: 24 },
-  avatar: { width: 80, height: 80, borderRadius: 40, backgroundColor: colors.gd, alignItems: 'center', justifyContent: 'center', marginBottom: 12 },
-  avatarText: { fontSize: 28, fontWeight: '700', color: colors.g1 },
-  name: { fontSize: 20, fontWeight: '700', color: colors.g1 },
-  school: { fontSize: 13, color: colors.ink3, marginTop: 4, textAlign: 'center' },
-  planBadge: { marginTop: 10, backgroundColor: colors.g4, paddingHorizontal: 16, paddingVertical: 6, borderRadius: 20 },
-  planText: { fontSize: 12, fontWeight: '700', color: colors.g2 },
-  infoCard: { backgroundColor: colors.white, borderRadius: 12, borderWidth: 1, borderColor: colors.bg3, marginBottom: 16, overflow: 'hidden' },
-  row: { flexDirection: 'row', borderBottomWidth: 1, borderColor: colors.bg3, padding: 14, alignItems: 'center' },
-  rowKey: { width: 110, fontSize: 13, fontWeight: '600', color: colors.ink3 },
-  rowVal: { flex: 1, fontSize: 13, color: colors.ink2 },
-  rowLink: { fontSize: 13, color: colors.g2, fontWeight: '600' },
-  upgradeBtn: { backgroundColor: colors.gd, borderRadius: 12, padding: 18, alignItems: 'center', marginBottom: 16 },
-  upgradeText: { color: colors.white, fontWeight: '700', fontSize: 15 },
-  logoutBtn: { borderWidth: 1.5, borderColor: colors.bg3, borderRadius: 10, padding: 14, alignItems: 'center', marginBottom: 8 },
-  logoutText: { color: colors.red, fontSize: 14, fontWeight: '600' },
+  content: { padding: 20, paddingTop: 16 },
+  header: { alignItems: 'center', paddingVertical: 16, marginBottom: 20 },
+  avatar: {
+    width: 80, height: 80, borderRadius: 40,
+    backgroundColor: C.gd, alignItems: 'center', justifyContent: 'center',
+    marginBottom: 12, ...shadow,
+  },
+  avatarPro: { backgroundColor: C.g2 },
+  avatarText: { fontSize: 28, fontWeight: '800', color: C.g1 },
+  name: { fontSize: 20, fontWeight: '800', color: C.g1, marginBottom: 4 },
+  school: { fontSize: 13, color: C.ink3, textAlign: 'center', marginBottom: 10, paddingHorizontal: 20 },
+  planBadge: { backgroundColor: C.g4, paddingHorizontal: 16, paddingVertical: 5, borderRadius: 20 },
+  planBadgePro: { backgroundColor: '#EDE9FE' },
+  planText: { fontSize: 12, fontWeight: '800', color: C.g2, letterSpacing: 0.5 },
+  planTextPro: { color: '#5B21B6' },
+  statsRow: { flexDirection: 'row', gap: 10, marginBottom: 24 },
+  statCard: {
+    flex: 1, backgroundColor: C.white, borderRadius: 14, padding: 14,
+    alignItems: 'center', borderWidth: 1, borderColor: C.bg3, ...shadow,
+  },
+  statVal: { fontSize: 16, fontWeight: '800', color: C.g1, marginBottom: 2 },
+  statLbl: { fontSize: 10, color: C.ink4, fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.5 },
+  section: { marginBottom: 18 },
+  sectionTitle: { fontSize: 11, fontWeight: '800', color: C.ink4, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 8, marginLeft: 2 },
+  card: { backgroundColor: C.white, borderRadius: 16, borderWidth: 1, borderColor: C.bg3, overflow: 'hidden', ...shadow },
+  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 14, borderBottomWidth: 1, borderColor: C.bg3 },
+  rowKey: { fontSize: 13, fontWeight: '600', color: C.ink3, flex: 1 },
+  rowVal: { fontSize: 13, color: C.ink2, fontWeight: '500', flex: 2, textAlign: 'right' },
+  rowLink: { fontSize: 13, color: C.g2, fontWeight: '700' },
+  upgradeBanner: {
+    backgroundColor: C.gd, borderRadius: 16, padding: 18, marginBottom: 18,
+    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
+    ...shadow, shadowColor: C.gd, shadowOpacity: 0.35,
+  },
+  upgradeTitle: { color: C.g1, fontWeight: '800', fontSize: 15 },
+  upgradeSub: { color: 'rgba(13,59,34,0.75)', fontSize: 12, marginTop: 3 },
+  upgradeArrow: { color: C.g1, fontSize: 22, fontWeight: '800' },
+  logoutBtn: {
+    borderWidth: 1.5, borderColor: C.bg3, borderRadius: 14, padding: 14,
+    alignItems: 'center', marginBottom: 16,
+  },
+  logoutText: { color: C.red, fontSize: 14, fontWeight: '700' },
+  footer: { textAlign: 'center', fontSize: 11, color: C.ink4, marginTop: 4 },
 });
