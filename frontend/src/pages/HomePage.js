@@ -28,22 +28,22 @@ export default function HomePage() {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 pt-8 border-t border-black/5 dark:border-white/5">
-                <div className="p-3 rounded-2xl bg-white/60 dark:bg-black/40 border border-white/60 dark:border-white/10 backdrop-blur-xl shadow-xl hover:scale-110 transition-transform cursor-default">
-                  <div className="text-2xl font-black text-gray-950 dark:text-white">100%</div>
-                  <div className="text-[9px] text-gray-700 dark:text-gray-400 uppercase font-black tracking-widest">NaCCA compliant</div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-10 border-t border-black/5 dark:border-white/10">
+                <div className="p-4 rounded-2xl bg-white/40 dark:bg-black/40 border border-white/40 dark:border-white/10 backdrop-blur-xl shadow-lg hover:scale-110 transition-transform">
+                  <div className="text-xl md:text-2xl font-black text-gray-950 dark:text-white">100%</div>
+                  <div className="text-[10px] text-gray-600 dark:text-gray-400 uppercase font-black tracking-widest leading-none mt-1 text-center">NaCCA compliant</div>
                 </div>
-                <div className="p-3 rounded-2xl bg-white/60 dark:bg-black/40 border border-white/60 dark:border-white/10 backdrop-blur-xl shadow-xl hover:scale-110 transition-transform cursor-default text-emerald-700 dark:text-emerald-400">
-                  <div className="text-2xl font-black">3-Step</div>
-                  <div className="text-[9px] uppercase font-black tracking-widest">Batch Wizard</div>
+                <div className="p-4 rounded-2xl bg-white/40 dark:bg-black/40 border border-white/40 dark:border-white/10 backdrop-blur-xl shadow-lg hover:scale-110 transition-transform">
+                  <div className="text-xl md:text-2xl font-black text-emerald-700 dark:text-emerald-400">3-Step</div>
+                  <div className="text-[10px] text-gray-600 dark:text-gray-400 uppercase font-black tracking-widest leading-none mt-1 text-center">Batch Wizard</div>
                 </div>
-                <div className="p-3 rounded-2xl bg-white/60 dark:bg-black/40 border border-white/60 dark:border-white/10 backdrop-blur-xl shadow-xl hover:scale-110 transition-transform cursor-default">
-                  <div className="text-2xl font-black text-gray-950 dark:text-white">B&W</div>
-                  <div className="text-[9px] text-gray-700 dark:text-gray-400 uppercase font-black tracking-widest">Print Ready</div>
+                <div className="p-4 rounded-2xl bg-white/40 dark:bg-black/40 border border-white/40 dark:border-white/10 backdrop-blur-xl shadow-lg hover:scale-110 transition-transform">
+                  <div className="text-xl md:text-2xl font-black text-gray-950 dark:text-white">B&W</div>
+                  <div className="text-[10px] text-gray-600 dark:text-gray-400 uppercase font-black tracking-widest leading-none mt-1 text-center">Print Ready</div>
                 </div>
-                <div className="p-3 rounded-2xl bg-white/60 dark:bg-black/40 border border-white/60 dark:border-white/10 backdrop-blur-xl shadow-xl hover:scale-110 transition-transform cursor-default text-emerald-700 dark:text-emerald-400">
-                  <div className="text-2xl font-black">AI</div>
-                  <div className="text-[9px] uppercase font-black tracking-widest">Powered JSON</div>
+                <div className="p-4 rounded-2xl bg-white/40 dark:bg-black/40 border border-white/40 dark:border-white/10 backdrop-blur-xl shadow-lg hover:scale-110 transition-transform">
+                  <div className="text-xl md:text-2xl font-black text-emerald-700 dark:text-emerald-400">AI</div>
+                  <div className="text-[10px] text-gray-600 dark:text-gray-400 uppercase font-black tracking-widest leading-none mt-1 text-center">Powered JSON</div>
                 </div>
             </div>
           </div>

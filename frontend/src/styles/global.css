@@ -22,19 +22,19 @@
 
 .dark {
   --ink: #F0FAF5;  --ink2: #E2DED4; --ink3: #9A9890; --ink4: #6B6759;
-  --bg: #0A0A0A;   --bg2: #121212;  --bg3: #1F1F1F;
-  --white: #1A1A1A;
+  --bg: #050806;   --bg2: #0D110E;  --bg3: #1A1F1C;
+  --white: #0D110E;
   --shadow: 0 4px 12px rgba(0,0,0,.5);
   --shadow-md: 0 8px 32px rgba(0,0,0,.7);
-  --card-bg: rgba(13, 20, 16, 0.92);
+  --card-bg: rgba(13, 20, 16, 0.85);
   --input-bg: rgba(26, 26, 26, 0.6);
-  --nav-bg: rgba(5, 20, 12, 0.95);
+  --nav-bg: rgba(5, 12, 8, 0.95);
 }
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg);
-  background-image: linear-gradient(rgba(248, 246, 240, 0.15), rgba(248, 246, 240, 0.15)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
+  background-image: linear-gradient(rgba(248, 246, 240, 0.1), rgba(248, 246, 240, 0.05)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -43,17 +43,18 @@ body {
   line-height: 1.6;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.5s ease, color 0.3s ease;
 }
 
 .dark body {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
 }
 
 @media (max-width: 640px) {
   body { 
     background-size: cover; 
     background-attachment: scroll; 
-    background-position: center 15%; 
+    background-position: center 20%; 
   }
 }
 
