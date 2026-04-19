@@ -2,14 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity, StyleSheet,
   ScrollView, ActivityIndicator, Alert, FlatList, Modal,
-  Dimensions
+  useWindowDimensions
 } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { schemeAPI } from '../services/api';
-
-const { width } = Dimensions.get('window');
 
 const C = {
   g1: '#0D3B22', g2: '#1A6B3C', g4: '#D4EDE0', gd: '#C8971A',

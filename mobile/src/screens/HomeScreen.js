@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ImageBackground, StatusBar, Dimensions
+  ImageBackground, Dimensions, useWindowDimensions
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
-const { width } = Dimensions.get('window');
 const C = {
   g1: '#0D3B22', g2: '#1A6B3C', g3: '#2E8B57', g4: '#D4EDE0',
   gd: '#C8971A', gl: '#FFF3CC', gb: '#8A6510',
@@ -14,6 +14,10 @@ const C = {
 };
 
 export default function HomeScreen({ navigation }) {
+  const { width } = useWindowDimensions();
+  // Safe calculation for grid items
+  const cardWidth = Math.max((width - 80) / 4 - 6, 60);
+
   return (
     <ImageBackground
       source={require('../../assets/bg.png')}
@@ -21,7 +25,7 @@ export default function HomeScreen({ navigation }) {
       resizeMode="cover"
     >
       <View style={s.overlay} />
-      <StatusBar barStyle="light-content" />
+      <StatusBar style="light" />
       <SafeAreaView style={s.safe}>
         {/* Header Brand */}
         <View style={s.header}>
@@ -44,7 +48,7 @@ export default function HomeScreen({ navigation }) {
           {/* Stat Badges */}
           <View style={s.statsRow}>
             {[['100%', 'NaCCA'], ['3-Step', 'Wizard'], ['B&W', 'Print'], ['AI', 'Powered']].map(([val, lbl]) => (
-              <View key={lbl} style={s.statCard}>
+              <View key={lbl} style={[s.statCard, { minWidth: cardWidth }]}>
                 <Text style={s.statVal}>{val}</Text>
                 <Text style={s.statLbl}>{lbl}</Text>
               </View>
@@ -100,7 +104,7 @@ const s = StyleSheet.create({
   sub: { fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 20, marginBottom: 20, fontWeight: '500' },
   statsRow: { flexDirection: 'row', gap: 8, marginBottom: 24, flexWrap: 'wrap' },
   statCard: {
-    flex: 1, minWidth: (width - 80) / 4 - 6,
+    flex: 1,
     backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: 12, borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.2)', padding: 10, alignItems: 'center',
   },
