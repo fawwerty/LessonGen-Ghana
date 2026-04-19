@@ -4,7 +4,7 @@ import * as SecureStore from 'expo-secure-store';
 // ── Backend URL ───────────────────────────────────────────────────────────────
 // Production: Render deployment
 // NOTE: Render free tier may spin down after inactivity — first request can take ~30s.
-const BASE_URL = 'https://lessongen-ghana.onrender.com/api';
+const BASE_URL = 'https://lessongen-ghana.onrender.com/api/';
 
 const api = axios.create({
   baseURL: BASE_URL,
@@ -37,39 +37,39 @@ api.interceptors.response.use(
 
 // ── API Methods ───────────────────────────────────────────────────────────────
 export const authAPI = {
-  login:    (d) => api.post('/auth/login', d),
-  register: (d) => api.post('/auth/register', d),
-  me:       ()  => api.get('/auth/me'),
+  login:    (d) => api.post('auth/login', d),
+  register: (d) => api.post('auth/register', d),
+  me:       ()  => api.get('auth/me'),
 };
 
 export const lessonsAPI = {
-  generate: (d)  => api.post('/lessons/generate', d),
-  list:     (p)  => api.get('/lessons', { params: p }),
-  get:      (id) => api.get(`/lessons/${id}`),
-  delete:   (id) => api.delete(`/lessons/${id}`),
+  generate: (d)  => api.post('lessons/generate', d),
+  list:     (p)  => api.get('lessons', { params: p }),
+  get:      (id) => api.get(`lessons/${id}`),
+  delete:   (id) => api.delete(`lessons/${id}`),
 };
 
 export const exportAPI = {
-  docx: (id) => api.post(`/exports/docx/${id}`, {}, { responseType: 'arraybuffer', timeout: 120000 }),
+  docx: (id) => api.post(`exports/docx/${id}`, {}, { responseType: 'arraybuffer', timeout: 120000 }),
 };
 
 export const paymentAPI = {
-  paystackInit: (plan) => api.post('/payments/paystack/initialize', { plan }),
+  paystackInit: (plan) => api.post('payments/paystack/initialize', { plan }),
 };
 
 export const schemeAPI = {
-  upload:        (formData) => api.post('/scheme/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
-  camera:        (formData) => api.post('/scheme/camera', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
-  paste:         (data)     => api.post('/scheme/paste', data, { timeout: 120000 }),
-  list:          ()         => api.get('/scheme/list'),
-  getById:       (id)       => api.get(`/scheme/${id}`),
-  getWeekly:     (classCode, subject, term) => api.get('/scheme/weekly', { params: { classCode, subject, term } }),
-  delete:        (id)       => api.delete(`/scheme/${id}`),
-  generateRange: (data)     => api.post('/scheme/generate-range', data, { timeout: 180000 }),
+  upload:        (formData) => api.post('scheme/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  camera:        (formData) => api.post('scheme/camera', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  paste:         (data)     => api.post('scheme/paste', data, { timeout: 120000 }),
+  list:          ()         => api.get('scheme/list'),
+  getById:       (id)       => api.get(`scheme/${id}`),
+  getWeekly:     (classCode, subject, term) => api.get('scheme/weekly', { params: { classCode, subject, term } }),
+  delete:        (id)       => api.delete(`scheme/${id}`),
+  generateRange: (data)     => api.post('scheme/generate-range', data, { timeout: 180000 }),
 };
 
 export const dashboardAPI = {
-  getStats: () => api.get('/dashboard/stats'),
+  getStats: () => api.get('dashboard/stats'),
 };
 
 export default api;
