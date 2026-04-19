@@ -15,6 +15,7 @@ const adminRoutes = require('./routes/admin');
 const schemeRoutes = require('./routes/scheme');
 
 const app = express();
+app.set('trust proxy', 1);
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',') 
