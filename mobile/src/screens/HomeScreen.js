@@ -45,15 +45,6 @@ export default function HomeScreen({ navigation }) {
             The AI tool for Ghanaian teachers. Generate NaCCA-compliant lesson notes and export print-ready DOCX files instantly.
           </Text>
 
-          {/* Stat Badges */}
-          <View style={s.statsRow}>
-            {[['100%', 'NaCCA'], ['3-Step', 'Wizard'], ['B&W', 'Print'], ['AI', 'Powered']].map(([val, lbl]) => (
-              <View key={lbl} style={[s.statCard, { minWidth: cardWidth }]}>
-                <Text style={s.statVal}>{val}</Text>
-                <Text style={s.statLbl}>{lbl}</Text>
-              </View>
-            ))}
-          </View>
 
           {/* CTA Buttons */}
           <TouchableOpacity style={s.primaryBtn} onPress={() => navigation.navigate('Register')}>
@@ -64,19 +55,6 @@ export default function HomeScreen({ navigation }) {
           </TouchableOpacity>
         </View>
 
-        {/* Feature Pills */}
-        <View style={s.featRow}>
-          {[
-            { icon: '⚡', label: 'Insta-Generate' },
-            { icon: '☁', label: 'NaCCA Aligned' },
-            { icon: '⬇', label: 'DOCX Export' },
-          ].map(f => (
-            <View key={f.label} style={s.featPill}>
-              <Text style={s.featIcon}>{f.icon}</Text>
-              <Text style={s.featLabel}>{f.label}</Text>
-            </View>
-          ))}
-        </View>
       </SafeAreaView>
     </ImageBackground>
   );
