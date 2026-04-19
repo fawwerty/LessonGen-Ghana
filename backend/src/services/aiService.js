@@ -134,6 +134,29 @@ async function validateLesson(lesson, isJHS, targetDays) {
   return true;
 }
 
+// ── generateLesson ────────────────────────────────────────────────────────────
+// The primary entry point for standard lesson note generation
+async function generateLesson(params) {
+  const { classCode, subject, term, week, teachingDays } = params;
+  const isJHS = ['B7','B8','B9'].includes(classCode);
+  const targetDays = teachingDays ? parseInt(teachingDays, 10) : (isJHS ? 1 : 5);
+  const curriculum = getCurriculum(classCode, subject, term, week);
+  const prompt = buildPrompt(params, curriculum);
+
+  for (let i = 0; i < 3; i++) {
+    try {
+      const result = await model.generateContent(prompt);
+      const lesson = JSON.parse(result.response.text());
+      if (await validateLesson(lesson, isJHS, targetDays)) {
+        return { lesson, curriculum, isJHS };
+      }
+    } catch (e) {
+      console.error(`Attempt ${i+1} failed for ${subject}:`, e.message);
+    }
+  }
+  throw new Error(`Failed to generate ${subject} lesson after 3 attempts.`);
+}
+
 // ── generateLessonFromScheme ──────────────────────────────────────────────────
 // Uses the uploaded scheme's weekly breakdown as the primary curriculum source
 async function generateLessonFromScheme(params, weekData) {
