@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { 
   Rocket, 
@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
        {/* Hero Section Container - NO CARD BOUNDARY */}
@@ -63,26 +64,53 @@ export default function HomePage() {
           <div id="features" className="relative z-10 w-full max-w-4xl mx-auto mt-24 px-8 py-16 bg-white/80 dark:bg-black/60 backdrop-blur-md rounded-3xl border border-white/50 dark:border-white/10 shadow-xl text-left">
             <h2 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-12 text-center">Platform Features</h2>
             <div className="grid md:grid-cols-3 gap-8">
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
-                  <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Rocket size={28} strokeWidth={2.5} />
+                <div 
+                  onClick={() => navigate('/generate')}
+                  className="p-10 bg-white dark:bg-white/5 rounded-[2.5rem] shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 cursor-pointer relative overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 shadow-sm">
+                    <Rocket size={32} strokeWidth={2.5} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Insta-Generate</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Convert Termly Schemes into standardized Weekly Lesson notes in a matter of seconds.</p>
+                  <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4 tracking-tight">Insta-Generate</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed mb-10 font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                    Convert Termly Schemes into standardized Weekly Lesson notes in a matter of seconds with AI.
+                  </p>
+                  <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-4 transition-all">
+                    Start Generating <ArrowRight size={18} />
+                  </div>
                 </div>
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
-                  <div className="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Printer size={28} strokeWidth={2.5} />
+                <div 
+                  onClick={() => navigate('/scheme')}
+                  className="p-10 bg-white dark:bg-white/5 rounded-[2.5rem] shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 cursor-pointer relative overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500 shadow-sm">
+                    <Printer size={32} strokeWidth={2.5} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">B&W Print Ready</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Download raw DOCX files instantly, formatted automatically to minimize ink usage.</p>
+                  <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4 tracking-tight">B&W Print Ready</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed mb-10 font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                    Download raw DOCX files instantly, formatted automatically to minimize ink usage for low-cost printing.
+                  </p>
+                  <div className="flex items-center gap-2 text-amber-600 font-bold text-sm group-hover:gap-4 transition-all">
+                    Upload Scheme <ArrowRight size={18} />
+                  </div>
                 </div>
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
-                  <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <ShieldCheck size={28} strokeWidth={2.5} />
+                <div 
+                  onClick={() => navigate('/about')}
+                  className="p-10 bg-white dark:bg-white/5 rounded-[2.5rem] shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 cursor-pointer relative overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 shadow-sm">
+                    <ShieldCheck size={32} strokeWidth={2.5} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">NaCCA Approved</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Pre-loaded with accurate Ministry standards for KG through JHS 3.</p>
+                  <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4 tracking-tight">NaCCA Approved</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed mb-10 font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                    Pre-loaded with accurate Ministry standards for KG through JHS 3, verified by professional educators.
+                  </p>
+                  <div className="flex items-center gap-2 text-blue-600 font-bold text-sm group-hover:gap-4 transition-all">
+                    Learn More <ArrowRight size={18} />
+                  </div>
                 </div>
             </div>
           </div>
