@@ -26,6 +26,7 @@ export default function DashboardScreen({ navigation }) {
       setData(res.data);
     } catch (err) {
       console.error('Dashboard Load Error:', err);
+      // Don't crash — show empty state gracefully
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -44,11 +45,17 @@ export default function DashboardScreen({ navigation }) {
   };
 
   const getGreeting = () => {
-    const hour = new Date().getUTCHours() + 0; // Ghana is UTC
+    const hour = new Date().getUTCHours(); // Ghana is UTC+0
     if (hour < 12) return 'Good Morning';
     if (hour < 17) return 'Good Afternoon';
     return 'Good Evening';
   };
+
+  // Navigate to another tab
+  const goToTab = (tabName) => navigation.navigate(tabName);
+
+  // Navigate to a root-level stack screen (LessonView, Payment)
+  const goToScreen = (screenName, params) => navigation.getParent()?.navigate(screenName, params);
 
   if (loading && !refreshing) {
     return (
@@ -70,7 +77,7 @@ export default function DashboardScreen({ navigation }) {
           <Text style={s.greeting}>{getGreeting()},</Text>
           <Text style={s.userName}>{user?.name?.split(' ')[0] || 'Teacher'} 👋</Text>
         </View>
-        <TouchableOpacity style={s.avatar} onPress={() => navigation.navigate('Profile')}>
+        <TouchableOpacity style={s.avatar} onPress={() => goToTab('Profile')}>
           <Text style={s.avatarText}>{user?.name?.[0] || 'T'}</Text>
         </TouchableOpacity>
       </View>
@@ -78,23 +85,23 @@ export default function DashboardScreen({ navigation }) {
       {/* Stats Row */}
       <View style={s.statsGrid}>
         <View style={[s.statCard, { width: (width - 48) / 2 }]}>
-          <Text style={s.statVal}>{data.stats.lessons}</Text>
+          <Text style={s.statVal}>{data.stats?.lessons ?? 0}</Text>
           <Text style={s.statLbl}>Lessons</Text>
         </View>
         <View style={[s.statCard, { width: (width - 48) / 2 }]}>
-          <Text style={s.statVal}>{data.stats.schemes}</Text>
+          <Text style={s.statVal}>{data.stats?.schemes ?? 0}</Text>
           <Text style={s.statLbl}>Schemes</Text>
         </View>
         <TouchableOpacity 
           style={[s.statCard, s.statCardHighlight, { width: width - 40 }]}
-          onPress={() => navigation.navigate('Payment')}
+          onPress={() => goToScreen('Payment')}
         >
           <View>
             <Text style={s.statLblHighlight}>MEMBERSHIP</Text>
-            <Text style={s.statValHighlight}>{data.stats.subscription}</Text>
+            <Text style={s.statValHighlight}>{data.stats?.subscription ?? 'Free'}</Text>
           </View>
           <View style={s.badge}>
-            <Text style={s.badgeText}>{data.stats.subscription === 'PRO' ? 'Active' : 'Upgrade'}</Text>
+            <Text style={s.badgeText}>{data.stats?.subscription === 'PRO' ? 'Active' : 'Upgrade'}</Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -103,21 +110,21 @@ export default function DashboardScreen({ navigation }) {
       <View style={s.section}>
         <Text style={s.sectionTitle}>QUICK ACTIONS</Text>
         <View style={s.actionRow}>
-          <TouchableOpacity style={s.actionBtn} onPress={() => navigation.navigate('Generate')}>
+          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Generate')}>
             <View style={[s.actionIcon, { backgroundColor: '#E0F2FE' }]}>
               <Text style={{ fontSize: 20 }}>⚡</Text>
             </View>
             <Text style={s.actionBtnText}>New Lesson</Text>
           </TouchableOpacity>
           
-          <TouchableOpacity style={s.actionBtn} onPress={() => navigation.navigate('Scheme')}>
+          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Scheme')}>
             <View style={[s.actionIcon, { backgroundColor: '#F0FDF4' }]}>
               <Text style={{ fontSize: 20 }}>📁</Text>
             </View>
             <Text style={s.actionBtnText}>Build Scheme</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={s.actionBtn} onPress={() => navigation.navigate('My Lessons')}>
+          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('My Lessons')}>
             <View style={[s.actionIcon, { backgroundColor: '#FEF3C7' }]}>
               <Text style={{ fontSize: 20 }}>📖</Text>
             </View>
@@ -130,7 +137,7 @@ export default function DashboardScreen({ navigation }) {
       <View style={s.section}>
         <View style={s.sectionHeader}>
           <Text style={s.sectionTitle}>RECENT LESSONS</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('My Lessons')}>
+          <TouchableOpacity onPress={() => goToTab('My Lessons')}>
             <Text style={s.viewAll}>View All</Text>
           </TouchableOpacity>
         </View>
@@ -138,7 +145,7 @@ export default function DashboardScreen({ navigation }) {
         {data.recentLessons.length === 0 ? (
           <View style={s.emptyCard}>
             <Text style={s.emptyText}>No lessons generated yet.</Text>
-            <TouchableOpacity style={s.emptyBtn} onPress={() => navigation.navigate('Generate')}>
+            <TouchableOpacity style={s.emptyBtn} onPress={() => goToTab('Generate')}>
               <Text style={s.emptyBtnText}>Create your first lesson</Text>
             </TouchableOpacity>
           </View>
@@ -147,7 +154,7 @@ export default function DashboardScreen({ navigation }) {
             <TouchableOpacity 
               key={item._id} 
               style={s.lessonItem}
-              onPress={() => navigation.navigate('LessonView', { lesson: item })}
+              onPress={() => goToScreen('LessonView', { lesson: item })}
             >
               <View style={s.lessonIcon}>
                 <Text style={s.lessonIconText}>{item.subject?.[0] || 'L'}</Text>
