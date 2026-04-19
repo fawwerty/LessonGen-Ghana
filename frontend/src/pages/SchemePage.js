@@ -210,7 +210,7 @@ export default function SchemePage() {
   const totalWeeks = activeScheme?.weeklyBreakdown?.length || 0;
 
   return (
-    <div style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }} className="min-h-screen bg-gray-50/50">
+    <div style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }} className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8">
 
         {/* ── Page Header ────────────────────────────────────────────── */}
@@ -221,7 +221,7 @@ export default function SchemePage() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Scheme of Learning</h1>
-              <p className="text-sm text-gray-500">Upload your TSoW and generate structured lesson notes instantly</p>
+              <p className="text-sm text-gray-500 font-medium">Upload your TSoW and generate structured lesson notes instantly</p>
             </div>
           </div>
         </div>
@@ -232,14 +232,14 @@ export default function SchemePage() {
           <div className="lg:col-span-2 space-y-5">
 
             {/* Upload Card */}
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-              <h2 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wider">Upload Scheme</h2>
+            <div className="glass rounded-2xl p-6 shadow-xl shadow-emerald-900/5">
+              <h2 className="text-xs font-bold text-gray-900 mb-4 uppercase tracking-wider">Upload Scheme</h2>
 
               {/* Tab switch */}
-              <div className="flex bg-gray-100 rounded-xl p-1 mb-5 gap-1">
+              <div className="flex bg-emerald-50/50 rounded-xl p-1 mb-5 gap-1 border border-emerald-100/50">
                 {[['upload', 'File Upload'], ['paste', 'Paste Text']].map(([k, l]) => (
                   <button key={k} onClick={() => setTab(k)}
-                    className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${tab === k ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}>
+                    className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${tab === k ? 'bg-white text-emerald-800 shadow-sm' : 'text-emerald-600/70 hover:text-emerald-800'}`}>
                     {l}
                   </button>
                 ))}
@@ -311,7 +311,7 @@ export default function SchemePage() {
 
             {/* Saved Schemes */}
             {savedSchemes.length > 0 && (
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+              <div className="glass rounded-2xl p-5 shadow-xl shadow-emerald-900/5">
                 <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Saved Schemes ({savedSchemes.length})</h2>
                 <div className="space-y-2">
                   {savedSchemes.map(s => (
@@ -343,7 +343,7 @@ export default function SchemePage() {
             ) : (
               <>
                 {/* Scheme Header */}
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                <div className="glass rounded-2xl p-5 shadow-xl shadow-emerald-900/5">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <h2 className="text-base font-bold text-gray-900">{activeScheme.subject}</h2>
@@ -362,8 +362,8 @@ export default function SchemePage() {
                 </div>
 
                 {/* Week Timeline Grid */}
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-                  <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Week Breakdown</h2>
+                <div className="glass rounded-2xl p-5 shadow-xl shadow-emerald-900/5">
+                  <h2 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Week Breakdown</h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {(activeScheme.weeklyBreakdown || []).map(week => (
                       <WeekCard key={week.week} week={week} selected={selectedWeeks.has(week.week)} onToggle={toggleWeek} generated={false} />
@@ -372,8 +372,8 @@ export default function SchemePage() {
                 </div>
 
                 {/* Generation Controls */}
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-                  <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Generate Lesson Notes</h2>
+                <div className="glass rounded-2xl p-5 shadow-xl shadow-emerald-900/5">
+                  <h2 className="text-xs font-bold text-gray-900 mb-4 uppercase tracking-wider">Generate Lesson Notes</h2>
 
                   {/* Mode Segmented Control */}
                   <div className="flex bg-gray-100 rounded-xl p-1 gap-1 mb-5">

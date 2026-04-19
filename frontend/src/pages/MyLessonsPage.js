@@ -71,8 +71,8 @@ export default function MyLessonsPage() {
       </div>
 
       {/* Search */}
-      <div className="mb-5 relative">
-        <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="mb-5 relative glass rounded-xl border-none shadow-xl shadow-emerald-900/5">
+        <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-600/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
         <input
@@ -110,10 +110,10 @@ export default function MyLessonsPage() {
           {lessons.map(l => (
             <div key={l._id}
               onClick={() => navigate(`/lessons/${l._id}`)}
-              className="group flex items-center gap-4 bg-white border border-gray-100 rounded-2xl p-4 cursor-pointer hover:border-emerald-200 hover:shadow-md transition-all duration-200">
+              className="group flex items-center gap-4 glass rounded-2xl p-4 cursor-pointer hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-200">
 
               {/* Badge */}
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex flex-col items-center justify-center flex-shrink-0 border border-emerald-100">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex flex-col items-center justify-center flex-shrink-0 border border-emerald-200">
                 <span className="text-xs font-black text-emerald-700">{l.classCode}</span>
                 <span className="text-[10px] text-emerald-500 font-medium">{(l.subject || '').split(' ')[0].slice(0, 4)}</span>
               </div>

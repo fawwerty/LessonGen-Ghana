@@ -111,7 +111,7 @@ function AppNavigator() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.g1 }}>
         <ActivityIndicator color={colors.gd} size="large" />
-        <Text style={{ color: colors.gd, marginTop: 16, fontWeight: '700', fontSize: 14 }}>Loading...</Text>
+        <Text style={{ color: colors.gd, marginTop: 16, fontWeight: '700', fontSize: 14 }}>Initializing...</Text>
       </View>
     );
   }

@@ -99,7 +99,7 @@ export default function GeneratePage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
         {/* ── Wizard Panel ─────────────────────────────── */}
-        <div className="lg:col-span-2 bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+        <div className="lg:col-span-2 glass rounded-2xl p-8 shadow-xl shadow-emerald-900/5">
 
           {/* STEP 1 */}
           {step === 1 && (
@@ -250,8 +250,8 @@ export default function GeneratePage() {
         </div>
 
         {/* ── Subject Basket ────────────────────────────── */}
-        <div className="bg-gray-50 rounded-2xl border border-gray-100 p-5 h-fit">
-          <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 pb-3 border-b border-gray-200">
+        <div className="glass rounded-2xl p-5 h-fit shadow-xl shadow-emerald-900/5">
+          <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 pb-3 border-b border-emerald-100/30">
             Batch ({subjectsBasket.length} subject{subjectsBasket.length !== 1 ? 's' : ''})
           </h3>
 

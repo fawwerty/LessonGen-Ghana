@@ -35,9 +35,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
     'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg);
-  background-image: linear-gradient(rgba(248, 246, 240, 0.1), rgba(248, 246, 240, 0.05)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
-  background-size: 100% auto;
-  background-position: top center;
+  /* Premium Vignette: Focuses light on centers, fades to bg color on long pages */
+  background-image: 
+    radial-gradient(circle at center, transparent 0%, var(--bg) 95%),
+    linear-gradient(to bottom, rgba(248, 246, 240, 0.4) 0%, rgba(248, 246, 240, 0.1) 100%),
+    url('../assets/ghanaian_classroom_bg_1776547738730.png');
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--ink);
@@ -49,8 +53,26 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.glass-dark {
+  background: rgba(26, 26, 26, 0.7) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
 .dark body {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('../assets/ghanaian_classroom_bg_1776547738730.png');
+  background-image: 
+    radial-gradient(circle at center, transparent 0%, var(--bg) 95%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('../assets/ghanaian_classroom_bg_1776547738730.png');
 }
 
 @media (max-width: 640px) {

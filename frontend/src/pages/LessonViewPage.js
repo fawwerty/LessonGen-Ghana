@@ -204,20 +204,20 @@ export default function LessonViewPage({ isBatch = false }) {
 
   return (
     <>
-      <div className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between shadow-sm sticky top-0 z-50 print:hidden">
-        <button className="text-gray-600 font-bold text-sm px-4 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition" onClick={() => navigate('/lessons')}>← Back</button>
+      <div className="glass px-6 py-4 flex items-center justify-between shadow-xl shadow-emerald-900/10 sticky top-0 z-50 print:hidden border-b-none rounded-b-2xl mx-4 mt-2">
+        <button className="text-gray-600 font-bold text-sm px-4 py-2 border border-emerald-100 rounded-lg bg-white/50 hover:bg-white transition" onClick={() => navigate('/lessons')}>← Back</button>
         <div className="font-serif font-bold text-gray-800 text-lg">
            {isBatch ? `Batch Preview: Term ${data.term}, Week ${data.week} (${data.lessons.length} Subjects)` : `${data.lessons[0].subject} — ${data.lessons[0].classCode} | Term ${data.lessons[0].term}, Week ${data.lessons[0].week}`}
         </div>
         <div className="flex gap-3">
-           <button className="text-gray-600 font-bold text-sm px-4 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition" onClick={() => window.print()}>🖨 Print</button>
-           <button className="bg-gray-900 text-white font-bold text-sm px-5 py-2 rounded-lg hover:bg-black transition shadow-md disabled:opacity-50" disabled={downloading} onClick={handleDownload}>
+           <button className="text-gray-600 font-bold text-sm px-4 py-2 border border-emerald-100 rounded-lg bg-white/50 hover:bg-white transition" onClick={() => window.print()}>🖨 Print</button>
+           <button className="bg-emerald-900 text-white font-bold text-sm px-5 py-2 rounded-lg hover:bg-black transition shadow-md disabled:opacity-50" disabled={downloading} onClick={handleDownload}>
               {downloading ? '⏳ Preparing...' : '⬇ Word DOCX'}
            </button>
         </div>
       </div>
 
-      <div className="bg-white min-h-screen py-10 px-4 print:bg-transparent print:min-h-0 print:py-0">
+      <div className="min-h-screen py-10 px-4 print:bg-transparent print:min-h-0 print:py-0">
         <div className="max-w-[794px] mx-auto bg-white print:shadow-none shadow-[0_0_20px_rgba(0,0,0,0.05)] border border-gray-200 print:border-none p-12 print:p-0 rounded-xl print:rounded-none selection:bg-gray-200 text-black">
           {data.lessons.map((lesson, idx) => (
              <SingleLessonView key={lesson._id || idx} lesson={lesson} />
