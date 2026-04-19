@@ -1,0 +1,104 @@
+{
+  "_note": "Standard GES-approved pupil textbooks used across Ghana. References appear alongside NaCCA curriculum references in lesson notes.",
+  "_format": "Each entry: { publisher, title, class, pages_range, abbr }",
+
+  "English Language": {
+    "B1-B3": [
+      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B1", "abbr": "Mastermind English B1"},
+      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B2", "abbr": "Mastermind English B2"},
+      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B3", "abbr": "Mastermind English B3"},
+      {"publisher": "Macmillan", "title": "Macmillan Primary English", "class": "B1-B3", "abbr": "Macmillan Primary English"}
+    ],
+    "B4-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B4", "abbr": "Mastermind English B4"},
+      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B5", "abbr": "Mastermind English B5"},
+      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B6", "abbr": "Mastermind English B6"},
+      {"publisher": "SAMs", "title": "SAMs English for Schools", "class": "B4-B6", "abbr": "SAMs English B4-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B7", "abbr": "Mastermind English B7"},
+      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B8", "abbr": "Mastermind English B8"},
+      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B9", "abbr": "Mastermind English B9"}
+    ]
+  },
+  "Mathematics": {
+    "B1-B3": [
+      {"publisher": "Mastermind", "title": "Mastermind Mathematics for Primary Schools", "class": "B1-B3", "abbr": "Mastermind Maths B1-B3"},
+      {"publisher": "Macmillan", "title": "Macmillan Primary Mathematics", "class": "B1-B3", "abbr": "Macmillan Maths B1-B3"}
+    ],
+    "B4-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B4", "abbr": "Mastermind Maths B4"},
+      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B5", "abbr": "Mastermind Maths B5"},
+      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B6", "abbr": "Mastermind Maths B6"},
+      {"publisher": "SAMs", "title": "SAMs Mathematics for Upper Primary", "class": "B4-B6", "abbr": "SAMs Maths B4-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind Mathematics for JHS", "class": "B7-B9", "abbr": "Mastermind Maths B7-B9"},
+      {"publisher": "Aki-Ola", "title": "Aki-Ola Mathematics for JHS", "class": "B7-B9", "abbr": "Aki-Ola Maths B7-B9"}
+    ]
+  },
+  "Science": {
+    "B1-B3": [
+      {"publisher": "Mastermind", "title": "Mastermind Science for Primary Schools", "class": "B1-B3", "abbr": "Mastermind Science B1-B3"}
+    ],
+    "B4-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind Science Pupil's Book", "class": "B4-B6", "abbr": "Mastermind Science B4-B6"},
+      {"publisher": "Macmillan", "title": "Macmillan Primary Science", "class": "B4-B6", "abbr": "Macmillan Science B4-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind Integrated Science for JHS", "class": "B7-B9", "abbr": "Mastermind Science B7-B9"},
+      {"publisher": "Aki-Ola", "title": "Aki-Ola Integrated Science", "class": "B7-B9", "abbr": "Aki-Ola Science B7-B9"}
+    ]
+  },
+  "History": {
+    "B1-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind History for Primary Schools", "class": "B1-B6", "abbr": "Mastermind History B1-B6"}
+    ]
+  },
+  "Social Studies": {
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind Social Studies for JHS", "class": "B7-B9", "abbr": "Mastermind Social Studies B7-B9"},
+      {"publisher": "Aki-Ola", "title": "Aki-Ola Social Studies for JHS", "class": "B7-B9", "abbr": "Aki-Ola Social Studies B7-B9"}
+    ]
+  },
+  "Religious and Moral Education (RME)": {
+    "B1-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind Religious and Moral Education", "class": "B1-B6", "abbr": "Mastermind RME B1-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Aki-Ola", "title": "Aki-Ola Religious and Moral Education", "class": "B7-B9", "abbr": "Aki-Ola RME B7-B9"}
+    ]
+  },
+  "Computing (ICT)": {
+    "B4-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind Computing for Primary Schools", "class": "B4-B6", "abbr": "Mastermind Computing B4-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind Computing for JHS", "class": "B7-B9", "abbr": "Mastermind Computing B7-B9"}
+    ]
+  },
+  "Creative Arts and Design": {
+    "B1-B6": [
+      {"publisher": "Mastermind", "title": "Mastermind Creative Arts for Primary Schools", "class": "B1-B6", "abbr": "Mastermind Creative Arts B1-B6"}
+    ]
+  },
+  "French Language": {
+    "B4-B6": [
+      {"publisher": "Akopem", "title": "Akopem French for Primary Schools", "class": "B4-B6", "abbr": "Akopem French B4-B6"}
+    ],
+    "B7-B9": [
+      {"publisher": "Akopem", "title": "Akopem French for JHS", "class": "B7-B9", "abbr": "Akopem French B7-B9"},
+      {"publisher": "Aki-Ola", "title": "Aki-Ola French for JHS", "class": "B7-B9", "abbr": "Aki-Ola French B7-B9"}
+    ]
+  },
+  "Career Technology": {
+    "B7-B9": [
+      {"publisher": "Mastermind", "title": "Mastermind Career Technology for JHS", "class": "B7-B9", "abbr": "Mastermind Career Tech B7-B9"}
+    ]
+  },
+  "Physical Education": {
+    "B1-B6": [
+      {"publisher": "GES", "title": "GES Physical Education Teacher's Guide", "class": "B1-B6", "abbr": "GES PE Guide B1-B6"}
+    ]
+  }
+}

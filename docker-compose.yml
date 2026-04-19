@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: lessongen_mongo
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: lessongen
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: lessongen_api
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    environment:
+      PORT: 5000
+      MONGODB_URI: mongodb://mongodb:27017/lessongen
+      JWT_SECRET: ${JWT_SECRET}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      PAYSTACK_SECRET_KEY: ${PAYSTACK_SECRET_KEY}
+      FRONTEND_URL: ${FRONTEND_URL}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}
+    volumes:
+      - ./shared:/app/shared
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: lessongen_web
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    environment:
+      REACT_APP_API_URL: http://localhost:5000/api
+
+volumes:
+  mongo_data:

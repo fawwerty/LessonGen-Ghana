@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "LessonGen Mobile",
+    "slug": "lessongen-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lessongen.mobile"
+    },
+    "android": {
+      "package": "com.lessongen.mobile"
+    },
+    "web": {} ,
+    "extra": {
+      "eas": {
+        "projectId": "86fc3736-5107-4c21-8b9e-2b96c690f8ba"
+      }
+    }
+  }
+}
