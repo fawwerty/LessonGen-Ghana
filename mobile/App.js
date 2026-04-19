@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {
   Text, ActivityIndicator, View, TouchableOpacity,
@@ -22,7 +22,7 @@ import LessonViewScreen from './src/screens/LessonViewScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import SchemeScreen from './src/screens/SchemeScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 // ── Minimalistic Tab Icons ────────────────────────────────────────────────────
@@ -64,8 +64,8 @@ function MainTabs() {
           backgroundColor: colors.white,
           borderTopColor: colors.bg3,
           borderTopWidth: 1,
-          height: 60 + insets.bottom,
-          paddingBottom: insets.bottom + 6,
+          height: 60 + (insets.bottom || 20),
+          paddingBottom: (insets.bottom || 20) + 6,
           paddingTop: 6,
           elevation: 12,
           shadowColor: colors.g1,
@@ -115,7 +115,6 @@ function AppNavigator() {
         headerTintColor: colors.white,
         headerTitleStyle: { fontWeight: '800' },
         headerShadowVisible: false,
-        animation: 'ios',
       }}
     >
       {!user ? (
@@ -159,13 +158,13 @@ function InitializingOverlay() {
 // ── Root App ─────────────────────────────────────────────────────────────────
 export default function App() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.g1 }}>
       <SafeAreaProvider>
         <AuthProvider>
           <NavigationContainer>
             <AppNavigator />
-            <InitializingOverlay />
           </NavigationContainer>
+          <InitializingOverlay />
         </AuthProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
