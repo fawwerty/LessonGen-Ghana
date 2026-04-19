@@ -323,7 +323,7 @@ export default function SchemeScreen({ navigation }) {
             <Text style={[s.sectionTitle, { marginTop: 16 }]}>PARSED WEEKS</Text>
             <View style={s.weekGrid}>
               {wb.map(week => (
-                <View key={week.week} style={s.weekCard}>
+                <View key={week.week} style={[s.weekCard, { width: (width - 40) / 3 }]}>
                   <Text style={s.weekCardNum}>W{week.week}</Text>
                   <Text style={s.weekCardStrand} numberOfLines={2}>{week.strand || '—'}</Text>
                   {week.topics?.length > 0 && <Text style={s.weekCardTopic} numberOfLines={1}>{week.topics[0]}</Text>}
@@ -487,7 +487,7 @@ const s = StyleSheet.create({
   readyBadge: { backgroundColor: C.g4, paddingHorizontal: 12, paddingVertical: 4, borderRadius: 20 },
   readyBadgeText: { fontSize: 11, fontWeight: '800', color: C.g2 },
   weekGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 20 },
-  weekCard: { width: (width - 80) / 3, backgroundColor: C.bg, borderRadius: 12, padding: 10, borderWidth: 1, borderColor: C.bg3 },
+  weekCard: { backgroundColor: C.bg, borderRadius: 12, padding: 10, borderWidth: 1, borderColor: C.bg3 },
   weekCardNum: { fontSize: 11, fontWeight: '900', color: C.g2, marginBottom: 4 },
   weekCardStrand: { fontSize: 10, fontWeight: '600', color: C.ink, lineHeight: 14 },
   weekCardTopic: { fontSize: 9, color: C.ink3, marginTop: 3 },
