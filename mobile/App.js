@@ -28,10 +28,10 @@ const Tab = createBottomTabNavigator();
 // ── Minimalistic Tab Icons ────────────────────────────────────────────────────
 function TabIcon({ name, focused }) {
   const icons = {
-    Generate: '⬡',
-    Scheme: '≋',
-    'My Lessons': '≡',
-    Profile: '○',
+    Generate: 'G',
+    Scheme: 'S',
+    'My Lessons': 'L',
+    Profile: 'P',
   };
   return (
     <View style={[ti.wrap, focused && ti.wrapActive]}>
@@ -47,7 +47,7 @@ const ti = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   wrapActive: { backgroundColor: colors.g4 },
-  icon: { fontSize: 18, color: colors.ink3 },
+  icon: { fontSize: 16, fontWeight: '900', color: colors.ink3 },
   iconActive: { color: colors.g1 },
 });
 
@@ -106,51 +106,53 @@ function MainTabs() {
 
 // ── Root Navigator ────────────────────────────────────────────────────────────
 function AppNavigator() {
-  const { user, loading } = useAuth();
-
-  if (loading) {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.g1 }}>
-        <ActivityIndicator color={colors.gd} size="large" />
-        <Text style={{ color: colors.gd, marginTop: 16, fontWeight: '700', fontSize: 14 }}>Initializing...</Text>
-      </View>
-    );
-  }
+  const { user } = useAuth();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: { backgroundColor: colors.g1 },
-          headerTintColor: colors.white,
-          headerTitleStyle: { fontWeight: '800' },
-          headerShadowVisible: false,
-          animation: 'ios',
-        }}
-      >
-        {!user ? (
-          <>
-            <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
-          </>
-        ) : (
-          <>
-            <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
-            <Stack.Screen
-              name="LessonView"
-              component={LessonViewScreen}
-              options={{ title: 'Lesson Note', headerBackTitle: 'Back' }}
-            />
-            <Stack.Screen
-              name="Payment"
-              component={PaymentScreen}
-              options={{ title: 'Upgrade to PRO', headerBackTitle: 'Back' }}
-            />
-          </>
-        )}
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: colors.g1 },
+        headerTintColor: colors.white,
+        headerTitleStyle: { fontWeight: '800' },
+        headerShadowVisible: false,
+        animation: 'ios',
+      }}
+    >
+      {!user ? (
+        <>
+          <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
+        </>
+      ) : (
+        <>
+          <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
+          <Stack.Screen
+            name="LessonView"
+            component={LessonViewScreen}
+            options={{ title: 'Lesson Note', headerBackTitle: 'Back' }}
+          />
+          <Stack.Screen
+            name="Payment"
+            component={PaymentScreen}
+            options={{ title: 'Upgrade to PRO', headerBackTitle: 'Back' }}
+          />
+        </>
+      )}
+    </Stack.Navigator>
+  );
+}
+
+// ── Initializing Overlay ─────────────────────────────────────────────────────
+function InitializingOverlay() {
+  const { loading } = useAuth();
+  if (!loading) return null;
+
+  return (
+    <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.g1, zIndex: 9999, alignItems: 'center', justifyContent: 'center' }]}>
+      <ActivityIndicator color={colors.gd} size="large" />
+      <Text style={{ color: colors.gd, marginTop: 16, fontWeight: '700', fontSize: 14 }}>Initializing...</Text>
+    </View>
   );
 }
 
@@ -160,7 +162,10 @@ export default function App() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
         <AuthProvider>
-          <AppNavigator />
+          <NavigationContainer>
+            <AppNavigator />
+            <InitializingOverlay />
+          </NavigationContainer>
         </AuthProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
