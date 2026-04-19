@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ImageBackground, Dimensions, useWindowDimensions
+  ImageBackground, useWindowDimensions
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
+import { Ionicons } from '@expo/vector-icons';
+import { useTheme } from '../utils/ThemeContext';
 
 const C = {
   g1: '#0D3B22', g2: '#1A6B3C', g3: '#2E8B57', g4: '#D4EDE0',
@@ -15,8 +17,7 @@ const C = {
 
 export default function HomeScreen({ navigation }) {
   const { width } = useWindowDimensions();
-  // Safe calculation for grid items
-  const cardWidth = Math.max((width - 80) / 4 - 6, 60);
+  const { theme, toggleTheme, isDark } = useTheme();
 
   return (
     <ImageBackground
@@ -24,37 +25,59 @@ export default function HomeScreen({ navigation }) {
       style={s.bg}
       resizeMode="cover"
     >
-      <View style={s.overlay} />
-      <StatusBar style="light" />
+      <View style={[s.overlay, { backgroundColor: isDark ? 'rgba(5,20,12,0.72)' : 'rgba(255,255,255,0.45)' }]} />
+      <StatusBar style={isDark ? 'light' : 'dark'} />
+      
       <SafeAreaView style={s.safe}>
-        {/* Header Brand */}
+        {/* Top Header Row */}
         <View style={s.header}>
-          <View style={s.logoBadge}>
-            <Text style={s.logoIcon}>L</Text>
+          <View style={s.brandGroup}>
+            <View style={[s.logoBadge, { backgroundColor: isDark ? C.gd : C.g1 }]}>
+              <Text style={[s.logoIcon, { color: isDark ? C.g1 : C.white }]}>L</Text>
+            </View>
+            <Text style={[s.brand, { color: isDark ? C.white : C.g1 }]}>LessonGen</Text>
           </View>
-          <Text style={s.brand}>LessonGen Ghana</Text>
+
+          <View style={s.headerActions}>
+            <TouchableOpacity onPress={toggleTheme} style={s.iconBtn}>
+              <Ionicons 
+                name={isDark ? 'sunny' : 'moon'} 
+                size={22} 
+                color={isDark ? '#FCD34D' : C.g1} 
+              />
+            </TouchableOpacity>
+            
+            <TouchableOpacity onPress={() => navigation.navigate('Login')} style={s.signInLink}>
+              <Text style={[s.signInText, { color: isDark ? C.white : C.g1 }]}>Sign In</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
-        {/* Hero Content */}
-        <View style={s.heroCard}>
-          <Text style={s.headline}>
-            Smarter Lesson Notes{'\n'}
-            <Text style={s.headlineAccent}>In Seconds.</Text>
-          </Text>
-          <Text style={s.sub}>
-            The AI tool for Ghanaian teachers. Generate NaCCA-compliant lesson notes and export print-ready DOCX files instantly.
-          </Text>
+        {/* Hero Content (Floating) */}
+        <View style={s.content}>
+          <View style={s.heroTextGroup}>
+            <Text style={[s.headline, { color: isDark ? C.white : C.g1 }]}>
+              Smarter Lesson Notes{'\n'}
+              <Text style={s.headlineAccent}>In Seconds.</Text>
+            </Text>
+            <Text style={[s.sub, { color: isDark ? 'rgba(255,255,255,0.85)' : 'rgba(13,59,34,0.85)' }]}>
+              The AI tool for Ghanaian educators. Generate NaCCA-compliant plans and export DOCX files instantly.
+            </Text>
+          </View>
 
-
-          {/* CTA Buttons */}
-          <TouchableOpacity style={s.primaryBtn} onPress={() => navigation.navigate('Register')}>
-            <Text style={s.primaryBtnText}>Start Generating Free  →</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={s.secondaryBtn} onPress={() => navigation.navigate('Login')}>
-            <Text style={s.secondaryBtnText}>Sign In to Dashboard</Text>
-          </TouchableOpacity>
+          {/* Centered CTA - Pushed Down */}
+          <View style={s.ctaWrapper}>
+            <TouchableOpacity 
+              style={[s.primaryBtn, !isDark && { backgroundColor: C.g1 }]} 
+              onPress={() => navigation.navigate('Register')}
+            >
+              <Text style={s.primaryBtnText}>Start Registration Free  →</Text>
+            </TouchableOpacity>
+            <Text style={[s.disclaimer, { color: isDark ? 'rgba(255,255,255,0.5)' : 'rgba(13,59,34,0.5)' }]}>
+              Join 5,000+ teachers across Ghana today.
+            </Text>
+          </View>
         </View>
-
       </SafeAreaView>
     </ImageBackground>
   );
@@ -62,49 +85,52 @@ export default function HomeScreen({ navigation }) {
 
 const s = StyleSheet.create({
   bg: { flex: 1 },
-  overlay: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(5,20,12,0.62)' },
-  safe: { flex: 1, paddingHorizontal: 20 },
-  header: { flexDirection: 'row', alignItems: 'center', paddingTop: 16, marginBottom: 24 },
+  overlay: { ...StyleSheet.absoluteFillObject },
+  safe: { flex: 1, paddingHorizontal: 24 },
+  
+  header: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    justifyContent: 'space-between',
+    paddingTop: 12, 
+    height: 60,
+  },
+  brandGroup: { flexDirection: 'row', alignItems: 'center' },
   logoBadge: {
-    width: 34, height: 34, borderRadius: 10,
-    backgroundColor: C.gd, alignItems: 'center', justifyContent: 'center', marginRight: 10,
+    width: 32, height: 32, borderRadius: 10,
+    alignItems: 'center', justifyContent: 'center', marginRight: 10,
   },
-  logoIcon: { fontSize: 18, fontWeight: '900', color: C.g1 },
-  brand: { fontSize: 17, fontWeight: '800', color: C.white },
-  heroCard: {
-    backgroundColor: 'rgba(255,255,255,0.12)',
-    borderWidth: 1, borderColor: 'rgba(255,255,255,0.2)',
-    borderRadius: 28, padding: 24,
-    marginBottom: 20,
+  logoIcon: { fontSize: 18, fontWeight: '900' },
+  brand: { fontSize: 18, fontWeight: '900', letterSpacing: -0.5 },
+
+  headerActions: { flexDirection: 'row', alignItems: 'center', gap: 16 },
+  iconBtn: { 
+    width: 36, height: 36, borderRadius: 18, 
+    alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.1)',
   },
-  headline: { fontSize: 30, fontWeight: '900', color: C.white, lineHeight: 38, marginBottom: 14 },
-  headlineAccent: { color: '#6EE7B7' },
-  sub: { fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 20, marginBottom: 20, fontWeight: '500' },
-  statsRow: { flexDirection: 'row', gap: 8, marginBottom: 24, flexWrap: 'wrap' },
-  statCard: {
-    flex: 1,
-    backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: 12, borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)', padding: 10, alignItems: 'center',
+  signInLink: { paddingVertical: 4 },
+  signInText: { fontSize: 15, fontWeight: '800' },
+
+  content: { flex: 1, justifyContent: 'center', paddingTop: 60 },
+  
+  heroTextGroup: { marginBottom: 80 },
+  headline: { 
+    fontSize: 42, fontWeight: '900', lineHeight: 48, marginBottom: 20,
+    textShadowColor: 'rgba(0,0,0,0.15)', textShadowOffset: { width: 0, height: 2 }, textShadowRadius: 10,
   },
-  statVal: { fontSize: 14, fontWeight: '900', color: C.white },
-  statLbl: { fontSize: 9, color: 'rgba(255,255,255,0.65)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.4, marginTop: 2 },
+  headlineAccent: { color: '#10B981' },
+  sub: { 
+    fontSize: 16, lineHeight: 24, fontWeight: '600',
+    textShadowColor: 'rgba(0,0,0,0.1)', textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 4,
+  },
+
+  ctaWrapper: { alignItems: 'center', marginTop: 20 },
   primaryBtn: {
-    backgroundColor: '#059669', borderRadius: 16, paddingVertical: 15,
-    alignItems: 'center', marginBottom: 10,
-    shadowColor: '#059669', shadowOffset: { width: 0, height: 6 }, shadowOpacity: 0.4, shadowRadius: 12, elevation: 8,
+    backgroundColor: '#059669', width: '100%', borderRadius: 20, paddingVertical: 18,
+    alignItems: 'center', marginBottom: 16,
+    shadowColor: '#059669', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.4, shadowRadius: 12, elevation: 10,
   },
-  primaryBtnText: { color: C.white, fontSize: 15, fontWeight: '800' },
-  secondaryBtn: {
-    backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: 16, paddingVertical: 14,
-    alignItems: 'center', borderWidth: 1, borderColor: 'rgba(255,255,255,0.3)',
-  },
-  secondaryBtnText: { color: C.white, fontSize: 15, fontWeight: '700' },
-  featRow: { flexDirection: 'row', gap: 10, justifyContent: 'center' },
-  featPill: {
-    flex: 1, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 14,
-    borderWidth: 1, borderColor: 'rgba(255,255,255,0.18)',
-    paddingVertical: 12, alignItems: 'center',
-  },
-  featIcon: { fontSize: 18, color: '#6EE7B7', marginBottom: 4 },
-  featLabel: { fontSize: 10, fontWeight: '700', color: 'rgba(255,255,255,0.8)', textTransform: 'uppercase', letterSpacing: 0.5 },
+  primaryBtnText: { color: C.white, fontSize: 17, fontWeight: '900' },
+  disclaimer: { fontSize: 12, fontWeight: '700', letterSpacing: 0.2 },
 });

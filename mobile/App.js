@@ -167,17 +167,21 @@ function InitializingOverlay() {
   );
 }
 
+import { ThemeProvider } from './src/utils/ThemeContext';
+
 // ── Root App ─────────────────────────────────────────────────────────────────
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.g1 }}>
       <SafeAreaProvider>
-        <AuthProvider>
-          <NavigationContainer>
-            <AppNavigator />
-          </NavigationContainer>
-          <InitializingOverlay />
-        </AuthProvider>
+        <ThemeProvider>
+          <AuthProvider>
+            <NavigationContainer>
+              <AppNavigator />
+            </NavigationContainer>
+            <InitializingOverlay />
+          </AuthProvider>
+        </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
