@@ -50,7 +50,11 @@ body {
 }
 
 @media (max-width: 640px) {
-  body { background-size: auto 100%; }
+  body { 
+    background-size: cover; 
+    background-attachment: scroll; 
+    background-position: center 15%; 
+  }
 }
 
 h1, h2, h3, .serif { font-family: 'Fraunces', serif; }
