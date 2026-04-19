@@ -81,7 +81,13 @@ export default function MyLessonsScreen({ navigation }) {
     ]);
   };
 
-  const fmt = (d) => new Date(d).toLocaleDateString('en-GH', { day: 'numeric', month: 'short', year: 'numeric' });
+  const fmt = (d) => {
+    if (!d) return '—';
+    const date = new Date(d);
+    if (isNaN(date.getTime())) return '—';
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+  };
 
   const renderItem = ({ item: l }) => (
     <TouchableOpacity style={s.item} onPress={() => navigation.navigate('LessonView', { lesson: l })}>

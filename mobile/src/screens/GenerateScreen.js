@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity, StyleSheet,
-  ScrollView, ActivityIndicator, Alert, Modal, Dimensions
+  ScrollView, ActivityIndicator, Alert, Modal, useWindowDimensions
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, shadow } from '../utils/theme';
 import { lessonsAPI } from '../services/api';
-
-const { width } = Dimensions.get('window');
 
 const CLASSES = ['KG1','KG2','B1','B2','B3','B4','B5','B6','B7','B8','B9'];
 const SUBJECTS = [
@@ -64,6 +62,7 @@ function PickerField({ label, value, options, onSelect }) {
 }
 
 export default function GenerateScreen({ navigation }) {
+  const { width } = useWindowDimensions();
   const [form, setForm] = useState({ classCode: '', subject: '', term: '', week: '', style: 'Standard', extra: '' });
   const [loading, setLoading] = useState(false);
   const [loadMsg, setLoadMsg] = useState('');

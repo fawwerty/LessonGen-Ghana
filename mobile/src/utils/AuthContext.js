@@ -20,7 +20,10 @@ export function AuthProvider({ children }) {
           await SecureStore.setItemAsync('lg_user', JSON.stringify(res.data.user));
         }
       } catch { await logout(); }
-      setLoading(false);
+      // Final stabilization delay
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     })();
   }, []);
 
