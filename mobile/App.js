@@ -21,6 +21,7 @@ import MyLessonsScreen from './src/screens/MyLessonsScreen';
 import LessonViewScreen from './src/screens/LessonViewScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import SchemeScreen from './src/screens/SchemeScreen';
+import DashboardScreen from './src/screens/DashboardScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -28,6 +29,7 @@ const Tab = createBottomTabNavigator();
 // ── Minimalistic Tab Icons ────────────────────────────────────────────────────
 function TabIcon({ name, focused }) {
   const icons = {
+    Home: 'H',
     Generate: 'G',
     Scheme: 'S',
     'My Lessons': 'L',
@@ -80,6 +82,11 @@ function MainTabs() {
         headerShadowVisible: false,
       })}
     >
+      <Tab.Screen
+        name="Home"
+        component={DashboardScreen}
+        options={{ title: 'My Dashboard', tabBarLabel: 'Home' }}
+      />
       <Tab.Screen
         name="Generate"
         component={GenerateScreen}

@@ -68,4 +68,8 @@ export const schemeAPI = {
   generateRange: (data)     => api.post('/scheme/generate-range', data, { timeout: 180000 }),
 };
 
+export const dashboardAPI = {
+  getStats: () => api.get('/dashboard/stats'),
+};
+
 export default api;

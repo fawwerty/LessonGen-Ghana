@@ -13,6 +13,7 @@ const paymentRoutes = require('./routes/payments');
 const curriculumRoutes = require('./routes/curriculum');
 const adminRoutes = require('./routes/admin');
 const schemeRoutes = require('./routes/scheme');
+const dashboardRoutes = require('./routes/dashboard');
 
 const app = express();
 app.set('trust proxy', 1);
@@ -61,6 +62,7 @@ app.use('/api/payments', paymentRoutes);
 app.use('/api/curriculum', curriculumRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/scheme', schemeRoutes);
+app.use('/api/dashboard', dashboardRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok', service: 'LessonGen Ghana API', version: '1.0.0' }));
 
