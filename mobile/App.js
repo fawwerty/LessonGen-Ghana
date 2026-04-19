@@ -26,18 +26,23 @@ import DashboardScreen from './src/screens/DashboardScreen';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+import { Ionicons } from '@expo/vector-icons';
+
 // ── Minimalistic Tab Icons ────────────────────────────────────────────────────
 function TabIcon({ name, focused }) {
   const icons = {
-    Home: 'H',
-    Generate: 'G',
-    Scheme: 'S',
-    'My Lessons': 'L',
-    Profile: 'P',
+    Home: focused ? 'home' : 'home-outline',
+    Generate: focused ? 'flash' : 'flash-outline',
+    Scheme: focused ? 'list' : 'list-outline',
+    'My Lessons': focused ? 'book' : 'book-outline',
+    Profile: focused ? 'person' : 'person-outline',
   };
+  
+  const iconName = icons[name] || 'help-circle-outline';
+
   return (
     <View style={[ti.wrap, focused && ti.wrapActive]}>
-      <Text style={[ti.icon, focused && ti.iconActive]}>{icons[name]}</Text>
+      <Ionicons name={iconName} size={20} color={focused ? colors.g1 : colors.ink3} />
     </View>
   );
 }

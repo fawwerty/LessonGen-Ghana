@@ -2,6 +2,19 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useTheme } from '../context/ThemeContext';
+import { 
+  LayoutDashboard, 
+  Sparkles, 
+  Calendar, 
+  BookOpen, 
+  Info, 
+  Settings, 
+  LogOut, 
+  CreditCard, 
+  Moon, 
+  Sun,
+  ChevronDown
+} from 'lucide-react';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -37,11 +50,11 @@ export default function Navbar() {
        <nav className={`relative transition-all ${isHome ? 'bg-white/10 dark:bg-black/20 backdrop-blur-sm border-none' : 'bg-white/80 dark:bg-black/60 backdrop-blur-md border-b border-gray-200 dark:border-white/10'}`}>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="flex justify-between items-center h-20">
-             <Link to="/" className="flex items-center gap-2">
-               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-600 to-emerald-900 border border-white/20 flex items-center justify-center">
-                 <span className="text-white font-bold font-serif text-lg leading-none">L</span>
+             <Link to="/" className="flex items-center gap-2 group">
+               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-900 border border-white/20 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                 <Sparkles className="text-white w-6 h-6" />
                </div>
-               <span className="font-serif font-bold text-xl text-gray-950 dark:text-white drop-shadow-sm">LessonGen</span>
+               <span className="font-serif font-bold text-2xl text-gray-950 dark:text-white drop-shadow-sm tracking-tight">LessonGen</span>
              </Link>
              
              {isHome && (
@@ -83,38 +96,24 @@ export default function Navbar() {
               <span className="font-serif font-bold text-xl text-gray-900 dark:text-white hidden sm:block">LessonGen</span>
             </Link>
             
-            {/* LINKS */}
-            <div className="hidden md:flex gap-1">
-              <button 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/dashboard' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
-                onClick={() => navigate('/dashboard')}
-              >
-                Dashboard
-              </button>
-              <button 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/generate' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
-                onClick={() => navigate('/generate')}
-              >
-                Generate
-              </button>
-              <button 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/scheme' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
-                onClick={() => navigate('/scheme')}
-              >
-                Scheme
-              </button>
-              <button 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/lessons' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
-                onClick={() => navigate('/lessons')}
-              >
-                My Lessons
-              </button>
-              <button 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/about' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
-                onClick={() => navigate('/about')}
-              >
-                About
-              </button>
+            <div className="hidden md:flex gap-1 ml-4">
+              {[
+                { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
+                { name: 'Generate', path: '/generate', icon: Sparkles },
+                { name: 'Scheme', path: '/scheme', icon: Calendar },
+                { name: 'My Lessons', path: '/lessons', icon: BookOpen },
+                { name: 'About', path: '/about', icon: Info }
+              ].map((item) => (
+                <button 
+                  key={item.path}
+                  className={`px-4 py-2 rounded-xl text-sm font-bold transition flex items-center gap-2 ${loc.pathname === item.path ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white'}`} 
+                  onClick={() => navigate(item.path)}
+                >
+                  <item.icon size={16} strokeWidth={2.5} />
+                  {item.name}
+                </button>
+              ))}
+            </div>
               {user?.role === 'sys_admin' && (
                 <button 
                   className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/admin' ? 'bg-purple-50 text-purple-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
@@ -158,16 +157,24 @@ export default function Navbar() {
 
                 {/* DROPDOWN MENU */}
                 {dropdownOpen && (
-                   <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 animate-fade-in origin-top-right z-50">
-                     <div className="px-4 py-3 border-b border-gray-50">
-                        <p className="text-sm font-bold text-gray-900 truncate">{user?.name}</p>
-                        <p className="text-xs text-gray-500 truncate">{user?.email}</p>
+                   <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-900 rounded-xl shadow-xl border border-gray-100 dark:border-gray-800 py-2 animate-fade-in origin-top-right z-50">
+                     <div className="px-4 py-3 border-b border-gray-50 dark:border-gray-800">
+                        <p className="text-sm font-bold text-gray-900 dark:text-white truncate">{user?.name}</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 truncate">{user?.email}</p>
                      </div>
                      <div className="py-1">
-                        <button onClick={() => { setDropdownOpen(false); navigate('/payment'); }} className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2">
-                           {user?.plan === 'free' ? '⭐ Upgrade to Pro' : '💳 Manage Subscription'}
+                        <button 
+                          onClick={() => { setDropdownOpen(false); navigate('/payment'); }} 
+                          className="w-full text-left px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 flex items-center gap-3 transition"
+                        >
+                           <CreditCard size={16} className="text-emerald-600" />
+                           {user?.plan === 'free' ? 'Upgrade to Pro' : 'Manage Subscription'}
                         </button>
-                        <button onClick={handleLogout} className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 font-medium">
+                        <button 
+                          onClick={handleLogout} 
+                          className="w-full text-left px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 dark:hover:bg-red-900/10 font-medium flex items-center gap-3 transition"
+                        >
+                           <LogOut size={16} />
                            Sign out
                         </button>
                      </div>

@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { 
+  GraduationCap, 
+  Code, 
+  ShieldCheck, 
+  Building2, 
+  HardHat, 
+  Globe2,
+  Award
+} from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -35,10 +44,12 @@ export default function AboutPage() {
             </div>
             <div className="relative group">
                <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-600 to-teal-400 rounded-3xl opacity-20 blur-xl group-hover:opacity-30 transition"></div>
-               <div className="relative aspect-square bg-white dark:bg-white/5 rounded-3xl border border-white/20 dark:border-white/10 overflow-hidden shadow-2xl flex flex-col items-center justify-center p-8 text-center">
-                  <div className="w-24 h-24 bg-emerald-700 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-xl">🇬🇭</div>
-                  <h3 className="text-2xl font-black text-gray-900 dark:text-white font-serif">Fawwerty</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium">Founder & Lead Engineer</p>
+                <div className="relative aspect-square bg-white dark:bg-white/5 rounded-3xl border border-white/20 dark:border-white/10 overflow-hidden shadow-2xl flex flex-col items-center justify-center p-8 text-center ring-1 ring-emerald-500/10">
+                   <div className="w-24 h-24 bg-emerald-700/10 rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-emerald-500/20">
+                      <Globe2 size={48} className="text-emerald-600" strokeWidth={1.5} />
+                   </div>
+                   <h3 className="text-2xl font-black text-gray-900 dark:text-white font-serif tracking-tight">Fawwerty</h3>
+                   <p className="text-sm text-emerald-600 dark:text-emerald-400 mt-2 font-bold uppercase tracking-widest text-[10px]">Founder & Lead Engineer</p>
                   <div className="mt-8 grid grid-cols-2 gap-4 w-full">
                      <div className="p-3 bg-gray-50 dark:bg-black/40 rounded-xl border border-gray-100 dark:border-white/5">
                         <div className="text-xs text-emerald-600 font-bold">4+ Years</div>
@@ -56,23 +67,29 @@ export default function AboutPage() {
           {/* Expert Experience */}
           <div className="mb-32">
             <h2 className="text-3xl font-bold font-serif text-gray-900 dark:text-white mb-12 text-center">Engineering Portfolio</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                <div className="text-3xl mb-4 group-hover:scale-110 transition">🛡️</div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">CyberShield-AI</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">ML-powered intrusion detection system using Isolation Forest & Deep Autoencoders.</p>
-              </div>
-              <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                <div className="text-3xl mb-4 group-hover:scale-110 transition">🏦</div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Bankly App</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Secure React Native mobile banking solution with encrypted JWT auth and RBAC.</p>
-              </div>
-              <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                <div className="text-3xl mb-4 group-hover:scale-110 transition">🏗️</div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">SecureX (GRC)</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Enterprise Cybersecurity & Risk Management platform tailored for African firms.</p>
-              </div>
-            </div>
+             <div className="grid md:grid-cols-3 gap-6">
+               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
+                 <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                   <ShieldCheck size={24} strokeWidth={2.5} />
+                 </div>
+                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">CyberShield-AI</h4>
+                 <p className="text-sm text-gray-500 dark:text-gray-400">ML-powered intrusion detection system using Isolation Forest & Deep Autoencoders.</p>
+               </div>
+               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
+                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:blue-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                   <Building2 size={24} strokeWidth={2.5} />
+                 </div>
+                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Bankly App</h4>
+                 <p className="text-sm text-gray-500 dark:text-gray-400">Secure React Native mobile banking solution with encrypted JWT auth and RBAC.</p>
+               </div>
+               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
+                 <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                   <HardHat size={24} strokeWidth={2.5} />
+                 </div>
+                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">SecureX (GRC)</h4>
+                 <p className="text-sm text-gray-500 dark:text-gray-400">Enterprise Cybersecurity & Risk Management platform tailored for African firms.</p>
+               </div>
+             </div>
           </div>
 
           {/* Call to Action */}

@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { 
+  Rocket, 
+  Printer, 
+  BookOpen, 
+  CheckCircle2, 
+  ShieldCheck, 
+  Clock,
+  ArrowRight
+} from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -54,18 +63,24 @@ export default function HomePage() {
           <div id="features" className="relative z-10 w-full max-w-4xl mx-auto mt-24 px-8 py-16 bg-white/80 dark:bg-black/60 backdrop-blur-md rounded-3xl border border-white/50 dark:border-white/10 shadow-xl text-left">
             <h2 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-12 text-center">Platform Features</h2>
             <div className="grid md:grid-cols-3 gap-8">
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5">
-                  <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">🚀</div>
+                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
+                  <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Rocket size={28} strokeWidth={2.5} />
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Insta-Generate</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Convert Termly Schemes into standardized Weekly Lesson notes in a matter of seconds.</p>
                 </div>
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5">
-                  <div className="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">🖨️</div>
+                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
+                  <div className="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Printer size={28} strokeWidth={2.5} />
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">B&W Print Ready</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Download raw DOCX files instantly, formatted automatically to minimize ink usage.</p>
                 </div>
-                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5">
-                  <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">📚</div>
+                <div className="p-8 bg-white dark:bg-white/5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 group hover:shadow-md transition-shadow">
+                  <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <ShieldCheck size={28} strokeWidth={2.5} />
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">NaCCA Approved</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Pre-loaded with accurate Ministry standards for KG through JHS 3.</p>
                 </div>
@@ -113,9 +128,18 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Free Plan</h3>
                   <p className="text-4xl font-bold text-gray-900 dark:text-white mb-8 font-serif">GH₵ 0 <span className="text-sm font-medium">/ mo</span></p>
                   <ul className="text-left space-y-5 mb-10 text-base text-gray-600 dark:text-gray-400">
-                      <li className="flex items-center gap-3">✅ Limited Generation</li>
-                      <li className="flex items-center gap-3">✅ Standard Templates</li>
-                      <li className="flex items-center gap-3">✅ Online Preview</li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Limited Generation
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Standard Templates
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Online Preview
+                      </li>
                   </ul>
                   <Link to="/register" className="mt-auto py-4 bg-gray-100 dark:bg-white/10 text-gray-900 dark:text-white rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-white/20 transition">Get Started</Link>
                 </div>
@@ -124,10 +148,22 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Pro Plan</h3>
                   <p className="text-4xl font-bold text-gray-900 dark:text-white mb-8 font-serif">GH₵ 50 <span className="text-sm font-medium">/ mo</span></p>
                   <ul className="text-left space-y-5 mb-10 text-base text-gray-600 dark:text-gray-400">
-                      <li className="flex items-center gap-3">✅ Unlimited Note Generation</li>
-                      <li className="flex items-center gap-3">✅ Batch Multi-Subject Export</li>
-                      <li className="flex items-center gap-3">✅ Termly Scheme Parsing</li>
-                      <li className="flex items-center gap-3">✅ Priority Support</li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Unlimited Note Generation
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Batch Multi-Subject Export
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Termly Scheme Parsing
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <CheckCircle2 size={18} className="text-emerald-500" />
+                        Priority Support
+                      </li>
                   </ul>
                   <Link to="/register" className="mt-auto py-4 bg-emerald-600 text-white rounded-xl font-bold shadow-md hover:bg-emerald-700 transition">Upgrade to Pro</Link>
                 </div>

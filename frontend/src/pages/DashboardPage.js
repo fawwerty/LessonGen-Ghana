@@ -1,6 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import { 
+  Sparkles, 
+  FileText, 
+  BookOpen, 
+  Crown, 
+  ChevronRight,
+  Zap,
+  Calendar,
+  Layers
+} from 'lucide-react';
 
 export default function DashboardPage() {
   const { user } = useAuth();
@@ -31,9 +41,7 @@ export default function DashboardPage() {
         >
           <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg className="w-7 h-7 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
+            <Zap className="w-7 h-7 text-emerald-600" strokeWidth={2.5} />
           </div>
           <h2 className="text-2xl font-bold mb-3" style={{ color: 'var(--apple-text)' }}>Generate Lesson Note</h2>
           <p className="text-[15px] font-medium leading-relaxed mb-8 opacity-80" style={{ color: 'var(--apple-text)' }}>
@@ -51,9 +59,7 @@ export default function DashboardPage() {
         >
           <div className="absolute top-0 left-0 w-1 h-full bg-violet-500 opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="w-14 h-14 bg-violet-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg className="w-7 h-7 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
+            <Calendar className="w-7 h-7 text-violet-600" strokeWidth={2.5} />
           </div>
           <h2 className="text-2xl font-bold mb-3" style={{ color: 'var(--apple-text)' }}>Scheme of Learning</h2>
           <p className="text-[15px] font-medium leading-relaxed mb-8 opacity-80" style={{ color: 'var(--apple-text)' }}>
@@ -71,9 +77,7 @@ export default function DashboardPage() {
         >
           <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>
+            <BookOpen className="w-7 h-7 text-blue-600" strokeWidth={2.5} />
           </div>
           <h2 className="text-2xl font-bold mb-3" style={{ color: 'var(--apple-text)' }}>My Lesson Notes</h2>
           <p className="text-[15px] font-medium leading-relaxed mb-8 opacity-80" style={{ color: 'var(--apple-text)' }}>
@@ -91,7 +95,9 @@ export default function DashboardPage() {
             className="col-span-1 md:col-span-2 lg:col-span-3 mt-4 glass overflow-hidden rounded-[32px] p-10 border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/5 to-orange-500/5 group cursor-pointer hover:shadow-2xl transition-all duration-500"
           >
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="text-6xl group-hover:rotate-12 transition-transform duration-500">🔓</div>
+              <div className="w-20 h-20 rounded-3xl bg-amber-500/10 flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                <Crown size={48} className="text-amber-600" strokeWidth={2} />
+              </div>
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl font-extrabold mb-3" style={{ color: 'var(--gd)' }}>Upgrade to PRO</h2>
                 <p className="text-lg font-medium opacity-80 max-w-2xl" style={{ color: 'var(--apple-text)' }}>

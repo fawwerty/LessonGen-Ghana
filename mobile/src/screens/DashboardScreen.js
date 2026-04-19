@@ -1,10 +1,7 @@
-import React, { useState, useCallback } from 'react';
-import {
-  View, Text, StyleSheet, ScrollView, TouchableOpacity,
-  ActivityIndicator, useWindowDimensions, RefreshControl
-} from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator, useWindowDimensions, RefreshControl } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../utils/AuthContext';
 import { colors } from '../utils/theme';
 import { dashboardAPI } from '../services/api';
@@ -112,21 +109,21 @@ export default function DashboardScreen({ navigation }) {
         <View style={s.actionRow}>
           <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Generate')}>
             <View style={[s.actionIcon, { backgroundColor: '#E0F2FE' }]}>
-              <Text style={{ fontSize: 20 }}>⚡</Text>
+              <Ionicons name="flash" size={24} color="#0284C7" />
             </View>
             <Text style={s.actionBtnText}>New Lesson</Text>
           </TouchableOpacity>
           
           <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Scheme')}>
             <View style={[s.actionIcon, { backgroundColor: '#F0FDF4' }]}>
-              <Text style={{ fontSize: 20 }}>📁</Text>
+              <Ionicons name="calendar" size={24} color="#16A34A" />
             </View>
             <Text style={s.actionBtnText}>Build Scheme</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('My Lessons')}>
             <View style={[s.actionIcon, { backgroundColor: '#FEF3C7' }]}>
-              <Text style={{ fontSize: 20 }}>📖</Text>
+              <Ionicons name="book" size={24} color="#D97706" />
             </View>
             <Text style={s.actionBtnText}>Archive</Text>
           </TouchableOpacity>
@@ -157,13 +154,13 @@ export default function DashboardScreen({ navigation }) {
               onPress={() => goToScreen('LessonView', { lesson: item })}
             >
               <View style={s.lessonIcon}>
-                <Text style={s.lessonIconText}>{item.subject?.[0] || 'L'}</Text>
+                <Ionicons name="document-text" size={20} color={C.g2} />
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={s.lessonTitle}>{item.subject}</Text>
                 <Text style={s.lessonSub}>{item.classCode} · {new Date(item.createdAt).toLocaleDateString()}</Text>
               </View>
-              <Text style={s.arrow}>→</Text>
+              <Ionicons name="chevron-forward" size={18} color={C.bg3} />
             </TouchableOpacity>
           ))
         )}
