@@ -19,7 +19,18 @@ const Tab = createBottomTabNavigator();
 
 function TabIcon({ name, focused }) {
   const icons = { Generate: '✨', 'My Lessons': '📚', Profile: '👤' };
-  return <Text style={{ fontSize: 18, opacity: focused ? 1 : 0.5 }}>{icons[name]}</Text>;
+  return (
+    <View style={{ 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      backgroundColor: focused ? colors.g4 : 'transparent',
+      paddingHorizontal: 16,
+      paddingVertical: 4,
+      borderRadius: 12,
+    }}>
+      <Text style={{ fontSize: 20, opacity: focused ? 1 : 0.6 }}>{icons[name]}</Text>
+    </View>
+  );
 }
 
 function MainTabs() {
@@ -27,18 +38,29 @@ function MainTabs() {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused }) => <TabIcon name={route.name} focused={focused} />,
-        tabBarActiveTintColor: colors.g2,
+        tabBarActiveTintColor: colors.g1,
         tabBarInactiveTintColor: colors.ink3,
-        tabBarStyle: { backgroundColor: colors.white, borderTopColor: colors.bg3, paddingTop: 4, height: 60 },
-        tabBarLabelStyle: { fontSize: 11, fontWeight: '600', paddingBottom: 4 },
-        headerStyle: { backgroundColor: colors.g1 },
+        tabBarStyle: { 
+          backgroundColor: colors.white, 
+          borderTopColor: colors.bg3, 
+          height: 70,
+          paddingBottom: 10,
+          paddingTop: 8,
+          elevation: 10,
+          shadowColor: colors.g1,
+          shadowOffset: { width: 0, height: -4 },
+          shadowOpacity: 0.05,
+          shadowRadius: 10
+        },
+        tabBarLabelStyle: { fontSize: 10, fontWeight: '800', marginTop: 4 },
+        headerStyle: { backgroundColor: colors.g1, height: 110 },
         headerTintColor: colors.white,
-        headerTitleStyle: { fontWeight: '700', fontSize: 17 },
+        headerTitleStyle: { fontWeight: '900', fontSize: 22, fontFamily: 'serif' },
       })}
     >
-      <Tab.Screen name="Generate" component={GenerateScreen} options={{ title: '✨ Generate' }} />
-      <Tab.Screen name="My Lessons" component={MyLessonsScreen} options={{ title: '📚 My Lessons' }} />
-      <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: '👤 Profile' }} />
+      <Tab.Screen name="Generate" component={GenerateScreen} options={{ title: 'LessonGen' }} />
+      <Tab.Screen name="My Lessons" component={MyLessonsScreen} options={{ title: 'My Archive' }} />
+      <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Settings' }} />
     </Tab.Navigator>
   );
 }
