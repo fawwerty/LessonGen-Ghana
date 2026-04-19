@@ -14,6 +14,7 @@ import MyLessonsPage from './pages/MyLessonsPage';
 import LessonViewPage from './pages/LessonViewPage';
 import AdminPage from './pages/AdminPage';
 import PaymentPage from './pages/PaymentPage';
+import AboutPage from './pages/AboutPage';
 import Navbar from './components/Navbar';
 
 function PrivateRoute({ children }) {
@@ -43,6 +44,7 @@ function AppRoutes() {
         <Route path="/lessons/batch/:id" element={<PrivateRoute><LessonViewPage isBatch={true} /></PrivateRoute>} />
         <Route path="/admin" element={<AdminRoute><AdminPage /></AdminRoute>} />
         <Route path="/payment" element={<PrivateRoute><PaymentPage /></PrivateRoute>} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </>
   );

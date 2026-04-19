@@ -45,11 +45,11 @@ export default function Navbar() {
              </Link>
              
              {isHome && (
-               <div className="hidden md:flex gap-8 items-center font-bold text-gray-950 dark:text-white text-sm">
-                 <a href="#features" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">Features</a>
-                 <a href="#how-it-works" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">How it Works</a>
-                 <a href="#pricing" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">Pricing</a>
-               </div>
+                <div className="hidden md:flex gap-8 items-center font-bold text-gray-950 dark:text-white text-sm">
+                  <a href="#features" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">Features</a>
+                  <Link to="/about" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">About Us</Link>
+                  <a href="#pricing" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition drop-shadow-sm">Pricing</a>
+                </div>
              )}
 
              <div className="flex gap-4 items-center">
@@ -102,6 +102,12 @@ export default function Navbar() {
                 onClick={() => navigate('/lessons')}
               >
                 My Lessons
+              </button>
+              <button 
+                className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/about' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
+                onClick={() => navigate('/about')}
+              >
+                About
               </button>
               {user?.role === 'sys_admin' && (
                 <button 

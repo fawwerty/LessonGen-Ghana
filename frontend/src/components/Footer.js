@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 dark:text-white mb-4 uppercase text-[10px] tracking-wider">Resources</h4>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">NaCCA Curriculum DB</a></li>
+              <li><Link to="/curriculum" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">NaCCA Curriculum DB</Link></li>
               <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Help Center</a></li>
               <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Video Tutorials</a></li>
               <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Community Forum</a></li>
@@ -42,10 +42,13 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 dark:text-white mb-4 uppercase text-[10px] tracking-wider">Company</h4>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Contact</a></li>
-              <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Terms of Service</a></li>
+              <li>
+                <Link to="/about" className="text-[11px] leading-relaxed mb-4 italic hover:text-emerald-700 dark:hover:text-emerald-400 transition">
+                  Founded by <span className="font-bold">Fawwerty</span>, a BSc. Computer Science graduate (AIT) and Basic School Teacher who knows exactly what educators need.
+                </Link>
+              </li>
+              <li><Link to="/contact" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Contact Us</Link></li>
+              <li><Link to="/privacy" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">Privacy Policy</Link></li>
             </ul>
           </div>
 
