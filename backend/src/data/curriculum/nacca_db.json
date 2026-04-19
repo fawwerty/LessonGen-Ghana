@@ -1,0 +1,247 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "note": "Curriculum references follow pattern: '[Subject] curriculum for [class-range] Page [X]'. Add textbook references in textbooks.json",
+    "primary_format": "Weekly table: DAYS | PHASE 1 STARTER 10mins | PHASE 2 MAIN 40mins | PHASE 3 REFLECTION 10mins",
+    "jhs_format": "Single lesson: Phase/Duration | Learner Activities | Resources",
+    "variation_pool": "Each entry has multiple strand/topic options so AI generates different content every session"
+  },
+
+  "KG1": {
+    "_level": "Kindergarten",
+    "_pedagogy": "Play-based, song and rhyme-driven, movement activities, very simple language, 3 days only (Mon/Wed/Fri)",
+    "_duration": "30 minutes",
+    "English Language": [
+      {"term":1,"week":1,"strand":"Listening and Speaking","subStrand":"Following Instructions","contentStd":"KG1.L.1.1.1","indicator":"KG1.L.1.1.1.1","perfIndicator":"Learners listen attentively and follow simple two-step instructions","reference":"KG Curriculum Pg. 5","teachingStrategies":["song","game","action-rhyme"]},
+      {"term":1,"week":2,"strand":"Listening and Speaking","subStrand":"Rhymes and Songs","contentStd":"KG1.L.1.2.1","indicator":"KG1.L.1.2.1.1","perfIndicator":"Learners recite familiar rhymes with correct rhythm and actions","reference":"KG Curriculum Pg. 8","teachingStrategies":["song","chant","movement"]},
+      {"term":1,"week":3,"strand":"Reading Readiness","subStrand":"Phonological Awareness","contentStd":"KG1.R.1.1.1","indicator":"KG1.R.1.1.1.1","perfIndicator":"Learners identify words that sound the same at the beginning","reference":"KG Curriculum Pg. 12"},
+      {"term":2,"week":1,"strand":"Reading Readiness","subStrand":"Letter Recognition","contentStd":"KG1.R.2.1.1","indicator":"KG1.R.2.1.1.1","perfIndicator":"Learners identify and name uppercase letters of the alphabet","reference":"KG Curriculum Pg. 20"},
+      {"term":3,"week":1,"strand":"Writing Readiness","subStrand":"Pre-Writing Skills","contentStd":"KG1.W.1.1.1","indicator":"KG1.W.1.1.1.1","perfIndicator":"Learners trace and draw basic lines, curves and shapes as pre-writing preparation","reference":"KG Curriculum Pg. 35"}
+    ],
+    "Mathematics": [
+      {"term":1,"week":1,"strand":"Number","subStrand":"Counting","contentStd":"KG1.N.1.1.1","indicator":"KG1.N.1.1.1.1","perfIndicator":"Learners count objects from 1 to 5 using one-to-one correspondence","reference":"KG Curriculum Pg. 30"},
+      {"term":1,"week":2,"strand":"Number","subStrand":"Number Recognition","contentStd":"KG1.N.1.2.1","indicator":"KG1.N.1.2.1.1","perfIndicator":"Learners recognise and name numerals 1 to 5","reference":"KG Curriculum Pg. 33"},
+      {"term":2,"week":1,"strand":"Geometry and Spatial Sense","subStrand":"2D Shapes","contentStd":"KG1.G.1.1.1","indicator":"KG1.G.1.1.1.1","perfIndicator":"Learners identify and name circle, square and triangle from everyday objects","reference":"KG Curriculum Pg. 50"},
+      {"term":3,"week":1,"strand":"Number","subStrand":"Counting","contentStd":"KG1.N.2.1.1","indicator":"KG1.N.2.1.1.1","perfIndicator":"Learners count objects from 1 to 10 and match numerals to quantities","reference":"KG Curriculum Pg. 40"}
+    ],
+    "Creative Arts and Design": [
+      {"term":1,"week":1,"strand":"Visual Arts","subStrand":"Exploring Materials","contentStd":"KG1.VA.1.1.1","indicator":"KG1.VA.1.1.1.1","perfIndicator":"Learners explore and manipulate different art materials to create simple artworks","reference":"KG Curriculum Pg. 60"},
+      {"term":2,"week":1,"strand":"Performing Arts","subStrand":"Music and Movement","contentStd":"KG1.PA.1.1.1","indicator":"KG1.PA.1.1.1.1","perfIndicator":"Learners participate in music and movement activities using simple rhythm instruments","reference":"KG Curriculum Pg. 70"}
+    ],
+    "Our World Our People (OWOP)": [
+      {"term":1,"week":1,"strand":"All About Me","subStrand":"My Body","contentStd":"KG1.SS.1.1.1","indicator":"KG1.SS.1.1.1.1","perfIndicator":"Learners identify and name the major parts of the body","reference":"KG Curriculum Pg. 80"},
+      {"term":2,"week":1,"strand":"My Family","subStrand":"Family Members","contentStd":"KG1.SS.2.1.1","indicator":"KG1.SS.2.1.1.1","perfIndicator":"Learners identify and name members of their immediate family","reference":"KG Curriculum Pg. 88"}
+    ],
+    "Religious and Moral Education (RME)": [
+      {"term":1,"week":1,"strand":"God, His Creation","subStrand":"Things God Made","contentStd":"KG1.RME.1.1.1","indicator":"KG1.RME.1.1.1.1","perfIndicator":"Learners name living and non-living things that God created in their environment","reference":"KG Curriculum Pg. 95"}
+    ],
+    "Ghanaian Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Greetings","contentStd":"KG1.GL.1.1.1","indicator":"KG1.GL.1.1.1.1","perfIndicator":"Learners exchange greetings in the morning, afternoon and evening in their Ghanaian Language","reference":"KG Curriculum Pg. 100"}
+    ],
+    "Physical Education": [
+      {"term":1,"week":1,"strand":"Movement and Physical Activity","subStrand":"Locomotor Skills","contentStd":"KG1.PE.1.1.1","indicator":"KG1.PE.1.1.1.1","perfIndicator":"Learners demonstrate basic locomotor movements such as walking, running and jumping","reference":"KG Curriculum Pg. 110"}
+    ]
+  },
+
+  "KG2": {
+    "_level": "Kindergarten",
+    "_pedagogy": "Play-based, story-driven, imaginative play, 3 days only",
+    "_duration": "30 minutes",
+    "English Language": [
+      {"term":1,"week":1,"strand":"Listening and Speaking","subStrand":"Storytelling","contentStd":"KG2.L.1.1.1","indicator":"KG2.L.1.1.1.1","perfIndicator":"Learners listen to a short story and answer simple questions about characters and events","reference":"KG Curriculum Pg. 15"},
+      {"term":2,"week":1,"strand":"Reading Readiness","subStrand":"Phonics","contentStd":"KG2.R.1.1.1","indicator":"KG2.R.1.1.1.1","perfIndicator":"Learners identify and produce the sounds of consonants b, c, d, f, g","reference":"KG Curriculum Pg. 25"},
+      {"term":3,"week":1,"strand":"Writing Readiness","subStrand":"Emergent Writing","contentStd":"KG2.W.1.1.1","indicator":"KG2.W.1.1.1.1","perfIndicator":"Learners copy their name and simple three-letter words clearly","reference":"KG Curriculum Pg. 42"}
+    ],
+    "Mathematics": [
+      {"term":1,"week":1,"strand":"Number","subStrand":"Counting and Cardinality","contentStd":"KG2.N.1.1.1","indicator":"KG2.N.1.1.1.1","perfIndicator":"Learners count objects from 1 to 10 and compare groups using more, less, or equal","reference":"KG Curriculum Pg. 45"},
+      {"term":2,"week":1,"strand":"Number","subStrand":"Addition Readiness","contentStd":"KG2.N.2.1.1","indicator":"KG2.N.2.1.1.1","perfIndicator":"Learners combine two groups of objects and state the total","reference":"KG Curriculum Pg. 52"},
+      {"term":3,"week":1,"strand":"Measurement","subStrand":"Size and Length","contentStd":"KG2.M.1.1.1","indicator":"KG2.M.1.1.1.1","perfIndicator":"Learners compare and order objects by size and length using words such as long, short, tall","reference":"KG Curriculum Pg. 60"}
+    ]
+  },
+
+  "B1": {
+    "_level": "Lower Primary",
+    "_pedagogy": "Guided discovery, colourful charts, simple language, games, 5 days",
+    "_duration": "60 minutes",
+    "English Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Listening Comprehension","contentStd":"B1.1.1.1","indicator":"B1.1.1.1.1","perfIndicator":"Learners listen attentively and respond to simple oral texts","reference":"English Language Curriculum B1-B3 Pg. 2"},
+      {"term":1,"week":2,"strand":"Reading","subStrand":"Phonological Awareness","contentStd":"B1.2.1.1","indicator":"B1.2.1.1.1","perfIndicator":"Learners identify and produce rhyming words in songs and poems","reference":"English Language Curriculum B1-B3 Pg. 5"},
+      {"term":1,"week":3,"strand":"Reading","subStrand":"Phonics","contentStd":"B1.2.2.1","indicator":"B1.2.2.1.1","perfIndicator":"Learners identify the letters of the alphabet and produce their sounds","reference":"English Language Curriculum B1-B3 Pg. 8"},
+      {"term":1,"week":4,"strand":"Reading","subStrand":"Sight Words","contentStd":"B1.2.3.1","indicator":"B1.2.3.1.1","perfIndicator":"Learners read and write common sight words correctly","reference":"English Language Curriculum B1-B3 Pg. 10"},
+      {"term":2,"week":1,"strand":"Writing","subStrand":"Penmanship","contentStd":"B1.4.1.1","indicator":"B1.4.1.1.1","perfIndicator":"Learners write letters of the alphabet legibly using correct strokes","reference":"English Language Curriculum B1-B3 Pg. 30"},
+      {"term":2,"week":2,"strand":"Grammar","subStrand":"Nouns","contentStd":"B1.3.1.1","indicator":"B1.3.1.1.1","perfIndicator":"Learners identify and use nouns to name people, places and things","reference":"English Language Curriculum B1-B3 Pg. 20"},
+      {"term":3,"week":1,"strand":"Writing","subStrand":"Sentence Construction","contentStd":"B1.4.2.1","indicator":"B1.4.2.1.1","perfIndicator":"Learners construct simple sentences using familiar vocabulary","reference":"English Language Curriculum B1-B3 Pg. 38"}
+    ],
+    "Mathematics": [
+      {"term":1,"week":1,"strand":"Number","subStrand":"Counting, Representation & Cardinality","contentStd":"B1.1.1.1","indicator":"B1.1.1.1.1","perfIndicator":"Learners count objects up to 10 and represent them with numerals","reference":"Mathematics Curriculum B1-B3 Pg. 2"},
+      {"term":1,"week":2,"strand":"Number","subStrand":"Number Operations — Addition","contentStd":"B1.1.2.1","indicator":"B1.1.2.1.1","perfIndicator":"Learners add two single-digit numbers using objects and pictures","reference":"Mathematics Curriculum B1-B3 Pg. 8"},
+      {"term":1,"week":3,"strand":"Number","subStrand":"Number Operations — Subtraction","contentStd":"B1.1.2.2","indicator":"B1.1.2.2.1","perfIndicator":"Learners subtract single-digit numbers using objects and number lines","reference":"Mathematics Curriculum B1-B3 Pg. 12"},
+      {"term":2,"week":1,"strand":"Geometry","subStrand":"2D Shapes","contentStd":"B1.3.1.1","indicator":"B1.3.1.1.1","perfIndicator":"Learners identify and describe basic 2D shapes in the environment","reference":"Mathematics Curriculum B1-B3 Pg. 40"},
+      {"term":3,"week":1,"strand":"Measurement","subStrand":"Length","contentStd":"B1.2.1.1","indicator":"B1.2.1.1.1","perfIndicator":"Learners compare and order lengths using non-standard units","reference":"Mathematics Curriculum B1-B3 Pg. 35"}
+    ],
+    "Science": [
+      {"term":1,"week":1,"strand":"Diversity of Living Things","subStrand":"Living and Non-Living Things","contentStd":"B1.1.1.1","indicator":"B1.1.1.1.1","perfIndicator":"Learners distinguish between living and non-living things by their characteristics","reference":"Science Curriculum B1-B3 Pg. 2"},
+      {"term":1,"week":2,"strand":"Diversity of Living Things","subStrand":"Plants","contentStd":"B1.1.2.1","indicator":"B1.1.2.1.1","perfIndicator":"Learners identify and name the basic parts of a plant","reference":"Science Curriculum B1-B3 Pg. 5"},
+      {"term":2,"week":1,"strand":"Earth and Space","subStrand":"Rocks and Soil","contentStd":"B1.4.1.1","indicator":"B1.4.1.1.1","perfIndicator":"Learners describe the different types of soil and their uses","reference":"Science Curriculum B1-B3 Pg. 25"},
+      {"term":3,"week":1,"strand":"Materials","subStrand":"Properties of Materials","contentStd":"B1.2.1.1","indicator":"B1.2.1.1.1","perfIndicator":"Learners describe and sort materials based on properties such as hard, soft, rough and smooth","reference":"Science Curriculum B1-B3 Pg. 18"}
+    ],
+    "Our World Our People (OWOP)": [
+      {"term":1,"week":1,"strand":"All About Us","subStrand":"The Individual","contentStd":"B1.SS.1.1.1","indicator":"B1.SS.1.1.1.1","perfIndicator":"Learners describe themselves using personal details such as name, age, family and community","reference":"OWOP Curriculum B1-B3 Pg. 2"},
+      {"term":2,"week":1,"strand":"My Community","subStrand":"Community Helpers","contentStd":"B1.SS.2.1.1","indicator":"B1.SS.2.1.1.1","perfIndicator":"Learners identify and describe the roles of community helpers in their environment","reference":"OWOP Curriculum B1-B3 Pg. 12"}
+    ],
+    "Religious and Moral Education (RME)": [
+      {"term":1,"week":1,"strand":"God, His Creation and Attributes","subStrand":"God the Creator","contentStd":"B1.RME.1.1.1","indicator":"B1.RME.1.1.1.1","perfIndicator":"Learners identify and name things God created in the environment","reference":"RME Curriculum B1-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"Morality","subStrand":"Good Behaviour","contentStd":"B1.RME.2.1.1","indicator":"B1.RME.2.1.1.1","perfIndicator":"Learners demonstrate good behaviour such as saying please, thank you and sorry","reference":"RME Curriculum B1-B6 Pg. 14"}
+    ],
+    "Creative Arts and Design": [
+      {"term":1,"week":1,"strand":"Visual Arts","subStrand":"Thinking and Exploring Ideas","contentStd":"B1.VA.1.1.1","indicator":"B1.VA.1.1.1.1","perfIndicator":"Learners explore and create artworks using materials found in their environment","reference":"Creative Arts Curriculum B1-B3 Pg. 2"},
+      {"term":2,"week":1,"strand":"Performing Arts","subStrand":"Music and Dance","contentStd":"B1.PA.1.1.1","indicator":"B1.PA.1.1.1.1","perfIndicator":"Learners participate in traditional Ghanaian songs and dances","reference":"Creative Arts Curriculum B1-B3 Pg. 20"}
+    ],
+    "Ghanaian Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Listening and Speaking","contentStd":"B1.GL.1.1.1","indicator":"B1.GL.1.1.1.1","perfIndicator":"Learners listen and respond to greetings and simple conversations in Ghanaian Language","reference":"Ghanaian Language Curriculum B1-B3 Pg. 2"},
+      {"term":2,"week":1,"strand":"Reading","subStrand":"Word Recognition","contentStd":"B1.GL.2.1.1","indicator":"B1.GL.2.1.1.1","perfIndicator":"Learners read and identify familiar words in their Ghanaian Language","reference":"Ghanaian Language Curriculum B1-B3 Pg. 15"}
+    ],
+    "Physical Education": [
+      {"term":1,"week":1,"strand":"Physical Fitness","subStrand":"Health-Related Fitness","contentStd":"B1.PE.1.1.1","indicator":"B1.PE.1.1.1.1","perfIndicator":"Learners demonstrate basic locomotor movements and explain their importance to health","reference":"Physical Education Curriculum B1-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"Games and Sports","subStrand":"Traditional Games","contentStd":"B1.PE.2.1.1","indicator":"B1.PE.2.1.1.1","perfIndicator":"Learners participate in simple traditional Ghanaian games and describe the rules","reference":"Physical Education Curriculum B1-B6 Pg. 18"}
+    ],
+    "History": [
+      {"term":1,"week":1,"strand":"My Family and Community","subStrand":"Family History","contentStd":"B1.HIS.1.1.1","indicator":"B1.HIS.1.1.1.1","perfIndicator":"Learners narrate the history of their family using information from grandparents and parents","reference":"History Curriculum B1-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"My Community","subStrand":"Community Events","contentStd":"B1.HIS.2.1.1","indicator":"B1.HIS.2.1.1.1","perfIndicator":"Learners describe important events and festivals celebrated in their community","reference":"History Curriculum B1-B6 Pg. 10"}
+    ],
+    "Computing (ICT)": [
+      {"term":1,"week":1,"strand":"Computing Systems","subStrand":"Devices","contentStd":"B1.ICT.1.1.1","indicator":"B1.ICT.1.1.1.1","perfIndicator":"Learners identify and name common computing devices used at home and at school","reference":"Computing Curriculum B4-B6 Pg. 2"}
+    ]
+  },
+
+  "B4": {
+    "_level": "Upper Primary",
+    "_pedagogy": "Learner-centred, group work, problem-solving, real-life Ghanaian contexts, 5 days",
+    "_duration": "60 minutes",
+    "English Language": [
+      {"term":1,"week":1,"strand":"Reading","subStrand":"Phonics","contentStd":"B4.2.2.1","indicator":"B4.2.2.1.1","perfIndicator":"Learners match sounds to their corresponding letter patterns","reference":"English Language Curriculum B4 Pg. 17,19"},
+      {"term":1,"week":2,"strand":"Oral Language","subStrand":"Songs and Rhymes","contentStd":"B4.1.1.1","indicator":"B4.1.1.1.2","perfIndicator":"Learners identify and discuss values embedded in songs and rhymes","reference":"English Language Curriculum B4 Pg. 17"},
+      {"term":1,"week":3,"strand":"Reading","subStrand":"Word Families and Common Digraphs","contentStd":"B4.2.3.1","indicator":"B4.2.3.1.1","perfIndicator":"Learners use common rhyming words and digraphs to decode unfamiliar words","reference":"English Language Curriculum B4 Pg. 19"},
+      {"term":1,"week":4,"strand":"Grammar","subStrand":"Nouns — Common and Proper","contentStd":"B4.3.1.1","indicator":"B4.3.1.1.1","perfIndicator":"Learners identify and use common and proper nouns in sentences","reference":"English Language Curriculum B4 Pg. 48"},
+      {"term":1,"week":5,"strand":"Writing","subStrand":"Paragraph Development","contentStd":"B4.4.6.1","indicator":"B4.4.6.1.1","perfIndicator":"Learners write structured paragraphs using appropriate modes of writing","reference":"English Language Curriculum B4 Pg. 48"},
+      {"term":1,"week":6,"strand":"Writing","subStrand":"Writing Conventions — Punctuation","contentStd":"B4.5.2.1","indicator":"B4.5.2.1.1","perfIndicator":"Learners apply commas and other punctuation marks correctly in sentences","reference":"English Language Curriculum B4 Pg. 59"},
+      {"term":2,"week":1,"strand":"Reading","subStrand":"Comprehension","contentStd":"B4.2.1.1","indicator":"B4.2.1.1.1","perfIndicator":"Learners read age-appropriate texts and answer questions to demonstrate comprehension","reference":"English Language Curriculum B4 Pg. 22"},
+      {"term":2,"week":2,"strand":"Grammar","subStrand":"Pronouns","contentStd":"B4.3.2.1","indicator":"B4.3.2.1.1","perfIndicator":"Learners identify and use personal pronouns correctly in oral and written communication","reference":"English Language Curriculum B4 Pg. 52"},
+      {"term":3,"week":1,"strand":"Oral Language","subStrand":"Conversation","contentStd":"B4.1.2.1","indicator":"B4.1.2.1.1","perfIndicator":"Learners participate in conversations using appropriate vocabulary and sentence structures","reference":"English Language Curriculum B4 Pg. 12"},
+      {"term":3,"week":2,"strand":"Writing","subStrand":"Narrative Writing","contentStd":"B4.4.3.1","indicator":"B4.4.3.1.1","perfIndicator":"Learners write narrative texts with a clear beginning, middle and end","reference":"English Language Curriculum B4 Pg. 44"}
+    ],
+    "Mathematics": [
+      {"term":1,"week":1,"strand":"Number","subStrand":"Counting, Representation & Cardinality","contentStd":"B4.1.1.1","indicator":"B4.1.1.1.1","perfIndicator":"Learners model number quantities and place values for multi-digit numbers up to 100,000","reference":"Mathematics Curriculum B4 Pg. 23"},
+      {"term":1,"week":2,"strand":"Number","subStrand":"Counting, Representation & Cardinality","contentStd":"B4.1.1.1","indicator":"B4.1.1.1.3","perfIndicator":"Learners identify numbers in different positions and compare whole numbers up to 10,000","reference":"Mathematics Curriculum B4 Pg. 5"},
+      {"term":1,"week":3,"strand":"Number","subStrand":"Addition and Subtraction","contentStd":"B4.1.2.1","indicator":"B4.1.2.1.1","perfIndicator":"Learners add and subtract multi-digit numbers with and without regrouping","reference":"Mathematics Curriculum B4 Pg. 28"},
+      {"term":1,"week":4,"strand":"Number","subStrand":"Multiplication","contentStd":"B4.1.3.1","indicator":"B4.1.3.1.1","perfIndicator":"Learners multiply two-digit numbers by one-digit numbers using various strategies","reference":"Mathematics Curriculum B4 Pg. 33"},
+      {"term":1,"week":5,"strand":"Number","subStrand":"Fractions","contentStd":"B4.1.4.1","indicator":"B4.1.4.1.1","perfIndicator":"Learners identify and represent fractions as parts of a whole using models and diagrams","reference":"Mathematics Curriculum B4 Pg. 38"},
+      {"term":2,"week":1,"strand":"Measurement","subStrand":"Length","contentStd":"B4.2.1.1","indicator":"B4.2.1.1.1","perfIndicator":"Learners measure and estimate lengths using standard units (cm, m, km)","reference":"Mathematics Curriculum B4 Pg. 55"},
+      {"term":2,"week":2,"strand":"Measurement","subStrand":"Mass","contentStd":"B4.2.2.1","indicator":"B4.2.2.1.1","perfIndicator":"Learners measure and compare masses using standard units (g, kg)","reference":"Mathematics Curriculum B4 Pg. 59"},
+      {"term":3,"week":1,"strand":"Geometry","subStrand":"2D Shapes","contentStd":"B4.3.1.1","indicator":"B4.3.1.1.1","perfIndicator":"Learners describe and classify 2D shapes based on their properties","reference":"Mathematics Curriculum B4 Pg. 70"},
+      {"term":3,"week":2,"strand":"Data Handling","subStrand":"Collecting and Representing Data","contentStd":"B4.4.1.1","indicator":"B4.4.1.1.1","perfIndicator":"Learners collect data and represent it using pictographs and bar charts","reference":"Mathematics Curriculum B4 Pg. 78"}
+    ],
+    "Science": [
+      {"term":1,"week":1,"strand":"Diversity of Living Things","subStrand":"Classification of Animals","contentStd":"B4.1.1.1","indicator":"B4.1.1.1.1","perfIndicator":"Learners classify animals into insects, birds, mammals and reptiles based on observable characteristics","reference":"Science Curriculum B4-B6 Pg. 2"},
+      {"term":1,"week":2,"strand":"Diversity of Living Things","subStrand":"Animal Life Processes","contentStd":"B4.1.1.1","indicator":"B4.1.1.1.2","perfIndicator":"Learners describe the life processes of animals including movement, feeding and reproduction","reference":"Science Curriculum B4-B6 Pg. 5"},
+      {"term":1,"week":3,"strand":"Diversity of Living Things","subStrand":"Plant Parts and Functions","contentStd":"B4.1.2.1","indicator":"B4.1.2.1.1","perfIndicator":"Learners identify the parts of a flowering plant and explain their functions","reference":"Science Curriculum B4-B6 Pg. 8"},
+      {"term":2,"week":1,"strand":"Materials","subStrand":"Properties of Materials","contentStd":"B4.2.1.1","indicator":"B4.2.1.1.1","perfIndicator":"Learners investigate and describe the physical properties of common materials","reference":"Science Curriculum B4-B6 Pg. 15"},
+      {"term":2,"week":2,"strand":"Materials","subStrand":"Changes in Materials","contentStd":"B4.2.2.1","indicator":"B4.2.2.1.1","perfIndicator":"Learners investigate reversible and irreversible changes in materials","reference":"Science Curriculum B4-B6 Pg. 18"},
+      {"term":3,"week":1,"strand":"Forces and Energy","subStrand":"Sources and Forms of Energy","contentStd":"B4.4.2.1","indicator":"B4.4.2.1.1","perfIndicator":"Learners identify effects of heat on the change of state of substances","reference":"Science Curriculum B4-B6 Pg. 10"},
+      {"term":3,"week":2,"strand":"Earth and Space","subStrand":"Earth's Resources","contentStd":"B4.5.1.1","indicator":"B4.5.1.1.1","perfIndicator":"Learners describe how natural resources are used and explain the importance of conservation","reference":"Science Curriculum B4-B6 Pg. 35"}
+    ],
+    "Our World Our People (OWOP)": [
+      {"term":1,"week":1,"strand":"All About Us","subStrand":"Nature of God","contentStd":"B4.SS.1.1.1","indicator":"B4.SS.1.1.1.1","perfIndicator":"Learners explain how each individual is uniquely and specially created by God","reference":"OWOP Curriculum B4-B6 Pg. 2"},
+      {"term":1,"week":2,"strand":"All About Us","subStrand":"Uniqueness of Individuals","contentStd":"B4.SS.1.1.1","indicator":"B4.SS.1.1.1.2","perfIndicator":"Learners describe how individuals differ from one another in appearance, talent and ability","reference":"OWOP Curriculum B4-B6 Pg. 4"},
+      {"term":2,"week":1,"strand":"My Country Ghana","subStrand":"Democratic Government","contentStd":"B4.SS.2.1.1","indicator":"B4.SS.2.1.1.1","perfIndicator":"Learners describe the structure and functions of Ghana's democratic government","reference":"OWOP Curriculum B4-B6 Pg. 20"},
+      {"term":3,"week":1,"strand":"The World Around Us","subStrand":"Environmental Protection","contentStd":"B4.SS.3.1.1","indicator":"B4.SS.3.1.1.1","perfIndicator":"Learners explain the importance of environmental protection and identify ways to protect the environment","reference":"OWOP Curriculum B4-B6 Pg. 35"}
+    ],
+    "Religious and Moral Education (RME)": [
+      {"term":1,"week":1,"strand":"God, His Creation and Attributes","subStrand":"Attributes of God","contentStd":"B4.RME.1.1.1","indicator":"B4.RME.1.1.1.2","perfIndicator":"Learners describe the attributes of God as creator using examples from their religious traditions","reference":"RME Curriculum B4-B6 Pg. 24"},
+      {"term":2,"week":1,"strand":"Morality","subStrand":"Moral Values","contentStd":"B4.RME.2.1.1","indicator":"B4.RME.2.1.1.1","perfIndicator":"Learners demonstrate moral values such as honesty, respect and tolerance in daily interactions","reference":"RME Curriculum B4-B6 Pg. 40"},
+      {"term":3,"week":1,"strand":"Religious Practices","subStrand":"Prayer and Worship","contentStd":"B4.RME.3.1.1","indicator":"B4.RME.3.1.1.1","perfIndicator":"Learners explain the significance of prayer and worship in different religious traditions in Ghana","reference":"RME Curriculum B4-B6 Pg. 55"}
+    ],
+    "Creative Arts and Design": [
+      {"term":1,"week":1,"strand":"Performing Arts","subStrand":"Thinking and Exploring Ideas","contentStd":"B4.CA.2.1.1","indicator":"B4.CA.2.1.1.1","perfIndicator":"Learners study and discuss the performing artworks of selected Ghanaian artists","reference":"Creative Arts Curriculum B4-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"Visual Arts","subStrand":"Exploring and Developing Ideas","contentStd":"B4.CA.1.2.1","indicator":"B4.CA.1.2.1.1","perfIndicator":"Learners create original artworks inspired by Ghanaian cultural practices and symbols","reference":"Creative Arts Curriculum B4-B6 Pg. 20"},
+      {"term":3,"week":1,"strand":"Performing Arts","subStrand":"Planning, Making and Composing","contentStd":"B4.CA.2.2.1","indicator":"B4.CA.2.2.1.1","perfIndicator":"Learners plan and present a short cultural performance using music, dance or drama","reference":"Creative Arts Curriculum B4-B6 Pg. 29"}
+    ],
+    "Ghanaian Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Storytelling","contentStd":"B4.GL.1.1.1","indicator":"B4.GL.1.1.1.1","perfIndicator":"Learners tell and retell familiar Ghanaian folktales using appropriate vocabulary and expression","reference":"Ghanaian Language Curriculum B4-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"Reading","subStrand":"Comprehension","contentStd":"B4.GL.2.1.1","indicator":"B4.GL.2.1.1.1","perfIndicator":"Learners read passages in their Ghanaian Language and answer comprehension questions","reference":"Ghanaian Language Curriculum B4-B6 Pg. 18"},
+      {"term":3,"week":1,"strand":"Writing","subStrand":"Sentence Writing","contentStd":"B4.GL.3.1.1","indicator":"B4.GL.3.1.1.1","perfIndicator":"Learners write simple sentences in their Ghanaian Language using correct grammar","reference":"Ghanaian Language Curriculum B4-B6 Pg. 30"}
+    ],
+    "Physical Education": [
+      {"term":1,"week":1,"strand":"Games and Sports","subStrand":"Traditional Ghanaian Games","contentStd":"B4.PE.2.1.1","indicator":"B4.PE.2.1.1.1","perfIndicator":"Learners participate in traditional Ghanaian games and explain their cultural significance","reference":"Physical Education Curriculum B1-B6 Pg. 30"},
+      {"term":2,"week":1,"strand":"Physical Fitness","subStrand":"Health-Related Fitness","contentStd":"B4.PE.1.1.1","indicator":"B4.PE.1.1.1.1","perfIndicator":"Learners perform fitness exercises and explain how they improve health and well-being","reference":"Physical Education Curriculum B1-B6 Pg. 15"},
+      {"term":3,"week":1,"strand":"Athletics","subStrand":"Running and Jumping","contentStd":"B4.PE.3.1.1","indicator":"B4.PE.3.1.1.1","perfIndicator":"Learners demonstrate correct techniques for running and jumping activities","reference":"Physical Education Curriculum B1-B6 Pg. 42"}
+    ],
+    "Computing (ICT)": [
+      {"term":1,"week":1,"strand":"Introduction to Computing","subStrand":"Generation of Computers","contentStd":"B4.ICT.1.1.1","indicator":"B4.ICT.1.1.1.1","perfIndicator":"Learners identify and describe the parts of a computer and their functions","reference":"Computing Curriculum B4-B6 Pg. 2"},
+      {"term":2,"week":1,"strand":"Software","subStrand":"Word Processing Applications","contentStd":"B4.ICT.2.1.1","indicator":"B4.ICT.2.1.1.1","perfIndicator":"Learners use word processing software to create, edit and format simple documents","reference":"Computing Curriculum B4-B6 Pg. 15"},
+      {"term":3,"week":1,"strand":"Internet and Communication","subStrand":"Using the Internet Safely","contentStd":"B4.ICT.3.1.1","indicator":"B4.ICT.3.1.1.1","perfIndicator":"Learners explain the importance of internet safety and demonstrate safe online practices","reference":"Computing Curriculum B4-B6 Pg. 28"}
+    ],
+    "History": [
+      {"term":1,"week":1,"strand":"My Country Ghana","subStrand":"Why and How We Study History","contentStd":"B4.HIS.1.1.1","indicator":"B4.HIS.1.1.1.1","perfIndicator":"Learners explain the importance of studying the history of Ghana for national identity and unity","reference":"History Curriculum B4-B6 Pg. 22"},
+      {"term":2,"week":1,"strand":"Ghanaian Empires and States","subStrand":"Pre-Colonial States","contentStd":"B4.HIS.2.1.1","indicator":"B4.HIS.2.1.1.1","perfIndicator":"Learners describe the location, organisation and achievements of pre-colonial Ghanaian states","reference":"History Curriculum B4-B6 Pg. 35"},
+      {"term":3,"week":1,"strand":"Ghana and Its People","subStrand":"Ethnic Groups and Traditions","contentStd":"B4.HIS.3.1.1","indicator":"B4.HIS.3.1.1.1","perfIndicator":"Learners identify and describe the major ethnic groups in Ghana and their cultural traditions","reference":"History Curriculum B4-B6 Pg. 50"}
+    ],
+    "French Language": [
+      {"term":1,"week":1,"strand":"Oral Communication","subStrand":"Greetings and Introductions","contentStd":"B4.FR.1.1.1","indicator":"B4.FR.1.1.1.1","perfIndicator":"Learners exchange greetings and introduce themselves in French using appropriate vocabulary","reference":"French Curriculum B4-B6 Pg. 5"},
+      {"term":2,"week":1,"strand":"Oral Communication","subStrand":"Numbers and Colours","contentStd":"B4.FR.1.2.1","indicator":"B4.FR.1.2.1.1","perfIndicator":"Learners count from 1 to 20 and identify colours in French","reference":"French Curriculum B4-B6 Pg. 18"}
+    ]
+  },
+
+  "B7": {
+    "_level": "JHS (Common Core Programme)",
+    "_pedagogy": "Analytical, critical thinking, peer assessment, group projects, real-world problem solving",
+    "_duration": "60 minutes",
+    "_format": "JHS single-lesson format: Phase/Duration | Learner Activities | Resources",
+    "English Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Listening and Speaking","contentStd":"B7.1.1.1","indicator":"B7.1.1.1.1","perfIndicator":"Learners listen actively and respond accurately to spoken texts on diverse topics and issues","reference":"English Language CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"},
+      {"term":1,"week":2,"strand":"Reading","subStrand":"Comprehension","contentStd":"B7.2.1.1","indicator":"B7.2.1.1.1","perfIndicator":"Learners apply reading strategies to comprehend, analyse and evaluate grade-level texts","reference":"English Language CCP B7-B9 Pg. 10","duration":"60mins","classSize":"35"},
+      {"term":1,"week":3,"strand":"Grammar","subStrand":"Parts of Speech — Nouns and Pronouns","contentStd":"B7.3.1.1","indicator":"B7.3.1.1.1","perfIndicator":"Learners identify and apply nouns, pronouns and their functions in oral and written communication","reference":"English Language CCP B7-B9 Pg. 50","duration":"60mins","classSize":"35"},
+      {"term":1,"week":4,"strand":"Grammar","subStrand":"Prepositions","contentStd":"B7.3.2.1","indicator":"B7.3.2.1.1","perfIndicator":"Learners identify and use prepositions correctly in sentences and written texts","reference":"English Language CCP B7-B9 Pg. 54","duration":"60mins","classSize":"35"},
+      {"term":2,"week":1,"strand":"Writing","subStrand":"Formal Letter Writing","contentStd":"B7.4.1.1","indicator":"B7.4.1.1.1","perfIndicator":"Learners compose formal letters following the correct format and appropriate register","reference":"English Language CCP B7-B9 Pg. 58","duration":"60mins","classSize":"35"},
+      {"term":2,"week":2,"strand":"Writing","subStrand":"Informal Letter Writing","contentStd":"B7.4.2.1","indicator":"B7.4.2.1.1","perfIndicator":"Learners compose informal letters using appropriate tone, vocabulary and format","reference":"English Language CCP B7-B9 Pg. 62","duration":"60mins","classSize":"35"},
+      {"term":3,"week":1,"strand":"Literature","subStrand":"Prose Fiction — Characters","contentStd":"B7.5.1.1","indicator":"B7.5.1.1.1","perfIndicator":"Learners analyse literary elements such as plot, theme and characterisation in prose texts","reference":"English Language CCP B7-B9 Pg. 67","duration":"60mins","classSize":"35"}
+    ],
+    "Mathematics": [
+      {"term":1,"week":1,"strand":"Number","subStrand":"Number and Numeration System","contentStd":"B7.1.1.1","indicator":"B7.1.1.1.1","perfIndicator":"Learners apply understanding of rational and irrational numbers in real-life problem solving situations","reference":"Mathematics CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"},
+      {"term":1,"week":2,"strand":"Number","subStrand":"Operations on Fractions","contentStd":"B7.1.2.1","indicator":"B7.1.2.1.1","perfIndicator":"Learners add, subtract, multiply and divide fractions and mixed numbers","reference":"Mathematics CCP B7-B9 Pg. 10","duration":"60mins","classSize":"35"},
+      {"term":2,"week":1,"strand":"Algebra","subStrand":"Patterns and Relations","contentStd":"B7.2.1.1","indicator":"B7.2.1.1.1","perfIndicator":"Learners identify, describe and extend number and geometric patterns using algebraic reasoning","reference":"Mathematics CCP B7-B9 Pg. 20","duration":"60mins","classSize":"35"},
+      {"term":3,"week":1,"strand":"Geometry","subStrand":"Properties of Geometric Shapes","contentStd":"B7.3.1.1","indicator":"B7.3.1.1.1","perfIndicator":"Learners investigate and describe properties of geometric shapes and their transformations","reference":"Mathematics CCP B7-B9 Pg. 45","duration":"60mins","classSize":"35"}
+    ],
+    "Science": [
+      {"term":1,"week":1,"strand":"Diversity of Matter","subStrand":"Properties of Matter","contentStd":"B7.1.1.1","indicator":"B7.1.1.1.1","perfIndicator":"Learners investigate and describe the physical and chemical properties of matter using experiments","reference":"Science CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"},
+      {"term":2,"week":1,"strand":"Life Science","subStrand":"Cells and Organisms","contentStd":"B7.2.1.1","indicator":"B7.2.1.1.1","perfIndicator":"Learners describe the structure and functions of cells as the basic unit of life","reference":"Science CCP B7-B9 Pg. 25","duration":"60mins","classSize":"35"},
+      {"term":3,"week":1,"strand":"Earth Science","subStrand":"Earth's Structure","contentStd":"B7.5.1.1","indicator":"B7.5.1.1.1","perfIndicator":"Learners describe the structure of the Earth and explain the causes of earthquakes and volcanoes","reference":"Science CCP B7-B9 Pg. 50","duration":"60mins","classSize":"35"}
+    ],
+    "Social Studies": [
+      {"term":1,"week":1,"strand":"Location and Its Significance","subStrand":"Location of Ghana","contentStd":"B7.SS.1.1.1","indicator":"B7.SS.1.1.1.1","perfIndicator":"Learners describe the location of Ghana using cardinal directions, coordinates and map features","reference":"Social Studies CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"},
+      {"term":2,"week":1,"strand":"Culture and Identity","subStrand":"Ghanaian Cultural Practices","contentStd":"B7.SS.2.1.1","indicator":"B7.SS.2.1.1.1","perfIndicator":"Learners analyse Ghanaian cultural practices and explain their significance in promoting national identity","reference":"Social Studies CCP B7-B9 Pg. 25","duration":"60mins","classSize":"35"}
+    ],
+    "Religious and Moral Education (RME)": [
+      {"term":1,"week":1,"strand":"God, His Creation and Attributes","subStrand":"Attributes of God","contentStd":"B7.RME.1.1.1","indicator":"B7.RME.1.1.1.1","perfIndicator":"Learners analyse the attributes of God as revealed in different religious texts and traditions","reference":"RME CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"}
+    ],
+    "Creative Arts and Design": [
+      {"term":1,"week":1,"strand":"Visual Arts","subStrand":"Art Appreciation","contentStd":"B7.CA.1.1.1","indicator":"B7.CA.1.1.1.1","perfIndicator":"Learners analyse and evaluate Ghanaian artworks for their cultural, historical and aesthetic significance","reference":"Creative Arts and Design CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"}
+    ],
+    "Computing (ICT)": [
+      {"term":1,"week":1,"strand":"Computing Systems","subStrand":"Hardware and Software","contentStd":"B7.ICT.1.1.1","indicator":"B7.ICT.1.1.1.1","perfIndicator":"Learners distinguish between hardware and software components and explain their functions in a computing system","reference":"Computing CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"},
+      {"term":2,"week":1,"strand":"Programming","subStrand":"Introduction to Coding","contentStd":"B7.ICT.2.1.1","indicator":"B7.ICT.2.1.1.1","perfIndicator":"Learners write simple programs using block-based coding to solve problems","reference":"Computing CCP B7-B9 Pg. 18","duration":"60mins","classSize":"35"}
+    ],
+    "Career Technology": [
+      {"term":1,"week":1,"strand":"Technology and Society","subStrand":"Introduction to Career Technology","contentStd":"B7.CT.1.1.1","indicator":"B7.CT.1.1.1.1","perfIndicator":"Learners identify career pathways related to technology and explain their relevance to Ghana's development","reference":"Career Technology CCP K-9 Pg. 2","duration":"60mins","classSize":"35"}
+    ],
+    "French Language": [
+      {"term":1,"week":1,"strand":"Oral Communication","subStrand":"Greetings and Personal Information","contentStd":"B7.FR.1.1.1","indicator":"B7.FR.1.1.1.1","perfIndicator":"Learners exchange greetings and personal information in French using appropriate vocabulary and expressions","reference":"French Language CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"}
+    ],
+    "Ghanaian Language": [
+      {"term":1,"week":1,"strand":"Oral Language","subStrand":"Conversation","contentStd":"B7.GL.1.1.1","indicator":"B7.GL.1.1.1.1","perfIndicator":"Learners engage in meaningful conversations in their Ghanaian Language on familiar topics","reference":"Ghanaian Language CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"}
+    ],
+    "Physical Education": [
+      {"term":1,"week":1,"strand":"Health and Physical Activity","subStrand":"Physical Fitness Components","contentStd":"B7.PE.1.1.1","indicator":"B7.PE.1.1.1.1","perfIndicator":"Learners demonstrate improved levels of physical fitness through regular exercise and explain the health benefits","reference":"Physical Education CCP B7-B9 Pg. 2","duration":"60mins","classSize":"35"}
+    ]
+  }
+}
