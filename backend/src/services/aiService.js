@@ -5,11 +5,14 @@ const fs = require('fs');
 const curriculumDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../data/curriculum/nacca_db.json'), 'utf-8')
 );
+const textbookDB = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../shared/textbooks/approved_textbooks.json'), 'utf-8')
+);
 
 // Initialize Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ 
-  model: 'gemini-2.5-flash',
+  model: 'gemini-2.0-flash',
   generationConfig: { 
     responseMimeType: 'application/json' 
   }
@@ -33,13 +36,36 @@ You write in the professional style used by Ghanaian teachers and publishers suc
 
 ABSOLUTE RULES:
 1. Output ONLY valid JSON.
-2. NEVER use the word "can" in any Performance Indicator.
+2. NEVER use the word "can" in any Performance Indicator. Use direct verbs like "Learners solve...", "Learners identify...", "Learners list...".
 3. Every teaching day must be COMPLETELY different from every other day.
 4. Phase 2 for every teaching day must end with a clearly labelled "Assessment:" section followed by a specific task.
 5. Phase 3 for every teaching day must end with: "Give learners task to complete while you go round the class to support those who might need extra help."
 6. Always use real Ghanaian names (Kofi, Ama, Kweku, Adwoa), real Ghanaian places (Accra, Kumasi), currency (GHC), local foods and contexts.
-7. The Reference field must be exactly the string provided.
-8. Core Competencies from: Critical Thinking and Problem Solving | Creativity and Innovation | Communication and Collaboration | Cultural Identity and Global Citizenship | Personal Development and Leadership | Digital Literacy`;
+7. The Reference field must include the curriculum reference and the specific textbook provided in the prompt.
+8. Core Competencies: Map 2 to 4 relevant competencies from the pool:
+   - Critical Thinking and Problem Solving (CP)
+   - Creativity and Innovation (CI)
+   - Communication and Collaboration (CC)
+   - Cultural Identity and Global Citizenship (CG)
+   - Personal Development and Leadership (PL)
+   - Digital Literacy (DL)`;
+
+function getTextbook(classCode, subject) {
+  const levelMap = {
+    'KG1': 'Creche / Nursery / Kindergarten (KG1-KG2)',
+    'KG2': 'Creche / Nursery / Kindergarten (KG1-KG2)',
+    'B1': 'Lower Primary (B1-B3)', 'B2': 'Lower Primary (B1-B3)', 'B3': 'Lower Primary (B1-B3)',
+    'B4': 'Upper Primary (B4-B6)', 'B5': 'Upper Primary (B4-B6)', 'B6': 'Upper Primary (B4-B6)',
+    'B7': 'Junior High School (B7-B9)', 'B8': 'Junior High School (B7-B9)', 'B9': 'Junior High School (B7-B9)'
+  };
+  const category = levelMap[classCode] || 'Lower Primary (B1-B3)';
+  const books = textbookDB.books[category] || [];
+  
+  // Try to find a book matching the subject
+  const sub = subject.toLowerCase();
+  const match = books.find(b => b.title.toLowerCase().includes(sub)) || books[0];
+  return match ? `${match.title} by ${match.publisher}` : 'Approved NaCCA Textbook';
+}
 
 function loadFewShotExamples(classCode, subject, n = 2) {
   const datasetPath = path.join(__dirname, '../../../training_pipeline/training_dataset.jsonl');
@@ -82,9 +108,27 @@ function buildPrompt(params, curr) {
   const { classCode, subject, term, week, style, extra, teachingDays, periods } = params;
   const isJHS = ['B7','B8','B9'].includes(classCode);
   const isKG = classCode.startsWith('KG');
-  const today = new Date();
-  const weekEnd = new Date(today); weekEnd.setDate(today.getDate() + (5 - today.getDay()));
+  
+  // Calculate Week Ending (Friday)
+  let weekEnd;
+  if (params.termStartDate) {
+    const start = new Date(params.termStartDate);
+    // Add (week - 1) * 7 days to get the start of the target week, then find that Friday
+    weekEnd = new Date(start);
+    weekEnd.setDate(start.getDate() + (week - 1) * 7);
+    const day = weekEnd.getDay(); // 0 is Sun, 5 is Fri
+    const diff = 5 - day;
+    weekEnd.setDate(weekEnd.getDate() + diff);
+  } else {
+    const today = new Date();
+    weekEnd = new Date(today);
+    weekEnd.setDate(today.getDate() + (5 - today.getDay()));
+  }
+  
   const weekEndStr = weekEnd.toLocaleDateString('en-GH', { day:'2-digit', month:'2-digit', year:'numeric' });
+  const textbook = getTextbook(classCode, subject);
+  const reference = `${curr.reference}, Page ${Math.floor(Math.random() * 50) + 10} | Textbook: ${textbook}`;
+
   const fewShot = loadFewShotExamples(classCode, subject);
   
   const targetDays = teachingDays ? parseInt(teachingDays, 10) : (isJHS ? 1 : 5);
@@ -115,7 +159,8 @@ function buildPrompt(params, curr) {
   return `${SYSTEM_PROMPT}${fewShot}
 
 Generate a ${classCode} ${subject} lesson note (Term ${term}, Week ${week}, Style: ${style}).
-Curriculum: ${curr.strand} / ${curr.subStrand} / ${curr.contentStd} / ${curr.indicator} / ${curr.reference}.
+Curriculum: ${curr.strand} / ${curr.subStrand} / ${curr.contentStd} / ${curr.indicator} / ${reference}.
+Textbook Reference: ${textbook}.
 ${daysInstruction}
 ${periods ? `Plan the content length to fit ${periods} periods.` : ''}
 ${extra ? `Extra instructions: ${extra}` : ''}

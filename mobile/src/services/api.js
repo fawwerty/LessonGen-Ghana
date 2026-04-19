@@ -59,6 +59,7 @@ export const paymentAPI = {
 
 export const schemeAPI = {
   upload:        (formData) => api.post('/scheme/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  camera:        (formData) => api.post('/scheme/camera', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
   paste:         (data)     => api.post('/scheme/paste', data, { timeout: 120000 }),
   list:          ()         => api.get('/scheme/list'),
   getById:       (id)       => api.get(`/scheme/${id}`),

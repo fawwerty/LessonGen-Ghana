@@ -5,6 +5,7 @@ import {
   useWindowDimensions
 } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
+import * as ImagePicker from 'expo-image-picker';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { schemeAPI } from '../services/api';
@@ -71,6 +72,7 @@ function WeekChip({ week, selected, onToggle }) {
 // ── Main SchemeScreen ─────────────────────────────────────────────────────────
 export default function SchemeScreen({ navigation }) {
   const insets = useSafeAreaInsets();
+  const { width } = useWindowDimensions();
 
   // Step 1: Setup
   const [tab, setTab]             = useState('paste'); // 'file' | 'paste'
@@ -80,6 +82,7 @@ export default function SchemeScreen({ navigation }) {
   const [pickerOpen, setPickerOpen] = useState(null); // 'class' | 'subject'
   const [pasteText, setPasteText] = useState('');
   const [pickedFile, setPickedFile] = useState(null);
+  const [capturedImage, setCapturedImage] = useState(null);
 
   // Step 2: Parsing
   const [parsing, setParsing]     = useState(false);
@@ -121,6 +124,16 @@ export default function SchemeScreen({ navigation }) {
     } catch { Alert.alert('Error', 'Failed to pick file.'); }
   };
 
+  const takePhoto = async () => {
+    try {
+      const { status } = await ImagePicker.requestCameraPermissionsAsync();
+      if (status !== 'granted') { Alert.alert('Permission Denied', 'We need camera access to scan your scheme.'); return; }
+      
+      const res = await ImagePicker.launchCameraAsync({ quality: 0.8, base64: true });
+      if (!res.canceled && res.assets?.length) setCapturedImage(res.assets[0]);
+    } catch { Alert.alert('Error', 'Failed to open camera.'); }
+  };
+
   const handleParse = async () => {
     if (!classCode || !subject || !term) { Alert.alert('Missing Info', 'Select class, subject, and term first.'); return; }
     if (tab === 'paste' && !pasteText.trim()) { Alert.alert('Missing Text', 'Paste your scheme text below.'); return; }
@@ -132,6 +145,14 @@ export default function SchemeScreen({ navigation }) {
       let res;
       if (tab === 'paste') {
         res = await schemeAPI.paste({ classCode, subject, term: Number(term), rawText: pasteText });
+      } else if (tab === 'camera') {
+        if (!capturedImage) { Alert.alert('No Image', 'Take a photo first.'); return; }
+        const fd = new FormData();
+        fd.append('image', { uri: capturedImage.uri, name: 'scheme.jpg', type: 'image/jpeg' });
+        fd.append('classCode', classCode);
+        fd.append('subject', subject);
+        fd.append('term', term);
+        res = await schemeAPI.camera(fd);
       } else {
         const fd = new FormData();
         fd.append('schemeFile', { uri: pickedFile.uri, name: pickedFile.name, type: pickedFile.mimeType });
@@ -236,7 +257,7 @@ export default function SchemeScreen({ navigation }) {
 
             {/* Tab switch */}
             <View style={s.tabRow}>
-              {[['paste','Paste Text'], ['file','Pick File']].map(([k, l]) => (
+              {[['paste','Paste'], ['file','File'], ['camera', 'Photo/OCR']].map(([k, l]) => (
                 <TouchableOpacity key={k} onPress={() => setTab(k)} style={[s.tabBtn, tab === k && s.tabBtnActive]}>
                   <Text style={[s.tabBtnText, tab === k && s.tabBtnTextActive]}>{l}</Text>
                 </TouchableOpacity>
@@ -254,6 +275,22 @@ export default function SchemeScreen({ navigation }) {
                 placeholderTextColor={C.ink4}
                 textAlignVertical="top"
               />
+            ) : tab === 'camera' ? (
+              <TouchableOpacity style={s.fileZone} onPress={takePhoto}>
+                {capturedImage ? (
+                  <View style={{ alignItems: 'center', gap: 8 }}>
+                    <Text style={s.fileIcon}>📸</Text>
+                    <Text style={s.fileName}>Photo Captured</Text>
+                    <TouchableOpacity onPress={() => setCapturedImage(null)}><Text style={{ color: C.red, fontSize: 13 }}>Retake</Text></TouchableOpacity>
+                  </View>
+                ) : (
+                  <View style={{ alignItems: 'center', gap: 10 }}>
+                    <Text style={s.fileIcon}>📷</Text>
+                    <Text style={s.fileZoneTitle}>Tap to take a photo</Text>
+                    <Text style={s.fileZoneSub}>Scan printed or handwritten schemes</Text>
+                  </View>
+                )}
+              </TouchableOpacity>
             ) : (
               <TouchableOpacity style={s.fileZone} onPress={pickFile}>
                 {pickedFile ? (

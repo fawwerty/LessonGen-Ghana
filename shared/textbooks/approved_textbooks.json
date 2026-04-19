@@ -1,104 +1,2395 @@
 {
-  "_note": "Standard GES-approved pupil textbooks used across Ghana. References appear alongside NaCCA curriculum references in lesson notes.",
-  "_format": "Each entry: { publisher, title, class, pages_range, abbr }",
-
-  "English Language": {
-    "B1-B3": [
-      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B1", "abbr": "Mastermind English B1"},
-      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B2", "abbr": "Mastermind English B2"},
-      {"publisher": "Mastermind", "title": "Mastermind English Language for Primary Schools", "class": "B3", "abbr": "Mastermind English B3"},
-      {"publisher": "Macmillan", "title": "Macmillan Primary English", "class": "B1-B3", "abbr": "Macmillan Primary English"}
+  "_meta": {
+    "schema_version": "1.2",
+    "description": "NaCCA Ghana Approved Supplementary Materials — Textbooks, E-Learning, Games, Manipulatives and Manuals",
+    "source": "Official NaCCA Approved Supplementary Materials Lists, Ministry of Education, Republic of Ghana",
+    "built_by": "LessonGen Ghana AI Data Pipeline",
+    "total_entries": 472,
+    "categories": [
+      "Creche / Nursery / Kindergarten (KG1-KG2)",
+      "Lower Primary (B1-B3)",
+      "Upper Primary (B4-B6)",
+      "Junior High School (B7-B9)",
+      "E-Learning / Games / Manipulatives / Manuals"
     ],
-    "B4-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B4", "abbr": "Mastermind English B4"},
-      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B5", "abbr": "Mastermind English B5"},
-      {"publisher": "Mastermind", "title": "Mastermind English Language Pupil's Book", "class": "B6", "abbr": "Mastermind English B6"},
-      {"publisher": "SAMs", "title": "SAMs English for Schools", "class": "B4-B6", "abbr": "SAMs English B4-B6"}
+    "notes": {
+      "Creche / Nursery / Kindergarten (KG1-KG2)": "134 approved books",
+      "Lower Primary (B1-B3)": "140 approved books",
+      "Upper Primary (B4-B6)": "146 approved books",
+      "Junior High School (B7-B9)": "12 approved books",
+      "E-Learning / Games / Manipulatives / Manuals": "40 materials"
+    }
+  },
+  "books": {
+    "Creche / Nursery / Kindergarten (KG1-KG2)": [
+      {
+        "sn": "11",
+        "title": "nglish Alphabet Booklet",
+        "publisher": "Wisdom Ofoe Agormeda"
+      },
+      {
+        "sn": "12",
+        "title": "uicksteps Language and Literacy for Kindergarten 1",
+        "publisher": "Joseph Boison /Boison Publication"
+      },
+      {
+        "sn": "13",
+        "title": "uicksteps Language and Literacy for Kindergarten 2",
+        "publisher": "Joseph Boison /Boison Publication"
+      },
+      {
+        "sn": "14",
+        "title": "aster Phonic and Workbook for KG 1",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "15",
+        "title": "aster Phonic and Workbook for KG 2",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "16",
+        "title": "indergarten 1 – Copy and Picture Reading",
+        "publisher": "Simon Baidoo /Good Shepherd Publication"
+      },
+      {
+        "sn": "17",
+        "title": "indergarten 2 – Copy and Picture Reading",
+        "publisher": "Simon Baidoo /Good Shepherd Publication"
+      },
+      {
+        "sn": "18",
+        "title": "indergarten 1 Integrated- All about Me- Classswork",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "19",
+        "title": "indergarten 1 Integrated- All about Me- Homework",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "20",
+        "title": "indergarten 1 Integrated- My Family- Classwork",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "21",
+        "title": "indergarten 1 Integrated- My Family- Homework",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "22",
+        "title": "indergarten 1 Read Aloud",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "23",
+        "title": "indergarten 2 Integrated- All about Me- Classswork",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "24",
+        "title": "indergarten 2 Integrated- All about Me- Homework",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "25",
+        "title": "indergarten 2 Integrated- My Family- Classwork",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "26",
+        "title": "indergarten 2 Integrated- My Family- Homework",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "27",
+        "title": "indergarten 2 Read Aloud",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "30",
+        "title": "omplete Handwriting Fun",
+        "publisher": "Wilco/EPP Books and Services"
+      },
+      {
+        "sn": "32",
+        "title": "unrise Series – Let’s read and Write – Book 1",
+        "publisher": "Michaela A. Nelson"
+      },
+      {
+        "sn": "33",
+        "title": "unrise Series – Let’s read and Write English – learning to read",
+        "publisher": "Michaela A. Nelson and write Phonics – Book 2"
+      },
+      {
+        "sn": "34",
+        "title": "unrise Series – Let’s Trace and Write English –Learning to trac",
+        "publisher": "e Michaela A. Nelson write WĂŐĞ\u0003ͮ\u0003Ϯϲ\u0003\u0003"
+      },
+      {
+        "sn": "44",
+        "title": "sential English Language and Literacy for KG 1",
+        "publisher": "K.H Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "45",
+        "title": "sential English Language and Literacy for KG 2",
+        "publisher": "K.H Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "59",
+        "title": "sic Numeracy for Kindergarten 1                             Ofo",
+        "publisher": "ri Ahenkora /Ahenkora Publication"
+      },
+      {
+        "sn": "60",
+        "title": "sic Numeracy for Kindergarten 2                             Ofo",
+        "publisher": "ri Ahenkora /Ahenkora Publication"
+      },
+      {
+        "sn": "61",
+        "title": "eal Numeracy for Kindergarten Book 1                        Jos",
+        "publisher": "eph Boison /Boison Publication"
+      },
+      {
+        "sn": "62",
+        "title": "eal Numeracy for Kindergarten Book 2                        Jos",
+        "publisher": "eph Boison /Boison Publication"
+      },
+      {
+        "sn": "63",
+        "title": "ndergarten 1 Maths                                          Sim",
+        "publisher": "on Baidoo /Good Shepherd Publication"
+      },
+      {
+        "sn": "64",
+        "title": "ndergarten 2 Maths                                          Sim",
+        "publisher": "on Baidoo /Good Shepherd Publication"
+      },
+      {
+        "sn": "65",
+        "title": "mprehensive Numeracy for Kindergarten 1                     Dom",
+        "publisher": "inic Otoo, PhD /Pascal Book Ventures"
+      },
+      {
+        "sn": "66",
+        "title": "mprehensive Numeracy for Kindergarten 2                     Dom",
+        "publisher": "inic Otoo, PhD /Pascal Book Ventures"
+      },
+      {
+        "sn": "67",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Numeracy for Beginners KG 1 Appiah /K3 Publishing"
+      },
+      {
+        "sn": "68",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Numeracy for Beginners KG 2 Appiah /K3 Publishing"
+      },
+      {
+        "sn": "69",
+        "title": "bbi Series - Numeracy for Kindergarten 1                    Col",
+        "publisher": "lins Osei Agyemang"
+      },
+      {
+        "sn": "70",
+        "title": "bbi Series - Numeracy for Kindergarten 2                    Col",
+        "publisher": "lins Osei Agyemang"
+      },
+      {
+        "sn": "71",
+        "title": "Sam",
+        "publisher": "uel Tetteh & Shamsudeem M. Mustapha Simple Mathematics (Numeracy Skills) for Kindergarten 1 /Sahabia Group Company Limited"
+      },
+      {
+        "sn": "72",
+        "title": "Sam",
+        "publisher": "uel Tetteh & Shamsudeem M. Mustapha Simple Mathematics (Numeracy Skills) for Kindergarten 2 /Sahabia Group Company Limited"
+      },
+      {
+        "sn": "73",
+        "title": "sential Numeracy KG 1                                       K.H",
+        "publisher": "Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "74",
+        "title": "sential Numeracy KG 2                                       K.H",
+        "publisher": "Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "75",
+        "title": "Kof",
+        "publisher": "i Mensah & Francis Benjamin Appiah Excellence Series - Practical Aid in Numeracy for Nursery 1   /Excellence Publications and Stationery Limited"
+      },
+      {
+        "sn": "76",
+        "title": "Kof",
+        "publisher": "i Mensah & Francis Benjamin Appiah Excellence Series - Practical Aid in Numeracy for Nursery 2   /Excellence Publications and Stationery Limited"
+      },
+      {
+        "sn": "77",
+        "title": "Alphabet Booklet                                           Wis",
+        "publisher": "dom Ofoe Agormeda"
+      },
+      {
+        "sn": "78",
+        "title": "ema Wisdom Ofoe Agormeda                                    Wis",
+        "publisher": "dom Ofoe Agormeda"
+      },
+      {
+        "sn": "79",
+        "title": "kant Series – Asante Twi Kasa Mmara Ne Amammer1 – KG        Bar",
+        "publisher": "ima Sarfo Kantanka & Opoku Marfo 1                                                             Benjamin /Sakant Series Publications"
+      },
+      {
+        "sn": "80",
+        "title": "kant Series – Asante Twi Kasa Mmara Ne Amammer1 – KG        Bar",
+        "publisher": "ima Sarfo Kantanka & Opoku Marfo 2                                                             Benjamin /Sakant Series Publications"
+      },
+      {
+        "sn": "81",
+        "title": "Sai",
+        "publisher": "nt Godson Kwasi Baah /Afrafra Ventures Asante Twi Afrafra N11seri 1 and Publications"
+      },
+      {
+        "sn": "82",
+        "title": "Sai",
+        "publisher": "nt Godson Kwasi Baah /Afrafra Ventures Asante Twi Afrafra N11seri 2 and Publications"
+      },
+      {
+        "sn": "83",
+        "title": "Sai",
+        "publisher": "nt Godson Kwasi Baah /Afrafra Ventures Asante Twi Afrafra – Mfitiasee Sukuu Nwoma - Kindergarten 1 and Publications"
+      },
+      {
+        "sn": "84",
+        "title": "Sai",
+        "publisher": "nt Godson Kwasi Baah /Afrafra Ventures Asante Twi Afrafra – Mfitiasee Sukuu Nwoma - Kindergarten 2 and Publications"
+      },
+      {
+        "sn": "87",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Our World and Our People for Beginners KG 1 Workbook Appiah /K3 Publishing"
+      },
+      {
+        "sn": "88",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Our World and Our People for Beginners KG 2 Workbook Appiah /K3 Publishing"
+      },
+      {
+        "sn": "89",
+        "title": "Edw",
+        "publisher": "ard K. Bimpong /Edrose Enterprise Edrose - Activity Workbook For Beginners In Colouring Printing Press"
+      },
+      {
+        "sn": "90",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Creative Arts for Beginners KG 1 Workbook Appiah /K3 Publishing"
+      },
+      {
+        "sn": "91",
+        "title": "Emm",
+        "publisher": "anuel Atuahene & Francis Benjamin Creative Arts for Beginners KG 2 Workbook Appiah /K3 Publishing"
+      },
+      {
+        "sn": "92",
+        "title": "sential Creative Arts KG 1                                  K.H",
+        "publisher": "Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "93",
+        "title": "sential Creative Arts KG 2                                  K.H",
+        "publisher": "Ameyaw /Bright Future Publication WĂŐĞ\u0003ͮ\u0003Ϯϴ\u0003\u0003"
+      },
+      {
+        "sn": "98",
+        "title": "we-Nuxevle Dzesiwo KG",
+        "publisher": "Agys Solutions"
+      },
+      {
+        "sn": "99",
+        "title": "fantse Akenkan Ahy3se KG",
+        "publisher": "Agys Solutions"
+      },
+      {
+        "sn": "100",
+        "title": "asic Phonics for Beginners KG",
+        "publisher": "Agys Solutions"
+      },
+      {
+        "sn": "101",
+        "title": "sante Twi-Akenkan Ahy3ase3",
+        "publisher": "Agys Solutions"
+      },
+      {
+        "sn": "102",
+        "title": "honique Base pour les Debutanta KG",
+        "publisher": "Agys Solutions"
+      },
+      {
+        "sn": "103",
+        "title": "honics Made Easy workbook for KG 1",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "104",
+        "title": "honics Made Easy workbook for KG 2",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "105",
+        "title": "asterman Writing Activity Book for KG 1",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "106",
+        "title": "asterman Writing Activity Book for KG 2",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "107",
+        "title": "asterman My First Colouring book for KG",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "108",
+        "title": "asterman My Second Colouring book for KG",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "109",
+        "title": "un with Colouring",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "110",
+        "title": "osaic and Collage Book 1A for Nursery",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "111",
+        "title": "osaic and Collage Book 1B for Nursery",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "112",
+        "title": "asterman Language Activities for Nursery",
+        "publisher": "Masterman Pulications LTD"
+      },
+      {
+        "sn": "113",
+        "title": "ssential Montessori Writing Skills for Nursery 1",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "114",
+        "title": "ssential Montessori Writing Skills for Nursery 2",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "115",
+        "title": "ssential Montessori Writing Skills for KG1",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "116",
+        "title": "ssential Montessori Writing Skills for KG2",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "117",
+        "title": "lphabet Reading and Writing",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "118",
+        "title": "asterman My First Copy Book 1",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "119",
+        "title": "asterman My First Copy Book 2",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "120",
+        "title": "asterman My First Copy Book 3",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "121",
+        "title": "asterman Pre-Writing Activities for Nursery",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "122",
+        "title": "asterman Activities for Numeracy",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "123",
+        "title": "asterman Phonics Activity Book for Nursery",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "124",
+        "title": "asterman Phonics Activity Book for Kindergarten",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "125",
+        "title": "y Best Writing Book for Kindergarten",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "126",
+        "title": "DG Colouring Book - Lets Create In Colour",
+        "publisher": "NNF Esquire limited"
+      },
+      {
+        "sn": "127",
+        "title": "ittle Sage Phonics Book 2",
+        "publisher": "Sage Literary House"
+      },
+      {
+        "sn": "128",
+        "title": "ittle Sage Handwriting Practice 1- Alphabet",
+        "publisher": "Sage Literary House"
+      },
+      {
+        "sn": "129",
+        "title": "ittle Sage Handwriting Practice 2- Two Letter Sounds",
+        "publisher": "Sage Literary House"
+      },
+      {
+        "sn": "130",
+        "title": "ittle Sage Handwriting Practice 3 - Onset, Rimes and Keywords",
+        "publisher": "Writing                                                          Sage Literary House"
+      },
+      {
+        "sn": "131",
+        "title": "umber Activity (Number 1-10) for Nursery 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "132",
+        "title": "umber Activity (Number 1-10) for Nursery 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "133",
+        "title": "re-Writing Activity Book for Starters - Part 1 - Nursery 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "134",
+        "title": "re-Writing Activity Book for Starters - Part 2 - Nursery 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "135",
+        "title": "anguage Activity for Nursery 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "136",
+        "title": "anguage Activity for Nursery 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "137",
+        "title": "anguage and Literacy Activity for KG 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "138",
+        "title": "anguage and Literacy Activity for KG 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "139",
+        "title": "implified Letter Work for Creche",
+        "publisher": "Vestle Publications WĂŐĞ\u0003ͮ\u0003Ϯϵ\u0003\u0003"
+      },
+      {
+        "sn": "140",
+        "title": "implified Literacy Work for Nursery 1",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "141",
+        "title": "implified Literacy Work for Nursery 2",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "142",
+        "title": "implified Numeracy for Nursery 1",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "143",
+        "title": "implified Numeracy for Nursery 2",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "144",
+        "title": "implified Creative Activities for Nursery 1",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "145",
+        "title": "implified Creative Activities for Nursery 2",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "146",
+        "title": "implified Scribbling and Colouring for Creche",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "147",
+        "title": "implified Colouring Book for Nursery 1",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "148",
+        "title": "implified Colouring Book for Nursery 2",
+        "publisher": "Vestle Publications"
+      },
+      {
+        "sn": "149",
+        "title": "dvocate Series - Phonics Skills Book 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "150",
+        "title": "dvocate Series - Phonics Skills Book 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "151",
+        "title": "dvocate Series - Phonics Skills Book 3",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "152",
+        "title": "umeracy Activity Book 1",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "153",
+        "title": "umeracy Teaching Guide 1",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "154",
+        "title": "umeracy Activity Book 2",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "155",
+        "title": "umeracy Teaching Guide 2",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "156",
+        "title": "iteracy Activity Book 1",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "157",
+        "title": "iteracy Teaching Guide 1",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "158",
+        "title": "iteracy Activity Book 2",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "159",
+        "title": "iteracy Teaching Guide 2",
+        "publisher": "Plan International Ghana"
+      },
+      {
+        "sn": "160",
+        "title": "oafo Series - Write Right Penmanship Practice Book 1",
+        "publisher": "Francis Boafo Assiaw"
+      },
+      {
+        "sn": "161",
+        "title": "oafo Series - Write Right Penmanship Practice Book 2",
+        "publisher": "Francis Boafo Assiaw"
+      },
+      {
+        "sn": "162",
+        "title": "oafo Series - Write Right Penmanship Practice Book 3",
+        "publisher": "Francis Boafo Assiaw"
+      },
+      {
+        "sn": "163",
+        "title": "oafo Series - Write Right Penmanship Practice Book - Age 3-5",
+        "publisher": "Francis Boafo Assiaw"
+      },
+      {
+        "sn": "164",
+        "title": "dvocate Series - Numeracy Activities for KG 1",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "165",
+        "title": "dvocate Series - Numeracy Activities for KG 2",
+        "publisher": "Advocate Publishing"
+      },
+      {
+        "sn": "166",
+        "title": "re-Writing Skills Book 1",
+        "publisher": "Esther Quayson"
+      },
+      {
+        "sn": "167",
+        "title": "re-Writing Skills Literacy Book 1",
+        "publisher": "Esther Quayson"
+      },
+      {
+        "sn": "168",
+        "title": "re-Writing Skills Numeracy Book 1",
+        "publisher": "Esther Quayson"
+      },
+      {
+        "sn": "169",
+        "title": "xploring Numeracy for Kindergarten 1",
+        "publisher": "Bernice Baiden"
+      },
+      {
+        "sn": "170",
+        "title": "xploring Numeracy for Kindergarten 2",
+        "publisher": "Bernice Baiden"
+      },
+      {
+        "sn": "171",
+        "title": "utomobile Guide - Fun Activity Colouring Book KG",
+        "publisher": "Nyarko Asiamah"
+      },
+      {
+        "sn": "172",
+        "title": "hings I Love to Colour",
+        "publisher": "Elco Publications"
+      },
+      {
+        "sn": "173",
+        "title": "honics for Kindergarten",
+        "publisher": "Elco Publications"
+      },
+      {
+        "sn": "174",
+        "title": "ittle Sage Phonics Book 1",
+        "publisher": "Sage Literary House"
+      },
+      {
+        "sn": "175",
+        "title": "ittle Sage Phonics Book 3",
+        "publisher": "Sage Literary House WĂŐĞ\u0003ͮ\u0003ϯϬ\u0003\u0003"
+      }
     ],
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B7", "abbr": "Mastermind English B7"},
-      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B8", "abbr": "Mastermind English B8"},
-      {"publisher": "Mastermind", "title": "Mastermind English for JHS", "class": "B9", "abbr": "Mastermind English B9"}
-    ]
-  },
-  "Mathematics": {
-    "B1-B3": [
-      {"publisher": "Mastermind", "title": "Mastermind Mathematics for Primary Schools", "class": "B1-B3", "abbr": "Mastermind Maths B1-B3"},
-      {"publisher": "Macmillan", "title": "Macmillan Primary Mathematics", "class": "B1-B3", "abbr": "Macmillan Maths B1-B3"}
+    "Lower Primary (B1-B3)": [
+      {
+        "sn": "1",
+        "title": "Master Phonic and Workbook 1",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "2",
+        "title": "Master Phonic and Workbook 2",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "3",
+        "title": "Master Phonic and Workbook 3",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "4",
+        "title": "Orion Basic English Course Book 1",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "5",
+        "title": "Orion Basic English Course Book 2",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "6",
+        "title": "Orion Basic English Course Book 3",
+        "publisher": "John Kwaku Damba /Orion Sirus Limited"
+      },
+      {
+        "sn": "7",
+        "title": "New Enrich English Language Grammar – Book 1",
+        "publisher": "Gado Salihu /EPP Books Services"
+      },
+      {
+        "sn": "8",
+        "title": "New Enrich English Language Grammar – Book 2",
+        "publisher": "Gado Salihu /EPP Books Services"
+      },
+      {
+        "sn": "9",
+        "title": "New Enrich English Language Grammar – Book 3",
+        "publisher": "Gado Salihu /EPP Books Services"
+      },
+      {
+        "sn": "10",
+        "title": "Guide To English Composition And Comprehension – Primary 1",
+        "publisher": "Esther Nancy Tetteh /EPP Books Services"
+      },
+      {
+        "sn": "11",
+        "title": "Guide To English Composition And Comprehension – Primary 2",
+        "publisher": "Esther Nancy Tetteh /EPP Books Services"
+      },
+      {
+        "sn": "12",
+        "title": "Guide To English Composition And Comprehension – Primary 3",
+        "publisher": "Esther Nancy Tetteh /EPP Books Services"
+      },
+      {
+        "sn": "13",
+        "title": "Essential Grammar – Primary 1",
+        "publisher": "K.H. Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "14",
+        "title": "Essential Grammar – Primary 2",
+        "publisher": "K.H. Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "15",
+        "title": "Essential Grammar – Primary 3",
+        "publisher": "K.H. Ameyaw /Bright Future Publication"
+      },
+      {
+        "sn": "16",
+        "title": "English Language – Pupil’s Course Book 1– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "17",
+        "title": "English Language – Activity Book 1– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "18",
+        "title": "English Language – Pupil’s Course Book 2– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "19",
+        "title": "English Language – Activity Book 2– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "20",
+        "title": "English Language – Pupil’s Course Book 3– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "21",
+        "title": "English Language – Activity Book 3– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "22",
+        "title": "Illustrated First AID in English",
+        "publisher": "Angus Maciver /EPP Books and Services"
+      },
+      {
+        "sn": "23",
+        "title": "First AID in Spellings",
+        "publisher": "Jan Gallow & Karen Morrision /EPP Books and Services"
+      },
+      {
+        "sn": "24",
+        "title": "Excellence English Language for Basic Schools Learner’s Book",
+        "publisher": "Francis Benjamin Appiah, Dennis Nsafoah & Faustina Appaiah 1 /Excellence Publications and Stationery Limited"
+      },
+      {
+        "sn": "25",
+        "title": "Excellence English Language for Basic Schools Learner’s Book",
+        "publisher": "Francis Benjamin Appiah, Dennis Nsafoah & Faustina Appaiah 2 /Excellence Publications and Stationery Limited"
+      },
+      {
+        "sn": "26",
+        "title": "Excellence English Language for Basic Schools Learner’s Book",
+        "publisher": "Francis Benjamin Appiah, Dennis Nsafoah & Faustina Appaiah 3 /Excellence Publications and Stationery Limited"
+      },
+      {
+        "sn": "27",
+        "title": "English Read Aloud Compendium and Teacher Workbook Instructions Basic 1",
+        "publisher": "USAID Partnership for Education: Learning"
+      },
+      {
+        "sn": "28",
+        "title": "English Read Aloud Compendium and Teacher Workbook Instructions Basic 2",
+        "publisher": "USAID Partnership for Education: Learning WĂŐĞ\u0003ͮ\u0003ϯϭ\u0003\u0003"
+      },
+      {
+        "sn": "29",
+        "title": "glish Read Aloud Compendium and Teacher Workbook",
+        "publisher": "USAID Partnership for Education: Instructions Basic 3                                                  Learning"
+      },
+      {
+        "sn": "30",
+        "title": "nrise Series – Let’s Read and Write English (Learning to read a",
+        "publisher": "nd Michaela A. Nelson-Cofie write with Phonics)-Book 1"
+      },
+      {
+        "sn": "31",
+        "title": "nrise Series – Let’s Read and Write English (Learning to read a",
+        "publisher": "nd Michaela A. Nelson-Cofie write with Phonics)-Book 2"
+      },
+      {
+        "sn": "32",
+        "title": "nrise Series – Let’s Trace and Write English (Learning to trace",
+        "publisher": "Michaela A. Nelson-Cofie and write)-Book 2"
+      },
+      {
+        "sn": "36",
+        "title": "l Day Rhymes and Poems for Schools Book 1",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "37",
+        "title": "l Day Rhymes and Poems for Schools Book 2",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "38",
+        "title": "l Day Rhymes and Poems for Schools Book 3",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "42",
+        "title": "adwoan French 1",
+        "publisher": "Kwame Odame Kwadwoan Publishing"
+      },
+      {
+        "sn": "43",
+        "title": "adwoan French 2",
+        "publisher": "Kwame Odame /Kwadwoan Publishing"
+      },
+      {
+        "sn": "44",
+        "title": "adwoan French 3",
+        "publisher": "Kwame Odame /Kwadwoan Publishing"
+      },
+      {
+        "sn": "45",
+        "title": "ench for Beginners - A French Course Book for Primary Schools",
+        "publisher": "Moses Owereko /Mozay Publications Pupils Book 1"
+      },
+      {
+        "sn": "46",
+        "title": "ench for Beginners - A French Course Book for Primary Schools",
+        "publisher": "Moses Owereko /Mozay Publications Pupils Book 2"
+      },
+      {
+        "sn": "47",
+        "title": "ench for Beginners - A French Course Book for Primary Schools",
+        "publisher": "Moses Owereko /Mozay Publications Pupils Book 3"
+      },
+      {
+        "sn": "48",
+        "title": "Can Count and Write Mathematics for Primary Schools – Pupils",
+        "publisher": "Philip Tamatey /Morning Glory workbook 1                                                            Writers"
+      },
+      {
+        "sn": "49",
+        "title": "Can Count and Write Mathematics for Primary Schools – Pupils",
+        "publisher": "Philip Tamatey /Morning Glory workbook 2                                                            Writers"
+      },
+      {
+        "sn": "50",
+        "title": "Can Count and Write Mathematics for Primary Schools – Pupils",
+        "publisher": "Philip Tamatey /Morning Glory workbook 3                                                            Writers"
+      },
+      {
+        "sn": "55",
+        "title": "thematics Pupil’s Course Book 1-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "56",
+        "title": "thematics Activity Book 1-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "57",
+        "title": "thematics Pupil’s Course Book 2-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "58",
+        "title": "thematics Activity Book 2-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "59",
+        "title": "thematics Pupil’s Course Book 3-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "60",
+        "title": "thematics Activity Book 3-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "61",
+        "title": "rst AID in Mathematics",
+        "publisher": "Robert Sully /EPP Books and Services WĂŐĞ\u0003ͮ\u0003ϯϮ\u0003\u0003"
+      },
+      {
+        "sn": "68",
+        "title": "aylay Series – Comprehensive Mathematics for Basic Schools –",
+        "publisher": "Nana Opoku A. Agyeman & Teiko M. Pupil’s Book 1                                                    Davidson /Olaylay Publication Limited"
+      },
+      {
+        "sn": "69",
+        "title": "aylay Series – Comprehensive Mathematics for Basic Schools –",
+        "publisher": "Nana Opoku A. Agyeman & Teiko M. Pupil’s Book 2                                                    Davidson /Olaylay Publication Limited"
+      },
+      {
+        "sn": "70",
+        "title": "aylay Series – Comprehensive Mathematics for Basic Schools –",
+        "publisher": "Nana Opoku A. Agyeman & Teiko M. Pupil’s Book 3                                                    Davidson /Olaylay Publication Limited"
+      },
+      {
+        "sn": "74",
+        "title": "e Nyame Series – Twi Adesua Nwoma Gyinap1n 1",
+        "publisher": "Owura Larbi /Gye Nyame Publication"
+      },
+      {
+        "sn": "75",
+        "title": "e Nyame Series – Twi Adesua Nwoma Gyinap1n 3",
+        "publisher": "Owura Larbi /Gye Nyame Publication"
+      },
+      {
+        "sn": "88",
+        "title": "opa Series - Mmɔfra Amammerɛ Mfitiaseɛ - Literacy in Asante Twi",
+        "publisher": "Ofori Ankoma Philip – Basic 1"
+      },
+      {
+        "sn": "89",
+        "title": "opa Series - Mmɔfra Amammerɛ Mfitiaseɛ - Literacy in Asante Twi",
+        "publisher": "Ofori Ankoma Philip – Basic 2"
+      },
+      {
+        "sn": "90",
+        "title": "opa Series - Mmɔfra Amammerɛ Mfitiaseɛ - Literacy in Asante Twi",
+        "publisher": "Ofori Ankoma Philip – Basic 3"
+      },
+      {
+        "sn": "91",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 1",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "92",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 2",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "93",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 3",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "100",
+        "title": "ur World and Our People-Pupil’s Course Book 1Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "101",
+        "title": "ur World and Our People - Activity Book 1 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "102",
+        "title": "ur World and Our People-Pupil’s Course Book 2-Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "103",
+        "title": "ur World and Our People - Activity Book 2 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "104",
+        "title": "ur World and Our People-Pupil’s Course Book 3-Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "105",
+        "title": "ur World and Our People - Activity Book 3 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "109",
+        "title": "ictory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "-   Dent Augustine Theophilus /Nabaf Book 1                                                               Victory Publishers"
+      },
+      {
+        "sn": "110",
+        "title": "ictory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "-   Dent Augustine Theophilus /Nabaf Book 2                                                               Victory Publishers"
+      },
+      {
+        "sn": "111",
+        "title": "ictory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "-   Dent Augustine Theophilus /Nabaf Book 3                                                               Victory Publishers"
+      },
+      {
+        "sn": "112",
+        "title": "peep Series - Religious and Moral Education for Primary",
+        "publisher": "Azeriya G. Ayeriga /Apeepuase Schools - Learner’s Book 1                                           Ventures"
+      },
+      {
+        "sn": "113",
+        "title": "peep Series - Religious and Moral Education for Primary",
+        "publisher": "Azeriya G. Ayeriga /Apeepuase Schools - Learner’s Book 2                                           Ventures"
+      },
+      {
+        "sn": "114",
+        "title": "peep Series - Religious and Moral Education for Primary",
+        "publisher": "Azeriya G. Ayeriga /Apeepuase Schools - Learner’s Book 3                                           Ventures"
+      },
+      {
+        "sn": "115",
+        "title": "cience Pupil’s Course Book 1-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "116",
+        "title": "cience Activity Book 1-Term 1",
+        "publisher": "Alpha Virtual Academy WĂŐĞ\u0003ͮ\u0003ϯϰ\u0003\u0003"
+      },
+      {
+        "sn": "117",
+        "title": "cience Pupil’s Course Book 2- Term 1                     Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "118",
+        "title": "cience Activity Book 2-Term 1                            Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "119",
+        "title": "cience Pupil’s Course Book 3-Term 1                      Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "120",
+        "title": "cience Activity Book 3-Term 1                            Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "121",
+        "title": "irst AID in Science                                      EPP Bo",
+        "publisher": "oks and Services"
+      },
+      {
+        "sn": "122",
+        "title": "cience Pupil’s Course Book 4-Term 1                      Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "123",
+        "title": "cience Activity Book 4-Term 1                            Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "124",
+        "title": "cience Pupil’s Course Book 5-Term 1                      Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "125",
+        "title": "cience Activity Book 5-Term 1                            Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "126",
+        "title": "cience Pupil’s Course Book 6-Term 1                      Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "127",
+        "title": "cience Activity Book 6-Term 1                            Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "128",
+        "title": "Wilson",
+        "publisher": "Osafo Apeanti & Donsiman Don Series - Science for Basic Schools Book 1             Quashie Attipoe /Don Publications"
+      },
+      {
+        "sn": "129",
+        "title": "Wilson",
+        "publisher": "Osafo Apeanti & Donsiman Don Series - Science for Basic Schools Book 2             Quashie Attipoe /Don Publications"
+      },
+      {
+        "sn": "130",
+        "title": "Wilson",
+        "publisher": "Osafo Apeanti & Donsiman Don Series - Science for Basic Schools Book 3             Quashie Attipoe /Don Publications"
+      },
+      {
+        "sn": "131",
+        "title": "Daniel",
+        "publisher": "Bright Yeboah & Edward Divine Grace - Science Learner's Book 1                   Owusu Whyteman /Divine Grace"
+      },
+      {
+        "sn": "132",
+        "title": "Daniel",
+        "publisher": "Bright Yeboah & Edward Divine Grace - Science Learner's Book 2                   Owusu Whyteman /Divine Grace"
+      },
+      {
+        "sn": "133",
+        "title": "Daniel",
+        "publisher": "Bright Yeboah & Edward Divine Grace - Science Learner's Book 3                   Owusu Whyteman /Divine Grace"
+      },
+      {
+        "sn": "134",
+        "title": "PS. Ph",
+        "publisher": "ilip Sarpong /Perfect Grade Perfect Series - History of Ghana for Basic Learners 1"
+      },
+      {
+        "sn": "135",
+        "title": "PS. Ph",
+        "publisher": "ilip Sarpong /Perfect Grade Perfect Series - History of Ghana for Basic Learners 2"
+      },
+      {
+        "sn": "136",
+        "title": "PS. Ph",
+        "publisher": "ilip Sarpong /Perfect Grade Perfect Series - History of Ghana for Basic Learners 3"
+      },
+      {
+        "sn": "137",
+        "title": "istory of Ghana Activity Book Term 1-Book 1              Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "138",
+        "title": "istory of Ghana Pupil’s Course Book Term 1-Book 1        Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "139",
+        "title": "istory of Ghana Activity Book Term 1-Book 2              Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "140",
+        "title": "istory of Ghana Pupil’s Course Book Term 1-Book 2        Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "141",
+        "title": "istory of Ghana Activity Book Term 1-Book 3              Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "142",
+        "title": "istory of Ghana Pupil’s Course Book Term 1-Book 3        Alpha",
+        "publisher": "Virtual Academy"
+      },
+      {
+        "sn": "143",
+        "title": "Seth K",
+        "publisher": "ordzo Gadzekpo /EPP Books History of Ghana for Basic Schools - Basic 1"
+      },
+      {
+        "sn": "144",
+        "title": "Seth K",
+        "publisher": "ordzo Gadzekpo /EPP Books History of Ghana for Basic Schools - Basic 2"
+      },
+      {
+        "sn": "145",
+        "title": "/Seth",
+        "publisher": "Kordzo Gadzekpo EPP Books History of Ghana for Basic Schools - Basic 3"
+      },
+      {
+        "sn": "146",
+        "title": "Christ",
+        "publisher": "ine Teyegaga & Harris Jasim History of Ghana – Learner’s Book 1"
+      },
+      {
+        "sn": "147",
+        "title": "Prince",
+        "publisher": "Adjei Kuffour /K4 Series K4 Series - History of Ghana for Primary Schools Book 1"
+      },
+      {
+        "sn": "148",
+        "title": "Prince",
+        "publisher": "Adjei Kuffour /K4 Series K4 Series - History of Ghana for Primary Schools Book 2"
+      },
+      {
+        "sn": "149",
+        "title": "Prince",
+        "publisher": "Adjei Kuffour /K4 Series K4 Series - History of Ghana for Primary Schools Book 3 WĂŐĞ\u0003ͮ\u0003ϯϱ\u0003\u0003"
+      },
+      {
+        "sn": "150",
+        "title": "Derby Series – History of Ghana for Basic 1 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "151",
+        "title": "Derby Series – History of Ghana for Basic 2 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "152",
+        "title": "Derby Series – History of Ghana for Basic 3 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "153",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 1",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "154",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 2",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "155",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 3",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "156",
+        "title": "Victory Series – History for Ghana Schools Book 1",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "157",
+        "title": "Victory Series – History for Ghana Schools Book 2",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "158",
+        "title": "Victory Series – History for Ghana Schools Book 3",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "159",
+        "title": "Simple Mathematics Activity Book 1",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "160",
+        "title": "Simple Mathematics Activity Book 2",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "161",
+        "title": "Simple Mathematics Activity Book 3",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "162",
+        "title": "Masterman My First Copy Book 4",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "163",
+        "title": "Masterman My First Copy Book 5",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "164",
+        "title": "Masterman My First Copy Book 6",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "165",
+        "title": "K1 Mi Akase Ga - Learn Ga With Me",
+        "publisher": "Quaye-Mensah Laryea"
+      },
+      {
+        "sn": "166",
+        "title": "Lison Francais Book 1",
+        "publisher": "Dr. Smith Kow Quainoo"
+      },
+      {
+        "sn": "167",
+        "title": "Lison Francais Book 2",
+        "publisher": "Dr. Smith Kow Quainoo"
+      },
+      {
+        "sn": "168",
+        "title": "Automobile Guide - Fun Activity Colouring Book 2 Primary",
+        "publisher": "Nyarko Asiamah"
+      },
+      {
+        "sn": "1",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 4",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "2",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 5",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "3",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 6",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "4",
+        "title": "Comprehensive Mathematics for Basic 4",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "5",
+        "title": "Comprehensive Mathematics for Basic 5",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "6",
+        "title": "Comprehensive Mathematics for Basic 6",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "7",
+        "title": "Mathematics Pupil’s Course Book 4-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "8",
+        "title": "Mathematics Activity Book 4-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "9",
+        "title": "Mathematics Pupil’s Course Book 5-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "10",
+        "title": "Mathematics Activity Book 5-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "11",
+        "title": "Mathematics Pupil’s Course Book 6-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "12",
+        "title": "Mathematics Activity Book 6-Term 1",
+        "publisher": "Alpha Virtual Academy WĂŐĞ\u0003ͮ\u0003ϯϲ\u0003\u0003"
+      }
     ],
-    "B4-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B4", "abbr": "Mastermind Maths B4"},
-      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B5", "abbr": "Mastermind Maths B5"},
-      {"publisher": "Mastermind", "title": "Mastermind Mathematics Pupil's Book", "class": "B6", "abbr": "Mastermind Maths B6"},
-      {"publisher": "SAMs", "title": "SAMs Mathematics for Upper Primary", "class": "B4-B6", "abbr": "SAMs Maths B4-B6"}
+    "Upper Primary (B4-B6)": [
+      {
+        "sn": "150",
+        "title": "Derby Series – History of Ghana for Basic 1 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "151",
+        "title": "Derby Series – History of Ghana for Basic 2 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "152",
+        "title": "Derby Series – History of Ghana for Basic 3 Learners",
+        "publisher": "Rueben Derby & Joshua Osondu /Reuben Enterprise"
+      },
+      {
+        "sn": "153",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 1",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "154",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 2",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "155",
+        "title": "AA Series – History for Ghana Schools Learner’s Book 3",
+        "publisher": "Henry Adjei Amankwah, Munirah Bint Ahmed & S.B. Oteng /Henry Adjei Ventures"
+      },
+      {
+        "sn": "156",
+        "title": "Victory Series – History for Ghana Schools Book 1",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "157",
+        "title": "Victory Series – History for Ghana Schools Book 2",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "158",
+        "title": "Victory Series – History for Ghana Schools Book 3",
+        "publisher": "Dent Augustine Theophilus /Nabaf Victory Publishers"
+      },
+      {
+        "sn": "159",
+        "title": "Simple Mathematics Activity Book 1",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "160",
+        "title": "Simple Mathematics Activity Book 2",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "161",
+        "title": "Simple Mathematics Activity Book 3",
+        "publisher": "Michael Ankrah /Michael Ankrah Publication"
+      },
+      {
+        "sn": "162",
+        "title": "Masterman My First Copy Book 4",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "163",
+        "title": "Masterman My First Copy Book 5",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "164",
+        "title": "Masterman My First Copy Book 6",
+        "publisher": "Masterman Publications Gh Limited"
+      },
+      {
+        "sn": "165",
+        "title": "K1 Mi Akase Ga - Learn Ga With Me",
+        "publisher": "Quaye-Mensah Laryea"
+      },
+      {
+        "sn": "166",
+        "title": "Lison Francais Book 1",
+        "publisher": "Dr. Smith Kow Quainoo"
+      },
+      {
+        "sn": "167",
+        "title": "Lison Francais Book 2",
+        "publisher": "Dr. Smith Kow Quainoo"
+      },
+      {
+        "sn": "168",
+        "title": "Automobile Guide - Fun Activity Colouring Book 2 Primary",
+        "publisher": "Nyarko Asiamah"
+      },
+      {
+        "sn": "1",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 4",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "2",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 5",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "3",
+        "title": "I Can Count and Write Mathematics for Primary Schools – Pupi workbook 6",
+        "publisher": "ls Morning Glory Writers"
+      },
+      {
+        "sn": "4",
+        "title": "Comprehensive Mathematics for Basic 4",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "5",
+        "title": "Comprehensive Mathematics for Basic 5",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "6",
+        "title": "Comprehensive Mathematics for Basic 6",
+        "publisher": "Pascal Book Ventures"
+      },
+      {
+        "sn": "7",
+        "title": "Mathematics Pupil’s Course Book 4-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "8",
+        "title": "Mathematics Activity Book 4-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "9",
+        "title": "Mathematics Pupil’s Course Book 5-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "10",
+        "title": "Mathematics Activity Book 5-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "11",
+        "title": "Mathematics Pupil’s Course Book 6-Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "12",
+        "title": "Mathematics Activity Book 6-Term 1",
+        "publisher": "Alpha Virtual Academy WĂŐĞ\u0003ͮ\u0003ϯϲ\u0003\u0003"
+      },
+      {
+        "sn": "16",
+        "title": "w Enrich English Language Grammar – Book 4",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "17",
+        "title": "w Enrich English Language Grammar – Book 5",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "18",
+        "title": "w Enrich English Language Grammar – Book 6",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "19",
+        "title": "ide To English Composition And Comprehension – Primary 4",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "20",
+        "title": "ide To English Composition And Comprehension – Primary 5",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "21",
+        "title": "ide To English Composition And Comprehension – Primary 6",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "22",
+        "title": "w Illustrated First Aid in English for Basic Schools",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "23",
+        "title": "rof and figures” Series – Simple English Language for basic sch",
+        "publisher": "ools Sahabia Group Ltd – Learner’s Book 4"
+      },
+      {
+        "sn": "24",
+        "title": "rof and figures” Series – Simple English Language for basic sch",
+        "publisher": "ools Sahabia Group Ltd – Learner’s Book 5"
+      },
+      {
+        "sn": "25",
+        "title": "rof and figures” Series – Simple English Language for basic sch",
+        "publisher": "ools Sahabia Group Ltd – Learner’s Book 6"
+      },
+      {
+        "sn": "26",
+        "title": "sential Grammar – Primary 4",
+        "publisher": "Bright Future Publication"
+      },
+      {
+        "sn": "27",
+        "title": "sential Grammar – Primary 5",
+        "publisher": "Bright Future Publication"
+      },
+      {
+        "sn": "28",
+        "title": "sential Grammar – Primary 6",
+        "publisher": "Bright Future Publication"
+      },
+      {
+        "sn": "29",
+        "title": "glish Language – Pupil’s Course Book 4– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "30",
+        "title": "glish Language – Activity Book 4– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "31",
+        "title": "glish Language – Pupil’s Course Book 5– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "32",
+        "title": "glish Language – Activity Book 5– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "33",
+        "title": "glish Language – Pupil’s Course Book 6– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "34",
+        "title": "glish Language – Activity Book 6– Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "35",
+        "title": "ion Basic – English Course Book 4",
+        "publisher": "Orion Sirus Limited"
+      },
+      {
+        "sn": "36",
+        "title": "ion Basic – English Course Book 5",
+        "publisher": "Orion Sirus Limited"
+      },
+      {
+        "sn": "37",
+        "title": "ion Basic – English Course Book 6",
+        "publisher": "Orion Sirus Limited"
+      },
+      {
+        "sn": "38",
+        "title": "onics Made Easy – Workbook for Grade 4",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "39",
+        "title": "onics Made Easy – Workbook for Grade 5",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "40",
+        "title": "onics Made Easy – Workbook for Grade 6",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "44",
+        "title": "l Day Rhymes and Poems for Schools Book 4",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "45",
+        "title": "l Day Rhymes and Poems for Schools Book 5",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "46",
+        "title": "l Day Rhymes and Poems for Schools Book 6",
+        "publisher": "Kofi Sarpong"
+      },
+      {
+        "sn": "50",
+        "title": "n Series - Science for Basic Schools Book 4",
+        "publisher": "Don Publications Ltd"
+      },
+      {
+        "sn": "51",
+        "title": "n Series - Science for Basic Schools Book 5",
+        "publisher": "Don Publications Ltd"
+      },
+      {
+        "sn": "52",
+        "title": "n Series - Science for Basic Schools",
+        "publisher": "Don Publications Ltd"
+      },
+      {
+        "sn": "53",
+        "title": "vine Grace - Science Learner's Book 4",
+        "publisher": "Divine Grace Publication"
+      },
+      {
+        "sn": "54",
+        "title": "vine Grace - Science Learner's Book 5",
+        "publisher": "Divine Grace Publication"
+      },
+      {
+        "sn": "55",
+        "title": "vine Grace - Science Learner's Book 6",
+        "publisher": "Divine Grace Publication WĂŐĞ\u0003ͮ\u0003ϯϳ\u0003\u0003"
+      },
+      {
+        "sn": "59",
+        "title": "New French Practical Book 4 (Nous Apprenons Le Français)",
+        "publisher": "D.K. Hededzi"
+      },
+      {
+        "sn": "60",
+        "title": "New French Practical Book 5 (Nous Apprenons Le Français)",
+        "publisher": "D.K. Hededzi"
+      },
+      {
+        "sn": "61",
+        "title": "New French Practical Book 6 (Nous Apprenons Le Français)",
+        "publisher": "D.K. Hededzi"
+      },
+      {
+        "sn": "62",
+        "title": "o Series - A Guide to the Study of French for Basic 4",
+        "publisher": "Bio Series Publications"
+      },
+      {
+        "sn": "63",
+        "title": "o Series - A Guide to the Study of French for Basic 5",
+        "publisher": "Bio Series Publications"
+      },
+      {
+        "sn": "64",
+        "title": "o Series - A Guide to the Study of French for Basic 6",
+        "publisher": "Bio Series Publications"
+      },
+      {
+        "sn": "65",
+        "title": "ow Your Basic French 4",
+        "publisher": "John Mensah"
+      },
+      {
+        "sn": "66",
+        "title": "ow Your Basic French 5",
+        "publisher": "John Mensah"
+      },
+      {
+        "sn": "67",
+        "title": "ow Your Basic French 6",
+        "publisher": "John Mensah"
+      },
+      {
+        "sn": "68",
+        "title": "sential of French for Primary Schools Book 4",
+        "publisher": "J.S. Intuah"
+      },
+      {
+        "sn": "69",
+        "title": "sential of French for Primary Schools Workbook Book 4",
+        "publisher": "J.S. Intuah"
+      },
+      {
+        "sn": "70",
+        "title": "rby Series – Computing for Basic 4 Learners",
+        "publisher": "Ruderus Enterprise"
+      },
+      {
+        "sn": "71",
+        "title": "rby Series – Computing for Basic 5 Learners",
+        "publisher": "Ruderus Enterprise"
+      },
+      {
+        "sn": "72",
+        "title": "rby Series – Computing for Basic 6 Learners",
+        "publisher": "Ruderus Enterprise"
+      },
+      {
+        "sn": "73",
+        "title": "ding Textbook for Children (Age 7 and above)",
+        "publisher": "Ebenbridge Ghana Ltd"
+      },
+      {
+        "sn": "74",
+        "title": "ding Textbook for Children - Teachers Guide (Age 7 and above)",
+        "publisher": "Ebenbridge Ghana Ltd"
+      },
+      {
+        "sn": "75",
+        "title": "e Best Time Computing Book 4",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "76",
+        "title": "e Best Time Computing Book 5",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "77",
+        "title": "e Best Time Computing Book 6",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "78",
+        "title": "mputing Workbook for Primary 4",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "79",
+        "title": "mputing Workbook for Primary 5",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "80",
+        "title": "mputing Workbook for Primary 6",
+        "publisher": "Best Time Publication"
+      },
+      {
+        "sn": "81",
+        "title": "ctory Series – Computing for Ghana Schools – Book 4",
+        "publisher": "Nabaf Victory Publishers"
+      },
+      {
+        "sn": "82",
+        "title": "ctory Series – Computing for Ghana Schools – Book 5",
+        "publisher": "Nabaf Victory Publishers"
+      },
+      {
+        "sn": "83",
+        "title": "ctory Series – Computing for Ghana Schools – Book 6",
+        "publisher": "Nabaf Victory Publishers"
+      },
+      {
+        "sn": "84",
+        "title": "tstanding Series - Computing Basic 4",
+        "publisher": "Outstanding Consults"
+      },
+      {
+        "sn": "85",
+        "title": "tstanding Series - Computing Basic 5",
+        "publisher": "Outstanding Consults"
+      },
+      {
+        "sn": "86",
+        "title": "tstanding Series - Computing Basic 6",
+        "publisher": "Outstanding Consults"
+      },
+      {
+        "sn": "87",
+        "title": "mputing for Basic 4",
+        "publisher": "Bag Publication"
+      },
+      {
+        "sn": "88",
+        "title": "mputing for Basic 5",
+        "publisher": "Bag Publication"
+      },
+      {
+        "sn": "89",
+        "title": "mputing for Basic 6",
+        "publisher": "Bag Publication"
+      },
+      {
+        "sn": "90",
+        "title": "ctory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "- Nabaf Victory Publishers Book 4"
+      },
+      {
+        "sn": "91",
+        "title": "ctory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "- Nabaf Victory Publishers Book 5"
+      },
+      {
+        "sn": "92",
+        "title": "ctory Series – Religious and Moral Education for Ghana Schools",
+        "publisher": "- Nabaf Victory Publishers Book 6"
+      },
+      {
+        "sn": "93",
+        "title": "eep Series - Religious and Moral Education for Primary",
+        "publisher": "Apeepuase Ventures Schools - Learner’s Book 4"
+      },
+      {
+        "sn": "94",
+        "title": "eep Series - Religious and Moral Education for Primary",
+        "publisher": "Apeepuase Ventures Schools - Learner’s Book 5"
+      },
+      {
+        "sn": "95",
+        "title": "eep Series - Religious and Moral Education for Primary",
+        "publisher": "Apeepuase Ventures Schools - Learner’s Book 6"
+      },
+      {
+        "sn": "96",
+        "title": "of & Figures Series - Simple - Our World and Our People –",
+        "publisher": "Sahabia Group Ltd Learner’s Book 4"
+      },
+      {
+        "sn": "97",
+        "title": "of & Figures Series - Simple - Our World and Our People –",
+        "publisher": "Sahabia Group Ltd Learner’s Book 5"
+      },
+      {
+        "sn": "98",
+        "title": "of & Figures Series - Simple - Our World and Our People –",
+        "publisher": "Sahabia Group Ltd Learner’s Book 6 WĂŐĞ\u0003ͮ\u0003ϯϴ\u0003\u0003"
+      },
+      {
+        "sn": "99",
+        "title": "ur World and Our People-Pupil’s Course Book 4-Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "100",
+        "title": "ur World and Our People - Activity Book 4 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "101",
+        "title": "ur World and Our People-Pupil’s Course Book 5-Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "102",
+        "title": "ur World and Our People - Activity Book 5 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "103",
+        "title": "ur World and Our People-Pupil’s Course Book 6-Term1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "104",
+        "title": "ur World and Our People - Activity Book 6 – Term 1",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "105",
+        "title": "A Series – Our World and Our People for Ghana Basic Schools -",
+        "publisher": "Henry Adjei Ventures Learner’s Book 4"
+      },
+      {
+        "sn": "106",
+        "title": "A Series – Our World and Our People for Ghana Basic Schools -",
+        "publisher": "Henry Adjei Ventures Learner’s Book 5"
+      },
+      {
+        "sn": "107",
+        "title": "A Series – Our World and Our People for Ghana Basic Schools -",
+        "publisher": "Henry Adjei Ventures Learner’s Book 6"
+      },
+      {
+        "sn": "108",
+        "title": "xcellence Series – Ghanaian Language – Asante Twi for Ghanaian",
+        "publisher": "Excellence Publication and Schools Book 4                                                    Stationeries Limited"
+      },
+      {
+        "sn": "109",
+        "title": "xcellence Series – Ghanaian Language – Asante Twi for Ghanaian",
+        "publisher": "Excellence Publication and Schools Book 5                                                    Stationeries Limited"
+      },
+      {
+        "sn": "110",
+        "title": "xcellence Series – Ghanaian Language – Asante Twi for Ghanaian",
+        "publisher": "Excellence Publication and Schools Book 6                                                    Stationeries Limited"
+      },
+      {
+        "sn": "111",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 4",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "112",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 5",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "113",
+        "title": "remsco Series – Asante Twi Nyansap4 Gyinap1n 6",
+        "publisher": "Bureau of Ghana Languages"
+      },
+      {
+        "sn": "114",
+        "title": "istory of Ghana Activity Book Term 1 Book 4",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "115",
+        "title": "istory of Ghana Pupil’s Course Book Term 1 Book 4",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "116",
+        "title": "istory of Ghana Activity Book Term 1 Book 5",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "117",
+        "title": "istory of Ghana Pupil’s Course Book Term 1 Book 5",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "118",
+        "title": "istory of Ghana Activity Book Term 1 Book 6",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "119",
+        "title": "istory of Ghana Pupil’s Course Book Term 1 Book 6",
+        "publisher": "Alpha Virtual Academy"
+      },
+      {
+        "sn": "120",
+        "title": "erby Series – History of Ghana for Basic 4 Learners",
+        "publisher": "Reuben Enterprise"
+      },
+      {
+        "sn": "121",
+        "title": "erby Series – History of Ghana for Basic 5 Learners",
+        "publisher": "Reuben Enterprise"
+      },
+      {
+        "sn": "122",
+        "title": "erby Series – History of Ghana for Basic 6 Learners",
+        "publisher": "Reuben Enterprise"
+      },
+      {
+        "sn": "123",
+        "title": "A Series – History for Ghana Schools Learner’s Book 4",
+        "publisher": "Henry Adjei Ventures"
+      },
+      {
+        "sn": "124",
+        "title": "A Series – History for Ghana Schools Learner’s Book 5",
+        "publisher": "Henry Adjei Ventures"
+      },
+      {
+        "sn": "125",
+        "title": "A Series – History for Ghana Schools Learner’s Book 6",
+        "publisher": "Henry Adjei Ventures"
+      },
+      {
+        "sn": "126",
+        "title": "ictory Series – History for Ghana Schools Book 4",
+        "publisher": "Nabaf Victory Publsihers"
+      },
+      {
+        "sn": "127",
+        "title": "ictory Series – History for Ghana Schools Book 5",
+        "publisher": "Nabaf Victory Publsihers"
+      },
+      {
+        "sn": "128",
+        "title": "ictory Series – History for Ghana Schools Book 6",
+        "publisher": "Nabaf Victory Publsihers"
+      },
+      {
+        "sn": "129",
+        "title": "imple Mathematics Activity Book 4",
+        "publisher": "Michael Ankrah Publication"
+      },
+      {
+        "sn": "130",
+        "title": "imple Mathematics Activity Book 5",
+        "publisher": "Michael Ankrah Publication"
+      },
+      {
+        "sn": "131",
+        "title": "imple Mathematics Activity Book 6",
+        "publisher": "Michael Ankrah Publication"
+      },
+      {
+        "sn": "132",
+        "title": "honics Made Easy Work book for Basic 4",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "133",
+        "title": "honics Made Easy Work book for Basic 5",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "134",
+        "title": "honics Made Easy Work book for Basic 6",
+        "publisher": "Vimesh Publications"
+      },
+      {
+        "sn": "135",
+        "title": "ir Kuta Series Computing for Basic 4",
+        "publisher": "SchneiderKuta Publications"
+      },
+      {
+        "sn": "136",
+        "title": "ir Kuta Series Computing for Basic 5",
+        "publisher": "SchneiderKuta Publications"
+      },
+      {
+        "sn": "137",
+        "title": "ir Kuta Series Computing for Basic 6",
+        "publisher": "SchneiderKuta Publications"
+      },
+      {
+        "sn": "138",
+        "title": "isons Francais Book 4",
+        "publisher": "Dr. Smith Kow Quainoo"
+      },
+      {
+        "sn": "139",
+        "title": "dvocate Series - Phonics Skills Book 4",
+        "publisher": "Advocate Publishing WĂŐĞ\u0003ͮ\u0003ϯϵ\u0003\u0003"
+      }
     ],
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind Mathematics for JHS", "class": "B7-B9", "abbr": "Mastermind Maths B7-B9"},
-      {"publisher": "Aki-Ola", "title": "Aki-Ola Mathematics for JHS", "class": "B7-B9", "abbr": "Aki-Ola Maths B7-B9"}
-    ]
-  },
-  "Science": {
-    "B1-B3": [
-      {"publisher": "Mastermind", "title": "Mastermind Science for Primary Schools", "class": "B1-B3", "abbr": "Mastermind Science B1-B3"}
+    "Junior High School (B7-B9)": [
+      {
+        "sn": "1",
+        "title": "Antidote To Common Errors In English",
+        "publisher": "Emmanuel Turkson"
+      },
+      {
+        "sn": "2",
+        "title": "The Complete Students Companion for Junior Secondary Schools",
+        "publisher": "EPP Books and Services"
+      },
+      {
+        "sn": "3",
+        "title": "A Comprehensive Approach to the New Common Core Programme Mathematics JHS 1",
+        "publisher": "Ruben Kofi Danquah"
+      },
+      {
+        "sn": "4",
+        "title": "Rapid English Pronuaciations and Errors",
+        "publisher": "Victor Kenneth N. Awlavi"
+      },
+      {
+        "sn": "5",
+        "title": "Revised Essay Points and Examples for Junior High Schools",
+        "publisher": "Seth Osei-Agyen"
+      },
+      {
+        "sn": "6",
+        "title": "A Comprehensive Approach to the New Common Core Programme Science JHS 1",
+        "publisher": "Ruben Kofi Danquah"
+      },
+      {
+        "sn": "7",
+        "title": "MK Series English Grammar for Junior High Schools",
+        "publisher": "Moro Kabore Ventures"
+      },
+      {
+        "sn": "8",
+        "title": "Automobile Guide for everyday People JHS/SHS/SHTS",
+        "publisher": "Nyarko Asiamah"
+      },
+      {
+        "sn": "9",
+        "title": "A Comprehensive Approach to the New Common Core Programme Mathematics JHS 2",
+        "publisher": "Ruben Kofi Danquah"
+      },
+      {
+        "sn": "10",
+        "title": "A Comprehensive Approach to the New Common Core Programme Mathematics JHS 3",
+        "publisher": "Ruben Kofi Danquah"
+      },
+      {
+        "sn": "11",
+        "title": "A Comprehensive Approach to the New Common Core Programme Science JHS 2",
+        "publisher": "Ruben Kofi Danquah"
+      },
+      {
+        "sn": "12",
+        "title": "A Comprehensive Approach to the New Common Core Programme Science JHS 3",
+        "publisher": "Ruben Kofi Danquah WĂŐĞ\u0003ͮ\u0003ϰϬ\u0003\u0003"
+      }
     ],
-    "B4-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind Science Pupil's Book", "class": "B4-B6", "abbr": "Mastermind Science B4-B6"},
-      {"publisher": "Macmillan", "title": "Macmillan Primary Science", "class": "B4-B6", "abbr": "Macmillan Science B4-B6"}
-    ],
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind Integrated Science for JHS", "class": "B7-B9", "abbr": "Mastermind Science B7-B9"},
-      {"publisher": "Aki-Ola", "title": "Aki-Ola Integrated Science", "class": "B7-B9", "abbr": "Aki-Ola Science B7-B9"}
-    ]
-  },
-  "History": {
-    "B1-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind History for Primary Schools", "class": "B1-B6", "abbr": "Mastermind History B1-B6"}
-    ]
-  },
-  "Social Studies": {
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind Social Studies for JHS", "class": "B7-B9", "abbr": "Mastermind Social Studies B7-B9"},
-      {"publisher": "Aki-Ola", "title": "Aki-Ola Social Studies for JHS", "class": "B7-B9", "abbr": "Aki-Ola Social Studies B7-B9"}
-    ]
-  },
-  "Religious and Moral Education (RME)": {
-    "B1-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind Religious and Moral Education", "class": "B1-B6", "abbr": "Mastermind RME B1-B6"}
-    ],
-    "B7-B9": [
-      {"publisher": "Aki-Ola", "title": "Aki-Ola Religious and Moral Education", "class": "B7-B9", "abbr": "Aki-Ola RME B7-B9"}
-    ]
-  },
-  "Computing (ICT)": {
-    "B4-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind Computing for Primary Schools", "class": "B4-B6", "abbr": "Mastermind Computing B4-B6"}
-    ],
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind Computing for JHS", "class": "B7-B9", "abbr": "Mastermind Computing B7-B9"}
-    ]
-  },
-  "Creative Arts and Design": {
-    "B1-B6": [
-      {"publisher": "Mastermind", "title": "Mastermind Creative Arts for Primary Schools", "class": "B1-B6", "abbr": "Mastermind Creative Arts B1-B6"}
-    ]
-  },
-  "French Language": {
-    "B4-B6": [
-      {"publisher": "Akopem", "title": "Akopem French for Primary Schools", "class": "B4-B6", "abbr": "Akopem French B4-B6"}
-    ],
-    "B7-B9": [
-      {"publisher": "Akopem", "title": "Akopem French for JHS", "class": "B7-B9", "abbr": "Akopem French B7-B9"},
-      {"publisher": "Aki-Ola", "title": "Aki-Ola French for JHS", "class": "B7-B9", "abbr": "Aki-Ola French B7-B9"}
-    ]
-  },
-  "Career Technology": {
-    "B7-B9": [
-      {"publisher": "Mastermind", "title": "Mastermind Career Technology for JHS", "class": "B7-B9", "abbr": "Mastermind Career Tech B7-B9"}
-    ]
-  },
-  "Physical Education": {
-    "B1-B6": [
-      {"publisher": "GES", "title": "GES Physical Education Teacher's Guide", "class": "B1-B6", "abbr": "GES PE Guide B1-B6"}
+    "E-Learning / Games / Manipulatives / Manuals": [
+      {
+        "sn": "1",
+        "title": "TLM Ghana - Graidup for age 3+ Software",
+        "publisher": "TLM Ghana Ltd"
+      },
+      {
+        "sn": "2",
+        "title": "KIZZO Game",
+        "publisher": "Daniel Edusei"
+      },
+      {
+        "sn": "3",
+        "title": "Social Studies - Atlas for Junior High Schools",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "4",
+        "title": "Social Studies - Atlas for Junior High Schools - Workbook",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "5",
+        "title": "My Global Community – Atlas for Basic Schools",
+        "publisher": "Amanor Isaac Tawiah"
+      },
+      {
+        "sn": "6",
+        "title": "Colouring Wheel And Creative Drawing In Practice",
+        "publisher": "Prof. Dr. Ys Peligah"
+      },
+      {
+        "sn": "7",
+        "title": "Science Set",
+        "publisher": "Dext Technology Limited"
+      },
+      {
+        "sn": "8",
+        "title": "Lively Minds Programme Games/Play Materials",
+        "publisher": "Lively Minds"
+      },
+      {
+        "sn": "9",
+        "title": "Milestones to Ghana’s Independence",
+        "publisher": "\u0018ĞĞ\u0003\u0018ĞĞ\u0003'ůŽďĂů"
+      },
+      {
+        "sn": "10",
+        "title": "Magnetic Jigsaw Puzzle and Drawing Board",
+        "publisher": "\u0018ĞĞ\u0003\u0018ĞĞ\u0003'ůŽďĂů"
+      },
+      {
+        "sn": "11",
+        "title": "Heads of States/Presidents of Ghana (Since Independence)",
+        "publisher": "\u0018ĞĞ\u0003\u0018ĞĞ\u0003'ůŽďĂů"
+      },
+      {
+        "sn": "12",
+        "title": "Magnetic Jigsaw Puzzle and Drawing Board",
+        "publisher": "\u0018ĞĞ\u0003\u0018ĞĞ\u0003'ůŽďĂů"
+      },
+      {
+        "sn": "13",
+        "title": "Punches",
+        "publisher": "dƌĂŝŶŝŶŐ\u0003ĂŶĚ\u0003\u001cĚƵĐĂƚŝŽŶ\u0003ŝŶ\u0003\u0018ŝĨĨĞƌĞŶƚ\u0003 \u0018ŝŵĞŶƐŝŽŶƐ\u0003;d\u001c\u0018\u0018Ϳ"
+      },
+      {
+        "sn": "14",
+        "title": "Construction Cards and Catridge Papers",
+        "publisher": "dƌĂŝŶŝŶŐ\u0003ĂŶĚ\u0003\u001cĚƵĐĂƚŝŽŶ\u0003ŝŶ\u0003\u0018ŝĨĨĞƌĞŶƚ\u0003 \u0018ŝŵĞŶƐŝŽŶƐ\u0003;d\u001c\u0018\u0018Ϳ"
+      },
+      {
+        "sn": "15",
+        "title": "Magnetic Boards and Fig-Saw Puzzles",
+        "publisher": "dƌĂŝŶŝŶŐ\u0003ĂŶĚ\u0003\u001cĚƵĐĂƚŝŽŶ\u0003ŝŶ\u0003\u0018ŝĨĨĞƌĞŶƚ\u0003 \u0018ŝŵĞŶƐŝŽŶƐ\u0003;d\u001c\u0018\u0018Ϳ"
+      },
+      {
+        "sn": "16",
+        "title": "Rainbow Conversational Posters",
+        "publisher": "John Akwasi Amponsah"
+      },
+      {
+        "sn": "17",
+        "title": "Reading And Literacy Proficiency And Skills For English Langua Teachers Of Basic School",
+        "publisher": "ge Emmanuel A. Amoako"
+      },
+      {
+        "sn": "18",
+        "title": "Understanding English – The Influence Of Latin, Greek, French Others – Teacher’s Guide",
+        "publisher": "And Joseph K.A. Bimpong"
+      },
+      {
+        "sn": "19",
+        "title": "English Handbook and Study Guide for Schools - A Comprehensive English Language Reference Book",
+        "publisher": "EPP Books Services"
+      },
+      {
+        "sn": "20",
+        "title": "Social Security In Ghana Teacher’s Guide for JHS",
+        "publisher": "SSNIT"
+      },
+      {
+        "sn": "21",
+        "title": "Social Security In Ghana Teacher’s Guide for SHS",
+        "publisher": "SSNIT"
+      },
+      {
+        "sn": "22",
+        "title": "Hands-On Sciene Resource Manual (for teachers) Basic 1-3",
+        "publisher": "Practical Education Network"
+      },
+      {
+        "sn": "23",
+        "title": "Hands-on Science Resource Manual (for Teachers) Basic 4-6",
+        "publisher": "Practical Education Network"
+      },
+      {
+        "sn": "24",
+        "title": "Thematic Integrated Approach for Learning Areas with Emphasis Language and Literacy",
+        "publisher": "on Emma Adjei Enterprise"
+      },
+      {
+        "sn": "25",
+        "title": "Colega- A Manual for Teaching Children's Right for Primary",
+        "publisher": "Geneva Office for Human Rights Education"
+      },
+      {
+        "sn": "26",
+        "title": "Colega- A Manual for Teaching Children's Right for Secondary",
+        "publisher": "Geneva Office for Human Rights Education"
+      },
+      {
+        "sn": "27",
+        "title": "Hands -on Mathematics Resourc Manual (For Teachers) Basic 1-3",
+        "publisher": "Practical Education Network"
+      },
+      {
+        "sn": "28",
+        "title": "Hands on Mathematics Resource Manual (For Teachers) Basic 4-6",
+        "publisher": "Practical Education Network"
+      },
+      {
+        "sn": "29",
+        "title": "Hands -on Mathematics Resources Manual (For Teachers) JHS 1-3",
+        "publisher": "Practical Education Network"
+      },
+      {
+        "sn": "30",
+        "title": "Nature of Music",
+        "publisher": "John O Magnus"
+      },
+      {
+        "sn": "31",
+        "title": "Taekwondo Training Guide",
+        "publisher": "Maxwell T. Alornyo"
+      },
+      {
+        "sn": "32",
+        "title": "MAHAMA TIŊGBANI BINVURA NI BINNƐMA NAM TIŊA",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "33",
+        "title": "BIHI NI BIKURA BUKU (LITAAFI)",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "34",
+        "title": "BUKU AYI – KARIŊDURI 6-9",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "35",
+        "title": "MAHAMA NƆHI NI NOONSI NAM TIŊA",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "36",
+        "title": "BIHI NI BIKURA BUKU (LITAAFI)",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "37",
+        "title": "BUKU AYI – KARIŊDURI 3-6",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "38",
+        "title": "MAHAMA BINKƆBIRI NAM TIŊA",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "39",
+        "title": "BIHI NI BIKURA BUKU (LITAAFI)",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ"
+      },
+      {
+        "sn": "40",
+        "title": "BUKU TUULI – KARIŊDURI 3-6",
+        "publisher": "/ďƌĂŚŝŵ\u0003DĂŚĂŵĂ WĂŐĞ\u0003ͮ\u0003ϱϬ\u0003\u0003"
+      }
     ]
   }
 }

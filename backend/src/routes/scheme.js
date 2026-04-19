@@ -6,6 +6,7 @@ const Scheme  = require('../models/Scheme');
 const Lesson  = require('../models/Lesson');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { generateLessonFromScheme, CLASS_LABEL } = require('../services/aiService');
+const { extractTextFromImage } = require('../services/visionService');
 
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 * 1024 * 1024 } });
@@ -121,31 +122,40 @@ router.post('/upload', protect, upload.single('schemeFile'), async (req, res) =>
   }
 });
 
-// ── POST /api/scheme/paste ──────────────────────────────────────────────────
-router.post('/paste', protect, async (req, res) => {
-  const { classCode, subject, term, rawText } = req.body;
-  if (!classCode || !subject || !term || !rawText?.trim()) {
-    return res.status(400).json({ success: false, message: 'classCode, subject, term, and rawText are required.' });
+// ── POST /api/scheme/camera ─────────────────────────────────────────────────
+// Process a photo of a scheme using Gemini Vision
+router.post('/camera', protect, upload.single('image'), async (req, res) => {
+  const { classCode, subject, term } = req.body;
+  if (!req.file || !classCode || !subject || !term) {
+    return res.status(400).json({ success: false, message: 'Missing image or required parameters.' });
   }
+
   let scheme;
   try {
     scheme = await Scheme.findOneAndUpdate(
       { userId: req.user._id, classCode, subject, term: Number(term) },
-      { status: 'parsing', rawText: rawText.trim(), sourceType: 'paste', weeklyBreakdown: [] },
+      { status: 'parsing', sourceType: 'camera', weeklyBreakdown: [] },
       { upsert: true, new: true }
     );
-    const weeklyBreakdown = await parseSchemeText(rawText.trim(), classCode, subject, Number(term));
+
+    const rawText = await extractTextFromImage(req.file.buffer, req.file.mimetype);
+    if (!rawText.trim()) throw new Error('Could not extract any text from image.');
+
+    const weeklyBreakdown = await parseSchemeText(rawText, classCode, subject, Number(term));
+
     const updated = await Scheme.findByIdAndUpdate(scheme._id, {
+      rawText,
       weeklyBreakdown,
       totalWeeks: weeklyBreakdown.length,
       status: 'ready',
       parsedAt: new Date(),
     }, { new: true });
+
     res.json({ success: true, scheme: updated });
   } catch (err) {
-    console.error('Scheme paste error:', err);
+    console.error('Scheme camera OCR error:', err);
     if (scheme) await Scheme.findByIdAndUpdate(scheme._id, { status: 'error', errorMessage: err.message });
-    res.status(500).json({ success: false, message: err.message || 'Failed to parse pasted scheme.' });
+    res.status(500).json({ success: false, message: err.message || 'Vision OCR failed.' });
   }
 });
 
