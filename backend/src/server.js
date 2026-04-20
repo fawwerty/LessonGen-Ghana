@@ -62,11 +62,14 @@ app.use('/api/payments', paymentRoutes);
 app.use('/api/curriculum', curriculumRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/scheme', schemeRoutes);
-app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/dashboard', (req, res, next) => {
+  console.log('🎯 [Match] Request hit the /api/dashboard mount point');
+  next();
+}, dashboardRoutes);
 
 app.get('/api/health', (req, res) => res.json({ 
   status: 'ok', 
-  version: '1.0.5-final-cleanup',
+  version: '1.0.6-force-deploy',
   timestamp: new Date().toISOString() 
 }));
 app.get('/api/ping', (req, res) => res.json({ success: true, message: 'Global API is alive' }));
