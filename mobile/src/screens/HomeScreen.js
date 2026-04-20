@@ -73,7 +73,7 @@ export default function HomeScreen({ navigation }) {
             >
               <Text style={s.primaryBtnText}>Start Registration Free  →</Text>
             </TouchableOpacity>
-            <Text style={[s.disclaimer, { color: isDark ? 'rgba(255,255,255,0.5)' : 'rgba(13,59,34,0.5)' }]}>
+            <Text style={[s.disclaimer, { color: 'rgba(255,255,255,0.7)' }]}>
               Join 5,000+ teachers across Ghana today.
             </Text>
           </View>

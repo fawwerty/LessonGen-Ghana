@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity, StyleSheet,
   ScrollView, ActivityIndicator, KeyboardAvoidingView, Platform,
@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuth } from '../utils/AuthContext';
+import { authAPI } from '../services/api';
 
 const C = {
   g1: '#0D3B22', g2: '#1A6B3C', gd: '#C8971A', gb: '#8A6510',
@@ -18,8 +19,26 @@ export default function LoginScreen({ navigation }) {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [serverStatus, setServerStatus] = useState('checking'); // checking, online, offline
   const { login } = useAuth();
   const insets = useSafeAreaInsets();
+
+  useEffect(() => {
+    checkConnection();
+  }, []);
+
+  const checkConnection = async () => {
+    try {
+      await authAPI.me(); // Simple authenticated ping (will 401 if unauth, but that proves connectivity)
+      setServerStatus('online');
+    } catch (err) {
+      if (err.response?.status === 401) {
+        setServerStatus('online'); // 401 means server reached but not logged in
+      } else {
+        setServerStatus('offline');
+      }
+    }
+  };
 
   const handleLogin = async () => {
     if (!email.trim() || !password) {
@@ -129,6 +148,19 @@ export default function LoginScreen({ navigation }) {
                 <Text style={s.linkAccent}>Register here</Text>
               </Text>
             </TouchableOpacity>
+
+            {/* Server Status */}
+            <View style={s.statusRow}>
+              <View style={[s.dot, { backgroundColor: serverStatus === 'online' ? '#10B981' : serverStatus === 'offline' ? '#EF4444' : '#F59E0B' }]} />
+              <Text style={s.statusText}>
+                {serverStatus === 'online' ? 'Server Connected' : serverStatus === 'offline' ? 'Connection Error' : 'Checking Server...'}
+              </Text>
+              {serverStatus === 'offline' && (
+                <TouchableOpacity onPress={checkConnection}>
+                  <Text style={s.retryText}>Retry</Text>
+                </TouchableOpacity>
+              )}
+            </View>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
@@ -181,7 +213,14 @@ const s = StyleSheet.create({
     shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.2, shadowRadius: 8, elevation: 6,
   },
   btnText: { color: C.white, fontSize: 15, fontWeight: '800' },
-  linkRow: { marginTop: 18, alignItems: 'center' },
+  linkRow: { marginTop: 18, alignItems: 'center', marginBottom: 20 },
   linkText: { fontSize: 13, color: C.ink3, fontWeight: '500' },
   linkAccent: { color: C.gd, fontWeight: '700' },
+  statusRow: { 
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', 
+    gap: 8, paddingTop: 16, borderTopWidth: 1, borderTopColor: 'rgba(0,0,0,0.05)' 
+  },
+  dot: { width: 8, height: 8, borderRadius: 4 },
+  statusText: { fontSize: 11, fontWeight: '700', color: C.ink4, letterSpacing: 0.5 },
+  retryText: { fontSize: 11, fontWeight: '800', color: '#3B82F6', marginLeft: 4 },
 });
