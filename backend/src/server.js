@@ -24,25 +24,14 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
   : ['*']; // Default to all in development
 
 app.use(cors({
-  origin: (origin, callback) => {
-    // Debug: Log the incoming origin
-    if (origin) console.log(`🌐 Incoming Request Origin: ${origin}`);
-    
-    // allow requests with no origin (like mobile apps) or if in allowed list or if * exists
-    if (!origin || allowedOrigins.includes('*') || allowedOrigins.indexOf(origin) !== -1) {
-      return callback(null, true);
-    }
-    
-    // Check if origin matches a local ip or expo pattern
-    if (origin.startsWith('exp://') || origin.includes('172.20.10')) {
-      return callback(null, true);
-    }
-
-    console.error(`🔴 CORS Blocked: Origin ${origin} is not allowed.`);
-    callback(new Error('Not allowed by CORS'));
-  },
-  credentials: true
+  origin: true, // Allow all origins temporarily to force connection
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
 }));
+
+// Manual OPTIONS handler for extra reliability
+app.options('*', cors());
 
 // ── Rate limiting ────────────────────────────────────────────────────────────
 const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100, message: 'Too many requests, try again later.' });

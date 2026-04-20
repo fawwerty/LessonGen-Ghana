@@ -4,12 +4,16 @@ import * as SecureStore from 'expo-secure-store';
 // ── Backend URL ───────────────────────────────────────────────────────────────
 // Production: Render deployment
 // NOTE: Render free tier may spin down after inactivity — first request can take ~30s.
-const BASE_URL = 'https://lessongen-ghana.onrender.com/api/';
+// NOTE: Render free tier may spin down after inactivity — first request can take ~30s.
+const BASE_URL = 'https://lessongen-ghana.onrender.com/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
-  timeout: 90000, // 90s to allow Render cold-start spin-up
-  headers: { 'Content-Type': 'application/json' },
+  timeout: 90000, 
+  headers: { 
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  },
 });
 
 // ── Request Interceptor — attach JWT & Logging ──────────────────────────────
@@ -19,7 +23,8 @@ api.interceptors.request.use(async (config) => {
     if (token) config.headers.Authorization = `Bearer ${token}`;
     
     // Debug logging
-    console.log(`🚀 [API Request] ${config.method?.toUpperCase()} ${config.url}`);
+    const fullURL = `${config.baseURL}/${config.url}`;
+    console.log(`🚀 [API Request] ${config.method?.toUpperCase()} ${fullURL}`);
     if (config.data) console.log('📦 [Payload]', JSON.stringify(config.data, null, 2));
     
   } catch { /* ignore */ }

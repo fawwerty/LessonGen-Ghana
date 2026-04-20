@@ -34,15 +34,26 @@ export default function RegisterScreen({ navigation }) {
   }, []);
 
   const checkConnection = async () => {
+    setServerStatus('checking');
+    console.log('🔍 [Diagnostic] Starting Network Test...');
+    
+    // 1. Test General Internet
     try {
-      await authAPI.me();
+      await fetch('https://google.com', { mode: 'no-cors' });
+      console.log('✅ [Diagnostic] Phone has internet (Google reached)');
+    } catch (e) {
+      console.warn('❌ [Diagnostic] Phone NO INTERNET:', e.message);
+    }
+
+    // 2. Test Render Health
+    try {
+      const start = Date.now();
+      const res = await fetch('https://lessongen-ghana.onrender.com/api/health');
+      console.log(`✅ [Diagnostic] Render Health OK (${Date.now() - start}ms)`);
       setServerStatus('online');
-    } catch (err) {
-      if (err.response?.status === 401) {
-        setServerStatus('online');
-      } else {
-        setServerStatus('offline');
-      }
+    } catch (e) {
+      console.warn('❌ [Diagnostic] Render Health FAILED:', e.message);
+      setServerStatus('offline');
     }
   };
 
