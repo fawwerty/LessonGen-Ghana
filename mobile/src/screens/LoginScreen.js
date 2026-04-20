@@ -19,26 +19,9 @@ export default function LoginScreen({ navigation }) {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [serverStatus, setServerStatus] = useState('checking'); // checking, online, offline
   const { login } = useAuth();
   const insets = useSafeAreaInsets();
 
-  useEffect(() => {
-    checkConnection();
-  }, []);
-
-  const checkConnection = async () => {
-    try {
-      await authAPI.me(); // Simple authenticated ping (will 401 if unauth, but that proves connectivity)
-      setServerStatus('online');
-    } catch (err) {
-      if (err.response?.status === 401) {
-        setServerStatus('online'); // 401 means server reached but not logged in
-      } else {
-        setServerStatus('offline');
-      }
-    }
-  };
 
   const handleLogin = async () => {
     if (!email.trim() || !password) {
@@ -149,18 +132,6 @@ export default function LoginScreen({ navigation }) {
               </Text>
             </TouchableOpacity>
 
-            {/* Server Status */}
-            <View style={s.statusRow}>
-              <View style={[s.dot, { backgroundColor: serverStatus === 'online' ? '#10B981' : serverStatus === 'offline' ? '#EF4444' : '#F59E0B' }]} />
-              <Text style={s.statusText}>
-                {serverStatus === 'online' ? 'Server Connected' : serverStatus === 'offline' ? 'Connection Error' : 'Checking Server...'}
-              </Text>
-              {serverStatus === 'offline' && (
-                <TouchableOpacity onPress={checkConnection}>
-                  <Text style={s.retryText}>Retry</Text>
-                </TouchableOpacity>
-              )}
-            </View>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>

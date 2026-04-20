@@ -3,6 +3,9 @@ const router = express.Router();
 const { protect } = require('../middleware/auth');
 const Lesson = require('../models/Lesson');
 const Scheme = require('../models/Scheme');
+const { authAPI } = require('../../mobile/src/services/api'); // Ignore this line, just for reference if needed
+
+router.get('/ping', (req, res) => res.json({ success: true, message: 'Dashboard router is alive' }));
 
 // GET /api/dashboard/stats
 router.get('/stats', protect, async (req, res) => {

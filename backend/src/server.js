@@ -73,6 +73,19 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => console.log(`🚀 LessonGen API running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`🚀 LessonGen API running on port ${PORT}`);
+  
+  // Debug: list all routes
+  const routes = app._router.stack
+    .filter(r => r.route || r.name === 'router')
+    .map(r => {
+      if (r.route) return `[ROUTE] ${Object.keys(r.route.methods).join(',').toUpperCase()} ${r.route.path}`;
+      if (r.name === 'router') return `[ROUTER] ${r.regexp.toString()}`;
+      return null;
+    })
+    .filter(Boolean);
+  console.log('📋 Registered Routes:\n', routes.join('\n'));
+});
 
 module.exports = app;

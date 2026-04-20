@@ -25,37 +25,9 @@ export default function RegisterScreen({ navigation }) {
   const [form, setForm] = useState({ name: '', email: '', school: '', password: '', role: 'teacher' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [serverStatus, setServerStatus] = useState('checking'); // checking, online, offline
   const { register } = useAuth();
   const insets = useSafeAreaInsets();
 
-  useEffect(() => {
-    checkConnection();
-  }, []);
-
-  const checkConnection = async () => {
-    setServerStatus('checking');
-    console.log('🔍 [Diagnostic] Starting Network Test...');
-    
-    // 1. Test General Internet
-    try {
-      await fetch('https://google.com', { mode: 'no-cors' });
-      console.log('✅ [Diagnostic] Phone has internet (Google reached)');
-    } catch (e) {
-      console.warn('❌ [Diagnostic] Phone NO INTERNET:', e.message);
-    }
-
-    // 2. Test Vercel Proxy Bridge
-    try {
-      const start = Date.now();
-      const res = await fetch('https://lesson-gen-ghana.vercel.app/api-proxy/health');
-      console.log(`✅ [Diagnostic] Vercel Proxy OK (${Date.now() - start}ms)`);
-      setServerStatus('online');
-    } catch (e) {
-      console.warn('❌ [Diagnostic] Vercel Proxy FAILED:', e.message);
-      setServerStatus('offline');
-    }
-  };
 
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
 
@@ -179,18 +151,6 @@ export default function RegisterScreen({ navigation }) {
               </Text>
             </TouchableOpacity>
 
-            {/* Server Status */}
-            <View style={s.statusRow}>
-              <View style={[s.dot, { backgroundColor: serverStatus === 'online' ? '#10B981' : serverStatus === 'offline' ? '#EF4444' : '#F59E0B' }]} />
-              <Text style={s.statusText}>
-                {serverStatus === 'online' ? 'Server Connected' : serverStatus === 'offline' ? 'Connection Error' : 'Checking Server...'}
-              </Text>
-              {serverStatus === 'offline' && (
-                <TouchableOpacity onPress={checkConnection}>
-                  <Text style={s.retryText}>Retry</Text>
-                </TouchableOpacity>
-              )}
-            </View>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
