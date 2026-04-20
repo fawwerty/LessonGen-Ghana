@@ -33,7 +33,11 @@ api.interceptors.response.use(
     return res;
   },
   async (err) => {
-    console.warn(`❌ [API Error] ${err.response?.status || 'Network Error'} ${err.config?.url}`);
+    const errorDetail = err.response?.status 
+      ? `${err.response.status}` 
+      : `${err.code || 'UNKNOWN'}: ${err.message}`;
+
+    console.warn(`❌ [API Error] ${errorDetail} for ${err.config?.url}`);
     if (err.response?.data) console.warn('💬 [Server Message]', JSON.stringify(err.response.data, null, 2));
 
     if (err.response?.status === 401) {

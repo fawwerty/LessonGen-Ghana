@@ -16,6 +16,7 @@ const schemeRoutes = require('./routes/scheme');
 const dashboardRoutes = require('./routes/dashboard');
 
 const app = express();
+// app.use(helmet()); // Temporarily disable for debugging network errors
 app.set('trust proxy', 1);
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
