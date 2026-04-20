@@ -1,3 +1,10 @@
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('🔥 [Unhandled Rejection] at:', promise, 'reason:', reason);
+});
+process.on('uncaughtException', (err) => {
+  console.error('🔥 [Uncaught Exception]:', err);
+});
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -79,7 +86,7 @@ app.get('/api/health', (req, res) => {
 
   res.json({ 
     status: 'ok', 
-    version: '1.0.8-fixed-deploy',
+    version: '1.0.9-fresh-deps',
     timestamp: new Date().toISOString(),
     registeredRoutes: routes
   });
