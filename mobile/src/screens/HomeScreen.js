@@ -35,7 +35,7 @@ export default function HomeScreen({ navigation }) {
             <View style={[s.logoBadge, { backgroundColor: isDark ? C.gd : C.g1 }]}>
               <Text style={[s.logoIcon, { color: isDark ? C.g1 : C.white }]}>L</Text>
             </View>
-            <Text style={[s.brand, { color: isDark ? C.white : C.g1 }]}>LessonGen</Text>
+            <Text style={[s.brand, { color: C.white }]}>LessonGen</Text>
           </View>
 
           <View style={s.headerActions}>
@@ -43,12 +43,12 @@ export default function HomeScreen({ navigation }) {
               <Ionicons 
                 name={isDark ? 'sunny' : 'moon'} 
                 size={22} 
-                color={isDark ? '#FCD34D' : C.g1} 
+                color={isDark ? '#FCD34D' : '#FDE68A'} 
               />
             </TouchableOpacity>
             
             <TouchableOpacity onPress={() => navigation.navigate('Login')} style={s.signInLink}>
-              <Text style={[s.signInText, { color: isDark ? C.white : C.g1 }]}>Sign In</Text>
+              <Text style={[s.signInText, { color: C.white }]}>Sign In</Text>
             </TouchableOpacity>
           </View>
         </View>
