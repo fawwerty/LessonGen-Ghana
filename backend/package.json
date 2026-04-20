@@ -1,6 +1,6 @@
 {
   "name": "lessongen-backend",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LessonGen Ghana Backend API",
   "engines": {
     "node": ">=18.0.0"
@@ -8,6 +8,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
+    "build": "echo 'No build step required'",
     "dev": "nodemon src/server.js",
     "seed": "node src/scripts/seedCurriculum.js"
   },
