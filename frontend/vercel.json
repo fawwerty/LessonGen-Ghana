@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api-proxy/:path*",
+      "destination": "https://lessongen-ghana.onrender.com/api/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

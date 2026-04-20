@@ -45,14 +45,14 @@ export default function RegisterScreen({ navigation }) {
       console.warn('❌ [Diagnostic] Phone NO INTERNET:', e.message);
     }
 
-    // 2. Test Render Health
+    // 2. Test Vercel Proxy Bridge
     try {
       const start = Date.now();
-      const res = await fetch('https://lessongen-ghana.onrender.com/api/health');
-      console.log(`✅ [Diagnostic] Render Health OK (${Date.now() - start}ms)`);
+      const res = await fetch('https://lesson-gen-ghana.vercel.app/api-proxy/health');
+      console.log(`✅ [Diagnostic] Vercel Proxy OK (${Date.now() - start}ms)`);
       setServerStatus('online');
     } catch (e) {
-      console.warn('❌ [Diagnostic] Render Health FAILED:', e.message);
+      console.warn('❌ [Diagnostic] Vercel Proxy FAILED:', e.message);
       setServerStatus('offline');
     }
   };

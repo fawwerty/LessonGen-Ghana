@@ -5,7 +5,7 @@ import * as SecureStore from 'expo-secure-store';
 // Production: Render deployment
 // NOTE: Render free tier may spin down after inactivity — first request can take ~30s.
 // NOTE: Render free tier may spin down after inactivity — first request can take ~30s.
-const BASE_URL = 'https://lessongen-ghana.onrender.com/api';
+const BASE_URL = 'https://lesson-gen-ghana.vercel.app/api-proxy';
 
 const api = axios.create({
   baseURL: BASE_URL,
