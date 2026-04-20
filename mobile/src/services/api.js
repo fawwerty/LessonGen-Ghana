@@ -12,7 +12,8 @@ const api = axios.create({
   timeout: 90000, 
   headers: { 
     'Content-Type': 'application/json',
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'User-Agent': 'LessonGen-Mobile-App/1.0.0 (iOS)'
   },
 });
 

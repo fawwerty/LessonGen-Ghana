@@ -19,6 +19,12 @@ const app = express();
 // app.use(helmet()); // Temporarily disable for debugging network errors
 app.set('trust proxy', 1);
 
+// Global debug log for EVERY incoming request
+app.use((req, res, next) => {
+  console.log(`📡 [Incoming] ${req.method} ${req.url} (Origin: ${req.get('origin') || 'None'})`);
+  next();
+});
+
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',') 
   : ['*']; // Default to all in development
