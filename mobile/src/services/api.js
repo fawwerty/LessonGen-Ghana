@@ -12,19 +12,30 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
-// ── Request Interceptor — attach JWT ─────────────────────────────────────────
+// ── Request Interceptor — attach JWT & Logging ──────────────────────────────
 api.interceptors.request.use(async (config) => {
   try {
     const token = await SecureStore.getItemAsync('lg_token');
     if (token) config.headers.Authorization = `Bearer ${token}`;
+    
+    // Debug logging
+    console.log(`🚀 [API Request] ${config.method?.toUpperCase()} ${config.url}`);
+    if (config.data) console.log('📦 [Payload]', JSON.stringify(config.data, null, 2));
+    
   } catch { /* ignore */ }
   return config;
 });
 
-// ── Response Interceptor — handle 401 ────────────────────────────────────────
+// ── Response Interceptor — handle 401 & Logging ─────────────────────────────
 api.interceptors.response.use(
-  res => res,
+  (res) => {
+    console.log(`✅ [API Success] ${res.status} ${res.config.url}`);
+    return res;
+  },
   async (err) => {
+    console.warn(`❌ [API Error] ${err.response?.status || 'Network Error'} ${err.config?.url}`);
+    if (err.response?.data) console.warn('💬 [Server Message]', JSON.stringify(err.response.data, null, 2));
+
     if (err.response?.status === 401) {
       try {
         await SecureStore.deleteItemAsync('lg_token');

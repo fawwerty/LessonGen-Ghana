@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
       style={s.bg}
       resizeMode="cover"
     >
-      <View style={[s.overlay, { backgroundColor: isDark ? 'rgba(5,20,12,0.72)' : 'rgba(255,255,255,0.45)' }]} />
+      <View style={[s.overlay, { backgroundColor: isDark ? 'rgba(5,20,12,0.78)' : 'rgba(5,20,12,0.55)' }]} />
       <StatusBar style={isDark ? 'light' : 'dark'} />
       
       <SafeAreaView style={s.safe}>
@@ -56,11 +56,11 @@ export default function HomeScreen({ navigation }) {
         {/* Hero Content (Floating) */}
         <View style={s.content}>
           <View style={s.heroTextGroup}>
-            <Text style={[s.headline, { color: isDark ? C.white : C.g1 }]}>
+            <Text style={[s.headline, { color: C.white }]}>
               Smarter Lesson Notes{'\n'}
               <Text style={s.headlineAccent}>In Seconds.</Text>
             </Text>
-            <Text style={[s.sub, { color: isDark ? 'rgba(255,255,255,0.85)' : 'rgba(13,59,34,0.85)' }]}>
+            <Text style={[s.sub, { color: 'rgba(255,255,255,0.95)' }]}>
               The AI tool for Ghanaian educators. Generate NaCCA-compliant plans and export DOCX files instantly.
             </Text>
           </View>
@@ -112,9 +112,9 @@ const s = StyleSheet.create({
   signInLink: { paddingVertical: 4 },
   signInText: { fontSize: 15, fontWeight: '800' },
 
-  content: { flex: 1, justifyContent: 'center', paddingTop: 60 },
+  content: { flex: 1, justifyContent: 'center', paddingTop: 100 },
   
-  heroTextGroup: { marginBottom: 80 },
+  heroTextGroup: { marginBottom: 120 },
   headline: { 
     fontSize: 42, fontWeight: '900', lineHeight: 48, marginBottom: 20,
     textShadowColor: 'rgba(0,0,0,0.15)', textShadowOffset: { width: 0, height: 2 }, textShadowRadius: 10,
