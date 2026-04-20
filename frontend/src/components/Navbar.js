@@ -116,9 +116,11 @@ export default function Navbar() {
             </div>
               {user?.role === 'sys_admin' && (
                 <button 
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition ${loc.pathname === '/admin' ? 'bg-purple-50 text-purple-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
+                  className={`px-3 py-2 rounded-md font-medium transition ${loc.pathname === '/admin' ? 'bg-purple-50 text-purple-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`} 
                   onClick={() => navigate('/admin')}
                 >
+                  Admin
+                </button>
               )}
             </div>
 
