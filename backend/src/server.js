@@ -64,7 +64,12 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/scheme', schemeRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
-app.get('/api/health', (req, res) => res.json({ status: 'ok', service: 'LessonGen Ghana API', version: '1.0.0' }));
+app.get('/api/health', (req, res) => res.json({ 
+  status: 'ok', 
+  version: '1.0.5-final-cleanup',
+  timestamp: new Date().toISOString() 
+}));
+app.get('/api/ping', (req, res) => res.json({ success: true, message: 'Global API is alive' }));
 
 // ── Error handler ─────────────────────────────────────────────────────────────
 app.use((err, req, res, next) => {
