@@ -67,11 +67,23 @@ app.use('/api/dashboard', (req, res, next) => {
   next();
 }, dashboardRoutes);
 
-app.get('/api/health', (req, res) => res.json({ 
-  status: 'ok', 
-  version: '1.0.6-force-deploy',
-  timestamp: new Date().toISOString() 
-}));
+app.get('/api/health', (req, res) => {
+  const routes = app._router.stack
+    .filter(r => r.route || r.name === 'router')
+    .map(r => {
+      if (r.route) return `[ROUTE] ${Object.keys(r.route.methods).join(',').toUpperCase()} ${r.route.path}`;
+      if (r.name === 'router') return `[ROUTER] ${r.regexp.toString()}`;
+      return null;
+    })
+    .filter(Boolean);
+
+  res.json({ 
+    status: 'ok', 
+    version: '1.0.7-diagnostic',
+    timestamp: new Date().toISOString(),
+    registeredRoutes: routes
+  });
+});
 app.get('/api/ping', (req, res) => res.json({ success: true, message: 'Global API is alive' }));
 
 // ── Error handler ─────────────────────────────────────────────────────────────
