@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const curriculumDB = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../data/curriculum/nacca_db.json'), 'utf-8')
+  fs.readFileSync(path.join(__dirname, '../shared/curriculum/nacca_db.json'), 'utf-8')
 );
 const textbookDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/textbooks/approved_textbooks.json'), 'utf-8')
