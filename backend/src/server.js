@@ -20,21 +20,25 @@ app.set('trust proxy', 1);
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',') 
-  : ['http://localhost:3000', 'http://localhost:4000', 'http://localhost:8081'];
+  : ['*']; // Default to all in development
 
 app.use(cors({
   origin: (origin, callback) => {
-    // allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
+    // Debug: Log the incoming origin
+    if (origin) console.log(`🌐 Incoming Request Origin: ${origin}`);
     
-    const isAllowed = allowedOrigins.indexOf(origin) !== -1 || allowedOrigins.includes('*');
-    
-    if (isAllowed) {
-      callback(null, true);
-    } else {
-      console.error(`🔴 CORS Blocked: Origin ${origin} is not in allowed list [${allowedOrigins}]`);
-      callback(new Error('Not allowed by CORS'));
+    // allow requests with no origin (like mobile apps) or if in allowed list or if * exists
+    if (!origin || allowedOrigins.includes('*') || allowedOrigins.indexOf(origin) !== -1) {
+      return callback(null, true);
     }
+    
+    // Check if origin matches a local ip or expo pattern
+    if (origin.startsWith('exp://') || origin.includes('172.20.10')) {
+      return callback(null, true);
+    }
+
+    console.error(`🔴 CORS Blocked: Origin ${origin} is not allowed.`);
+    callback(new Error('Not allowed by CORS'));
   },
   credentials: true
 }));
