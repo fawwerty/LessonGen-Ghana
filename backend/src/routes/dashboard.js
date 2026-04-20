@@ -3,7 +3,6 @@ const router = express.Router();
 const { protect } = require('../middleware/auth');
 const Lesson = require('../models/Lesson');
 const Scheme = require('../models/Scheme');
-const Scheme = require('../models/Scheme');
 
 router.get('/ping', (req, res) => res.json({ success: true, message: 'Dashboard router is alive' }));
 
