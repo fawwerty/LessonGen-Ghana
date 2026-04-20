@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity, StyleSheet,
   ScrollView, ActivityIndicator, KeyboardAvoidingView, Platform,
@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuth } from '../utils/AuthContext';
+import { authAPI } from '../services/api';
 
 const C = {
   g1: '#0D3B22', g2: '#1A6B3C', gd: '#C8971A', gb: '#8A6510',
@@ -24,8 +25,26 @@ export default function RegisterScreen({ navigation }) {
   const [form, setForm] = useState({ name: '', email: '', school: '', password: '', role: 'teacher' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [serverStatus, setServerStatus] = useState('checking'); // checking, online, offline
   const { register } = useAuth();
   const insets = useSafeAreaInsets();
+
+  useEffect(() => {
+    checkConnection();
+  }, []);
+
+  const checkConnection = async () => {
+    try {
+      await authAPI.me();
+      setServerStatus('online');
+    } catch (err) {
+      if (err.response?.status === 401) {
+        setServerStatus('online');
+      } else {
+        setServerStatus('offline');
+      }
+    }
+  };
 
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
 
@@ -148,6 +167,19 @@ export default function RegisterScreen({ navigation }) {
                 <Text style={s.linkAccent}>Sign in</Text>
               </Text>
             </TouchableOpacity>
+
+            {/* Server Status */}
+            <View style={s.statusRow}>
+              <View style={[s.dot, { backgroundColor: serverStatus === 'online' ? '#10B981' : serverStatus === 'offline' ? '#EF4444' : '#F59E0B' }]} />
+              <Text style={s.statusText}>
+                {serverStatus === 'online' ? 'Server Connected' : serverStatus === 'offline' ? 'Connection Error' : 'Checking Server...'}
+              </Text>
+              {serverStatus === 'offline' && (
+                <TouchableOpacity onPress={checkConnection}>
+                  <Text style={s.retryText}>Retry</Text>
+                </TouchableOpacity>
+              )}
+            </View>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
@@ -209,7 +241,14 @@ const s = StyleSheet.create({
     shadowColor: '#1A6B3C', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 6,
   },
   btnText: { color: '#FFFFFF', fontSize: 15, fontWeight: '800' },
-  linkRow: { marginTop: 18, alignItems: 'center' },
+  linkRow: { marginTop: 18, alignItems: 'center', marginBottom: 20 },
   linkText: { fontSize: 13, color: '#6B6759', fontWeight: '500' },
   linkAccent: { color: '#1A6B3C', fontWeight: '700' },
+  statusRow: { 
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', 
+    gap: 8, paddingTop: 16, borderTopWidth: 1, borderTopColor: 'rgba(0,0,0,0.05)' 
+  },
+  dot: { width: 8, height: 8, borderRadius: 4 },
+  statusText: { fontSize: 11, fontWeight: '700', color: '#9A9890', letterSpacing: 0.5 },
+  retryText: { fontSize: 11, fontWeight: '800', color: '#3B82F6', marginLeft: 4 },
 });
