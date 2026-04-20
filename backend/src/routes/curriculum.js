@@ -5,7 +5,7 @@ const { getCurriculum } = require('../services/aiService');
 const router = express.Router();
 const fs = require('fs'), path = require('path');
 
-const db = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/curriculum/nacca_db.json'), 'utf-8'));
+const db = JSON.parse(fs.readFileSync(path.join(__dirname, '../shared/curriculum/nacca_db.json'), 'utf-8'));
 
 router.get('/classes', protect, (req, res) => {
   res.json({ success: true, classes: Object.keys(db) });
