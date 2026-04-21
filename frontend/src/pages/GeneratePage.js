@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { lessonsAPI, schemeAPI, timetableAPI } from '../utils/api';
 import { useAuth } from '../hooks/useAuth';
 import toast from 'react-hot-toast';
+import { Layers } from 'lucide-react';
 
 const CLASSES = [
   { group: 'Kindergarten', options: [{ value: 'KG1', label: 'KG 1' }, { value: 'KG2', label: 'KG 2' }] },

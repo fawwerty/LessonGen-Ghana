@@ -97,6 +97,7 @@ export default function SchemePage() {
   const [file, setFile]             = useState(null);
   const [pasteText, setPasteText]   = useState('');
   const [dragging, setDragging]     = useState(false);
+  const [classCode, setClassCode]   = useState('');
   const [selectedSubjects, setSelectedSubjects] = useState([]);
   const [term, setTerm]             = useState('1');
   const [uploading, setUploading]   = useState(false);
