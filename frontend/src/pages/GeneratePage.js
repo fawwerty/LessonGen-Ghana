@@ -40,14 +40,18 @@ export default function GeneratePage() {
 
   const [step, setStep] = useState(1);
   const [term, setTerm] = useState('1');
-  const [week, setWeek] = useState('1');
+  const [week, setWeek] = useState(1);
+  const [weekMode, setWeekMode] = useState('single'); // 'single' | 'range'
+  const [weekFrom, setWeekFrom] = useState(1);
+  const [weekTo, setWeekTo] = useState(1);
+  const [scheme, setScheme] = useState(null);
   const [schemeFile, setSchemeFile] = useState(null);
   const [timetableFile, setTimetableFile] = useState(null);
   const [timetable, setTimetable] = useState(null);
   const [uploadingScheme, setUploadingScheme] = useState(false);
   const [uploadingTimetable, setUploadingTimetable] = useState(false);
   const [subjectsBasket, setSubjectsBasket] = useState([]);
-  const [form, setForm] = useState({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard' });
+  const [form, setForm] = useState({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard', level: 'Standard' });
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0, status: '' });
 
@@ -69,7 +73,8 @@ export default function GeneratePage() {
     fd.append('schemeFile', schemeFile); fd.append('classCode', form.classCode);
     fd.append('subject', form.subject); fd.append('term', term);
     try {
-      await schemeAPI.upload(fd);
+      const res = await schemeAPI.upload(fd);
+      setScheme(res.data.scheme);
       toast.success('Scheme parsed! View it on the Scheme page.');
       setSchemeFile(null);
     } catch (err) { toast.error(err.response?.data?.message || 'Upload failed'); }
@@ -117,27 +122,51 @@ export default function GeneratePage() {
   };
 
   const handleGenerateAll = async () => {
-    if (!subjectsBasket.length) return toast.error('Add at least one subject');
-    setLoading(true);
-    setProgress({ current: 0, total: subjectsBasket.length, status: 'Initializing...' });
+    if (subjectsBasket.length === 0) return toast.error('No subjects added');
     
+    const startWeek = weekMode === 'single' ? parseInt(week, 10) : weekFrom;
+    const endWeek   = weekMode === 'single' ? parseInt(week, 10) : weekTo;
+    const weekCount = (endWeek - startWeek) + 1;
+    
+    setLoading(true);
+    setProgress({ current: 0, total: subjectsBasket.length * weekCount, status: 'Starting batch...' });
+
     try {
-      for (let i = 0; i < subjectsBasket.length; i++) {
-        const item = subjectsBasket[i];
-        setProgress(p => ({ ...p, current: i + 1, status: `Attempt 1: Contextualizing ${item.subject}...` }));
-        await lessonsAPI.generate({
-          ...item,
-          ...form,
-          timetableData: timetable
-        });
+      let count = 0;
+      for (const item of subjectsBasket) {
+        for (let w = startWeek; w <= endWeek; w++) {
+          count++;
+          setProgress({ 
+            current: count, 
+            total: subjectsBasket.length * weekCount, 
+            status: `Generating ${item.subject} (Week ${w})...` 
+          });
+
+          // If scheme was uploaded, use it
+          if (scheme) {
+            const weekData = scheme.weeklyBreakdown.find(wd => wd.week === w);
+            if (weekData) {
+              await lessonsAPI.generateFromScheme({
+                ...item,
+                term,
+                week: w,
+                schemeId: scheme._id
+              }, weekData);
+            } else {
+              // Fallback to standard if week not in scheme
+              await lessonsAPI.generate({ ...item, term, week: w, timetableData: timetable });
+            }
+          } else {
+            await lessonsAPI.generate({ ...item, term, week: w, timetableData: timetable });
+          }
+        }
       }
-      
-      toast.success(`${subjectsBasket.length} lesson${subjectsBasket.length > 1 ? 's' : ''} generated!`);
+      toast.success(`Successfully generated ${count} lesson notes!`);
       navigate('/lessons');
-    } catch (err) { 
-      toast.error(err.response?.data?.message || 'Generation failed.'); 
-    } finally { 
-      setLoading(false); 
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Batch generation failed.');
+    } finally {
+      setLoading(false);
       setProgress({ current: 0, total: 0, status: '' });
     }
   };
@@ -164,7 +193,7 @@ export default function GeneratePage() {
           {step === 1 && (
             <div>
                 <h2 className="text-base font-bold text-gray-900 mb-6">Step 1: The Basics</h2>
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div>
                   <FieldLabel>Term</FieldLabel>
                   <div className="flex gap-2">
@@ -177,12 +206,45 @@ export default function GeneratePage() {
                   </div>
                 </div>
                 <div>
-                  <FieldLabel>Week</FieldLabel>
-                  <select value={week} onChange={e => setWeek(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition">
-                    {[...Array(15)].map((_, i) => <option key={i+1} value={i+1}>Week {i+1}</option>)}
-                  </select>
+                  <FieldLabel>Week Mode</FieldLabel>
+                  <div className="flex bg-gray-100 rounded-xl p-1 gap-1">
+                    {[['single', 'One Week'], ['range', 'Range']].map(([m, l]) => (
+                      <button key={m} onClick={() => setWeekMode(m)}
+                        className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all ${weekMode === m ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}>
+                        {l}
+                      </button>
+                    ))}
+                  </div>
                 </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {weekMode === 'single' ? (
+                  <div className="col-span-2">
+                    <FieldLabel>Select Week</FieldLabel>
+                    <select value={week} onChange={e => setWeek(e.target.value)}
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-sm focus:border-emerald-400 outline-none transition">
+                      {[...Array(15)].map((_, i) => <option key={i+1} value={i+1}>Week {i+1}</option>)}
+                    </select>
+                  </div>
+                ) : (
+                  <>
+                    <div>
+                      <FieldLabel>From Week</FieldLabel>
+                      <select value={weekFrom} onChange={e => setWeekFrom(parseInt(e.target.value, 10))}
+                        className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm">
+                        {[...Array(15)].map((_, i) => <option key={i+1} value={i+1}>Week {i+1}</option>)}
+                      </select>
+                    </div>
+                    <div>
+                      <FieldLabel>To Week</FieldLabel>
+                      <select value={weekTo} onChange={e => setWeekTo(parseInt(e.target.value, 10))}
+                        className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm">
+                        {[...Array(15)].map((_, i) => <option key={i+1} value={i+1} disabled={i+1 < weekFrom}>Week {i+1}</option>)}
+                      </select>
+                    </div>
+                  </>
+                )}
               </div>
 
               <div className="mb-8">
@@ -323,7 +385,9 @@ export default function GeneratePage() {
 
               <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex items-center justify-between mb-6">
                 <span className="text-sm text-gray-500 font-medium">Generating for</span>
-                <span className="text-sm font-bold text-gray-900">Term {term}, Week {week}</span>
+                <span className="text-sm font-bold text-gray-900">
+                  {weekMode === 'single' ? `Week ${week}` : `Weeks ${weekFrom} – ${weekTo}`}
+                </span>
               </div>
 
               <div className="flex gap-3">
