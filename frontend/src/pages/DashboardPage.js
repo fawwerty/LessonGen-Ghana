@@ -23,10 +23,10 @@ export default function DashboardPage() {
     <div className="main-content">
       {/* HEADER SECTION */}
       <header className="mb-10 text-left">
-        <h1 className="text-4xl font-extrabold tracking-tight mb-2" style={{ color: 'var(--apple-text)' }}>
+        <h1 className="text-4xl font-extrabold tracking-tight mb-2 drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] dark:drop-shadow-none" style={{ color: 'var(--apple-text)' }}>
           {greeting}, {user?.name?.split(' ')[0]} 👋
         </h1>
-        <p className="text-lg font-medium opacity-70" style={{ color: 'var(--apple-text)' }}>
+        <p className="text-lg font-medium opacity-70 drop-shadow-[0_1px_5px_rgba(255,255,255,0.5)] dark:drop-shadow-none" style={{ color: 'var(--apple-text)' }}>
           {user?.school} · Ready to generate your NaCCA lesson notes?
         </p>
       </header>
