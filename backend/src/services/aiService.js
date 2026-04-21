@@ -15,11 +15,39 @@ const textbookDB = JSON.parse(
 // Initialize Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ 
-  model: 'gemini-2.0-flash',
+  model: 'gemini-1.5-flash', // Use 1.5-flash for higher stability on free tier
   generationConfig: { 
     responseMimeType: 'application/json' 
   }
 });
+
+/**
+ * Robust wrapper for AI calls to handle 429 (Rate Limit) errors with retries.
+ */
+async function callGemini(prompt, isJson = true) {
+  let attempts = 0;
+  const maxAttempts = 3;
+  const delay = (ms) => new Promise(res => setTimeout(res, ms));
+
+  while (attempts < maxAttempts) {
+    try {
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      return response.text();
+    } catch (err) {
+      attempts++;
+      const isRateLimit = err.message?.includes('429') || err.message?.includes('Quota');
+      
+      if (isRateLimit && attempts < maxAttempts) {
+        const waitTime = attempts * 15000; // 15s, 30s...
+        console.warn(`Gemini Rate Limit (429) hit. Attempt ${attempts}/${maxAttempts}. Waiting ${waitTime/1000}s...`);
+        await delay(waitTime);
+        continue;
+      }
+      throw err;
+    }
+  }
+}
 
 const CLASS_LABEL = {
   KG1:'KG 1', KG2:'KG 2', B1:'One', B2:'Two', B3:'Three',
@@ -303,8 +331,8 @@ async function generateLesson(params) {
   for (let i = 0; i < prompts.length; i++) {
     try {
       console.log(`Attempt ${i+1} for ${subject} (${classCode})...`);
-      const result = await model.generateContent(prompts[i]);
-      const lesson = JSON.parse(result.response.text());
+      const text = await callGemini(prompts[i]);
+      const lesson = JSON.parse(text);
       if (await validateLesson(lesson, isJHS, targetDays)) {
         return { lesson, curriculum, isJHS };
       }
@@ -373,9 +401,8 @@ Output ONLY valid JSON:
 ${formatHint}`;
 
   for (let i = 0; i < 3; i++) {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
     try {
+      const text = await callGemini(prompt);
       const lesson = JSON.parse(text);
       if (await validateLesson(lesson, isJHS, targetDays)) return { lesson, isJHS };
     } catch (e) { console.error('Scheme lesson JSON error:', e); }
@@ -415,8 +442,8 @@ RULES:
 
 Output the new content for ${sectionName} as PLAIN TEXT:`;
 
-  const result = await model.generateContent(prompt);
-  return result.response.text().trim();
+  const text = await callGemini(prompt, false);
+  return text.trim();
 }
 
 module.exports = { generateLesson, generateLessonFromScheme, getCurriculum, regenerateSection, CLASS_LABEL, CLASS_LEVEL };

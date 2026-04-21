@@ -1,45 +1,52 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+
+/**
+ * Shared retry wrapper for vision tasks
+ */
+async function callVisionWithRetry(parts) {
+  let attempts = 0;
+  const maxAttempts = 3;
+  const delay = (ms) => new Promise(res => setTimeout(res, ms));
+
+  while (attempts < maxAttempts) {
+    try {
+      const result = await model.generateContent(parts);
+      const response = await result.response;
+      return response.text();
+    } catch (err) {
+      attempts++;
+      if ((err.message?.includes('429') || err.message?.includes('Quota')) && attempts < maxAttempts) {
+        const waitTime = attempts * 10000;
+        console.warn(`Vision API Rate Limit hit. Retrying in ${waitTime/1000}s...`);
+        await delay(waitTime);
+        continue;
+      }
+      throw err;
+    }
+  }
+}
+
 /**
  * visionService.js
  * Uses Gemini Vision models to extract structured data from images of printed or handwritten schemes.
  */
 async function extractTextFromImage(imageBuffer, mimeType = 'image/jpeg') {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
   const prompt = `Perform high-fidelity OCR on this image of a Ghanaian Basic School Scheme of Work (SOW). 
 Extract as much text as possible, maintaining the logical structure (Strands, Sub-strands, Indicators, Weeks).
 If the text is handwritten, do your best to transcribe it accurately.
 Output ONLY the raw text found in the document.`;
 
-  const imageParts = [
-    {
-      inlineData: {
-        data: imageBuffer.toString('base64'),
-        mimeType
-      }
-    }
-  ];
-
-  try {
-    const result = await model.generateContent([prompt, ...imageParts]);
-    const response = await result.response;
-    return response.text();
-  } catch (err) {
-    console.error('Vision OCR Error:', err);
-    throw new Error('Failed to process image with Vision AI: ' + err.message);
-  }
+  const parts = [{ inlineData: { data: imageBuffer.toString('base64'), mimeType } }, { text: prompt }];
+  return await callVisionWithRetry(parts);
 }
 
 /**
  * Extracts structured timetable data (Day, Subject, Periods) from an image or document.
  */
 async function parseTimetable(imageBuffer, mimeType = 'image/jpeg') {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  // Use gemini-1.5-flash for broader document compatibility if 2.0 has issues
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
   const prompt = `You are an expert at parsing school timetables from various formats (images, PDFs, or scans). 
 Extract the weekly schedule from this document. 
 Combine consecutive periods of the same subject on the same day into a single entry with 'periods' count.
@@ -59,20 +66,10 @@ Rules:
 4. If it's a multi-class timetable, ONLY extract the schedule relevant to the primary class shown.
 5. Do NOT include markdown formatting or backticks in your response. Output raw JSON only.`;
 
-  const parts = [
-    {
-      inlineData: {
-        data: imageBuffer.toString('base64'),
-        mimeType
-      }
-    },
-    { text: prompt }
-  ];
+  const parts = [{ inlineData: { data: imageBuffer.toString('base64'), mimeType } }, { text: prompt }];
 
   try {
-    const result = await model.generateContent(parts);
-    const response = await result.response;
-    let text = response.text();
+    let text = await callVisionWithRetry(parts);
     
     // Clean potential markdown backticks
     text = text.replace(/```json|```/g, '').trim();
