@@ -207,16 +207,31 @@ export default function GeneratePage() {
               </div>
 
               {/* Scheme upload (Optional but helpful) */}
-              <div className="p-5 rounded-2xl border border-dashed border-gray-200 bg-gray-50 mb-6">
+              <div className="p-5 rounded-2xl border border-dashed border-gray-200 bg-gray-50 mb-6 transition-all hover:border-emerald-300">
                 <div className="flex items-center gap-2 mb-1">
-                  <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                  <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                   <h4 className="text-sm font-bold text-gray-700">Optional: Scheme of Learning</h4>
                 </div>
-                <p className="text-xs text-gray-400 mb-3">Upload your SOW to ensure AI aligns perfectly with your term plan.</p>
-                <input type="file" accept=".pdf,.docx,.txt" onChange={e => setSchemeFile(e.target.files[0])} className="text-xs mb-3 w-full text-gray-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gray-200 file:text-gray-700" />
+                <p className="text-xs text-gray-400 mb-4">Upload your SOW to ensure AI aligns perfectly with your term plan.</p>
+                
+                <div className="mb-4">
+                  <FieldLabel>Select Subject for Scheme</FieldLabel>
+                  <select value={form.subject} onChange={set('subject')}
+                    className="w-full px-3 py-2 bg-white border border-gray-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition mb-3">
+                    <option value="">Select subject...</option>
+                    {SUBJECTS.map(s => <option key={s} value={s}>{s}</option>)}
+                  </select>
+                </div>
+
+                <input type="file" accept=".pdf,.docx,.txt" 
+                  onChange={e => setSchemeFile(e.target.files[0])} 
+                  className="text-xs mb-4 w-full text-gray-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gray-200 file:text-gray-700" />
+                
                 <button onClick={handleUploadScheme} disabled={uploadingScheme || !schemeFile || !form.classCode || !form.subject}
-                  className="px-4 py-2 border border-gray-300 text-gray-600 rounded-xl text-xs font-bold disabled:opacity-50 hover:bg-gray-100 transition">
-                  {uploadingScheme ? 'Parsing...' : 'Upload Scheme'}
+                  className={`px-6 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 ${schemeFile && form.subject ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-md' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}>
+                  {uploadingScheme ? (
+                    <><div className="w-3 h-3 border border-white border-t-transparent animate-spin rounded-full"/> Parsing...</>
+                  ) : 'Upload & Parse Scheme'}
                 </button>
               </div>
 
