@@ -49,15 +49,31 @@ router.post('/paystack/webhook', express.raw({ type: 'application/json' }), asyn
   const hash = crypto.createHmac('sha512', process.env.PAYSTACK_SECRET_KEY).update(req.body).digest('hex');
   if (hash !== req.headers['x-paystack-signature']) return res.status(400).send('Invalid signature');
   const event = JSON.parse(req.body);
+  console.log(`🔔 [Webhook] Received Paystack event: ${event.event}`);
+
   if (event.event === 'charge.success') {
-    const { metadata, customer } = event.data;
-    const user = await User.findById(metadata.userId) || await User.findOne({ email: customer.email });
-    if (user) {
-      const expiry = new Date();
-      const plan = metadata.plan || 'monthly';
-      if (plan === 'annual') expiry.setFullYear(expiry.getFullYear() + 1);
-      else expiry.setMonth(expiry.getMonth() + 1);
-      await User.findByIdAndUpdate(user._id, { plan, paymentExpiry: expiry });
+    const { metadata, customer, reference } = event.data;
+    try {
+      const user = await User.findById(metadata.userId) || await User.findOne({ email: customer.email });
+      
+      if (user) {
+        const expiry = new Date();
+        const plan = metadata.plan || 'monthly';
+        if (plan === 'annual') expiry.setFullYear(expiry.getFullYear() + 1);
+        else expiry.setMonth(expiry.getMonth() + 1);
+
+        await User.findByIdAndUpdate(user._id, { 
+          plan, 
+          paymentExpiry: expiry,
+          paymentRef: reference 
+        });
+        console.log(`✅ [Webhook] User ${user.email} successfully upgraded to ${plan} via webhook.`);
+      } else {
+        console.warn(`⚠️ [Webhook] Success event received but user not found: ${customer.email}`);
+      }
+    } catch (err) {
+      console.error('🔥 [Webhook] Error processing charge.success:', err.message);
+      return res.status(500).send('Webhook processing failed');
     }
   }
   res.sendStatus(200);

@@ -24,7 +24,10 @@ const dashboardRoutes = require('./routes/dashboard');
 const timetableRoutes = require('./routes/timetable');
 
 const app = express();
-// app.use(helmet()); // Temporarily disable for debugging network errors
+app.use(helmet({
+  contentSecurityPolicy: false, // Set to false if you're serving a frontend that needs specific resources
+  crossOriginEmbedderPolicy: false
+}));
 app.set('trust proxy', 1);
 
 // Global debug log for EVERY incoming request
@@ -35,10 +38,18 @@ app.use((req, res, next) => {
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',') 
-  : ['*']; // Default to all in development
+  : [];
 
 app.use(cors({
-  origin: true, // Allow all origins temporarily to force connection
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV === 'development') {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
@@ -49,8 +60,12 @@ app.options('*', cors());
 
 // ── Rate limiting ────────────────────────────────────────────────────────────
 const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100, message: 'Too many requests, try again later.' });
+const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 20, message: 'Too many login attempts. Please try again later.' });
 const aiLimiter = rateLimit({ windowMs: 60 * 1000, max: 5, message: 'AI generation limit reached. Wait 1 minute.' });
+
 app.use('/api/', apiLimiter);
+app.use('/api/auth/login', authLimiter);
+app.use('/api/auth/register', authLimiter);
 app.use('/api/lessons/generate', aiLimiter);
 
 // ── Body parsing ─────────────────────────────────────────────────────────────

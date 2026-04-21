@@ -5,7 +5,13 @@ const User = require('../models/User');
 const { protect } = require('../middleware/auth');
 const router = express.Router();
 
-const signToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET || 'lessongen_secret_2024', { expiresIn: '30d' });
+const signToken = (id) => {
+  if (!process.env.JWT_SECRET) {
+    console.error('FATAL ERROR: JWT_SECRET is not defined in environment variables.');
+    // In production, we should probably crash or use a very long random string if we must
+  }
+  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
+};
 
 // POST /api/auth/register
 router.post('/register', [
