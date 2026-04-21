@@ -37,25 +37,26 @@ const SYSTEM_PROMPT = `You are an expert Ghanaian basic school lesson planner wi
 
 You write in the professional style used by Ghanaian teachers and publishers such as Mickinet Systems — structured, practical, activity-rich, and aligned to the exact NaCCA indicators.
 
+PEDAGOGICAL FLOW (MANDATORY):
+Each lesson must follow a natural teaching flow: 
+1. Starter: Connect to prior knowledge and prepare the brain.
+2. Phase 2 (Main): Guided Activity → Practice → Assessment.
+3. Phase 3 (Reflection): Check understanding and wrap up.
+
 ABSOLUTE RULES:
 1. Output ONLY valid JSON.
 2. NEVER use the word "can" in any Performance Indicator. Use direct verbs like "Learners solve...", "Learners identify...", "Learners list...".
-3. Every teaching day must be COMPLETELY different from every other day.
+3. SEQUENCE AWARENESS: Lessons within the same week must build progressively from previous lessons for the same subject. References to "previous lesson" or "building on" are encouraged.
 4. Phase 2 for every teaching day must end with a clearly labelled "Assessment:" section followed by a specific task.
 5. Phase 3 for every teaching day must end with: "Give learners task to complete while you go round the class to support those who might need extra help."
 6. Always use real Ghanaian names (Kofi, Ama, Kweku, Adwoa), real Ghanaian places (Accra, Kumasi), currency (GHC), local foods and contexts.
 7. The Reference field must include the curriculum reference and the specific textbook provided in the prompt.
-8. Core Competencies: Map 2 to 4 relevant competencies from the pool:
-   - Critical Thinking and Problem Solving (CP)
-   - Creativity and Innovation (CI)
-   - Communication and Collaboration (CC)
-   - Cultural Identity and Global Citizenship (CG)
-   - Personal Development and Leadership (PL)
-   - Digital Literacy (DL)
-9. ACTIVITY LIMITS:
-   - KG & Lower/Upper Primary: Exactly 3 to 5 bullet-pointed activities in Phase 2.
-   - JHS: Exactly 4 to 6 bullet-pointed activities in Phase 2.
-10. FORMATTING: Use clear bullet points (-) for activities in Phase 2. No walls of text.`;
+8. Core Competencies: Map 2 to 4 relevant competencies from the pool (CP, CI, CC, CG, PL, DL).
+9. QUALITY CONTROL: Each activity must be unique, actionable, and student-centered. Avoid repetition or passive instructions like "Teacher explains..." (use "Teacher guides learners to discover...").
+10. ACTIVITY LIMITS:
+    - KG & Lower/Upper Primary: 3 to 5 unique, bullet-pointed activities in Phase 2.
+    - JHS: 4 to 6 unique, bullet-pointed activities in Phase 2.
+11. FORMATTING: Use clear bullet points (-) for activities in Phase 2. No walls of text.`;
 
 function getTextbook(classCode, subject) {
   const levelMap = {
@@ -158,7 +159,7 @@ function getEnrichedCurriculum(classCode, subject, indicator) {
 }
 
 function buildPrompt(params, curr) {
-  const { classCode, subject, term, week, style, extra, teachingDays, periods } = params;
+  const { classCode, subject, term, week, style, extra, teachingDays, periods, level, previousContext } = params;
   const isJHS = ['B7','B8','B9'].includes(classCode);
   const isKG = classCode.startsWith('KG');
   
@@ -219,6 +220,12 @@ ${curr.rawSourceText}
 --- END RAW TEXT ---` : ''}
 
 Textbook Reference: ${textbook}.
+Difficulty Level: ${level || 'Standard'} (Generate content appropriate for this level).
+
+${previousContext ? `--- CONTENT FROM PREVIOUS LESSONS ---
+${previousContext}
+--- Use the above to ensure logical sequence and progression. ---` : ''}
+
 ${daysInstruction}
 ${periods ? `Plan the content length to fit ${periods} periods.` : ''}
 ${extra ? `Extra instructions: ${extra}` : ''}
@@ -240,6 +247,22 @@ async function validateLesson(lesson, isJHS, targetDays) {
 // ── generateLesson ────────────────────────────────────────────────────────────
 async function generateLesson(params) {
   let { classCode, subject, term, week, teachingDays, periods, timetableData } = params;
+  const Lesson = require('../models/Lesson'); // Lazy load to avoid circular dep
+
+  // ── SEQUENCE AWARENESS: Fetch previous week's lesson for context ────────────
+  let previousContext = '';
+  if (week > 1) {
+    try {
+      const prevLesson = await Lesson.findOne({ 
+        userId: params.userId, subject, classCode, term, week: week - 1 
+      }).sort({ createdAt: -1 });
+      if (prevLesson && prevLesson.days && prevLesson.days.length > 0) {
+        const lastDay = prevLesson.days[prevLesson.days.length - 1];
+        previousContext = `WEEK ${week-1} RECAP (${prevLesson.strand}):\n${lastDay.phase2}\nAssessment was: ${lastDay.phase3}`;
+      }
+    } catch (e) { console.error('Prev context fetch error:', e); }
+  }
+
   const isJHS = ['B7','B8','B9'].includes(classCode);
   const isPrimary = !isJHS && !classCode.startsWith('KG');
 
@@ -270,10 +293,11 @@ async function generateLesson(params) {
   let curriculum = getCurriculum(classCode, subject, term, week);
   
   // Fallback prompt strategy
+  const common = { ...params, teachingDays: targetDays, periods, previousContext };
   const prompts = [
-    buildPrompt({ ...params, teachingDays: targetDays, periods }, curriculum),
-    buildPrompt({ ...params, teachingDays: targetDays, periods, extra: (params.extra || '') + "\nKeep it extremely simple and focus on the core indicator." }, curriculum),
-    buildPrompt({ ...params, teachingDays: targetDays, periods, style: 'Standard', extra: "Format as basic structured lesson note." }, curriculum)
+    buildPrompt(common, curriculum),
+    buildPrompt({ ...common, extra: (params.extra || '') + "\nKeep it extremely simple and focus on the core indicator." }, curriculum),
+    buildPrompt({ ...common, style: 'Standard', extra: "Format as basic structured lesson note." }, curriculum)
   ];
 
   for (let i = 0; i < prompts.length; i++) {
@@ -299,7 +323,22 @@ async function generateLesson(params) {
 // ── generateLessonFromScheme ──────────────────────────────────────────────────
 // Uses the uploaded scheme's weekly breakdown as the primary curriculum source
 async function generateLessonFromScheme(params, weekData) {
-  const { classCode, subject, term, week, style, teachingDays, periods } = params;
+  const { userId, classCode, subject, term, week, style, teachingDays, periods, level } = params;
+  const Lesson = require('../models/Lesson');
+
+  // ── SEQUENCE AWARENESS ──────────────────────────────────────────────────────
+  let previousContext = '';
+  if (week > 1) {
+    try {
+      const prevLesson = await Lesson.findOne({ 
+        userId, subject, classCode, term, week: week - 1 
+      }).sort({ createdAt: -1 });
+      if (prevLesson && prevLesson.days && prevLesson.days.length > 0) {
+        const lastDay = prevLesson.days[prevLesson.days.length - 1];
+        previousContext = `WEEK ${week-1} RECAP (${prevLesson.strand}):\n${lastDay.phase2}\nAssessment was: ${lastDay.phase3}`;
+      }
+    } catch (e) { console.error('Prev context fetch error (scheme):', e); }
+  }
   const isJHS  = ['B7','B8','B9'].includes(classCode);
   const today  = new Date();
   const weekEnd = new Date(today);
@@ -326,6 +365,8 @@ USE THIS EXACT SCHEME DATA (from uploaded Termly Scheme of Work):
 - Key Words: ${(weekData.keyWords || []).join(', ') || ''}
 
 CRITICAL: Generate EXACTLY ${targetDays} teaching day(s).
+Difficulty Level: ${level || 'Standard'}.
+${previousContext ? `--- PREVIOUS WEEK CONTEXT ---\n${previousContext}\n--- Ensure progression based on this. ---` : ''}
 ${periods ? `Plan content for ${periods} periods.` : ''}
 
 Output ONLY valid JSON:
@@ -339,8 +380,44 @@ ${formatHint}`;
       if (await validateLesson(lesson, isJHS, targetDays)) return { lesson, isJHS };
     } catch (e) { console.error('Scheme lesson JSON error:', e); }
   }
-  throw new Error(`Failed to generate lesson for Week ${week} after 3 attempts.`);
+// ── regenerateSection ─────────────────────────────────────────────────────────
+async function regenerateSection(lesson, dayIndex, sectionName) {
+  const isJHS = ['B7','B8','B9'].includes(lesson.classCode);
+  const day = lesson.days[dayIndex];
+  
+  const sectionLabels = {
+    phase1: 'STARTER (10 mins)',
+    phase2: 'MAIN / NEW LEARNING (40 mins)',
+    phase3: 'REFLECTION (10 mins)'
+  };
+
+  const context = `
+Class: ${lesson.classCode}
+Subject: ${lesson.subject}
+Strand: ${lesson.strand}
+Sub-strand: ${lesson.subStrand}
+Indicator: ${lesson.indicator}
+Existing Day Content:
+- Starter: ${day.phase1}
+- Main: ${day.phase2}
+- Reflection: ${day.phase3}
+`;
+
+  const prompt = `You are a Ghanaian curriculum expert. I want to REGENERATE only the ${sectionLabels[sectionName]} for a ${lesson.subject} lesson.
+
+${context}
+
+RULES:
+1. Output ONLY the new text for the ${sectionName}.
+2. Style: Actionable, student-centered, bullet-pointed (for Main).
+3. The new content must be unique and different from the existing one.
+4. Keep the same pedagogical goal but improve activity quality.
+
+Output the new content for ${sectionName} as PLAIN TEXT:`;
+
+  const result = await model.generateContent(prompt);
+  return result.response.text().trim();
 }
 
-module.exports = { generateLesson, generateLessonFromScheme, getCurriculum, CLASS_LABEL, CLASS_LEVEL };
+module.exports = { generateLesson, generateLessonFromScheme, getCurriculum, regenerateSection, CLASS_LABEL, CLASS_LEVEL };
 

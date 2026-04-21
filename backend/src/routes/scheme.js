@@ -223,13 +223,16 @@ router.post('/generate-range', protect, async (req, res) => {
     if (!weeks.length) return res.status(400).json({ success: false, message: `No weeks found between ${from} and ${to} in this scheme.` });
 
     const savedLessons = [];
+    // Sequential loop is MANDATORY for Sequence Awareness (Week 2 needs Week 1 in DB)
     for (const weekData of weeks) {
       const { lesson, isJHS } = await generateLessonFromScheme({
+        userId: req.user._id,
         classCode: classCode || scheme.classCode,
         subject: subject || scheme.subject,
         term: term || scheme.term,
         week: weekData.week,
         style: style || 'Standard',
+        level: req.body.level || 'Standard',
         teachingDays: teachingDays || null,
         periods: periods || null,
       }, weekData);

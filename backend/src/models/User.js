@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
   plan: { type: String, enum: ['free', 'monthly', 'annual'], default: 'free' },
   exportCount: { type: Number, default: 0 },
   freeExportUsed: { type: Boolean, default: false },
+  freeGenerationUsed: { type: Boolean, default: false },
   paymentRef: { type: String },
   paymentExpiry: { type: Date },
   subjects: [String],

@@ -10,9 +10,24 @@ const router = express.Router();
 // Accepts either a single object or an array of subject configurations
 router.post('/generate', protect, async (req, res) => {
   const payload = Array.isArray(req.body) ? req.body : [req.body];
+  const user = req.user;
   
   if (!payload.length) {
     return res.status(400).json({ success: false, message: 'No subjects provided for generation' });
+  }
+
+  // Paywall Logic: First generation is always free. Subsequent batches/parsed-timetables require PRO.
+  const isBatch = payload.length > 1;
+  const usesTimetable = payload.some(i => i.timetableData);
+  
+  if (user.plan === 'free' && user.freeGenerationUsed) {
+    if (isBatch || usesTimetable) {
+      return res.status(402).json({ 
+        success: false, 
+        message: 'Batch generation and Timetable-awareness are PRO features. Please upgrade to continue.',
+        upgradeRequired: true 
+      });
+    }
   }
 
   try {
@@ -26,14 +41,17 @@ router.post('/generate', protect, async (req, res) => {
       }
 
       const { lesson, curriculum, isJHS } = await generateLesson({ 
+        userId: req.user._id,
         classCode: item.classCode, 
         subject: item.subject, 
         term: Number(item.term), 
         week: Number(item.week), 
         style: item.style || 'Standard', 
+        level: item.level || 'Standard',
         extra: item.extra || '',
         teachingDays: item.teachingDays || null,
-        periods: item.periods || null
+        periods: item.periods || null,
+        timetableData: item.timetableData || null
       });
 
       const saved = await Lesson.create({
@@ -76,6 +94,11 @@ router.post('/generate', protect, async (req, res) => {
     }
 
     res.json({ success: true, lessons: savedLessons, batchId });
+
+    // Mark first generation as used
+    if (!user.freeGenerationUsed) {
+      await User.findByIdAndUpdate(user._id, { freeGenerationUsed: true });
+    }
   } catch (err) {
     res.status(500).json({ success: false, message: err.message });
   }
@@ -111,6 +134,40 @@ router.get('/batch/:id', protect, async (req, res) => {
   const batch = await LessonBatch.findOne({ _id: req.params.id, userId: req.user._id }).populate('lessons');
   if (!batch) return res.status(404).json({ success: false, message: 'Batch not found' });
   res.json({ success: true, batch });
+});
+
+// PUT /api/lessons/:id - Manual update
+router.put('/:id', protect, async (req, res) => {
+  try {
+    const lesson = await Lesson.findOneAndUpdate(
+      { _id: req.params.id, userId: req.user._id },
+      { $set: req.body },
+      { new: true }
+    );
+    if (!lesson) return res.status(404).json({ success: false, message: 'Lesson not found' });
+    res.json({ success: true, lesson });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+});
+
+// POST /api/lessons/:id/regenerate-section
+router.post('/:id/regenerate-section', protect, async (req, res) => {
+  const { dayIndex, sectionName } = req.body; // e.g. 0, "phase2"
+  try {
+    const lesson = await Lesson.findOne({ _id: req.params.id, userId: req.user._id });
+    if (!lesson) return res.status(404).json({ success: false, message: 'Lesson not found' });
+
+    const newContent = await regenerateSection(lesson, dayIndex, sectionName);
+    
+    // Update the local lesson object
+    lesson.days[dayIndex][sectionName] = newContent;
+    await lesson.save();
+
+    res.json({ success: true, newContent, lesson });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
 });
 
 module.exports = router;

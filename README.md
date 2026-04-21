@@ -1,6 +1,7 @@
 # 📚 LessonGen Ghana — Complete Platform
 
 > AI-powered NaCCA-aligned lesson planning for Ghanaian teachers.
+> **Now with Timetable-Awareness, Sequence Progression, and Teacher Controls.**
 > React Web App · Node.js Backend · React Native Mobile App · AI Training Pipeline
 
 ---
@@ -17,6 +18,16 @@
 8. [Payment Integration](#8-payment-integration)
 9. [Deploying to Production](#9-deploying-to-production)
 10. [Docker Deployment](#10-docker-deployment)
+
+## ✨ Phase 2: Professional SaaS Upgrades (Latest)
+This platform was recently upgraded with market-leading pedagogical intelligence:
+-   **📅 Timetable Intelligence**: Upload/Capture your timetable images, and the AI automatically maps your teaching days and periods.
+-   **⛓️ Sequence Awareness**: Lessons now build logically week-over-week. Week 2 recap automatically connects to Week 1 objectives.
+-   **✏️ Teacher Control**: 
+    -   **Inline Editor**: Change any text in the preview before exporting.
+    -   **Section Refresh**: Regenerate just the "Main Content" or "Starter" if you want different activities.
+-   **📊 Difficulty Levels**: Choice of **Basic**, **Standard**, or **Advanced** content to match student performance.
+-   **🎁 First-Free Hook**: Every user's first generation is completely free to showcase value.
 
 ---
 

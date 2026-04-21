@@ -101,7 +101,7 @@ export default function GeneratePage() {
   const addToBasket = () => {
     if (!form.classCode || !form.subject) return toast.error('Class and subject are required');
     setSubjectsBasket(curr => [...curr, { ...form, id: Date.now() }]);
-    setForm({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard' });
+    setForm({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard', level: 'Standard', termStartDate: '' });
     toast.success('Subject added');
   };
 
@@ -111,21 +111,18 @@ export default function GeneratePage() {
     setProgress({ current: 0, total: subjectsBasket.length, status: 'Initializing...' });
     
     try {
-      const payload = subjectsBasket.map(s => ({ 
-        ...s, 
-        term: Number(term), 
-        week: Number(week),
-        timetableData: timetable // Pass timetable context
-      }));
-      
-      // We process sequentially or in parallel depending on backend capacity
-      // For UX, we'll update progress per subject
-      const res = await lessonsAPI.generateBatch(payload);
+      for (let i = 0; i < subjectsBasket.length; i++) {
+        const item = subjectsBasket[i];
+        setProgress(p => ({ ...p, current: i + 1, status: `Attempt 1: Contextualizing ${item.subject}...` }));
+        await lessonsAPI.generate({
+          ...item,
+          ...form,
+          timetableData: timetable
+        });
+      }
       
       toast.success(`${subjectsBasket.length} lesson${subjectsBasket.length > 1 ? 's' : ''} generated!`);
-      if (res.data.batchId) navigate(`/lessons/batch/${res.data.batchId}`);
-      else if (res.data.lessons?.length > 0) navigate(`/lessons/${res.data.lessons[0]._id}`);
-      else navigate('/lessons');
+      navigate('/lessons');
     } catch (err) { 
       toast.error(err.response?.data?.message || 'Generation failed.'); 
     } finally { 
@@ -257,6 +254,25 @@ export default function GeneratePage() {
                 </div>
               </div>
 
+              <div className="md:col-span-2 mb-4">
+                <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wider">Teaching Style & Difficulty</label>
+                <div className="grid grid-cols-2 gap-3">
+                  <select value={form.style} onChange={set('style')}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-emerald-500 transition outline-none bg-white">
+                    <option value="Standard">Standard NaCCA</option>
+                    <option value="Mickinet">Professional (Mickinet Style)</option>
+                    <option value="Detailed">Detailed & Comprehensive</option>
+                    <option value="Simplified">Simplified & Concise</option>
+                  </select>
+                  <select value={form.level} onChange={set('level')}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-emerald-500 transition outline-none bg-white">
+                    <option value="Basic">Basic / Remedial</option>
+                    <option value="Standard">Standard / Grade Level</option>
+                    <option value="Advanced">Advanced / Gifted</option>
+                  </select>
+                </div>
+              </div>
+
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div>
                   <FieldLabel>Periods per Week</FieldLabel>
@@ -273,19 +289,6 @@ export default function GeneratePage() {
                       </button>
                     ))}
                   </div>
-                </div>
-              </div>
-
-              {/* Style pills */}
-              <div className="mb-6">
-                <FieldLabel>Lesson Style</FieldLabel>
-                <div className="flex flex-wrap gap-2">
-                  {STYLES.map(s => (
-                    <button key={s} onClick={() => setForm(f => ({ ...f, style: s }))}
-                      className={`px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ${form.style === s ? 'border-emerald-400 bg-emerald-50 text-emerald-800' : 'border-gray-200 bg-white text-gray-500 hover:border-gray-300'}`}>
-                      {s}
-                    </button>
-                  ))}
                 </div>
               </div>
 
@@ -313,8 +316,8 @@ export default function GeneratePage() {
                 <div className="mb-6 p-5 bg-amber-50 rounded-2xl border border-amber-200 flex items-center gap-4">
                   <div className="w-8 h-8 border-2 border-amber-200 border-t-amber-600 rounded-full animate-spin flex-shrink-0" />
                   <div>
-                    <p className="text-sm font-bold text-amber-800">AI is writing your lessons...</p>
-                    <p className="text-xs text-amber-600 mt-0.5">Generating {subjectsBasket.length} subject{subjectsBasket.length > 1 ? 's' : ''}. This may take up to 60s.</p>
+                    <p className="text-sm font-bold text-amber-800">{progress.status}</p>
+                    <p className="text-xs text-amber-600 mt-0.5">Generating {progress.current} of {progress.total} subjects. This may take up to 60s.</p>
                   </div>
                 </div>
               )}

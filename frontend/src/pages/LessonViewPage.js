@@ -4,13 +4,74 @@ import { lessonsAPI, exportAPI } from '../utils/api';
 import { useAuth } from '../hooks/useAuth';
 import toast from 'react-hot-toast';
 
-function SingleLessonView({ lesson }) {
+function SingleLessonView({ lesson, onUpdate, onRegenerate }) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [edited, setEdited] = useState(lesson);
+  const [regenLoading, setRegenLoading] = useState({});
+
   const isJHS = ['B7','B8','B9'].includes(lesson.classCode);
   const termNames = ['', 'ONE', 'TWO', 'THREE'];
 
+  const triggerRegen = async (dayIndex, sectionName) => {
+    setRegenLoading(p => ({ ...p, [`${dayIndex}-${sectionName}`]: true }));
+    try {
+      const res = await onRegenerate(lesson._id, dayIndex, sectionName);
+      setEdited(prev => {
+         const newDays = [...prev.days];
+         newDays[dayIndex][sectionName] = res.newContent;
+         return { ...prev, days: newDays };
+      });
+      toast.success('Section regenerated!');
+    } catch (err) {
+      toast.error('Regeneration failed.');
+    } finally {
+      setRegenLoading(p => ({ ...p, [`${dayIndex}-${sectionName}`]: false }));
+    }
+  };
+
+  const handleSave = async () => {
+    await onUpdate(lesson._id, edited);
+    setIsEditing(false);
+  };
+
+  const DayCell = ({ dayIndex, sectionName, content, title }) => (
+    <td className={`border-r border-black p-3 align-top font-medium leading-relaxed group relative ${regenLoading[`${dayIndex}-${sectionName}`] ? 'opacity-50' : ''}`}>
+       {isEditing ? (
+         <textarea 
+           value={content} 
+           onChange={(e) => setEdited(prev => {
+             const d = [...prev.days];
+             d[dayIndex][sectionName] = e.target.value;
+             return { ...prev, days: d };
+           })}
+           className="w-full min-h-[150px] p-2 border border-blue-200 rounded text-sm outline-none focus:ring-1 focus:ring-blue-500"
+         />
+       ) : (
+         <>
+          <div className="whitespace-pre-wrap">{content}</div>
+          <button 
+            onClick={() => triggerRegen(dayIndex, sectionName)}
+            className="absolute top-2 right-2 p-1.5 bg-gray-100 hover:bg-emerald-100 text-gray-500 hover:text-emerald-700 rounded-lg opacity-0 group-hover:opacity-100 transition shadow-sm print:hidden"
+            title={`Regenerate ${title}`}
+          >
+            {regenLoading[`${dayIndex}-${sectionName}`] ? '⏳' : '🔄'}
+          </button>
+         </>
+       )}
+    </td>
+  );
+
   return (
-    <div className="mb-20 print:break-after-page print:mb-0">
-      {/* ── B&W TITLE BLOCK ── */}
+    <div className="mb-20 print:break-after-page print:mb-0 relative group/lesson">
+      <div className="absolute -left-16 top-0 flex flex-col gap-2 print:hidden">
+        <button onClick={() => setIsEditing(!isEditing)} className={`p-3 rounded-xl shadow-lg transition ${isEditing ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-blue-50'}`}>
+           {isEditing ? '💾' : '✏️'}
+        </button>
+        {isEditing && (
+           <button onClick={handleSave} className="p-3 bg-emerald-600 text-white rounded-xl shadow-lg hover:bg-emerald-700">✓</button>
+        )}
+      </div>
+
       <div className="text-center mb-8 border-b-2 border-black pb-4">
         <h1 className="text-2xl font-bold text-black uppercase font-serif tracking-wide">
           TERM {termNames[lesson.term] || lesson.term} WEEKLY LESSON NOTES — WEEK {lesson.week}
@@ -128,12 +189,12 @@ function SingleLessonView({ lesson }) {
               </tr>
             </thead>
             <tbody>
-              {(lesson.days || []).map((d, i) => (
+              {(edited.days || []).map((d, i) => (
                 <tr key={i} className="border-b border-black last:border-b-0">
                   <td className="border-r border-black font-bold p-3 text-center align-top bg-gray-50">{d.day}</td>
-                  <td className="border-r border-black p-3 whitespace-pre-wrap align-top font-medium leading-relaxed">{d.phase1}</td>
-                  <td className="border-r border-black p-3 whitespace-pre-wrap align-top font-medium leading-relaxed">{d.phase2}</td>
-                  <td className="p-3 whitespace-pre-wrap align-top font-medium leading-relaxed">{d.phase3}</td>
+                  <DayCell dayIndex={i} sectionName="phase1" content={d.phase1} title="Starter" />
+                  <DayCell dayIndex={i} sectionName="phase2" content={d.phase2} title="Main" />
+                  <DayCell dayIndex={i} sectionName="phase3" content={d.phase3} title="Reflection" />
                 </tr>
               ))}
             </tbody>
@@ -174,9 +235,34 @@ export default function LessonViewPage({ isBatch = false }) {
     if (isBatch) {
       lessonsAPI.getBatch(id).then(r => { setData(r.data.batch); setLoading(false); }).catch(() => { toast.error('Batch not found'); navigate('/lessons'); });
     } else {
-      lessonsAPI.get(id).then(r => { setData({ lessons: [r.data.lesson], term: r.data.lesson.term, week: r.data.lesson.week }); setLoading(false); }).catch(() => { toast.error('Lesson not found'); navigate('/lessons'); });
+      lessonsAPI.get(id).then(r => { 
+        setData({ lessons: [r.data.lesson], term: r.data.lesson.term, week: r.data.lesson.week }); 
+        setLoading(false); 
+      }).catch(() => { toast.error('Lesson not found'); navigate('/lessons'); });
     }
-  }, [id, isBatch]);
+  }, [id, isBatch, navigate]);
+
+  const onUpdateLesson = async (lessonId, payload) => {
+    try {
+      const res = await lessonsAPI.update(lessonId, payload);
+      setData(prev => ({
+        ...prev,
+        lessons: prev.lessons.map(l => l._id === lessonId ? res.data.lesson : l)
+      }));
+      toast.success('Lesson updated');
+    } catch (err) {
+      toast.error('Update failed');
+    }
+  };
+
+  const onRegenerateSection = async (lessonId, dayIndex, sectionName) => {
+    const res = await lessonsAPI.regenerateSection(lessonId, { dayIndex, sectionName });
+    setData(prev => ({
+      ...prev,
+      lessons: prev.lessons.map(l => l._id === lessonId ? res.data.lesson : l)
+    }));
+    return res.data;
+  };
 
   const handleDownload = async () => {
     if (user?.plan === 'free' && user?.freeExportUsed) { navigate('/payment'); return; }
@@ -220,7 +306,12 @@ export default function LessonViewPage({ isBatch = false }) {
       <div className="min-h-screen py-10 px-4 print:bg-transparent print:min-h-0 print:py-0">
         <div className="max-w-[794px] mx-auto bg-white print:shadow-none shadow-[0_0_20px_rgba(0,0,0,0.05)] border border-gray-200 print:border-none p-12 print:p-0 rounded-xl print:rounded-none selection:bg-gray-200 text-black">
           {data.lessons.map((lesson, idx) => (
-             <SingleLessonView key={lesson._id || idx} lesson={lesson} />
+             <SingleLessonView 
+               key={lesson._id || idx} 
+               lesson={lesson} 
+               onUpdate={onUpdateLesson}
+               onRegenerate={onRegenerateSection}
+             />
           ))}
           
           <div className="text-center mt-12 pt-4 border-t border-gray-300 text-xs text-gray-500 font-medium print:hidden">
