@@ -313,10 +313,12 @@ export default function SchemePage() {
                     ? 'bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-emerald-200 hover:scale-[1.02]' 
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
               >
+                {uploading ? (
+                  <>
                     <div className="w-4 h-4 border-2 border-white border-t-transparent animate-spin rounded-full"/>
                     AI is parsing your scheme...
                   </>
-                ) : 'Parse Scheme with AI →'}
+                ) : `Parse ${selectedSubjects.length} Subject(s) →`}
               </button>
 
               {uploading && (
