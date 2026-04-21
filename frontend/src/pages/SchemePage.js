@@ -97,8 +97,7 @@ export default function SchemePage() {
   const [file, setFile]             = useState(null);
   const [pasteText, setPasteText]   = useState('');
   const [dragging, setDragging]     = useState(false);
-  const [classCode, setClassCode]   = useState('');
-  const [subject, setSubject]       = useState('');
+  const [selectedSubjects, setSelectedSubjects] = useState([]);
   const [term, setTerm]             = useState('1');
   const [uploading, setUploading]   = useState(false);
 
@@ -126,36 +125,45 @@ export default function SchemePage() {
   useEffect(() => { loadSchemes(); }, [loadSchemes]);
 
   const handleUpload = async () => {
-    if (tab === 'upload') {
-      if (!file || !classCode || !subject || !term) return toast.error('Select class, subject, term, and a file.');
-      setUploading(true);
-      try {
-        const fd = new FormData();
-        fd.append('schemeFile', file);
-        fd.append('classCode', classCode);
-        fd.append('subject', subject);
-        fd.append('term', term);
-        const res = await schemeAPI.upload(fd);
-        toast.success('Scheme parsed successfully!');
-        setActiveScheme(res.data.scheme);
-        setFile(null);
-        loadSchemes();
-      } catch (err) {
-        toast.error(err.response?.data?.message || 'Upload failed.');
-      } finally { setUploading(false); }
-    } else {
-      if (!pasteText.trim() || !classCode || !subject || !term) return toast.error('Select class, subject, term, and paste your scheme text.');
-      setUploading(true);
-      try {
-        const res = await schemeAPI.paste({ classCode, subject, term: Number(term), rawText: pasteText });
-        toast.success('Scheme parsed successfully!');
-        setActiveScheme(res.data.scheme);
-        setPasteText('');
-        loadSchemes();
-      } catch (err) {
-        toast.error(err.response?.data?.message || 'Paste parsing failed.');
-      } finally { setUploading(false); }
+    if (!classCode || selectedSubjects.length === 0 || !term || (tab === 'upload' ? !file : !pasteText.trim())) {
+      return toast.error('Please select Class, Subjects, Term, and provide a file or text.');
     }
+
+    setUploading(true);
+    const toastId = toast.loading(`Parsing scheme for ${selectedSubjects.length} subject(s)...`);
+    
+    try {
+      // We process subjects one by one or as a batch depending on backend.
+      // Currently backend takes one subject. We'll loop for now or send as array if backend updated.
+      // Let's assume we want to create one entry per subject.
+      
+      for (const sub of selectedSubjects) {
+        if (tab === 'upload') {
+          const fd = new FormData();
+          fd.append('schemeFile', file);
+          fd.append('classCode', classCode);
+          fd.append('subject', sub);
+          fd.append('term', term);
+          await schemeAPI.upload(fd);
+        } else {
+          await schemeAPI.paste({ classCode, subject: sub, term: Number(term), rawText: pasteText });
+        }
+      }
+
+      toast.success('All schemes parsed successfully!', { id: toastId });
+      setFile(null);
+      setPasteText('');
+      loadSchemes();
+      // Auto-select the first one to show
+      const res = await schemeAPI.list();
+      if (res.data.schemes?.length > 0) setActiveScheme(res.data.schemes[0]);
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Parsing failed.', { id: toastId });
+    } finally { setUploading(false); }
+  };
+
+  const toggleSubject = (s) => {
+    setSelectedSubjects(prev => prev.includes(s) ? prev.filter(x => x !== s) : [...prev, s]);
   };
 
   const handleDeleteScheme = async (id) => {
@@ -249,30 +257,38 @@ export default function SchemePage() {
               <div className="grid grid-cols-1 gap-3 mb-4">
                 {/* Class */}
                 <div>
-                  <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Class Level</label>
+                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">1. Class Level</label>
                   <select value={classCode} onChange={e => setClassCode(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm text-gray-900 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition">
+                    className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-100 rounded-2xl text-sm font-bold focus:border-emerald-400 outline-none transition">
                     <option value="">Select class...</option>
                     {CLASSES.map(g => <optgroup key={g.group} label={g.group}>{g.options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}</optgroup>)}
                   </select>
                 </div>
-                {/* Subject */}
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Subject</label>
-                  <select value={subject} onChange={e => setSubject(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm text-gray-900 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition">
-                    <option value="">Select subject...</option>
-                    {SUBJECTS.map(s => <option key={s}>{s}</option>)}
-                  </select>
-                </div>
-                {/* Term */}
-                <div className="flex gap-2">
+
+                {/* Term Selection */}
+                <div className="flex gap-2 mb-2">
                   {TERMS.map(t => (
                     <button key={t.value} onClick={() => setTerm(t.value)}
-                      className={`flex-1 py-2.5 text-xs font-semibold rounded-xl border transition-all ${term === t.value ? 'border-emerald-400 bg-emerald-50 text-emerald-800' : 'border-gray-200 bg-gray-50 text-gray-500 hover:border-gray-300'}`}>
+                      className={`flex-1 py-2.5 text-xs font-bold rounded-xl border-2 transition-all ${term === t.value ? 'border-emerald-500 bg-emerald-50 text-emerald-800' : 'border-gray-100 bg-gray-50 text-gray-400'}`}>
                       {t.label}
                     </button>
                   ))}
+                </div>
+
+                {/* Multi-Subject Selection */}
+                <div>
+                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">2. Select Subjects in Scheme</label>
+                  <div className="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto p-1 scrollbar-hide">
+                    {SUBJECTS.map(s => {
+                      const isSel = selectedSubjects.includes(s);
+                      return (
+                        <button key={s} onClick={() => toggleSubject(s)}
+                          className={`px-3 py-2 rounded-xl border-2 text-[11px] font-bold text-left transition-all ${isSel ? 'border-emerald-500 bg-emerald-50 text-emerald-900' : 'border-gray-100 bg-white text-gray-500 hover:border-gray-200'}`}>
+                          {isSel ? '✓ ' : ''}{s}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
 
@@ -291,14 +307,12 @@ export default function SchemePage() {
 
               <button
                 onClick={handleUpload}
-                disabled={uploading || (tab === 'upload' ? !file : !pasteText.trim()) || !classCode || !subject}
-                className={`mt-6 w-full py-3.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-sm
-                  ${(tab === 'upload' ? file : pasteText.trim()) && classCode && subject 
-                    ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-emerald-200' 
+                disabled={uploading || (tab === 'upload' ? !file : !pasteText.trim()) || !classCode || selectedSubjects.length === 0}
+                className={`mt-4 w-full py-4 rounded-2xl text-sm font-black transition-all flex items-center justify-center gap-2 shadow-lg
+                  ${(tab === 'upload' ? file : pasteText.trim()) && classCode && selectedSubjects.length > 0
+                    ? 'bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-emerald-200 hover:scale-[1.02]' 
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
               >
-                {uploading ? (
-                  <>
                     <div className="w-4 h-4 border-2 border-white border-t-transparent animate-spin rounded-full"/>
                     AI is parsing your scheme...
                   </>

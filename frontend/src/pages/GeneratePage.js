@@ -98,11 +98,21 @@ export default function GeneratePage() {
     }
   };
 
-  const addToBasket = () => {
-    if (!form.classCode || !form.subject) return toast.error('Class and subject are required');
-    setSubjectsBasket(curr => [...curr, { ...form, id: Date.now() }]);
-    setForm({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard', level: 'Standard', termStartDate: '' });
-    toast.success('Subject added');
+  const toggleSubjectInBasket = (subj) => {
+    setSubjectsBasket(prev => {
+      const exists = prev.find(s => s.subject === subj);
+      if (exists) {
+        toast.error(`Removed ${subj}`);
+        return prev.filter(s => s.subject !== subj);
+      } else {
+        if (!form.classCode) {
+          toast.error('Select a Class Level first');
+          return prev;
+        }
+        toast.success(`Added ${subj}`);
+        return [...prev, { ...form, subject: subj, id: Date.now() }];
+      }
+    });
   };
 
   const handleGenerateAll = async () => {
@@ -152,15 +162,15 @@ export default function GeneratePage() {
           {/* STEP 1 */}
           {step === 1 && (
             <div>
-              <h2 className="text-base font-bold text-gray-900 mb-6">Select Term &amp; Week</h2>
-              <div className="grid grid-cols-2 gap-4 mb-6">
+                <h2 className="text-base font-bold text-gray-900 mb-6">Step 1: The Basics</h2>
+              <div className="grid grid-cols-2 gap-4 mb-8">
                 <div>
                   <FieldLabel>Term</FieldLabel>
                   <div className="flex gap-2">
                     {['1','2','3'].map(t => (
                       <button key={t} onClick={() => setTerm(t)}
                         className={`flex-1 py-2.5 rounded-xl border text-sm font-semibold transition-all ${term === t ? 'border-emerald-400 bg-emerald-50 text-emerald-800' : 'border-gray-200 bg-gray-50 text-gray-500 hover:border-gray-300'}`}>
-                        Term {t}
+                        T{t}
                       </button>
                     ))}
                   </div>
@@ -168,79 +178,71 @@ export default function GeneratePage() {
                 <div>
                   <FieldLabel>Week</FieldLabel>
                   <select value={week} onChange={e => setWeek(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition">
+                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition">
                     {[...Array(15)].map((_, i) => <option key={i+1} value={i+1}>Week {i+1}</option>)}
                   </select>
                 </div>
               </div>
 
-              {/* Timetable upload (NEW - REQUIRED) */}
-              <div className="p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 mb-6 shadow-sm">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                    <h4 className="text-sm font-bold text-emerald-900">Upload Your Timetable (REQUIRED)</h4>
-                  </div>
-                  {timetable && <span className="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-tight">Active</span>}
-                </div>
-                <p className="text-xs text-gray-500 mb-4 font-medium italic">Supports Images (JPEG/PNG), PDF, or Excel sheets.</p>
-                
-                <div className="mb-4">
-                   <FieldLabel>Class Level</FieldLabel>
-                   <select value={form.classCode} onChange={set('classCode')}
-                    className="w-full px-3 py-2 bg-white border border-emerald-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition mb-3">
-                    <option value="">Select class first...</option>
-                    {CLASSES.map(g => <optgroup key={g.group} label={g.group}>{g.options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}</optgroup>)}
-                  </select>
-                </div>
-
-                <input type="file" accept="image/*,.pdf,.xlsx,.xls,.csv" 
-                  onChange={e => setTimetableFile(e.target.files[0])} 
-                  className="text-xs mb-4 w-full text-gray-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-gray-900 file:text-white hover:file:bg-gray-800" />
-                
-                <button onClick={handleUploadTimetable} disabled={uploadingTimetable || !timetableFile || !form.classCode}
-                  className={`w-full py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 ${timetable ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-emerald-600 text-white hover:bg-emerald-700'}`}>
-                  {uploadingTimetable ? (
-                    <><div className="w-3 h-3 border border-white border-t-transparent animate-spin rounded-full"/> Parsing Timetable...</>
-                  ) : timetable ? '✓ Timetable Ready (Click to Update)' : 'Parse Timetable with AI'}
-                </button>
+              <div className="mb-8">
+                <FieldLabel>Class Level</FieldLabel>
+                <select value={form.classCode} onChange={set('classCode')}
+                  className="w-full px-4 py-3 bg-white border-2 border-gray-100 rounded-2xl text-base font-semibold focus:border-emerald-400 outline-none transition">
+                  <option value="">Select your class level...</option>
+                  {CLASSES.map(g => <optgroup key={g.group} label={g.group}>{g.options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}</optgroup>)}
+                </select>
               </div>
 
-              {/* Scheme upload (Optional but helpful) */}
-              <div className="p-5 rounded-2xl border border-dashed border-gray-200 bg-gray-50 mb-6 transition-all hover:border-emerald-300">
-                <div className="flex items-center gap-2 mb-1">
-                  <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                  <h4 className="text-sm font-bold text-gray-700">Optional: Scheme of Learning</h4>
+              {/* Subject Grid - THE HEART OF MULTI-SELECT */}
+              <div className="mb-10">
+                <FieldLabel>Select Subjects (Select All That Apply)</FieldLabel>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {SUBJECTS.map(s => {
+                    const isSelected = subjectsBasket.some(b => b.subject === s);
+                    return (
+                      <button key={s} onClick={() => toggleSubjectInBasket(s)}
+                        className={`p-4 rounded-2xl border-2 text-left transition-all duration-200 ${isSelected ? 'border-emerald-500 bg-emerald-50 shadow-sm ring-2 ring-emerald-100' : 'border-gray-100 bg-gray-50/50 hover:border-gray-200 hover:bg-white'}`}>
+                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center mb-2 transition-colors ${isSelected ? 'bg-emerald-500 text-white' : 'bg-gray-200 text-gray-400'}`}>
+                          {isSelected ? '✓' : s[0]}
+                        </div>
+                        <p className={`text-[13px] font-bold leading-tight ${isSelected ? 'text-emerald-900' : 'text-gray-500'}`}>{s}</p>
+                      </button>
+                    );
+                  })}
                 </div>
-                <p className="text-xs text-gray-400 mb-4">Upload your SOW to ensure AI aligns perfectly with your term plan.</p>
-                
-                <div className="mb-4">
-                  <FieldLabel>Select Subject for Scheme</FieldLabel>
-                  <select value={form.subject} onChange={set('subject')}
-                    className="w-full px-3 py-2 bg-white border border-gray-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition mb-3">
-                    <option value="">Select subject...</option>
-                    {SUBJECTS.map(s => <option key={s} value={s}>{s}</option>)}
-                  </select>
+              </div>
+
+              {/* Resources - CLEARLY OPTIONAL */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                {/* Timetable upload */}
+                <div className="p-5 rounded-2xl border-2 border-dashed border-emerald-200 bg-emerald-50/30">
+                  <h4 className="text-[11px] font-black text-emerald-800 uppercase tracking-widest mb-1">Smart Timetable</h4>
+                  <p className="text-[10px] text-emerald-600 mb-3 font-medium">Auto-sync subjects from your picture</p>
+                  <input type="file" accept="image/*,.pdf" onChange={e => setTimetableFile(e.target.files[0])} className="text-[10px] mb-3 w-full" />
+                  <button onClick={handleUploadTimetable} disabled={uploadingTimetable || !timetableFile || !form.classCode}
+                    className="w-full py-1.5 bg-emerald-600 text-white rounded-lg text-[10px] font-bold hover:bg-emerald-700 transition">
+                    {uploadingTimetable ? 'Syncing...' : 'Sync Timetable'}
+                  </button>
                 </div>
 
-                <input type="file" accept=".pdf,.docx,.txt" 
-                  onChange={e => setSchemeFile(e.target.files[0])} 
-                  className="text-xs mb-4 w-full text-gray-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gray-200 file:text-gray-700" />
-                
-                <button onClick={handleUploadScheme} disabled={uploadingScheme || !schemeFile || !form.classCode || !form.subject}
-                  className={`px-6 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 ${schemeFile && form.subject ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-md' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}>
-                  {uploadingScheme ? (
-                    <><div className="w-3 h-3 border border-white border-t-transparent animate-spin rounded-full"/> Parsing...</>
-                  ) : 'Upload & Parse Scheme'}
-                </button>
+                {/* Scheme upload */}
+                <div className="p-5 rounded-2xl border-2 border-dashed border-gray-200 bg-gray-50/50">
+                  <h4 className="text-[11px] font-black text-gray-700 uppercase tracking-widest mb-1">Optional: SOW</h4>
+                  <p className="text-[10px] text-gray-400 mb-3 font-medium">Ensure AI aligns with your term plan</p>
+                  <input type="file" accept=".pdf,.docx" onChange={e => setSchemeFile(e.target.files[0])} className="text-[10px] mb-3 w-full" />
+                  <button onClick={handleUploadScheme} disabled={uploadingScheme || !schemeFile || !form.classCode || subjectsBasket.length === 0}
+                    className="w-full py-1.5 bg-gray-900 text-white rounded-lg text-[10px] font-bold hover:bg-gray-800 transition">
+                    {uploadingScheme ? 'Parsing...' : 'Upload Scheme'}
+                  </button>
+                </div>
               </div>
 
               <button onClick={() => {
-                if (!timetable) return toast.error('Please upload and parse your timetable first.');
+                if (!subjectsBasket.length) return toast.error('Please select at least one subject.');
                 setStep(2);
               }}
-                className="w-full py-3.5 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition shadow-sm disabled:opacity-50">
-                Next Step: Configure Subjects →
+                className="w-full py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-2xl font-black text-lg shadow-xl shadow-emerald-200 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                Continue with {subjectsBasket.length} Subjects →
               </button>
             </div>
           )}
@@ -248,29 +250,14 @@ export default function GeneratePage() {
           {/* STEP 2 */}
           {step === 2 && (
             <div>
-              <h2 className="text-base font-bold text-gray-900 mb-6">Add Subjects to Batch</h2>
-
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                  <FieldLabel>Class Level</FieldLabel>
-                  <select value={form.classCode} onChange={set('classCode')}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition">
-                    <option value="">Select class...</option>
-                    {CLASSES.map(g => <optgroup key={g.group} label={g.group}>{g.options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}</optgroup>)}
-                  </select>
-                </div>
-                <div>
-                  <FieldLabel>Subject</FieldLabel>
-                  <select value={form.subject} onChange={set('subject')}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition">
-                    <option value="">Select subject...</option>
-                    {SUBJECTS.map(s => <option key={s}>{s}</option>)}
-                  </select>
-                </div>
+              <h2 className="text-base font-bold text-gray-900 mb-6">Step 2: Customize Style</h2>
+              <div className="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 mb-6">
+                <p className="text-xs font-bold text-emerald-800 mb-1">Configuration for {subjectsBasket.length} Subjects</p>
+                <p className="text-[11px] text-emerald-600">The settings below will be applied to your entire batch.</p>
               </div>
 
-              <div className="md:col-span-2 mb-4">
-                <label className="block text-xs font-bold text-gray-700 mb-1.5 uppercase tracking-wider">Teaching Style & Difficulty</label>
+              <div className="md:col-span-2 mb-8">
+                <label className="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wider">Teaching Style & Difficulty</label>
                 <div className="grid grid-cols-2 gap-3">
                   <select value={form.style} onChange={set('style')}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-emerald-500 transition outline-none bg-white">
@@ -288,35 +275,31 @@ export default function GeneratePage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 mb-4">
+              <div className="grid grid-cols-1 gap-6 mb-8">
                 <div>
-                  <FieldLabel>Periods per Week</FieldLabel>
-                  <input type="number" min="1" max="10" value={form.periods} onChange={set('periods')}
-                    className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 outline-none transition" />
-                </div>
-                <div>
-                  <FieldLabel>Teaching Days</FieldLabel>
-                  <div className="flex gap-1.5">
-                    {['1','2','3','4','5'].map(d => (
-                      <button key={d} onClick={() => setForm(f => ({ ...f, teachingDays: d }))}
-                        className={`flex-1 py-2.5 rounded-xl border text-xs font-bold transition-all ${form.teachingDays === d ? 'border-emerald-400 bg-emerald-50 text-emerald-800' : 'border-gray-200 bg-gray-50 text-gray-500 hover:border-gray-300'}`}>
-                        {d}
-                      </button>
-                    ))}
+                  <FieldLabel>Batch Teaching Frequency (Suggested)</FieldLabel>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1">
+                      <p className="text-[11px] text-gray-500 mb-1">Periods/Week</p>
+                      <input type="number" min="1" max="10" value={form.periods} onChange={set('periods')}
+                        className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-[11px] text-gray-500 mb-1">Days/Week</p>
+                      <select value={form.teachingDays} onChange={e => setForm(f => ({ ...f, teachingDays: e.target.value }))}
+                        className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm">
+                        {[1,2,3,4,5].map(d => <option key={d} value={d}>{d} Days</option>)}
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <button onClick={addToBasket}
-                className="w-full py-3 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-xl text-sm font-bold hover:bg-emerald-100 transition mb-6">
-                + Add Subject to Batch
-              </button>
-
-              <div className="flex gap-3">
-                <button onClick={() => setStep(1)} className="px-5 py-3 bg-gray-100 text-gray-600 rounded-xl text-sm font-bold hover:bg-gray-200 transition">← Back</button>
-                <button onClick={() => setStep(3)} disabled={!subjectsBasket.length}
-                  className="flex-1 py-3 bg-gray-900 text-white rounded-xl text-sm font-bold hover:bg-gray-800 transition disabled:opacity-50 shadow-sm">
-                  Review Batch ({subjectsBasket.length}) →
+              <div className="flex gap-4">
+                <button onClick={() => setStep(1)} className="px-8 py-3.5 bg-gray-100 text-gray-600 rounded-2xl text-sm font-bold hover:bg-gray-200 transition">← Back</button>
+                <button onClick={() => setStep(3)}
+                  className="flex-1 py-3.5 bg-gray-900 text-white rounded-2xl text-sm font-bold hover:bg-gray-800 transition shadow-lg">
+                  Next: Final Review →
                 </button>
               </div>
             </div>
