@@ -337,31 +337,51 @@ export default function GeneratePage() {
         </div>
 
         {/* ── Subject Basket ────────────────────────────── */}
-        <div className="glass rounded-2xl p-5 h-fit shadow-xl shadow-emerald-900/5">
-          <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 pb-3 border-b border-emerald-100/30">
-            Batch ({subjectsBasket.length} subject{subjectsBasket.length !== 1 ? 's' : ''})
-          </h3>
+        <div className="glass rounded-3xl p-6 h-fit shadow-xl shadow-emerald-900/5 border border-emerald-100/20 order-last lg:order-none">
+          <div className="flex items-center justify-between mb-6 pb-4 border-b border-emerald-100/30">
+            <h3 className="text-[11px] font-black text-gray-400 uppercase tracking-[0.2em]">
+              Your Batch
+            </h3>
+            <span className="bg-emerald-500 text-white px-2.5 py-0.5 rounded-lg text-[10px] font-bold shadow-sm">
+              {subjectsBasket.length} Subjects
+            </span>
+          </div>
 
           {subjectsBasket.length === 0 ? (
-            <div className="text-center py-10">
-              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <svg className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+            <div className="text-center py-12">
+              <div className="w-16 h-16 bg-gray-50 rounded-3xl flex items-center justify-center mx-auto mb-4 border-2 border-dashed border-gray-100">
+                <Layers className="w-8 h-8 text-gray-200" />
               </div>
-              <p className="text-xs text-gray-400 font-medium">Add subjects in Step 2</p>
+              <p className="text-sm text-gray-400 font-bold">Your basket is empty</p>
+              <p className="text-[10px] text-gray-300 mt-1">Select subjects from the grid</p>
             </div>
           ) : (
-            <div className="space-y-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
               {subjectsBasket.map(s => (
-                <div key={s.id} className="bg-white p-3.5 rounded-xl border border-gray-200 shadow-sm group relative">
-                  <p className="text-sm font-semibold text-gray-900 pr-6 leading-tight">{s.subject}</p>
-                  <p className="text-xs text-gray-400 mt-1">{s.classCode} · {s.teachingDays} days · {s.periods} periods · {s.style}</p>
+                <div key={s.id} className="bg-white/80 p-4 rounded-2xl border border-emerald-100/50 shadow-sm hover:shadow-md transition-all group relative">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-600 font-black text-sm">
+                      {s.subject[0]}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-black text-gray-900 truncate pr-4">{s.subject}</p>
+                      <p className="text-[10px] text-gray-400 font-bold uppercase tracking-tight mt-0.5">{s.classCode} · {s.periods}p</p>
+                    </div>
+                  </div>
                   <button onClick={() => setSubjectsBasket(curr => curr.filter(x => x.id !== s.id))}
-                    className="absolute top-2.5 right-2.5 w-5 h-5 flex items-center justify-center text-gray-300 hover:text-red-500 transition text-base leading-none">
-                    ×
+                    className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-full bg-gray-50 text-gray-300 hover:bg-red-50 hover:text-red-500 transition-all opacity-0 group-hover:opacity-100 lg:opacity-100">
+                    <span className="text-lg">×</span>
                   </button>
                 </div>
               ))}
             </div>
+          )}
+
+          {subjectsBasket.length > 0 && step === 1 && (
+             <div className="mt-8 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50 text-center">
+                <p className="text-[10px] font-bold text-emerald-800 uppercase tracking-widest">Ready to proceed?</p>
+                <button onClick={() => setStep(2)} className="mt-2 text-xs font-black text-emerald-600 hover:underline">Configure Style Settings →</button>
+             </div>
           )}
         </div>
       </div>
