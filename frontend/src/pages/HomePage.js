@@ -17,15 +17,15 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
        {/* Hero Section Container - NO CARD BOUNDARY */}
        <div className="px-4 w-full flex flex-col items-center pt-24 pb-12">
-          <div className="relative z-10 max-w-2xl mx-auto space-y-8 animate-fade-in py-12 px-6 rounded-[3rem] bg-white/5 dark:bg-black/5 backdrop-blur-[2px]">
+          <div className="relative z-10 max-w-2xl mx-auto space-y-8 animate-fade-in py-12 px-6 rounded-[3rem] bg-black/20 backdrop-blur-md border border-white/10">
             
-            <h1 className="text-4xl md:text-6xl font-black text-gray-950 dark:text-white font-serif leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(255,255,255,0.8)] dark:drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+            <h1 className="text-4xl md:text-6xl font-black text-white font-serif leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
                 Smarter Lesson Notes <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
                   In Seconds.
                 </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-950 dark:text-white max-w-xl mx-auto font-black leading-relaxed drop-shadow-[0_2px_12px_rgba(255,255,255,1)] dark:drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
+            <p className="text-lg md:text-xl text-emerald-50/90 max-w-xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
                 The ultimate SaaS tool for Ghanaian teachers. Batch generate NaCCA-compliant lesson notes from your termly scheme and export print-ready DOCX files instantly.
             </p>
             

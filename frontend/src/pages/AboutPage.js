@@ -13,17 +13,17 @@ import {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-transparent transition-colors">
+    <div className="min-h-screen bg-transparent transition-colors" style={{ backgroundImage: 'radial-gradient(circle at center, transparent 0%, rgba(5, 20, 12, 0.45) 100%), linear-gradient(to bottom, rgba(5, 20, 12, 0.55) 0%, rgba(5, 20, 12, 0.25) 100%), url("/assets/ghanaian_classroom_bg_1776547738730.png")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
       <div className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
           
           {/* Hero Section */}
           <div className="text-center mb-20 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white font-serif mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-black text-white font-serif mb-6 leading-tight drop-shadow-xl">
               Bridging Classrooms <br /> 
-              & <span className="text-emerald-600 dark:text-emerald-400">Code.</span>
+              & <span className="text-emerald-400">Code.</span>
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-xl text-emerald-50/90 max-w-2xl mx-auto leading-relaxed font-bold drop-shadow-md">
               MEET THE FOUNDER: A professional educator and software engineer dedicated to modernizing Ghanaian education through scalable AI systems.
             </p>
           </div>
@@ -34,11 +34,11 @@ export default function AboutPage() {
               <div className="inline-block px-4 py-1.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-xs font-bold uppercase tracking-widest">
                 The Founder's Journey
               </div>
-              <h2 className="text-3xl font-bold font-serif text-gray-900 dark:text-white">From the Chalkboard to the Codebase.</h2>
-              <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
+              <h2 className="text-3xl font-bold font-serif text-white">From the Chalkboard to the Codebase.</h2>
+              <p className="text-emerald-50/90 leading-relaxed font-medium">
                 Since February 2020, I have served as a **Basic School Teacher** in Ghana. My daily experience in the classroom revealed a critical gap: teachers spend hours on manual paperwork that could be automated by technology.
               </p>
-              <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
+              <p className="text-emerald-50/90 leading-relaxed font-medium">
                 To solve this, I transitioned into deep software engineering. Having attended **Accra College of Education (2017-2020)** and currently pursuing a BSc. in Computer Science at **Accra Institute of Technology (2023-2026)**, I built LessonGen Ghana to be the bridge between traditional pedagogy and the future of AI.
               </p>
             </div>
@@ -66,29 +66,29 @@ export default function AboutPage() {
 
           {/* Expert Experience */}
           <div className="mb-32">
-            <h2 className="text-3xl font-bold font-serif text-gray-900 dark:text-white mb-12 text-center">Engineering Portfolio</h2>
+            <h2 className="text-3xl font-bold font-serif text-white mb-12 text-center">Engineering Portfolio</h2>
              <div className="grid md:grid-cols-3 gap-6">
-               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                 <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
-                   <ShieldCheck size={24} strokeWidth={2.5} />
-                 </div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">CyberShield-AI</h4>
-                 <p className="text-sm text-gray-500 dark:text-gray-400">ML-powered intrusion detection system using Isolation Forest & Deep Autoencoders.</p>
-               </div>
-               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:blue-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
-                   <Building2 size={24} strokeWidth={2.5} />
-                 </div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Bankly App</h4>
-                 <p className="text-sm text-gray-500 dark:text-gray-400">Secure React Native mobile banking solution with encrypted JWT auth and RBAC.</p>
-               </div>
-               <div className="p-8 bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:scale-105 transition cursor-default group">
-                 <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
-                   <HardHat size={24} strokeWidth={2.5} />
-                 </div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">SecureX (GRC)</h4>
-                 <p className="text-sm text-gray-500 dark:text-gray-400">Enterprise Cybersecurity & Risk Management platform tailored for African firms.</p>
-               </div>
+                <div className="p-8 glass rounded-2xl shadow-sm hover:scale-105 transition cursor-default group">
+                  <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                    <ShieldCheck size={24} strokeWidth={2.5} />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2">CyberShield-AI</h4>
+                  <p className="text-sm text-emerald-50/70">ML-powered intrusion detection system using Isolation Forest & Deep Autoencoders.</p>
+                </div>
+                <div className="p-8 glass rounded-2xl shadow-sm hover:scale-105 transition cursor-default group">
+                  <div className="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                    <Building2 size={24} strokeWidth={2.5} />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2">Bankly App</h4>
+                  <p className="text-sm text-emerald-50/70">Secure React Native mobile banking solution with encrypted JWT auth and RBAC.</p>
+                </div>
+                <div className="p-8 glass rounded-2xl shadow-sm hover:scale-105 transition cursor-default group">
+                  <div className="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition">
+                    <HardHat size={24} strokeWidth={2.5} />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2">SecureX (GRC)</h4>
+                  <p className="text-sm text-emerald-50/70">Enterprise Cybersecurity & Risk Management platform tailored for African firms.</p>
+                </div>
              </div>
           </div>
 
