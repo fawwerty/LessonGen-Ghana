@@ -1,0 +1,3554 @@
+NATIONAL COUNCIL FOR  
+CURRICULUM & ASSESSMENT 
+(MINISTRY OF EDUCATION) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PHYSICAL EDUCATION AND HEALTH 
+COMMON CORE PROGRAMME (CCP) 
+CURRICULUM FOR JHS1 (B7) - JHS3 (B9) 
+ 
+SEPTEMBER, 2020 
+ 
+ 
+ 
+ 
+MINISTRY OF EDUCATION 
+REPUBLIC OF GHANA 
+ 
+
+ii 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+Physical Education and Health Curriculum for Junior High School 1-3 
+Enquiries and comments on this Curriculum should be addressed to: 
+The Director-General 
+National Council for Curriculum and 
+Assessment (NaCCA) Ministry of 
+Education 
+P. O. Box 
+CT PMB 
+77 
+Cantonm
+ents 
+Accra 
+Telephone: 0302909071, 0302909862 
+Email: info@nacca.gov.gh 
+Website: www.nacca.gov.gh 
+ 
+ 
+©2021 National Council for Curriculum and Assessment (NaCCA) 
+This publication is not for sale. All rights reserved. No part of this 
+publication may be reproduced without prior written permission 
+from the Ministry of Education, Ghana. 
+ 
+Ministry of Education 
+Ghana 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+iii 
+ 
+© NaCCA, Ministry of Education 2021 
+FOREWORD 
+ 
+The Ministry of Education, acting through the National Council for Curriculum and Assessment (NaCCA) has, in recent times, been working on curriculum and 
+assessment reforms to improve the quality and relevance of learning experiences in pre-tertiary schools in Ghana. This JHS curriculum, is a sequel to the Kindergarten-
+Primary standards-based school curriculum, the implementation of which commenced with the 2019/2020 academic year. The curriculum focuses on building 
+character and nurturing values, in addition to ensuring a seamless progression for all learners from JHS1 to JHS3 and creates clear continuity in the SHS Physical 
+Education and Health programmes. 
+ 
+In the twenty-first century, memorisation of facts and figures is no longer a sufficient learner attribute. Therefore, the JHS curriculum focuses on the acquisition of 
+the 4Rs (Reading, wRiting, aRithmetic and cReativity) and core competencies to afford learners the ability to apply and integrate knowledge innovatively to solve 
+everyday problems. Personal projects, community projects and community service 
+ 
+The Ministry of Education is committed to ensuring that our schools develop globally competitive high school graduates who have the requisite employable skills 
+and workplace ethos. The JHS curriculum will, therefore, play an important role in this regard. The Ministry will support the effective implementation of the JHS 
+curriculum to include capacity development of all teachers to ensure improved learning experiences and outcomes for our young people. 
+ 
+ 
+Dr Matthew Opoku Prempeh (MP) 
+The Honourable Minister of Education 
+ 
+ 
+ 
+
+iv 
+ 
+© NaCCA, Ministry of Education 2021 
+ACKNOWLEDGEMENTS 
+ 
+This JHS curriculum was developed together with the National Pre-tertiary Learning Assessment Framework (NPLAF) The JHS curriculum was developed by the 
+National Council for Curriculum and Assessment (NaCCA), under the oversight and strategic direction of the Ministry of Education (MoE) with support from some 
+agencies of the MoE and other relevant stakeholders. 
+ 
+NaCCA, acting on behalf of the Ministry of Education (MoE), would like to express its sincere gratitude to all its partners who participated in the professional 
+conversations and discussions during the course of the development of the JHS curriculum. 
+ 
+NaCCA also extends special commendations to the leadership of the Ghana Education Service (GES), National School Inspectorate Authority (NaSIA), National 
+Teaching Council (NTC), Commission for Technical and Vocational Education and Training (Commission for TVET) and other agencies of the MoE. 
+ 
+Additionally, NaCCA acknowledges the contributions of staff from various Universities and Colleges of Education as well as teachers and learners with- in the Ghana 
+Education Service. 
+ 
+ Special thanks go to those who also contributed to shaping this curriculum content through the consultation process, including the national stakeholder engagement 
+conducted in Accra in February, 2020. 
+ 
+ 
+ 
+
+v 
+ 
+© NaCCA, Ministry of Education 2021 
+CONTENTS 
+ 
+FOREWORD  ...............................................................................................................................................................................................................................................................................iii 
+ACKNOWLEDGEMENTS...........................................................................................................................................................................................................................................................iv 
+INTRODUCTION .......................................................................................................................................................................................................................................................................viii 
+RATIONALE  ............................................................................................................................................................................................................................................................................... x 
+PHILOSOPHY  .............................................................................................................................................................................................................................................................................. xi 
+AIMS  .............................................................................................................................................................................................................................................................................................. xiii 
+PROFILE OF EXPECTED LEARNING BEHAVIOURS ...................................................................................................................................................................................................... xiii 
+ASSESSMENT   ........................................................................................................................................................................................................................................................................... xvii 
+CREATIVE PEDAGOGICAL APPROACHES ...................................................................................................................................................................................................................... xxii 
+LEARNING-CENTRED PEDAGOGY ................................................................................................................................................................................................................................. xxiii 
+CORE COMPETENCIES ........................................................................................................................................................................................................................................................ xxvii 
+INSTRUCTIONAL EXPECTATIONS .................................................................................................................................................................................................................................. xxix 
+STRUCTURE AND ORGANISATION OF THE PEH CURRICULUM ........................................................................................................................................................................ xxx 
+SCOPE AND SEQUENCE ..................................................................................................................................................................................................................................................... xxxii 
+
+vi 
+ 
+© NaCCA, Ministry of Education 2021 
+JHS1  ................................................................................................................................................................................................................................................................................................. 1 
+STRAND 1: HEALTH EDUCATION ............................................................................................................................................................................. 2 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY ..................................................................................................................................................................................... 2 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT ............................................................................................................................................................................ 3 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT ....................................................................................................................................................... 4 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION ...................................................................................................................................................... 6 
+SUB-STRAND 1: TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE ..................................................................................................................................... 6 
+SUB-STRAND 2: PHYSICAL FITNESS ............................................................................................................................................................................................................................. 10 
+SUB-STRAND 3: ORGANISED SPORTS AND PHYSICAL ACTIVITY PARTICIPATION ................................................................................................................................. 13 
+JHS 2  .............................................................................................................................................................................................................................................................................................. 20 
+STRAND 1: HEALTH EDUCATION ............................................................................................................................................................................ 21 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY ..................................................................................................................................................................................... 21 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT .......................................................................................................................................................................... 22 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT ....................................................................................................................................................... 23 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION .................................................................................................................................................... 25 
+SUB-STRAND 1:TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE .................................................................................................................................... 25 
+SUB-STRAND 2: PHYSICAL FITNESS ............................................................................................................................................................................................................................. 28 
+JHS 3  ............................................................................................................................................................................................................................................................................................... 37 
+STRAND 1: HEALTH EDUCATION ............................................................................................................................................................................ 38 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY ..................................................................................................................................................................................... 38 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT .......................................................................................................................................................................... 39 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT ....................................................................................................................................................... 40 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION .................................................................................................................................................... 41 
+
+vii 
+ 
+© NaCCA, Ministry of Education 2021 
+SUB-STRAND 1: TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE ................................................................................................................................... 41 
+SUB-STRAND 2: PHYSICAL FITNESS ............................................................................................................................................................................................................................. 43 
+SUB-STRAND 3: ORGANISED SPORTS AND PHYSICAL ACTIVITY PARTICIPATION ................................................................................................................................. 45 
+APPENDICES  ............................................................................................................................................................................................................................................................................. 49 
+BIBLIOGRAPHY ........................................................................................................................................................................................................................................................................... 60 
+PHYSICAL HEALTH AND EDUCATION SUBJECT PANEL MEMBERS AND REVIEWERS .................................................................................................................................. 61 
+SUPERVISORS AND COORDINATING TEAM ................................................................................................................................................................................................................. 61 
+
+viii 
+ 
+© NaCCA, Ministry of Education 2021 
+INTRODUCTION 
+ 
+In the first three years of high school education, learners cover nine (9) learning areas that 
+emphasise a set of high, internationally benchmarked career and tertiary education readiness 
+standards. Learners need to acquire these for post-secondary education, the workplace or 
+both. The standards articulate what learners are expected to know, understand and be able 
+to do. The features that shape the JHS programme are shown in Figure 1 including, 
+• 
+learning and teaching approaches – the core competencies, 4Rs and pedagogical 
+approaches 
+• 
+learning context – engagement, service, and project 
+• 
+learning areas – mathematics, science, computing, language and literacy, career 
+technology, social studies, Physical Education and Health, creative arts and design and 
+religious and moral education. 
+ 
+ 
+ 
+Figure 1: Common Core Learner Attributes 
+These are elaborated subsequently: 
+ 
+Learning and Teaching Approaches 
+• 
+The core competencies: These describe the relevant global skills for learning that the JHS Curriculum helps learners to develop in addition 
+to the 4Rs. The global skills for learning allow learners to become critical thinkers, problem-solvers, creators, innovators, good communicators, 
+collaborators, digitally literates as well as culturally and globally sensitive citizens who are life-long learners with a keen interest in their personal 
+development. 
+• 
+Pedagogical approaches: The JHS Curriculum emphasises creative and inclusive pedagogies that are anchored on authentic and enquiry-
+based learning, collaborative and cooperative learning, differentiated learning, holistic learning as well as cross disciplinary learning. 
+• 
+The 4Rs across the Curriculum: The 4Rs refer to Reading, wRiting, aRithmetic and cReativity, which all learners must become fluent in. 
+ 
+
+ix 
+ 
+© NaCCA, Ministry of Education 2021 
+Learning Context 
+The JHS Curriculum places emphasis on engagement of learners in classroom activities and projects (in and outside the classroom). These projects can involve 
+individual or group tasks which all learners are required to complete by the end of Basic Nine. The JHS Curriculum project provides learners with contexts to 
+demonstrate creativity and inventiveness in various areas of human endeavour. Community service offers an opportunity for learners to nurture, love and care for 
+their community and solve problems in the community. 
+ 
+Learning Areas 
+The JHS Curriculum comprises the following learning areas: 
+• Languages (English Language, Ghanaian Languages, French, Arabic) 
+• Mathematics 
+• Science 
+• Creative Arts and Design (CAD) 
+• Career Technology 
+• Social Studies 
+• Computing 
+• Religious and Moral Education (RME) 
+• Physical Education and Health (PEH) 
+This document sets out the standards for learning Physical Education and Health at the JHS level. The standards in the document are posited in the expectation that 
+the JHS Curriculum (B7 – B9) will offer 
+The design of this curriculum is based on the features of the JHS curriculum shown in Figure 1. 
+It emphasises a set of high internationally-benchmarked career and tertiary education readiness standards. 
+Learners need to acquire these competencies in Physical Education and Health for post-secondary education, the workplace or both. The curriculum has been 
+designed to be user friendly because it provides a detailed preamble that covers the rationale, philosophy, aims, expected learning behaviours (i.e. knowledge, skills, 
+attitudes and values), pedagogical approaches, core competencies and the 4Rs, assessment practices and instructional expectations. 
+ 
+ 
+ 
+ 
+
+x 
+ 
+© NaCCA, Ministry of Education 2021 
+RATIONALE 
+ 
+Physical Education and Health (PEH), is a new subject label conceptualised to replace the former Physical Education (PE) label offered in pre-tertiary education in 
+the country. The intent of PEH, compared to PE, is to ensure a quality blend of physical education and health education through both multidisciplinary and 
+interdisciplinary facets. This way, all the health-related, academic-related and sports-related benefits shall be realised in learners within the statutory 150 minutes 
+allocated for instruction every week. 
+Physical Education and Health (PEH) provides opportunities for a learner to manage stress, build physical literacy, develop health-related fitness, become conscious 
+of wellness and active living, engage in regular physical activity, and achieve personal satisfaction and enjoyment. The knowledge, skills and attitudes acquired through 
+PEH will enable learners to refine or improve their performances in other learning areas and become tertiary and career ready. This way, it will provide an avenue 
+for personal realisation in at least one physical education and health discipline in which they will continue to be actively involved in their adult lives, as well as support 
+in their communities and country. 
+Physical Education and Health at the basic school level is aimed at developing a functional and holistic learner. At the JHS level, learners are exposed to a range of 
+comprehensive knowledge, skills and attitudes to become critical thinkers, creators and innovators, communicators and collaborators, problem - solvers with a good 
+sense of social and cultural identity. Additionally, the PEH in the JHS Programme is intended to improve the level of physical activity among children both in school 
+and outside of school and to reduce the high prevalence of non-communicable diseases. In view of the desperate need to promote sports excellence in the country, 
+the PEH component of the JHS programme will address the critical issues regarding the foundation for tertiary level study in the humanities perspectives in sports, 
+scientific perspectives in sports and teaching/pedagogical perspectives upon transition to SHS.  
+
+xi 
+ 
+© NaCCA, Ministry of Education 2021 
+PHILOSOPHY 
+ 
+Teaching Philosophy 
+Ghana believes that an effective physical education and health needed for sustainable development should be inquiry-based. Thus, Physical Education and Health must 
+provide learners with opportunities to respond, refine, extend, change, enhance and modify the ways in which they view their learning. It should be pivoted on 
+learner-centred Physical Education and Health teaching and learning approaches that engage learners physically and cognitively in the knowledge-acquiring process 
+in a rich and rigorous enquiry-driven environment. 
+ 
+Learning Philosophy 
+Learning in Physical Education and Health is an active contextualized process of constructing knowledge, based on learners’ experiences rather than acquiring it. 
+Learners are information constructors who operate as enquiry-minded individuals. Teachers serve as facilitators by providing the enabling environment that promotes 
+the construction of learners’ own knowledge, based on their previous experiences. This makes learning more relevant to the learner and leads to the development 
+of creative critical thinkers and problem solvers. 
+ 
+ 
+ 
+
+xii 
+ 
+© NaCCA, Ministry of Education 2021 
+AIMS 
+ 
+General Aim 
+The curriculum is aimed at developing physically literate individuals who are good problem solvers with the ability to think creatively and having both the confidence 
+and competence to participate fully in the Ghanaian society as responsible local and global citizens. 
+ 
+Specific Aims 
+The Physical Education and Health curriculum is aimed at developing physical  literacy in individuals to become confident, physically competent, motivated and possess 
+knowledge and understanding, that individuals develop in order to maintain physical activity at an appropriate level throughout their life. In the same way that reading, 
+writing, listening and speaking combine to formulate language literacy enabling a lifetime of reading and communication, physical literacy is a progressive journey in 
+which different components (i.e., physical competence, healthy behaviour, knowledge & understanding, motivation & confidence) interact holistically to facilitate a 
+lifetime of participation and enjoyment in physical activity. A physically literate child can move capably and confidently in a range of physically challenging situations 
+(problem-solver), is able to read the physical environment (critical thinker), anticipating possible movement needs (analytic/decision-maker), and able to respond 
+intelligently and imaginatively (creator/innovator). 
+
+xiii 
+ 
+© NaCCA, Ministry of Education 2021 
+PROFILE OF EXPECTED LEARNING BEHAVIOURS 
+A central aspect of this curriculum is the concept of three integral learning domains that should be the basis for instruction and assessment. 
+These are: 
+• 
+Knowledge, Understanding and Application 
+• 
+Process Skills 
+• 
+Attitudes and Values 
+ 
+Knowledge, Understanding and Application 
+Under this domain, learners acquire knowledge through learning experiences. They may also show understanding of concepts by comparing, summarising, re-writing, 
+etc., in their own words and constructing meaning from instruction. The learner may also apply the knowledge acquired in some new contexts. 
+At a higher level of learning behaviour, the learner may be required to analyse an issue or a problem. At a much higher level, the learner may be required to synthesise 
+knowledge by integrating several ideas to formulate a plan, solve a problem and compose a story or a piece of music. Further, learners may be required to evaluate, 
+estimate and interpret a concept. At the last level, which is the highest, learners may be required to create, invent, compose, design and construct. These learning 
+behaviours, “knowing”, “understanding”, “applying”, “analysing”, “synthesising”, “evaluating” and “creating” fall under the domain “Knowledge, Understanding and 
+Application”. 
+In this curriculum, learning indicators are stated with action verbs to show what the learner is expected to know and be able to do. For example, the learner will be 
+able to describe something. Being able to “describe” something after teaching and learning has been completed means that the learner has acquired “knowledge”. 
+Being able to explain, summarise and give examples etc., means that the learner has understood the concept taught. 
+ 
+Similarly, being able to develop, defend, etc. means that the learner can “apply” the knowledge acquired in some new context. You will note that each of the 
+indicators in the curriculum contains an “action verb” that describes the behaviour the learner will be able to demonstrate after teaching and learning has taken 
+place. “Knowledge, Understanding and Application” is a domain that should be the prime focus of teaching and learning in all schools. Teaching, in most cases, has 
+tended to stress knowledge acquisition to the detriment of other higher-level behaviours such as applying knowledge. 
+Each action verb in any indicator outlines the underlying expected outcome. Each indicator must be read carefully to know the learning domain towards which the 
+teacher has to teach. The focus is to move teaching and learning from the didactic acquisition of “knowledge” where there is fact memorisation, heavy reliance on 
+formulae, remembering facts without critiquing them or relating them to the real world – surface learning – to a new position called – deep learning. Learners are 
+expected to deepen their learning through knowledge application to develop critical thinking skills, explain reasoning and generate creative ideas to solve real life 
+problems in their school lives and later in their adult lives. This is the position where learning becomes beneficial to the learner. 
+
+xiv 
+ 
+© NaCCA, Ministry of Education 2021 
+The explanation and the key words involved in the “Knowledge, Understanding and Application” domain are as follows: 
+ 
+Knowing: 
+The ability to remember, recall, identify, define, describe, list, name, match and state principles, facts and concepts. Knowledge is the ability to 
+remember or recall material already learned and this constitutes the lowest level of learning. 
+Understanding:  The ability to explain, summarise, translate, rewrite, paraphrase, give examples, generalise, estimate or predict consequences based on a trend. 
+Understanding is generally the ability to grasp the meaning of material that may be oral, pictorial or symbolic. 
+Applying:  
+This dimension is also referred to as “Use of Knowledge”. It describes the ability to use knowledge or apply knowledge, rules, methods, principles, 
+theories, etc., to situations that are new and unfamiliar. It also involves the ability to produce, solve, plan, demonstrate, discover, etc. 
+Analysis: 
+The ability to break down material/information into its component parts; to differentiate, compare, distinguish, separate, identify significant points 
+etc., ability to recognise unstated assumptions and logical fallacies; ability to recognise inferences from facts, etc. 
+Synthesising: 
+The ability to put parts together to form a new whole. It involves the ability to combine, compile, compose, devise, plan, revise, organise, create, 
+generate new ideas and solutions, etc. 
+Evaluating:  
+The ability to appraise, compare, contrast, criticise, justify support, discuss, conclude, make recommendations, etc. Evaluation refers to the ability 
+to judge the worth or value of material based on some criteria. 
+Creating:  
+The ability to use information or materials to plan, compose, produce, manufacture, or construct other material or products. From the foregoing, 
+creation is the highest form of thinking and learning skill and is there- fore the most important behaviour. This, unfortunately, is the area in which 
+most learners perform poorly. To get learners to develop critical thinking and behavioural skills beginning right from the basic level, it is advised 
+that learner is guided to develop analytical and application skills. 
+ 
+Attitudes, Values and Process Skills 
+To be effective, competent and reflective citizens, willing and capable of solving personal and societal problems, learners should be exposed to situations that 
+challenge them to raise questions and attempt to solve problems. Learners therefore need to acquire positive attitudes, values and psycho- social skills to enable 
+them to participate in debates and take a stand on issues affecting them and others. The physical education curriculum, thus, emphasises the development of attitudes 
+and values. 
+ 
+Attitudes 
+i. 
+Curiosity: The inclination or feeling toward seeking information about how things work in a variety of fields. 
+ii. 
+Perseverance: The ability to pursue a problem until a satisfying solution is found. 
+
+xv 
+ 
+© NaCCA, Ministry of Education 2021 
+iii. Flexibility in ideas: Willingness to change opinion in the face of more plausible evidence 
+iv. Respect for Evidence: Willingness to collect and use data in one’s investigation and have respect for data collected by others. 
+v. 
+Reflection: The habit of critically reviewing ways in which an investigation has been carried out to see possible faults and other ways by which the investigation 
+could be improved upon. The teacher should endeavour to ensure that learners cultivate the above attitudes and process skills as a prelude to effective 
+academic work. 
+ 
+Values 
+At the heart of this curriculum is the belief in nurturing honest, creative, and responsible citizens. As such, every part of this curriculum, including the related 
+pedagogy, should be consistent with the following set of values: 
+i. 
+Respect: This includes respect for the nation of Ghana, its institutions and laws and the culture and respect among its citizens and friends of Ghana. 
+ii. 
+Diversity: Ghana is a multicultural society in which every citizen enjoys fundamental rights and responsibilities. Learners must be taught to respect the views 
+of all persons and to see national diversity as a powerful force for national development. The curriculum promotes social cohesion. 
+iii. Equity: The socio-economic development across the country is uneven. Consequently, it is necessary to ensure an equitable distribution of resources based 
+on the unique needs of learners and schools across the country. Ghana’s learners come from diverse backgrounds, which require the provision of equal 
+opportunities to all, each citizen caring for the other personally and professionally. 
+iv. Commitment to achieving excellence: Learners must be taught to appreciate the opportunities provided through the curriculum and persist in doing 
+their best in any field of endeavour as global citizens. The curriculum encourages innovativeness through creative and critical thinking and the use of 
+contemporary technology. 
+v. 
+Teamwork/Collaboration: Learners are encouraged to be com- mitted to team-oriented working and learning environments. This also means that learners 
+should have an attitude of tolerance to be able to live peacefully with all persons. 
+vi. Truth and Integrity: The curriculum aims to develop learners into individuals who will consistently tell the truth irrespective of the con- sequences. In 
+addition, they are expected to be morally upright with the attitude of doing the right thing even when no one is watching. They should also be true to 
+themselves and be willing to live the values of honesty and compassion. Equally important, the ethos or culture of the workplace, including integrity and 
+perseverance, must underpin the learning processes to allow learners to apply skills and competencies in the world of work. The action verbs provided under 
+the various profile dimensions should help the teacher to structure the desired learning outcomes. Select from the action verbs provided for your teaching, 
+for evaluation exercises and for test construction. 
+ 
+ 
+ 
+ 
+ 
+
+xvi 
+ 
+© NaCCA, Ministry of Education 2021 
+Process Skills 
+Process skills are specific activities or tasks that indicate performance or proficiency in each learning area. They are useful benchmarks for planning lessons and 
+developing exemplars and are the core of enquiry-based learning. Processes are the ways we think about and interact with objects or materials to understand new 
+scientific ideas and concepts. By using these skills, learners will be able to come out with information, test their competencies and construct their own scientific 
+explanation of the world. 
+i. 
+Receiving: Refers to controlling a moving object or stopping a moving object using various parts of the body (e.g., stopping, catching, etc.). 
+ii. 
+Sending: Applying force to put an object in motion using various parts of the body and/or using objects (e.g., striking, kicking, throwing etc.). 
+iii. Galloping: Refers to a forward slide movement with a front footstep forward, followed by the transfer of body weight to the back leg. 
+iv. Hopping: Propelling the body up and down on the same foot. 
+v. 
+Interpreting: Ability to explain and communicate the process and outcome of their performance. 
+vi. 
+Jumping: Taking off with both feet and landing on both feet. 
+vii. Measuring/recording: Assessing an individual’s performance and keeping records to track the progress of learning. 
+viii. Observing: Taking a critical look at how something is done or how something happened over a period for the purpose of learning through repetition. 
+ix. Practising: Doing something continuously to achieve mastery and refinement. 
+x. 
+Predicting: Estimating the outcome of learners’ actions or performance. 
+xi. Recording: Writing down personal or performance data for assessment purposes. 
+xii. Running: Rapid movement which involves both feet staying off the ground at a time before touching the ground in alternation from one place 
+to another. 
+xiii. Skipping: Refers to a series of step-hop movements on one foot or both feet with and without a skipping rope. 
+xiv. Travelling: Movement of the body from one point to another. 
+xv. Volleying: Striking a ball upward with the foot or hand while in the air. 
+ 
+ 
+
+xvii 
+ 
+© NaCCA, Ministry of Education 2021 
+ASSESSMENT 
+ 
+Assessment is a process of collecting and evaluating information about learners and using the information to make decisions to improve their learning. 
+Assessment may be formative, summative, diagnostic, or evaluative depending on its purpose. It is integral to the teaching-learning process, promotes learner learning 
+and improves instruction. In the JHS it is suggested that assessment involves assessment for learning, assessment of learning and assessment as learning, which are 
+described in subsequent paragraphs. 
+ 
+Assessment for Learning (AfL) 
+Assessment for Learning (AfL) is the process of seeking and interpreting evidence for use by learners and their teachers to decide where the learner is in their 
+learning, where they need to be (the desired goal) and how best to get them there. AfL is one of the most suitable methods for improving learning and raising 
+standards (Black and William, 1998). 
+Assessment for Learning also refers to all the activities undertaken by teachers and/or their learners, which provide information to be used as feedback to modify the 
+teaching and learning activities in which they are engaged. AfL can be achieved through processes such as sharing criteria with learners and effective questioning, and 
+feedback. 
+AfL, therefore, provides timely feedback to ensure individual learners are assisted during the teaching and learning process using various strategies and questioning to 
+measure the learning that has taken place. It is a continuous process that happens at all stages of the instructional process to monitor the progress of a learner and to 
+offer feedback or change teaching strategies to achieve the performance standards of a lesson. 
+ 
+Assessment as Learning (AaL) 
+Assessment as Learning develops and supports learners’ sense of ownership and efficacy about their learning through reflective practices. This form of self-
+assessment helps in building the competencies of learners to achieve deeper understanding of their own learning and what they are taught. 
+ 
+Assessment of Learning (AoL) 
+Assessment of Learning provides a picture of the achieved standards of the teacher and performance of learners at the terminal stage of the learning process. This 
+information provides data for accountability and educational decisions such as grading, selection and placement, promotion and certification. Through AoL, 
+stakeholders such as parents and guardians are informed about the extent to which learners have attained expected learning out- comes at the end of their grade or 
+programme. 
+ 
+ 
+
+xviii 
+ 
+© NaCCA, Ministry of Education 2021 
+What do we assess? 
+Emphasis in assessment in the JHS Curriculum is on the Common Core Learner Attributes, which are essential outcomes in the three domains of learning 
+(i.e., cognitive, psychomotor, and affective). 
+Knowledge and skills with emphasis on the 4Rs in the learning areas. 
+Core competencies with emphasis on attitudes and values developed through the learning and its context as well as the pedagogical approaches. 
+The process is illustrated diagrammatically in Figure 2. 
+ 
+ 
+ 
+ 
+Figure 2: Essential Assessment Features 
+ 
+
+xix 
+ 
+© NaCCA, Ministry of Education 2021 
+How do we monitor progress? 
+School-Based Assessments (SBA) cover all forms/modes of assessment including AfL, AaL and AoL (see Table 1) that can be undertaken by any school-level actor 
+(learner, teacher, head teacher) to monitor the learner’s achievement over a period of time. Data collection and keeping records of the data are central to the 
+conduct of SBA. 
+Table 1 Modes of Assessment 
+ 
+Assessment for 
+Learning 
+Assessment of 
+Learning 
+Assessment as 
+Learning 
+Class exercises 
+Class Assessment 
+Task 
+(CAT) 
+Portfolio 
+Quizzes 
+End of term 
+examination 
+Journal entries 
+Class tests (written, 
+oral, aural, and/or 
+practical) 
+End of year 
+examination 
+Project work 
+Class Assessment 
+Task 
+(CAT) 
+ 
+Checklist 
+ 
+ 
+Questionnaire 
+ 
+The following are samples of relevant records that can be kept on the learner’s learning. 
+• Learner’s Progress Record (Cumulative Record) 
+• Learner’s Report Card 
+• School Based Assessment Termly Recording Register 
+•  
+
+xx 
+ 
+© NaCCA, Ministry of Education 2021 
+Details of guidelines on SBA can be found in the National Pre-Tertiary Learning Assessment Framework (NPLAF) document (Ministry of Education, 2020a) and the 
+School-Based Assessment Guidelines (Ministry of Education, 2020b). 
+PEH Physical Activity Report Card 
+The characteristics of PEH Learner’s Report Card is unique and require additional information and detailed guidelines. In general, a learner’s report card must 
+express an overall level of physical activity, daily physical activity behaviours and individual characteristics. Details of the Report Card can be found in Appendix D. 
+ 
+Reporting School-Based Assessment (SBA) in the JHS Curriculum 
+The JHS Curriculum uses a criterion-referenced model of presenting and reporting school-based assessment data. School-based assessment throughout the three-
+year duration of JHS Curriculum is done against criteria linked to performance standards and not against the work of other learners. The JHS Curriculum provides 
+levels of proficiency to be attained and descriptors for all grade levels of the programme (see Table 2). These levels and descriptors cannot be changed by individual 
+schools and are, therefore, common to all learners as well as learning areas nationwide. For each assessment criterion (or benchmark for the level of proficiency), 
+several descriptors are defined as shown in Table 2 
+Table 2 Benchmarks, levels of proficiency and the grade level descriptors 
+ 
+Level of 
+Proficiency 
+Benchmark 
+Grade Level Descriptor 
+1: Highly proficient 
+(HP) 
+80% + 
+Learner shows a high level of 
+proficiency in knowledge, skills 
+and values and can transfer the 
+automatically and flexibly through 
+authentic performance tasks. 
+2: Proficient (P) 
+68-79% 
+Learner demonstrates sufficient 
+level of proficient knowledge, 
+skills, and core understanding; 
+can transfer them independently 
+through authentic performance 
+tasks. 
+
+xxi 
+ 
+© NaCCA, Ministry of Education 2021 
+3: Approaching 
+Proficiency (A)P 
+54-67% 
+Learner is approaching proficiency 
+in terms of knowledge, skills and 
+values with little guidance and can 
+transfer understanding through 
+authentic performance tasks 
+4: Developing 
+(D) 
+40-53% 
+Learner demonstrates developing 
+level of knowledge, skills and 
+values but needs help throughout 
+the performance of authentic 
+tasks 
+5: Emerging (E) 
+39% and below Learner is emerging with minimal 
+understanding in terms of 
+knowledge, skills, and values but 
+needs a lot of help. 
+ 
+ 
+The grading system presented shows the letter grade system and equivalent grade boundaries. In assigning grades to learner’s test results, or any form of evaluation, 
+the above grade boundaries and the descriptors may be applied. 
+The descriptors (Highly Proficient [HP], Proficient [P], Approaching Proficiency [AP], Developing [D], Emerging [E] indicate the meaning of each grade. 
+In addition to the school-based assessment (SBA), a national standards assessment test is conducted in Basic 8 to provide national level indicators on the learners’ 
+achievement. 
+ 
+SUGGESTED TIME ALLOCATION 
+A total of three periods a week, each period consisting of 50 minutes, is allocated to the teaching of Physical Education and Health at JHS 
+Theory and practice should be fully integrated to ensure appropriate pedagogy across the curriculum. 
+ 
+ 
+ 
+
+xxii 
+ 
+© NaCCA, Ministry of Education 2021 
+CREATIVE PEDAGOGICAL APPROACHES 
+ 
+The JHS emphasises creative and inclusive pedagogies that are anchored on authentic and enquiry-based learning, collaborative and cooperative learning, differentiated 
+learning, holistic learning and cross disciplinary learning (i.e., the 4Rs across the Curriculum) as well as developing the core competencies. This section describes 
+some of the creative pedagogical approaches required for the JHS. 
+These include the approaches, methods and strategies for ensuring that every learner benefits from appropriate and relevant teaching and learning episodes which 
+are timely assessed, and feedback provided to the learner and other stakeholders such as parents and education authorities. It includes the type and use of appropriate 
+and relevant teaching and learning resources to ensure that all learners attain the expected level of learning outcomes. 
+The curriculum emphasises: 
+• 
+The creation of learning-centred classrooms using creative approaches to teaching and learning as strategies to ensuring learner empowerment and independent 
+learning. 
+• 
+The positioning of inclusion and equity at the centre of quality teaching and learning. 
+• 
+The use of differentiation and scaffolding as teaching and learning strategies for ensuring that no learner is left behind. 
+• 
+The use of Information Communication Technology (ICT) as a pedagogical tool. 
+• 
+The identification of subject specific instructional expectations needed to make learning in the subject relevant to learners. 
+• 
+The integration of assessment for learning, as learning and of learning into the teaching and learning process and as an accountability strategy. 
+• 
+The use of questioning techniques that promote deep learning. 
+
+xxiii 
+ 
+© NaCCA, Ministry of Education 2021 
+LEARNING-CENTRED PEDAGOGY 
+ 
+The learner is at the centre of learning. At the heart of the curriculum is learning progression and improvement of learning outcomes for Ghana’s young people with 
+a focus on the 4Rs – Reading, wRiting, aRithmetic and cReativity. It is expected that at each curriculum phase, learners would be offered the essential learning 
+experiences to progress seamlessly to the next phase. Where there are indications that a learner is not sufficiently ready for the next phase, a compensatory 
+provision through differentiation should be provided to ensure that such a learner is ready to progress with his/her peers. 
+The curriculum encourages the creation of a learning-centred classroom with the opportunity for learners to engage in meaningful “hands-on” activities that bring 
+home to the learner, what they are learning in school and what they know from outside of school. The learning-centred classroom is a place for learners to 
+discuss ideas and, through the inspiration of the teacher, actively engage in looking for answers through working in groups to solve problems. 
+This also includes researching for information and analysing and evaluating the information obtained. The aim of the learning-centred classroom approach is to develop 
+learner autonomy so that learners can take ownership of their learning. It provides the opportunity for deep and profound learning to take place. 
+The teacher should create a learning atmosphere that ensures: 
+• 
+Learners feel safe and accepted. 
+• 
+Learners are given frequent opportunities to interact with varied sources of information, teaching and learning materials and ideas in a 
+variety of ways. 
+• 
+The teacher assumes the position of a facilitator or coach who helps learners to identify a problem suitable for investigation via project 
+work. 
+• 
+Problems are connected to the context of the learner’s world so that it presents authentic opportunities for learning. 
+• 
+Subject matter revolves around the problem, not the discipline. 
+• 
+Learners responsibly define their learning experience and draw up a plan to solve the problem in question. 
+• 
+Learners collaborate whilst learning. 
+• 
+Demonstrate the results of their learning through a product or performance. 
+It is more productive for learners to find answers to their own questions rather than for teachers to provide the answers and their opinions in a learning-centred 
+classroom. 
+ 
+Inclusion 
+Inclusion entails access and learning for all learners, especially those dis- advantaged. All learners are entitled to a broad and balanced curriculum in every school 
+
+xxiv 
+ 
+© NaCCA, Ministry of Education 2021 
+in Ghana. The daily learning activities to which learners are exposed should ensure that learners’ right to equal access to quality education is being met. The 
+curriculum suggests a variety of approaches that address learners’ diversity and their special needs in the learning process. These approaches, when used in lessons, 
+will contribute to the full development of the learning potential of every learner. Learners have individual needs and different learning styles, learning experiences 
+and different levels of motivation for learning. 
+Planning, delivery and reflection on daily learning episodes should take these differences into consideration. The curriculum therefore promotes: 
+• 
+learning that is linked to the learners’ background and to their prior experiences, interests, potential and capacities; 
+• 
+learning that is meaningful because it aligns with learners’ ability (e.g., learning that is oriented towards developing general capabilities and solving the practical 
+problems of everyday life); and 
+• 
+the active involvement of learners in the selection and organisation of learning experiences, making them aware of their importance in the process and enabling 
+them to assess their own learning outcomes. 
+ 
+Differentiation and Scaffolding 
+This curriculum is to be delivered using creative approaches. Differentiation and Scaffolding are pedagogical approaches to be used within the context of the creative 
+approaches. 
+Differentiation is a process by which differences between learners (learning styles, interests and readiness to learn, etc.) are accommodated so that all learners in a 
+group have the best possible chance of learning. Differentiation could be by task, support and outcome. Differentiation as a way of ensuring each learner benefits 
+adequately from the delivery of the curriculum can be achieved in the classroom through: 
+• 
+Task 
+• 
+One-on-one support 
+• 
+Outcome 
+• 
+Differentiation by task involves teachers setting different tasks for learners of different ability e.g., in sketching the plan and shape of their classroom some 
+learners could be made to sketch with free hand while others would be made to trace the outline of the plan of the classroom. 
+• 
+Differentiation by support involves the teacher providing targeted support to learners who are performing below expected standards or are at risk of not 
+reaching the expected level of learning outcome. This support may include a referral to a Guidance and Counselling Officer for academic support. 
+• 
+Differentiation by outcome involves the teacher allowing learners to respond at different levels. In this case, identified learners are allowed more time to 
+complete a given task. 
+ 
+
+xxv 
+ 
+© NaCCA, Ministry of Education 2021 
+Scaffolding in education refers to the use of a variety of instructional techniques aimed at moving learners progressively towards stronger understanding and 
+ultimately greater independence in the learning process. 
+It involves breaking up the learning episode, experience or concepts into smaller parts and then providing learners with the support they need to learn each part. 
+The process may require a teacher assigning an excerpt of a longer text to learners to read, engage them to discuss the excerpt to improve comprehension 
+of its rationale, then guiding them through the key words/vocabulary to ensure learners have developed a thorough under- standing of the text before engaging them 
+to read the full text. 
+Common scaffolding strategies available to the teacher include: 
+• 
+giving learners a simplified version of a lesson, assignment or reading, and gradually increasing the complexity, difficulty, or sophistication over time; 
+• 
+describing or illustrating a concept, problem or process in multiple ways to ensure understanding; 
+• 
+giving learners an exemplar or model of an assignment that they will be asked to complete; 
+• 
+giving learners a vocabulary lesson before they read a difficult text; 
+• 
+clearly describing the purpose of a learning activity, the directions learners need to follow and the learning goals they are expected to achieve; 
+• 
+explicitly describing how the new lesson builds on the knowledge and skills learners were taught in a previous lesson. 
+ 
+Information Communication Technology (ICT) 
+ICT has been integrated into this curriculum as a teaching and learning tool to enhance deep and independent learning. Some of the expected outcomes that this 
+curriculum aims to achieve through ICT use for teaching and learning are: 
+• 
+improved teaching and learning processes; 
+• 
+improved consistency and quality of teaching and learning; 
+• 
+increased opportunities for more learner-centred pedagogical approaches; 
+• 
+improved inclusive education practices by addressing inequalities in gender, language and ability; 
+• 
+improved collaboration, creativity and higher order thinking skills; 
+• 
+enhanced flexibility and differentiated approach of delivery. 
+The use of ICT as a teaching and learning tool is to provide learners access to large quantities of information online. It also provides the framework for analysing 
+data to investigate patterns and relationships in a geographical context. Once learners have made their findings, ICT can then help them organise, edit and present 
+information in many ways. 
+
+xxvi 
+ 
+© NaCCA, Ministry of Education 2021 
+Learners need to be exposed to the various ICT tools around them including calculators, radios, cameras, phones, television sets, the computer and related software 
+like Microsoft Office packages – Word, PowerPoint, and Excel- as teaching and learning tools. The exposure highlights that learners are given at the Basic School 
+level to use ICT in exploring learning will build their confidence and increase their level of motivation to apply ICT use in later years, both within and outside of 
+formal education. ICT use for teaching and learning is expected to enhance learners’ level of competence in the 4Rs. 
+ 
+ 
+
+xxvii 
+ 
+© NaCCA, Ministry of Education 2021 
+CORE COMPETENCIES 
+ 
+In using this curriculum, we hope that certain core competencies will be developed in learners to help them develop our country, Ghana. These competencies include: 
+ 
+Critical Thinking and Problem Solving (CP) 
+This skill develops learners’ cognitive and reasoning abilities to enable them analyse and solve problems. Critical thinking and problem-solving skills enable learners 
+to draw on their own experiences to analyse situations and choose the most appropriate out of several possible solutions. It requires that learners embrace the 
+problem at hand, persevere and take responsibility for their own learning. 
+ 
+Creativity and Innovation (CI) 
+Creativity and Innovation promotes entrepreneurial skills in learners through their ability to think of new ways of solving problems and developing technologies for 
+addressing the problem at hand. It requires ingenuity of ideas, arts, technology and enterprise. Learners having this skill are also able to think independently and 
+creatively. 
+ 
+Communication and Collaboration (CC) 
+This competency promotes in learners, the skills to make use of language, symbols and texts to exchange information about themselves and their life experiences. 
+Learners actively participate in sharing their ideas. They engage in dialogue with others by listening to and learning from them. They also respect and value the views 
+of others. 
+ 
+Cultural Identity and Global Citizenship (CG) 
+This competency involves developing learners to put country and service foremost through an understanding of what it means to be active citizens. 
+This is done by inculcating in learners a strong sense of social and economic awareness. Learners make use of the knowledge, skills, competencies,  and attitudes 
+acquired to contribute effectively towards the socioeconomic development of the country and on the global stage. Learners build skills to critically identify and 
+analyse cultural and global trends that enable them to contribute to the global community. 
+ 
+Personal Development and Leadership (PL) 
+This competency involves improving self-awareness and building self-esteem. It also entails identifying and developing talents and fulfilling dreams and aspirations. 
+Learners can learn from mistakes and failures of the past. They acquire skills to develop other people to meet their needs. It involves recognising the importance of 
+values such as honesty and empathy and seeking the well-being of others. Personal development and leadership enable learners to distinguish between right and wrong. 
+
+xxviii 
+ 
+© NaCCA, Ministry of Education 2021 
+This skill helps them develop per- severance, resilience, and self-confidence. PL helps them acquire the skill of leadership, self-regulation and responsibility necessary 
+for lifelong learning. 
+ 
+Digital Literacy (DL) 
+Digital Literacy develops learners to discover, acquire and communicate through ICT to support their learning. It also equips them to use digital media responsibly. 
+
+xxix 
+ 
+© NaCCA, Ministry of Education 2021 
+INSTRUCTIONAL EXPECTATIONS 
+ 
+Physical Health Education teachers are expected to develop a focus that would ensure or provide support for learners to meet the JHS Content Standards. Therefore, 
+PEH teachers must create a learner-centred learning environment that would promote physical health literacy through high and quality content coverage of the CCP 
+learning indicators, coupled with high response rate, academic learning time-PEH (or regular engagement with the content), problem-solving, creativity and developing 
+own under- standing of the learning context from personal and experiential perspectives. 
+ 
+ 
+
+xxx 
+ 
+© NaCCA, Ministry of Education 2021 
+STRUCTURE AND ORGANISATION OF THE PEH CURRICULUM 
+ 
+The Physical Education and Health Curriculum is organised into strands, sub-strands, content standards, indicators and exemplars. 
+Strands are the broad learning areas of the content to be studied. 
+Sub-strands are the sub-divisions of the broad learning areas or strands 
+Content standards are the expected level of knowledge, skill and/or attitude that a learner must attain at each grade level. 
+Indicators are the distinct outcomes that learners must exhibit for each content standard at each level of learning. 
+Exemplars clearly explain the distinct outcomes or indicators. They sup- port and guide the facilitator/teacher in helping learners to achieve the con- tent standards. 
+ 
+ 
+ 
+Curriculum Reference Numbers 
+Example: B7.1.2.3.1 
+ 
+ANNOTATION 
+MEANING/REPRESENTATION 
+ B7. 
+YEAR OR CLASS 
+1 
+STRAND NUMBER 
+2 
+SUB-STRAND NUMBER 
+3 
+CONTENT STANDARD NUMBER 
+1 
+LEARNING/PERFORMANCE INDICATOR 
+NUMBER 
+
+xxxi 
+ 
+© NaCCA, Ministry of Education 2021 
+A unique annotation used for numbering the strands, sub-strands, content standards and indicators in the curriculum for the purpose of easy 
+referencing is shown below: 
+ 
+ 
+ 
+ 
+ 
+
+xxxii 
+ 
+© NaCCA, Ministry of Education 2021 
+SCOPE AND SEQUENCE 
+ 
+Strand 
+Sub-strand 
+JHS 1 
+JHS 2 
+JHS 3 
+1. Health Education 
+1. Nutrition and Physical Activity 
+ 
+ 
+ 
+2. Disease Prevention and Management 
+ 
+ 
+ 
+3. First Aid, Injury Prevention and Management 
+ 
+ 
+ 
+2. Physical Activity Education 
+1. Traditional Rhythmic Gymnastics, Games and Dance 
+ 
+ 
+ 
+2. Physical Fitness 
+ 
+ 
+ 
+3. Organised Sports and Physical Activity Participation 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JHS1 
+ 
+ 
+ 
+ 
+ 
+
+2 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.1.1.1 
+Demonstrate 
+understanding of various 
+food nutrients required 
+for sports and physical 
+activity. 
+B7.1.1.1.1: Discuss food nutrients that influence sports and physical 
+activity participation 
+EXEMPLARS 
+1. Research and list food nutrients in small groups including: 
+• Energy supplying foods, carbohydrates e.g., cassava, yam, rice, bread, etc. 
+• Body building foods, proteins e.g., meat, fish, egg, etc. 
+• Repair and maintenance foods, vitamins e.g., banana, palm oil, etc. 
+2. In small groups, discuss the functions of food nutrients in physical activity 
+and think-pair-share list of functions with other groups. 
+Watch the YouTube video on food and culture in Ghana from YouTube (where 
+applicable) to further understanding - https://youtu.be/Fbs5KUz_pe0 
+https://youtu.be/Fbs5KUz_pe0 
+Critical Thinking and Problem 
+Solving (CP), Communication and 
+Collaboration (CC) 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion 
+CC 9.2: Understand and use 
+interpersonal skills 
+CC8.1: Speak clearly and explain ideas. 
+Share a narrative or extended answer 
+while speaking to a group. 
+CP5.2: Analyse and make distinct 
+judgement about viewpoints expressed in 
+an argument. 
+
+3 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.1.2.1 
+Demonstrate 
+understanding of 
+common diseases 
+associated with 
+sedentary behaviours 
+and physical inactivity 
+B7.1.2.1.1: Research common diseases associated with sedentary 
+behaviours and physical inactivity 
+EXEMPLARS 
+1. Discuss the relationship between sedentary behaviour and physical inactivity. 
+2. In small groups, research and discuss common diseases associated with 
+sedentary behaviours and physical inactivity and produce a brief report to 
+share. 
+3. Present the group report on common diseases associated with sedentary 
+behaviours and physical inactivity to the whole class. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC9.1: Demonstrate behaviour and skills 
+of working towards group goals. 
+CC8.1: Speak clearly and explain ideas 
+to a group. 
+
+4 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCES 
+B7.1.3.1 
+Demonstrate 
+understanding of first aid, 
+causes, prevention and 
+management of common 
+injuries in sports and 
+physical activity. 
+B7.1.3.1.1: Describe first aid and evaluate causes of common injuries 
+related to sports and physical activity. 
+ 
+EXEMPLARS  
+1. 
+In small groups, discuss and assess the scope of first aid as applied to sports 
+and physical activity 
+2. 
+Identify common injuries related to sports and physical activity, e.g. cuts, 
+dislocation,   fracture etc. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cut                                         Dislocation                 
+ 
+ 
+ 
+ 
+ 
+ 
+Fracture 
+ 
+3. 
+In groups, classify various injuries as either a minor or a major one. 
+4. 
+Analyse the causes of the common injuries associated with physical activity. 
+E.g., lack of adequate warm-up, inappropriate footwear, and equipment, etc. 
+5. 
+Demonstrate international procedures of managing physical activity and 
+sports related injuries (wounds, fractures etc.). 
+Critical Thinking and Problem Solving. (CP) 
+Communication and Collaboration (CC) 
+ 
+CP5.1: Ability to combine information and ideas from 
+several sources to reach a conclusion. 
+ 
+ 
+ 
+
+5 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCES 
+B7.1.3.1 
+Demonstrate 
+understanding of first aid, 
+causes, prevention and 
+management of common 
+injuries in sports and 
+physical activity. 
+CONT’D 
+B7.1.3.1.2: Demonstrate understanding of preventive 
+management measures for common injuries associated with 
+sports and physical activity.  
+ 
+EXEMPLARS 
+1. In small groups, research and design a guide for preventing 
+common injuries in sports and physical activity settings.  
+2. Through role play, pick an injury associated with sports/physical 
+activity and demonstrate ways of managing.  
+ 
+(CC) Ability to work with all group members 
+to complete a task successfully.    
+ 
+CP5.1: Ability to combine information and 
+ideas from several sources to reach a 
+conclusion. 
+ 
+CP5.6: Demonstrate through understanding 
+of generalised concepts and facts. 
+ 
+CC5.1: Ability to work with all group 
+members to complete a task successfully.  
+ 
+CC: 5.1 Ability to work with all group 
+members to complete a task successfully. 
+ 
+ 
+ 
+ 
+
+6 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 1: TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.1.1 
+Demonstrate 
+understanding of the 
+varieties of traditional 
+games and adaptations 
+for inclusivity and 
+cultural identity 
+(e.g., conceptual and 
+cooperative games, etc.) 
+B7.2.1.1.1: Identify and demonstrate the various conceptual and 
+cooperative traditional games (e.g., otoosa or ampe, kokrokoo, 
+mitu mituo, ozimzim, etc.) for critical thinking, decision-making, 
+inclusivity, and cultural identity 
+EXEMPLARS 
+1. Research, list and perform a variety of conceptual and cooperative 
+traditional games in the locality. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+ 
+Ampe 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CG5.3: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+
+7 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.1.1 
+Demonstrate 
+understanding of the 
+varieties of traditional 
+games and adaptations 
+for inclusivity and 
+cultural identity 
+(e.g. conceptual and 
+cooperative games, etc.) 
+B7.2.1.1.1: Identify and demonstrate the various conceptual and 
+cooperative traditional games (e.g., otoosa or ampe, kokrokoo, 
+mitu mituo, ozimzim, etc.) for critical thinking, decision-making, 
+inclusivity, and cultural identity 
+EXEMPLARS 
+3. Research, list and perform a variety of conceptual and cooperative 
+traditional games in the locality. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+ 
+Ampe 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CG5.3: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+
+8 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.1.2 
+Demonstrate 
+understanding of the 
+varieties of traditional 
+dances and adaptations 
+for inclusivity and 
+cultural identity (e.g., 
+individual and group 
+dances, etc.) 
+B7.2.1.2.1: Explore and perform a variety of individual and group 
+traditional dance movements and adaptation for the recognition and 
+appreciation of culture (e.g., adowa, kpo dada, dugu, takai, etc.). 
+EXEMPLARS 
+1. Research, list and perform a variety of individual and group traditional dance 
+movements from their own locality. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Examples of traditional dance movements for viewing and practice: 
+1. Adowa dance - https://www.youtube.com/watch?v=VnSQihGFUWY 
+2. Takai dance - https://www.youtube.com/watch?v=soAf1AwhUDk 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CG5.3: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+CC9.2: Understand and use 
+interpersonal skills. 
+Refer to Visual Arts and 
+Design CS B7.2.1.3 for 
+cross-referencing. 
+CC9.3: Understand roles during group 
+activities. 
+
+9 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.1.3 
+Demonstrate 
+understanding and 
+apply skills and 
+movement techniques 
+in global and traditional 
+rhythmic gymnastics and 
+adaptations for global 
+awareness and cultural 
+sensitivity 
+B7.2.1.3.1: Explore and perform a variety of global and traditional 
+rhythmic gymnastics (e.g., synchronised adowa, agbadza, etc.) and 
+adaptation for creativity, communication, and cultural identity 
+EXEMPLARS: 
+1. Research and synchronise traditional, individual and group dance movements 
+and global rhythmic dance movements for a performance. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Rhythmic dance and gymnastics movements 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC), Creativity 
+and Innovation (CC) 
+CG5.3: Develop and express respect, 
+recognition, and appreciation of others’ 
+culture. 
+CC9.2: Understand and use 
+interpersonal skills. 
+Refer to Visual Arts and 
+Design CS B7.2.1.3 for 
+cross-referencing 
+ 
+Integrate dance of the 
+minority group or 
+individual in the class 
+CI:5.1 Examine alternatives in creating 
+new things 
+
+10 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 2: PHYSICAL FITNESS 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.2.1 
+Demonstrate the ability 
+to participate in a 
+variety of internationally 
+benchmarked physical 
+fitness indicators (e.g., 
+muscular strength 
+and endurance, 
+cardiorespiratory 
+strength and endurance, 
+flexibility and balance 
+fitness indicators) 
+B7.2.2.1.1: Participate in internationally benchmarked fitness 
+indicators (e.g., cardiorespiratory strength and endurance, muscular 
+strength and endurance, flexibility, and balance indicators.) for 
+personal fitness development, decision-making and goal setting 
+EXEMPLARS 
+1. Perform push-ups to determine level of strength in the arms. 
+2. Perform sit and reach to determine level of flexibility in the lower back. 
+3. Perform sit-ups to determine level of strength in the abdominal region. 
+4. Perform a 12-minute run/walk to determine level of cardiorespiratory 
+strength and endurance. 
+5. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Note: These activities are performed at the individual learner’s own 
+ability level and not against any set standard or benchmark. 
+Personal Development and 
+Leadership (PL) 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+PL5.6: Ability to set and maintain 
+personal standards 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+
+11 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.2.2 
+Demonstrate the ability 
+to participate in a 
+variety of traditional and 
+global cardiorespiratory 
+activities 
+B7.2.2.2.1: Perform a variety of traditional and global activities 
+for personal fitness development/improvement, cardiorespiratory 
+fitness, decision-making and goal setting 
+EXEMPLARS 
+1. Perform a variety of cardiorespiratory activities at home and school such as 
+skipping, brisk walking, jogging, running, cycling, etc. 
+2. Develop and maintain a record of performance (e.g., time and distance 
+covered). Refer to Visual Arts and Design CS B7.2.1.3 for cross-referencing. 
+Learners must be directed to report the physical exercises, games and dance 
+movements as record of practice of cardiovascular activities. 
+3. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Aerobic dance 
+Skipping 
+Communication and Collaboration 
+(CC) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully 
+B7.2.2.3 
+Demonstrate the ability 
+to participate in a variety 
+of muscular strength and 
+endurance activities 
+B7.2.2.3.1: Perform a variety of muscular strength and endurance 
+activities for personal fitness development/improvement, muscular 
+fitness, decision-making and goal setting 
+EXEMPLARS 
+1. Perform a variety of activities such as push-ups, pull-ups, leg press, pulling 
+fishing rope at the seashore, cutting wood from the forest, lifting buckets 
+and all the daily chores that challenge muscles (i.e., bring weight to bear 
+on muscles). 
+Personal Development and 
+Leadership. (PL) 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+
+12 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.2.4 
+Demonstrate the ability 
+to participate in a variety 
+of flexibility and balance 
+activities 
+B7.2.2.4.1: Perform a variety of flexibility and balance activities for 
+personal fitness and health development/improvement, decision- 
+making and goal setting 
+EXEMPLARS: 
+1. Perform a variety of activities such as sit and reach on the floor (with/ 
+without a box), carrying a book on top of the head while going to school, all 
+other carrying activities that keep the body in a good balance, reaching high 
+to pick an object as in house chores, various stretching activities at home 
+and school, etc. (Ensure free movement of joints, relax muscles as well as 
+good body balance.) 
+Personal Development and 
+Leadership. (PL) 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+2. Refer to Visual Arts and Design CS B7.2.1.3 for cross-referencing. Learners must 
+be directed to report the flexibility in dance movements in the diary as a record of 
+practice of flexibility exercises. 
+3. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+ 
+Sit and reach 
+
+13 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 3: ORGANISED SPORTS AND PHYSICAL ACTIVITY PARTICIPATION 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.3.1 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+and individual and 
+target sports) to develop 
+creativity, innovation, 
+communication and 
+collaboration 
+B7. 2.3.1.1: Apply movement concepts, principles and strategies 
+in performing beginning level ball and racket sports (e.g., tennis, 
+table tennis and badminton) to develop creativity, innovation, 
+communication and collaboration 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression etc.) and strategies in learning beginning 
+level ball and racket sports with adaptation and individual pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment, 
+and collaboration 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CL6.4: Imagining and seeing things in a 
+different way. 
+PL5.4: Ability to understand one’s 
+personality trait. 
+
+14 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.3.1 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles, and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+and individual and 
+target sports) to develop 
+creativity, innovation, 
+communication, and 
+collaboration 
+B7.2.3.1.2: Apply movement concepts, principles and strategies in 
+performing beginning level athletics (e.g., sprinting, jumping and 
+throwing events) to develop communication and collaboration. 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in learning 
+beginning level athletics based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment, 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Athletics 
+Creativity and Innovation (CI) 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CI5.5: Ability to try alternatives, seeing 
+possibilities, problems and challenges. 
+CC9.8: Demonstrate an awareness 
+of the wider team dynamics and work 
+against negative conflict in the team. 
+
+15 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7.2.3.1 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+and individual and 
+target sports) to develop 
+creativity, innovation, 
+communication, and 
+collaboration 
+B7. 2. 3.1.3: Apply movement concepts, principles, and strategies in 
+performing beginning level individual and target sports (e.g., local 
+archery and golf) to develop ability to solve problems and set goals 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in learning beginning 
+level individual and target sports. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Local archery 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CC9.2: Understand and use 
+interpersonal skills. 
+CP6.1: Ability to effectively define goals 
+towards solving a problem. 
+
+16 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7. 2.3.2 
+Demonstrate the ability 
+to apply movement 
+concepts, principles, and 
+strategies in performing 
+limited–contact sports 
+(e.g., stick and ball, hand 
+and ball) to develop 
+awareness, coordination, 
+critical thinking and goal 
+setting 
+B7.2.3.2.1: Apply movement concepts, principles and strategies in 
+performing beginning level stick and ball sports (e.g., cricket, tsasikele, 
+softball, baseball, and rounders) 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in performing 
+beginning level stick and ball sports. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Cricket 
+Baseball 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CC9.8: Demonstrate an awareness of 
+team dynamics and work against negative 
+conflict in the team. 
+
+17 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7. 2.3.2 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+limited–contact sports 
+(e.g., stick and ball, hand 
+and ball) to develop 
+awareness, coordination, 
+critical thinking and goal 
+setting 
+B7.2.3.2.2: Apply movement concepts, principles, and strategies to 
+perform beginning level hand and ball sports (e.g., volleyball, netball, 
+etc.) to develop communication and collaboration 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in learning beginning 
+level hand and ball sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CC 9.6: Ability to work with all group 
+members to complete a task successfully. 
+CC9.1: Demonstrate behaviour and 
+skills of working towards group goals 
+B7. 2.3.3 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+full–contact sports (e.g., 
+invasion sports, martial 
+art, and traditional 
+wrestling) to develop 
+critical thinking and 
+decision-making. 
+B7.2.3.3.1: Apply movement concepts, principles, and strategies in 
+performing beginning level invasion sports (e.g., football, basketball, 
+field hockey, etc.) to develop critical thinking and decision-making 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in learning beginning 
+level invasion sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment, collaboration and talent identification. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CC9.6: Ability to work with all groups 
+members to complete a task successfully. 
+
+18 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7. 2.3.3 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles, and 
+strategies in performing 
+full–contact sports (e.g., 
+invasion sports, martial 
+art and traditional 
+wrestling) to develop 
+critical thinking and 
+decision-making 
+B7.2.3.3.2: Apply movement concepts, principles and strategies in 
+performing beginning level martial art (e.g., judo, taekwondo, and 
+karate) to develop critical thinking and decision-making 
+EXEMPLARS 
+1. Apply movement concepts (space, dynamics, relationship, etc.), principles 
+(specificity, adaptation, progression, etc.) and strategies in learning beginning 
+level martial art based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+ 
+Martial Art 
+Creativity and Innovation (CI), 
+Personal Development and 
+Leadership (PL) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing 
+CI6.4: Imagining and seeing things in a 
+different way. 
+PL6.6: Ability to mentor peers 
+
+19 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B7. 2.3.3 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+full–contact sports (e.g., 
+invasion sports, martial 
+art and traditional 
+wrestling) to develop 
+critical thinking and 
+decision-making 
+B7. 2.3.3.3: Apply movement concepts, principles and strategies in 
+performing beginning level traditional wrestling (e.g., abotri and arm 
+wrestling, etc.) for personal development and decision-making 
+EXEMPLARS 
+1. Apply concepts (space, dynamics, relationship, etc.), principles (specificity, 
+adaptation, progression, etc.) and strategies in learning beginning level 
+traditional wrestling 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competition for development of confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Abotri 
+Creativity and Innovation (CI), 
+Personal Development and 
+Leadership (PL) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.4: Imagining and seeing things in a 
+different way. 
+PL6.4: Ability to manage and resolve 
+conflict 
+
+20 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ JHS 2 
+ 
+ 
+ 
+ 
+ 
+
+21 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.1.1.1 
+Demonstrate 
+understanding of the 
+factors that influence 
+the choice of food and 
+feeding habits in relation 
+to participation in sports 
+and physical activity 
+B8.1.1.1.1: Examine the factors that influence the choice of food and 
+eating habits in relation to participation in physical activity 
+EXEMPLARS 
+1. In small groups, discuss the factors that influence the choice of food and 
+eating habits including misconceptions, religion, age and state of health. 
+2. Research (through books, internet, etc.) and do a 5-minute oral presentation 
+in small groups on the effects of good and bad eating habits on participation 
+in sports and physical activity. 
+Digital Literacy (DL), 
+Communication and Collaboration 
+(CC) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+DL5.5: Evaluate the quality and validity 
+of information. 
+
+22 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.1.2.1 
+Develop awareness of 
+behaviours that promote 
+regular participation 
+in sports and physical 
+activity 
+B8.1.2.1.1: Explore and catalogue several ways of getting active in 
+different contexts including home school, community, etc. 
+EXEMPLARS 
+1. Based on the estimates of performance in your reflective journal (as your 
+effort to increase involvement in physical activity), self-assess how often you 
+participate in a variety of physical activities. 
+Use tally to assess. Refer to mathematics curriculum (B7.4.1.1) for additional 
+information on frequency of occurrence and tallying 
+2. Interview your peers in groups on how often they engage in a variety of 
+physical activities at home, school, community, etc. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC9.2: Understand and use 
+interpersonal skills 
+CC9.1: Demonstrate behaviour and 
+skills of working towards group goals. 
+3. Plan and practise individually and in groups a variety of physical activities 
+(such as active transportation, group aerobics, active play, keepfit, etc.) at 
+home, school, and community to enhance good health and active lifestyle. 
+Information generated would be used for goal setting and as 
+intervention to increase regular participation in various forms of 
+physical activity at school, home and community. 
+
+23 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.1.3.1 
+Apply the principles 
+of first aid in a variety 
+of sports and physical 
+activity settings to 
+support environmental 
+and personal safety 
+B8.1.3.1.1: Discuss the concepts and principles of first aid and how to 
+apply them to ensure environmental and personal safety 
+EXEMPLARS 
+1. In groups, research and present to the class, the concept of first aid and how 
+it can contribute to personal and environmental safety. 
+2. Think-pair-share in small groups, identify and discuss the basic principles of 
+first aid (using appropriate first aid procedures and techniques, providing 
+assurance and guidance to the casualty, how and where to get help etc.). 
+3. In small groups, explore how and where to get help in cases of emergency 
+and share with the class. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CP5.6: Demonstrate a thorough 
+understanding of a generalised concepts 
+and facts. 
+
+24 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.1.3.1 (CONTINUED) 
+Apply the principles 
+of first aid in a variety 
+of sports and physical 
+activity settings to 
+support environmental 
+and personal safety 
+B8.1.3.1.2: Apply the principles of first aid in a variety of sports and 
+physical activity settings to develop or create a safe environment for 
+performance 
+EXEMPLARS 
+1. Identify and discuss the items in a first aid kit. 
+ 
+First Aid Kit 
+2. Demonstrate how to use the first aid items in managing physical activity- 
+related injuries. 
+3. Plan and demonstrate how to apply first aid to a casualty who is 
+(unconscious, bleeding, choked, etc. using internationally accepted basic 
+principles.) 
+4. In groups, prepare and submit a first aid kit for injury management in a 
+physical activity setting. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC). 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC9.2: Understand and use 
+interpersonal skills. 
+CP5.6: Demonstrate thorough 
+understanding of generalised concepts. 
+and facts. 
+CC: Ability to work with all group 
+members to complete a task successfully. 
+
+25 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 1:TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.1.1 
+Perform a variety 
+of traditional games 
+and adaptations for 
+inclusivity and cultural 
+awareness, sensitivity, 
+and appreciation of 
+other cultures (e.g., 
+socio-relational games). 
+Refer to Mathematics CS 
+B7.4.1.1. for cross-referencing 
+ 
+Integrate dance of the 
+minority group or 
+individual in the class 
+B8.2.1.1.1: Classify and perform socio-relational traditional games 
+(e.g., agblatsetse, kwanikwani, etc.) and adaptations for cultural 
+awareness, sensitivity, and appreciation of other cultures. 
+EXEMPLARS 
+1. Explore and perform various socio-relational traditional games with 
+adaptations, from various regions in the country (e.g., antoakyire, agblatsetse, 
+kwanikwani, etc.). 
+2. Prepare a schedule with a variety of socio-relational traditional games and 
+adaptation and perform at school and home. 
+3. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity 
+Antoakyire. https://www.youtube.com/watch?v=7GwZKdP152w (Watch the video 
+via the link above to understand the concept and maths in antoakyire). 
+4. Follow the video carefully to refine your understanding of probability in 
+maths. Reflect in your journal as in “3” above. 
+ 
+Antoakyire 
+ 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CG5.3: Develop and express respect, 
+recognition, and appreciation of others’ 
+culture. 
+CI6.6: Being open-minded, adapting 
+and modifying ideas to achieve creative 
+results. 
+
+26 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.1.2 
+Perform a variety 
+of traditional dances 
+and adaptations for 
+inclusivity and cultural 
+awareness (e.g., 
+individual and group 
+dance movements) for 
+personal development 
+and communication 
+B8.2.1.2.1: Classify and perform individual and group traditional 
+dance movements and adaptations in the different regions for 
+personal development, communication, inclusivity, and cultural 
+identity (e.g., kpanlogo, wan tiadoone, nwemboaba, etc.) 
+EXEMPLARS 
+1. Let learners research, list and perform a variety of individual and group 
+traditional dance movements from your own locality. 
+2. Create inclusive and adapted individual and group traditional dance 
+movements and teach others in groups in school and community. 
+3. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Kpanlogo dance 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC), Personal 
+Development and Leadership (PL) 
+CG5.3: Develop and express respect, 
+recognition, and appreciation of others’ 
+culture. 
+CC9.2: Understand roles during group 
+activities. 
+CI6.6: Being open-minded, adapting 
+and modifying ideas to achieve creative 
+results. 
+
+27 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.1.3 
+Demonstrate 
+understanding and apply 
+skills and movement 
+techniques in global 
+and traditional rhythmic 
+gymnastics movements 
+and adaptations for 
+coordination and 
+appreciation of global 
+cultures 
+Refer to Visual Arts and 
+Design CS B7.2.1.3 for 
+cross-referencing 
+B8.2.1.3.1: Classify and perform global and traditional rhythmic 
+gymnastics movements (e.g., group dance movements- nobabie, hoo- 
+londoreho! etc.) and adaptation for creativity, communication and 
+cultural identity 
+EXEMPLARS 
+1. Research and synchronise traditional individual and group dance movements 
+and global rhythmic dance movements and perform. 
+2. Create and perform combinations of global and traditional rhythmic dance 
+gymnastics movements in small and large groups. 
+3. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CG5.3: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+CC5.6: Understand and use 
+interpersonal skills. 
+CI6.6: Being open-minded, adapting 
+and modifying ideas to achieve creative 
+results. 
+Select rhythmic dance movements from the various regions to expose 
+learners to the wide range of cultures that exist in Ghana. 
+
+28 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 2: PHYSICAL FITNESS 
+ 
+ 
+CONTENT STANDARD INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.2.1 
+Demonstrate the ability 
+to increase the level of 
+participation in a variety 
+of muscular strength 
+and endurance activities 
+B8.2.2.1.1: Participate in muscular strength and endurance activities 
+at varying levels of challenge/difficulty for leisure and personal 
+development 
+EXEMPLARS 
+1. Set muscular strength and endurance goals and pursue them through 
+personal activities recorded in the B7 log. This may include increased 
+frequency of bike riding, skipping, push-ups, sit-ups, leg-press, etc. done in 
+home and school. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Bike riding 
+Personal Development and 
+Leadership (PL) 
+PL5.6: Ability to set and maintain 
+personal standards and values. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+
+29 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.2.2 
+Demonstrate the ability 
+to increase the level of 
+participation in a variety 
+of cardiorespiratory 
+activities 
+B8.2.2.2.1: Participate in cardiorespiratory activities at varying 
+levels of challenge or difficulty for personal development and leisure 
+EXEMPLARS 
+1. Set cardiorespiratory strength and endurance goals and pursue them 
+through personal activities recorded in the B7 performance log. This 
+may include increased frequency of bike riding, skipping, swimming, 
+running, walking, skipping, small sided football games done at home, 
+school, etc. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity 
+ 
+ 
+Walking and running 
+Personal Development and 
+Leadership. (PL), Communication 
+and Collaboration (CC) 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+CC8.1: Exhibit knowledge of duties 
+expected of them. 
+
+30 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.2.3 
+Demonstrate the ability 
+to increase the level of 
+participation in a variety 
+of flexibility and balance 
+activities 
+B8.2.2.3.1: Participate in flexibility and balance activities at varying 
+levels of challenge or difficulty 
+EXEMPLARS 
+1. Set flexibility and balance goals and pursue them through personal activities 
+recorded in the B7 performance log. This may include increased frequency 
+of line walking, balancing various objects on the head while walking, spoon 
+and egg brisk walk, reaching activities and tumatu done at home and in 
+school. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Flexibility Balance 
+Personal Development and 
+Leadership (PL), Communication 
+and Collaboration (CC) 
+PL5.6: Ability to set and maintain 
+personal standards and values. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+CC8.1: Exhibit knowledge of 
+duties expected of them. 
+
+31 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 3: ORGANISED SPORTS AND PHYSICAL ACTIVITY PARTICIPATION 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.1 
+Demonstrate the ability 
+to apply movement 
+concepts, principles, and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+and, individual and 
+target sports) 
+B8.2.3.1.1: Apply movement concepts, principles, and strategies 
+to perform beginning-intermediate level ball and racket sports 
+(e.g.,  badminton, tennis and table tennis, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level ball and racket sports based on individual adaptation and 
+pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Footwork in tennis 
+Creativity and Innovation 
+(CI), Communication and 
+Collaboration (CC) 
+(CI5.2 Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.4: Imagining and seeing things in a 
+different way. 
+PL5.4: Ability to one’s personality trait. 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC9.1: Demonstrate behaviour and skills 
+of working towards group goals. 
+
+32 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.1 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+concepts, principles, and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+and, individual and 
+target sports) 
+B8.2.3.1.2- Apply movement concepts, principles, and strategies 
+to perform beginning-intermediate level athletics (e.g., middle 
+distance, jumping and throwing) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level athletics based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions develop confidence, empowerment and 
+collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC: Demonstrate behaviour and skills of 
+working towards group and goals. 
+B8.2.3.1.3- Apply movement concepts, principles, and strategies to 
+perform beginning-intermediate level individual and target sports 
+(e.g., local archery.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level individual and target sports (e.g., backward skating, basic 
+stance, hold, draw and release – in local archery etc.) based on individual 
+adaptation. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration. 
+5. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC: Demonstrate behaviour and skills of 
+working towards group and goals. 
+
+33 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.2 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+limited–contact sports 
+(e.g., stick and ball sports 
+and hand and ball sports) 
+B8.2.3.2.1: Apply movement concepts, principles and strategies 
+to perform beginning-intermediate level stick and ball sports (e.g., 
+cricket, rounders, chaskele etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level stick and ball sports based on individual adaptation and 
+pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+CC9.2: Understand and use 
+interpersonal skills. 
+B8.2.3.2.2: Apply movement concepts, principles, and strategies 
+to perform beginning-intermediate level hand and ball sports 
+(e.g., volleyball, netball, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level hand and ball sports based on individual adaptation and 
+pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC9.1: Demonstrate behaviour and 
+skills of working towards group goals. 
+
+34 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.3 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing full– 
+contact sports (e.g., 
+invasion sports, martial 
+art, and traditional 
+wrestling) 
+B8.2.3.3.1: Apply movement concepts, principles and strategies 
+in performing beginning-intermediate level of invasion sports 
+(e.g.,  handball, basketball and football etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level invasion sports based on individual/team adaptations and 
+pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC9.1 Demonstrate behaviour and skills 
+of working towards group goals. 
+
+35 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.3 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing full– 
+contact sports (e.g., 
+invasion sports, martial 
+art and traditional 
+wrestling) 
+B8.2.3.3.2: Apply movement concepts, principles, and strategies 
+in performing beginning-intermediate level martial art (e.g., 
+karate, judo, taekwondo, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level martial art based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+ 
+Martial art 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC9.1 Demonstrate behaviour and skills 
+of working towards group goals. 
+
+36 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B8.2.3.3 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing full– 
+contact sports (e.g., 
+invasion sports, martial 
+art, and traditional 
+wrestling). 
+B8.2.3.3.3: Apply movement concepts, principles, and strategies in 
+performing beginning-intermediate level traditional wrestling (e.g., 
+arm wrestling, abotri etc.). 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning beginning- 
+intermediate level local wrestling, based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+CC9.1: Demonstrate behaviour and 
+skills of working towards group goals. 
+
+37 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ JHS 3 
+ 
+ 
+ 
+ 
+ 
+
+38 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 1: NUTRITION AND PHYSICAL ACTIVITY 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.1.1.1 
+Demonstrate 
+understanding of 
+nutritional problems 
+associated with 
+participation in sports 
+physical activities 
+B9.1.1.1.1: Examine the problems associated with unbalanced or 
+poor diet in relation to sports and physical activities 
+EXEMPLARS 
+1. In small groups, discuss the nutritional problems associated with unbalanced 
+or poor diet related to participation in sports and physical activities. 
+2. using role play, demonstrate the effects of unbalanced or poor diet and 
+participation in sports or physical activities. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP5.6: Demonstrate a thorough 
+understanding of a generalised concepts 
+and facts. 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+B9.1.1.1.2: Discuss the role of water in relation to nutrition and 
+physical activity 
+EXEMPLARS 
+1. Research and discuss in groups why water is a useful nutrient. 
+2. Observe and analyse how useful water is in physical activity participation. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CP 5.1: Ability to combine information 
+and ideas from several sources to reach a 
+conclusion. 
+CC 9.6: Ability to work with all group 
+members to complete a task successfully. 
+
+39 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 2: DISEASE PREVENTION AND MANAGEMENT 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.1.2.1 
+Discuss ways to prevent 
+diseases associated with 
+sedentary behaviours 
+and physical inactivity 
+B9.1.2.1.1: Create and perform physical activities to lower the risks 
+associated with sedentary behaviours and physical inactivity 
+EXEMPLARS 
+1. In groups, discuss a variety of physical activities performed daily. E.g. 
+, ,gardening, riding a bike, playing games, jogging, etc. 
+2. Research and make a presentation about physical activities that enhance 
+regular participation to prevent diseases associated with sedentary 
+behaviours and physical inactivity. (Obesity – moderate intensity exercises 
+such as fast walking, jogging, tennis, aerobic dance, etc.) 
+3. Plan and perform physical activities to prevent diseases related to sedentary 
+and physical inactivity. E.g., aerobics, jogging, tennis, etc. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Critical Thinking and Problem 
+Solving. (CP), Digital Literacy (DL) 
+CC 9.6: Ability to work with all group 
+members to complete a task successfully. 
+DL 6.6: Recognition of societal issues 
+emanating from the use of digital 
+technology. 
+CP 5.6: Demonstrate a thorough 
+understanding of a generalised concepts 
+and facts. 
+
+40 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 1: HEALTH EDUCATION 
+SUB-STRAND 3: FIRST AID, INJURY PREVENTION AND MANAGEMENT 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.1.3.1 
+Apply internationally 
+accepted best practices 
+for injury management 
+in sports and physical 
+activity settings 
+B9.1.3.1.1: Demonstrate the effective procedures of injury 
+management in sports and physical activity settings 
+EXEMPLARS 
+1. Research and share with class internationally accepted best practices for 
+injury management. 
+2. Watch a video on first aid procedures and critique the procedures for 
+injury management in small groups. (Protection, Rest, Ice, Compression and 
+Elevation - P.R.I.C.E) 
+3. In groups, demonstrate how to use internationally accepted best practices 
+to manage physical activity-related injuries. For example; 
+a. Strain – protect the strained muscle from further injury, rest the 
+strained muscle, ice the muscle area for 20 minutes, etc. 
+b. Cuts – Wash your hands with soap and water, wash the cut to prevent 
+infection, stop the bleeding, etc. 
+c. Dislocation –Apply ice to the affected area, splint the injured area, etc. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+Digital Literacy (DL) 
+CC 8.1: Speak clearly and explain ideas. 
+Share a narrative or extended answer 
+while speaking to a group. 
+DL 5.5: Evaluate the quality and validity 
+of information. 
+CC9.2: Understand roles during group 
+activities. 
+
+41 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 1: TRADITIONAL RHYTHMIC GYMNASTICS, GAMES AND DANCE 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.1.1 
+Demonstrate 
+understanding of 
+performing a variety 
+of traditional games 
+and adaptations for 
+inclusivity and cultural 
+identity 
+B9.2.1.1.1: Perform and classify a variety of traditional games (e.g., 
+socio-relational games, self-directed games, etc.) and adaptation 
+according to level of intensity (low, moderate, and vigorous 
+intensity) 
+EXEMPLARS 
+1. Based on the research list and performance of traditional games identified in 
+B1- B8, classify the games into low, moderate and high intensity activities. 
+2. In small groups, think-pair-share and refine classification for class 
+presentation. 
+Cultural Identity and Global 
+Citizenship (CG) 
+Critical Thinking and Problem 
+Solving (CP) 
+CG5.3: Develop and express respect, 
+recognition, and appreciation of others’ 
+culture. 
+CG6.4: Exhibit a sense of nationality and 
+global identity. 
+3. Check your pulse or heartbeat to determine accuracy of classification. 
+Higher heartbeat per minute denotes high intensity while pulse at 
+resting heartbeat denote low intensity. 
+CP: Ability to understand features of a 
+problem. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+
+42 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.1.2 
+Demonstrate 
+understanding of 
+performing a variety 
+of traditional dances 
+and adaptations for 
+inclusivity and cultural 
+identity 
+B9.2.1.2.1: Create a list of various traditional dance movements and 
+adaptations according to level of intensity (e.g., low, moderate and 
+high intensity, etc.) 
+EXEMPLARS 
+1. Based on the research list and performance of traditional dance movements 
+identified in B1-B8, classify the games into low, moderate and high intensity 
+activities. 
+2. In small groups, think-pair-share and refine classification for class 
+presentation. 
+3. Check your pulse or heartbeat to determine accuracy of classification. 
+Higher heartbeat per minute denotes high intensity while pulse at 
+resting heartbeat denote low intensity 
+Cultural Identity and Global 
+Citizenship (CG), Critical Thinking 
+and Problem Solving (CP) 
+CG: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+CG: Exhibit a sense of nationality and 
+global identity. 
+CP: Ability to understand features of a 
+problem. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+B9.2.1.3 
+Demonstrate 
+understanding 
+of performing a 
+variety of traditional 
+rhythmic gymnastics 
+and adaptations for 
+inclusivity and cultural 
+identity 
+B9.2.1.3.1: Create and classify a variety of traditional rhythmic 
+gymnastics and adaptation according to level of intensity 
+(e.g., low, moderate and high intensity) 
+EXEMPLARS 
+1. Based on the research list and performance of traditional rhythmic dance 
+movements identified in B1- B8, classify the rhythmic movements into low, 
+moderate and high intensity activities. 
+2. In small groups, think-pair-share and refine classification for class 
+presentation. 
+3. Check your pulse or heartbeat to determine accuracy of classification. 
+Higher heartbeat per minute denotes high intensity while pulse at 
+resting heartbeat denote low intensity. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Cultural Identity and Global 
+Citizenship (CG), Critical Thinking 
+and Problem Solving (CP) 
+CG: Develop and express respect, 
+recognition and appreciation of others’ 
+culture. 
+CP: Exhibit a sense of nationality and 
+global identity. 
+CP: Ability to understand features of a 
+problem. 
+
+43 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 2: PHYSICAL FITNESS 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.2.1 
+Demonstrate ability to 
+maintain or improve the 
+level of participation in 
+a variety of muscular 
+strength and endurance 
+activities 
+B9.2.2.1.1: Participate in muscular strength and endurance activities 
+at varying levels of challenge or difficulty 
+EXEMPLARS 
+1. Set muscular strength and endurance goals and pursue them through 
+personal activities recorded in the B7- B8 log. The major goal is to 
+maintain personal level of performance and improve, as necessary. This 
+may include increased frequency of push-ups, sit-ups or lifting/carrying 
+various objects that bring weight to bear on the muscles at home and 
+school. 
+Personal Development and 
+Leadership (PL), Communication 
+and Collaboration (CC) 
+PL5.6: Ability to set and maintain 
+personal standards and values. 
+CC9.2: Understand and use 
+interpersonal skills. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+B9.2.2.2 
+Demonstrate ability 
+to maintain or 
+improve the level of 
+participation in a variety 
+of cardiorespiratory 
+strength and endurance 
+activities 
+B9.2.2.2.1: Participate in cardiorespiratory strength and endurance 
+activities at varying levels of challenge or difficulty 
+EXEMPLARS 
+1. Set cardiorespiratory strength and endurance goals and pursue them 
+through performances recorded in the B7- B8 log. The major goal is to 
+maintain a personal level of performance and improve, as necessary. This 
+may include increased frequency of bike riding, skipping, skipping, small sided 
+football games, etc. at home and school. 
+Personal Development and 
+Leadership (PL) 
+PL5.6: Ability to set and maintain 
+personal standards and values. 
+PL5.6: Ability to set and maintain 
+personal standards. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+
+44 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.2.3 
+Demonstrate the ability 
+to maintain or improve 
+the level of participation 
+in a variety of flexibility 
+and balance activities 
+B9.2.2.3.1: Participate in flexibility and balance activities at varying 
+personal levels of challenge or difficulty 
+EXEMPLARS 
+1. Set flexibility and balance goals and then pursue them through personal 
+activities recorded in the B7-B8 log. The major goal is to maintain 
+personal level of performance and improve, as necessary. This may include 
+increased frequency of line walking, balancing various objects on the head 
+while walking, spoon and egg brisk walk, reaching activities, tumatu, etc. 
+done at home and school. 
+2. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity 
+Personal Development and 
+Leadership (PL) 
+PL5.6: Ability to set and maintain 
+personal standards and values. 
+PL5.6: Ability to set and maintain 
+personal standards. 
+
+45 
+ 
+© NaCCA, Ministry of Education 2021 
+STRAND 2: PHYSICAL ACTIVITY EDUCATION 
+SUB-STRAND 3: ORGANISED SPORTS AND PHYSICAL ACTIVITY PARTICIPATION 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.3.1 
+Demonstrate the ability 
+to apply movement 
+concepts, principles and 
+strategies in performing 
+non–contact sports (e.g., 
+ball and racket, athletics, 
+individual and target 
+sports) 
+B9.2.3.1.1: Apply movement concepts, principles and strategies to 
+perform intermediate level ball and racket sports (e.g., table tennis, 
+badminton etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning intermediate 
+level ball and racket sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+B9.2.3.1.2: Apply movement concepts, principles and strategies to 
+perform intermediate level athletics (e.g., throwing, jumping, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles, and strategies in learning intermediate 
+level athletics (e.g., jumping, throwing, etc.) based on individual adaptation 
+and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise small-group competitions to develop confidence, 
+empowerment, collaboration and talent identification. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Critical Thinking and Problem 
+Solving (CP), Personal 
+Development and Leadership (PL) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CI6.6: Being open-minded and modifying 
+ideas to achieve creative results. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+
+46 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.3.2 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing limited– 
+contact sports (e.g., ball 
+and stick and hand and 
+ball sports) 
+B9.2.3.2.1: Apply movement concepts, principles, and strategies 
+to perform intermediate level stick and ball sports (e.g., cricket, 
+rounders, baseball, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles, and strategies in learning intermediate 
+level stick and ball sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Critical Thinking and Problem 
+Solving. (CP), Communication and 
+Collaboration (CC) 
+CC9.6: Ability to work with all group 
+members to complete a task successfully. 
+CI: 6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+B9.2.3.2.2: Apply movement concepts, principles, and strategies 
+to perform intermediate level hand and ball sports (e.g., volleyball, 
+netball, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning intermediate 
+level hand and ball sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CI 6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+PL5.5: Desire to accept one’s true self 
+and overcome weakness. 
+
+47 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.3.3 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing full– 
+contact sports (e.g., 
+invasion, martial art, and 
+traditional wrestling) 
+B9.2.3.3.1: Apply movement concepts, principles, and strategies 
+in performing intermediate level invasion sports (e.g., football, 
+basketball, field hockey, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning intermediate 
+level invasion sports based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situation or thing. 
+CI 6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+CL 6.2: Ability to reflect on approaches 
+to creative task and evaluate the 
+effectiveness of tools used. 
+B9.2.3.3.2: Apply movement concepts, principles and strategies in 
+performing intermediate level martial art (e.g., judo, karate, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles, and strategies in learning intermediate 
+level martial art based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Creativity and Innovation (CI), 
+Communication and Collaboration 
+(CC) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CI 6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+CL 6.2: Ability to reflect on approaches 
+to creative tasks and evaluate the 
+effectiveness of tools used. 
+
+48 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+CONTENT STANDARD 
+INDICATORS AND EXEMPLARS 
+CORE COMPETENCIES 
+B9.2.3.3 (CONTINUED) 
+Demonstrate the ability 
+to apply movement 
+principles and strategies 
+in performing full– 
+contact sports (e.g., 
+invasion, martial art, and 
+traditional wrestling) 
+B9.2.3.3.3: Apply movement concepts, principles and strategies in 
+performing intermediate level traditional wrestling (e.g., abotri, arm 
+wrestling, etc.) 
+EXEMPLARS 
+1. Apply movement concepts, principles and strategies in learning intermediate 
+level local wrestling, based on individual adaptation and pacing. 
+2. Use adapted rules and equipment to foster inclusion. 
+3. Create and organise competitions to develop confidence, empowerment, 
+and collaboration. 
+4. Record estimate of duration/measure of performance in your self-journal as 
+your effort to increase involvement in physical activity. 
+Cultural Identity and Global 
+Citizenship (CG), Communication 
+and Collaboration (CC) 
+CI 5.2: Ability to merge simple/complex 
+ideas to create novel situations or things. 
+CI 6.6: Being open-minded and 
+modifying ideas to achieve creative 
+results. 
+CL 6.2: Ability to reflect on approaches 
+to creative tasks and evaluate the 
+effectiveness of tools used. 
+
+49 
+ 
+© NaCCA, Ministry of Education 2021 
+APPENDICES 
+ 
+APPENDIX A: CORE COMPETENCIES AND SUBSKILLS OF THE COMMON CORE PROGRAMME (CCP) 
+ 
+1. COMMUNICATION AND COLLABORATION (CC) 
+ 
+ 
+ 
+ 
+ 
+B7-B9 
+CC7: LISTENING 
+CC8: PRESENTING 
+CC9: TEAMWORK 
+CC7.1: Identify words or sentences in 
+context appropriately 
+CC8.1: Speak clearly and explain ideas. Share a 
+narrative or extended answer while speaking 
+to a group 
+CC9.1: Demonstrate behaviour and skills of 
+working towards group goals 
+CC7.2: Interpret correctly and respond to non- 
+verbal 
+communication 
+such 
+as 
+facial 
+expressions, cues and gestures 
+CC8.2: Explain ideas in a clear order with 
+relevant detail, using correct construction 
+and structure of speech 
+CC9.2: Understand and use interpersonal skills 
+CC7.3: Provide feedback in areas of ideas, 
+organisation, voice, word choice and sentence 
+fluency in communication 
+CC8.3: Apply appropriate diction, and structure 
+sentences correctly for narrative, persuasive, 
+imaginative and expository purposes 
+CC9.3: Understand roles during group activities 
+CC7.4: Identify underlying themes, implications 
+and issues when listening 
+CC8.4: Anticipate different responses from 
+the audience and plan for them 
+CC9.4: Help group work on relevant activities 
+CC7.5: Identify and analyse different points of 
+views of speaker 
+CC8.5: Vary the level of detail and the 
+language used when presenting to make it 
+appropriate to the audience 
+CC9.5: Appreciate the importance of including all 
+team members in discussions and actively 
+encourage contributions from them 
+CC9.6: Ability to work with all group members to 
+complete a task successfully 
+CC9.7: Effectively perform multiple roles within the 
+group 
+
+50 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+B7-B9 
+CC9.8: Demonstrate an awareness of the wider 
+team dynamics and work to minimise conflicts in 
+the team 
+ 
+
+51 
+ 
+© NaCCA, Ministry of Education 2021 
+2. CRITICAL THINKING AND PROBLEM SOLVING (CP) 
+ 
+ 
+ 
+B7-B9 
+CP5: CRITICAL THINKING 
+CP6: PROBLEM SOLVING 
+CP 5.1: Ability to combine information and ideas from several sources to 
+reach a conclusion 
+CP 6.1: Ability to effectively define goals towards solving a problem 
+CP 5.2: Analyse and make distinct judgement about viewpoints expressed 
+in an argument 
+CP 6.2: Ability to explain plans for attaining goals 
+CP 5.3: Create simple logic trees to think through problems 
+CP 6.3: Identify important and appropriate alternatives 
+CP 5.4: Generate hypothesis to help answer complex problems 
+CP 6.4: Ability to identify important and appropriate criteria and use them 
+to evaluate available alternatives 
+CP 5.5: Effectively evaluate the success of solutions used to solve a 
+complex problem 
+CP 6.5: Ability to select alternative(s) that adequately meet selected 
+criteria 
+CP 5.6: Demonstrate a thorough understanding of a generalised concept 
+and facts specific to a task or situation 
+CP 6.6: Preparedness to recognise and explain results after implementation 
+of plans 
+CP 5.7: Provide new insight into controversial situation or task 
+CP 6.7: Implement strategies with accuracy 
+CP 5.8: Identify and prove misconceptions about a generalised concept or 
+fact specific to a task or situation 
+CP 5.9: Identify and explain a confusion, uncertainty or a contradiction 
+surrounding an event 
+CP 5.10: Develop and defend a logical plausible resolution to a confusion, 
+uncertainty or contradiction surrounding an event 
+
+52 
+ 
+© NaCCA, Ministry of Education 2021 
+3. PERSONAL DEVELOPMENT AND LEADERSHIP (PL) 
+ 
+ 
+ 
+B7-B9 
+PL5: PERSONAL DEVELOPMENT 
+PL6: LEADERSHIP 
+PL5.1: Understanding oneself (strengths, weaknesses, goals and 
+aspirations), in reacting and adjusting to novel situations 
+PL6.1: Ability to serve group members effectively 
+PL5.2: Demonstrate a sense of belongingness to a group 
+PL6.2: Division of tasks into solvable units and assigning group members to 
+task units 
+PL5.3: Recognise one’s emotional state and their preparedness to apply 
+emotional intelligence 
+PL6.3: Ability to manage time effectively 
+PL5.4: Ability to understand one’s personality traits 
+PL6.4: Ability to manage and resolve conflicts 
+PL5.5: Desire to accept one’s true self and overcome weaknesses 
+PL6.5: Ability to monitor team members to ascertain progress 
+PL5.6: Ability to set and maintain personal standards and values 
+PL6.6: Ability to mentor peers 
+PL6.7: Actively promote effective group interaction and the expression of 
+ideas and opinions in a way that is sensitive to the feelings and background 
+of others 
+PL6.8: Actively assist group identify changes or modifications necessary in 
+the group activities and work towards carrying out those changes 
+
+53 
+ 
+© NaCCA, Ministry of Education 2021 
+4. CULTURAL IDENTITY AND GLOBAL CITIZENSHIP (CG) 
+ 
+B7-B9 
+CG5: CULTURAL IDENTITY 
+CG6: GLOBAL CITIZENSHIP 
+CG5.1: Show a strong sense of belongingness to one’s culture 
+CG6.1: Understanding of influences of globalisation on traditions, languages 
+and cultures 
+CG5.2: Develop and exhibit ability to defend one’s cultural beliefs, 
+practices and norms 
+CG6.2: Recognise resistance to global practices that are inimical to our 
+culture 
+CG5.3: Develop and express respect, recognition and appreciation of 
+others’ cultures 
+CG6.3: Know the global discourse about the roles of males and females 
+CG5.4: Develop and exhibit a sense of cultural identity 
+CG6.4: Exhibit a sense of nationality and global identity 
+CG5.5: Adjust to the demands of customs, traditions, values and attitudes 
+of society 
+
+54 
+ 
+© NaCCA, Ministry of Education 2021 
+5. CREATIVITY AND INNOVATION (CI) 
+ 
+ 
+ 
+ 
+B7-B9 
+CI5: KNOWLEDGE, UNDERSTANDING, SKILLS AND 
+STRATEGIES 
+CI6: REFLECTION AND EVALUATION 
+CI 5.1: Examine alternatives in creating new things 
+CI 6.1: Exhibit strong memory, intuitive thinking and respond appropriately 
+CI 5.2: Ability to merge simple/complex ideas to create novel situations or 
+things 
+CI 6.2: Ability to reflect on approaches to creative tasks and evaluate the 
+effectiveness of tools used 
+CI 5.3: Identification of requirements of a given situation and justification 
+of more than one creative tool that will be suitable 
+CI 6.3: Ability to select the most effective creative tools for work and give 
+reasons for the choice 
+CI 5.4: Ability to visualise alternatives, see possibilities and identify 
+problems and challenges 
+CI 6.4: Imagining and seeing things in a different way 
+CI 5.5: Ability to try new alternatives and different approaches 
+CI 6.5: Anticipate and overcome difficulties relating to taking initiatives 
+CI 5.6: Understand and use analogies and metaphors 
+CI 6.6: Being open-minded, adapting and modifying ideas to achieve 
+creative results 
+CI 5.7: Putting forward constructive comments, ideas, explanations and 
+new ways of doing things 
+CI 6.7: Look and think about things differently and from different 
+perspectives 
+CI 6.8: Recognise and generalise information and experience; search for 
+trends and patterns 
+CI 6.9: Interpret and apply learning in new contexts 
+CI 6.10: Reflect on work and explore the thinking behind thoughts and 
+processes 
+
+55 
+ 
+© NaCCA, Ministry of Education 2021 
+6. DIGITAL LITERACY (DL) 
+ 
+ 
+ 
+Please note these inclusivity issues 
+The core competencies outlined in this document must be assessed taking into consideration learners with special needs (physical disabilities, learning 
+disabilities, etc.). Consider the use of realia for visual and visually challenged learners. A system of creating alternatives for tasks must also be adopted. 
+ 
+ 
+B7-B9 
+DL5: PHOTO-VISUAL AND INFORMATION LITERACY 
+DL6: SOCIO-EMOTIONAL AND REPRODUCTION LITERACY 
+DL5.1: Ability to ascertain when information is needed and be able to 
+identify, locate, evaluate and effectively use it to solve a problem 
+DL 6.1: Understand the sociological and emotional aspects of cyberspace 
+DL5.2: Ability to recognise and avoid traps in cyberspace 
+DL 6.2: Create a meaningful and original piece of work, or its 
+interpretation by integrating existing information 
+DL5.3: Ability to find and utilise digital content 
+DL6.3: Use digital tools to create novel things 
+DL5.4: Ability to construct knowledge from a non-linear hyper-textual 
+navigation 
+DL6.4: Adhere to behavioural protocols that prevail in cyberspace 
+DL5.5: Evaluate the quality and validity of information 
+DL6.5: Recognition of societal issues emanating from the use of digital 
+technologies 
+DL5.6: Preparedness to make better decisions using available information 
+DL6.6: Knowledge and recognition of ethical use of information 
+
+56 
+ 
+© NaCCA, Ministry of Education 2021 
+APPENDIX B 
+ 
+CLASSIFICATION OF SPORTS BY LEVEL OF CONTACT 
+In order to provide diversity, adaptations and variations for sports and physical activity content selection, the table of sports and games classification 
+is included below to help teachers and learners to better understand the scope of the content to be covered, especially sub- strand 3 (organised sports 
+and physical activity participation) in the physical activity education strand. 
+ 
+ 
+ 
+FULL-CONTACT SPORTS 
+LIMITED-CONTACT SPORTS 
+NON-CONTACT SPORTS 
+a) Invasion sports 
+i. Football 
+ii. Basketball 
+iii. Field hockey 
+iv. Handball 
+b) Martial arts 
+i. Judo 
+ii. Karate 
+iii. Taekwondo 
+iv. Boxing 
+c) Traditional wrestling 
+i. Arm wrestling 
+ii. Abotri/kukule 
+a) Stick and ball sports 
+i. Cricket 
+ii. Rounders 
+iii. Baseball 
+iv. Softball 
+v. Tsasikele 
+b) Hand and ball sports 
+i. Volleyball 
+ii. Netball 
+a) Athletics 
+i. Relay adaptations 
+ii. Throwing events 
+iii. Jumping events 
+b) Ball and racket/bat sports 
+i. Tennis 
+ii. Table tennis 
+iii. Badminton 
+c) Individual/target sports 
+i. Local archery 
+ii. Golf 
+
+57 
+ 
+© NaCCA, Ministry of Education 2021 
+APPENDIX C 
+ 
+CATEGORIES OF TRADITIONAL ACTIVITIES 
+ 
+ 
+SELF-DIRECTED 
+ACTIVITIES 
+CONCEPTUAL 
+ACTIVITIES 
+COOPERATIVE ACTIVITIES 
+SOCIO-RELATIONAL 
+ACTIVITIES 
+1. Ahurukutu 
+2. Aniis 
+3. Atlibo 
+4. Bo Mframa 
+5. Chasikelen 
+6. Bofako 
+7. Hwiibom 
+8. KereKere 
+9. Kwaakwaa 
+10. Moobo 
+11. Pietor 
+12. ToenYounin 
+13. To Koa No 
+1. Dua-Oo-Dua 
+2. Kokrokoo 
+3. Kyekyekule 
+4. Masi-Masi 
+5. Otoosa 
+1. Abasakonw 
+2. Asoba 
+3. Denkyem So Me Dua Mu 
+4. Dazalla 
+5. Langa 
+6. Mitu Mituo 
+7. Obiarra Yewoo No Kwasiada 
+8. Ozimzim 
+9. Kale 
+10. Kpe Do KpetoGbo 
+11. Sia Deka Meyi 
+12. TuweTuwe – Mamprobi 
+13. Zangina Tobikayulika 
+1. Agblatseetse 
+2. Bu Dikyi Fam No 
+3. Daakuulanga 
+4. Kwaanikwaan 
+5. M’foBie Loo? 
+6. Odo Handkerchief 
+7. Nsamanfuo Agoro 
+8. Wuriba-Bari 
+
+58 
+ 
+© NaCCA, Ministry of Education 2021 
+ 
+ 
+ 
+GROUP DANCE 
+INDIVIDUAL-DUAL DANCE 
+BOARD-FLOOR ACTIVITIES 
+SAMPLE VIDEOS 
+1. Awandobele 
+2. Dugu 
+3. Gangang 
+4. Mwetanku 
+5. NobaBie 
+6. Ntan 
+7. N Yagse Yagse 
+8. Nwemboaba 
+9. “O” Africa 
+10. Takai 
+11. Wah DosiLeng Tolle 
+12. HooLondore Ho! 
+13. Wan Tia Dooni 
+14. Bamaya 
+1. Adowa 
+2. Anteada 
+3. Adumbire Kolgo,TuaTua” 
+4. Ayisimono 
+5. Fontonfrom 
+6. Kpo Dada 
+7. Npelege Nyine 
+8. Sikyi 
+1. Agya Wo Ho 
+2. Gau 
+3. Kremesim 
+4. KugahSoah 
+5. Nsakwakyri 
+6. Orefa 
+7. Pitinga 
+8. Sukuu Aba 
+9. Wapena 
+1. Kyekyekule/Sansankroma - https:// 
+youtu.be/os4GS102ReI 
+2. Takai- https://www.youtube. 
+com/results?search_query=Takai 
+| https://www.youtube.com/ 
+watch?v=eBYTrH-zIVk 
+3. Song-Baamaaya- https://www. 
+youtube.com/watch?v=v5H8tCigs0E 
+4. Documentary traditional 
+Games-https://www.youtube. 
+com/watch?v=wqpsrBtbr64 
+| https://www.youtube.com/ 
+watch?v=zdDWHOhAWkY 
+5. Ga Kpanlogo music and 
+dance- https://www.youtube.com/ 
+watch?v=1zb69xgp5Ho 
+
+59 
+ 
+© NaCCA, Ministry of Education 2021 
+APPENDIX D 
+Details of indicators and benchmarks for learner’s report card for physical activity 
+ 
+ 
+ 
+INDICATOR 
+Overall physical activity 
+Percent of recorded estimates in the learner’s Self-Journal and all surveillance mechanisms including but not 
+limited to physical fitness test records, physical activity in the past 7 days record, etc. It indicates whether or not 
+the learner is meeting the Ghana Health Service, the Ghana Education Policy Guidelines for Physical Education 
+and Sports, and continental recommendations on physical activity for health, which recommends that children 
+and youth accumulate at least 60 minutes of moderate to vigorous-intensity physical activity per day on average, 
+or in every 4 days when an average cannot be estimated. 
+Individual characteristics 
+Physical literacy 
+Meet or exceed the minimum level physical literacy based on the adapted version of the Canadian Assessment of 
+Physical Literacy15 
+Physical fitness 
+Average percentile achieved on certain fitness indicators based on the normative values published by Tomkinson 
+et. al.16 
+Daily behaviours 
+Organised sport and physical 
+activity 
+Percent of recorded estimates (in the learner’s Self-Journal and other surveillance mechanisms) which shows 
+participation in organised sport and/or physical activity programmes in school and out of school. 
+Active play 
+Recorded estimates (in the learner’s Self-Journal and other surveillance mechanisms) which shows engagement 
+in unstructured/unorganised active play at any intensity for more than 2 hours a day or being outdoors for more 
+than 2 days. 
+Active transportation 
+Recorded estimates (in the learner’s Self-Journal and other surveillance mechanisms) which shows use of active 
+transportation to get to and from places (e.g., school, mall friends’ house etc.) 
+Sedentary behaviours 
+Percent of recorded estimates (in the learner’s Self-Journal and other surveillance mechanisms) which shows no 
+more than 2 hours of recreation screen time per day. 
+Physical education 
+Recorded estimates (in the learner’s Self-Journal and other surveillance mechanisms) which shows participation 
+in physical education classes and getting at least 120 minutes (out of the 150 minutes allocation) per week. 
+
+60 
+ 
+© NaCCA, Ministry of Education 2021 
+BIBLIOGRAPHY 
+ 
+1. Akuffo, P. A., Darko, R. A., & Seibu, M. (2018). Supervision of children recreation. Winneba: Institute for Educational Development and Extension. 
+2. Akuffo, P. A., Darko, R. A., & Seibu, M. (2016). Physical Education for early childhood education teacher. Winneba: Institute for Educational Development and Extension. 
+3. Ammah, A. (2004). Physical education for the basic schoolteacher. Winneba: Institute for Educational Development and Extension. 
+4. Bagerbaseh, B. N., Atubga, A., & Soyelle, J. (2008). Teaching physical education in primary schools (B1-B6). Accra: Adwinsa Publications (Gh) Ltd. 
+5. Grey, (2000). Concept of fitness and wellness (3rd ed.). New York: McGraw- Hill Companies http://www.biologydiscussion.com/energy/metabolism-energy/ how-to-measure-calorific-
+value-of-food/17321 
+6. Kutame, M. A. & Ocansey, R. (2010). Multicultural curriculum model: Preparing culturally sensitive physical education teachers. Ghana Physical Education and Sport Journal, 1(1) 
+25-38. 
+7. Manyanga et al. (2018). Indicators of physical activity among children and youth in nine countries with low-to-medium human development indices: A global matrix 3.0 paper. 
+Journal of Physical Activity and Health, 15(S2): S274-S283. doi: 10.1123/jpah.2018-0370. 
+8. Nyawornota et al. (2018). Results from Ghana’s 2018 report card on physical activity for children and youth. Journal of Physical Activity and Health, 15(suppl 2): S366–S367. 
+doi:10.1123/jpah.2018-0459. 
+9. Ocansey et al. (2016). Results from Ghana’s 2016 report card on physical activity for children and youth. Journal of Physical Activity and Health, 13(11 Suppl 2), S165-S168. 
+10. Ocansey, R., Aryeetey, R., Sofo, S., Badasu, M., Nyawornota,V. & Pambo, P. (2014). Results from Ghana’s 2014 report card on physical activity for children and youth. Journal of 
+Physical Activity and Health, 11(Supp 1), S58-S62. 
+11. Ocansey, R., & Wosornu, L.. (2011). Placing physical activity at the center of wellness and school curricula: A communiqué. Ghana Physical Education and Sport Journal, 2(2) 22-25. 
+12. Sedentary Behaviour Research Network. (2012). Standardised use 
+of the terms “sedentary” and “sedentary behaviours”. Applied Physiology Nutrition and Metabolism, 37, 
+540–542 
+13. Sofo, S., & Ocansey, R. (2014). Interdisciplinary learning: An introduction. Ghana Physical Education & Sport Journal, 3, 6-9. 
+14. Sharkey. J. B., & Gaskill, E. S. (2007). Fitness and Wellness (6th ed.). U.S.: Human Kinetics 
+15 Francis et al. (2015). The Canadian assessment of physical literacy: development of a model of children’s capacity for a healthy, active lifestyle through a Delphi process. Journal 
+of Physical Activity & Health, Available from: https://www. researchgate.net/publication/279305440_The_Canadian_Assessment_of_ 
+Physical_Literacy_Development_of_a_Model_of_Children’s_Capacity_for_a_ Healthy_Active_Lifestyle_Through_a_Delphi_Process [accessed Aug 29 2020]. 
+16 Tomkinson et al. (2017). International normative 20 m shuttle run values from 1?142?026 children and youth representing 50 countries. Br. J. Sport Med., 51, 1545–1554. 
+17. Tremblay et al. (2016). Physical activity of children: A global matrix of grades comparing 38 countries. Journal of Physical Activity and Health, 3(Suppl 2), S343 
+-S366. 
+18. Whitehead, M. (2001). The concept of physical literacy. European Journal of Physical Education, (2), 127-138. 
+19 Whitehead, M. (Ed.). (2010). Physical literacy: Throughout the life course. Oxford shire, England: Routledge. 
+
+61 
+ 
+© NaCCA, Ministry of Education 2021 
+PHYSICAL HEALTH AND EDUCATION SUBJECT PANEL MEMBERS AND REVIEWERS 
+ 
+NAME 
+INSTITUTION 
+ 
+WRITING PANEL 
+Prof. Reginald Ocansey 
+College of Education, University of Ghana, Legon 
+Mr. Munkaila Seibu 
+Department of HPERS, University of Education, 
+Winneba 
+Mr. Paul Kofi Yesu Dadzie 
+PRESEC, Legon 
+Mr. Sullivan Ayuuba Akudago 
+G. E. S. Ashaiman 
+ 
+REVIEWERS 
+Cambridge International 
+Dr Mrs Harriet Naki Amui 
+Presbyterian Women’s College of Education, Aburi 
+Prof. Charles Domfeh 
+Department of HPER, University of Cape Coast 
+Mr. Didier Abi Jaoudeh 
+Al-Rayan International School, Accra. 
+ 
+ 
+ 
+SUPERVISORS AND COORDINATING TEAM 
+ 
+ 
+ 
+ 
+ 
+NAME 
+INSTITUTION 
+SUPERVISORS 
+Dr. Prince H. Armah 
+Director-General (Ag.), NaCCA 
+Prof. Kwame Osei Kwarteng 
+Council Chairman, NaCCA 
+COORDINATING TEAM 
+Mr. Johnson Boakye Yiadom 
+NaCCA/EDT 
+Mr. John Mensah Anang 
+NaCCA 
+Mr. Cosmos Eminah 
+NaCCA 
+Mrs. Wilma S. Titus-Glover 
+NaCCA 
+GRAPHIC DESIGNER 
+Eugene Offei Tettey 
+NaCCA 

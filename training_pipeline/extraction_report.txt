@@ -1,0 +1,10 @@
+CURRICULUM EXTRACTION REPORT
+==================================================
+Total files processed: 98
+Total text extracted: 20,183,009 characters
+
+Folders with content: ['KG1', 'KG2', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
+
+Empty folders (add curriculum files here):
+
+Next step: run python training_pipeline/build_training_data.py

@@ -71,5 +71,11 @@ export const schemeAPI = {
   generateRange: (data)     => API.post('/scheme/generate-range', data, { timeout: 180000 }),
 };
 
+export const timetableAPI = {
+  upload: (formData) => API.post('/timetable/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  get: (classCode) => API.get(`/timetable/${classCode}`),
+  delete: (classCode) => API.delete(`/timetable/${classCode}`),
+};
+
 export default API;
 

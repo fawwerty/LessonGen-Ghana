@@ -21,6 +21,7 @@ const curriculumRoutes = require('./routes/curriculum');
 const adminRoutes = require('./routes/admin');
 const schemeRoutes = require('./routes/scheme');
 const dashboardRoutes = require('./routes/dashboard');
+const timetableRoutes = require('./routes/timetable');
 
 const app = express();
 // app.use(helmet()); // Temporarily disable for debugging network errors
@@ -69,6 +70,7 @@ app.use('/api/payments', paymentRoutes);
 app.use('/api/curriculum', curriculumRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/scheme', schemeRoutes);
+app.use('/api/timetable', timetableRoutes);
 app.use('/api/dashboard', (req, res, next) => {
   console.log('🎯 [Match] Request hit the /api/dashboard mount point');
   next();

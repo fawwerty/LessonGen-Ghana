@@ -5,6 +5,9 @@ const fs = require('fs');
 const curriculumDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/curriculum/nacca_db.json'), 'utf-8')
 );
+const extractedCurriculum = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../../../training_pipeline/extracted_curriculum.json'), 'utf-8')
+);
 const textbookDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/textbooks/approved_textbooks.json'), 'utf-8')
 );
@@ -48,7 +51,11 @@ ABSOLUTE RULES:
    - Communication and Collaboration (CC)
    - Cultural Identity and Global Citizenship (CG)
    - Personal Development and Leadership (PL)
-   - Digital Literacy (DL)`;
+   - Digital Literacy (DL)
+9. ACTIVITY LIMITS:
+   - KG & Lower/Upper Primary: Exactly 3 to 5 bullet-pointed activities in Phase 2.
+   - JHS: Exactly 4 to 6 bullet-pointed activities in Phase 2.
+10. FORMATTING: Use clear bullet points (-) for activities in Phase 2. No walls of text.`;
 
 function getTextbook(classCode, subject) {
   const levelMap = {
@@ -67,17 +74,28 @@ function getTextbook(classCode, subject) {
   return match ? `${match.title} by ${match.publisher}` : 'Approved NaCCA Textbook';
 }
 
-function loadFewShotExamples(classCode, subject, n = 2) {
-  const datasetPath = path.join(__dirname, '../../../training_pipeline/training_dataset.jsonl');
-  if (!fs.existsSync(datasetPath)) return '';
-  const lines = fs.readFileSync(datasetPath, 'utf-8').split('\n').filter(Boolean);
+function loadFewShotExamples(classCode, subject, n = 3) {
+  const datasetPath = path.join(__dirname, '../../../training_pipeline/grandfather_dataset.jsonl');
+  const fallbackPath = path.join(__dirname, '../../../training_pipeline/training_dataset.jsonl');
+  
+  let lines = [];
+  if (fs.existsSync(datasetPath)) {
+    lines = fs.readFileSync(datasetPath, 'utf-8').split('\n').filter(Boolean);
+  }
+  if (lines.length === 0 && fs.existsSync(fallbackPath)) {
+    lines = fs.readFileSync(fallbackPath, 'utf-8').split('\n').filter(Boolean);
+  }
+
   const relevant = lines
     .map(l => { try { return JSON.parse(l); } catch { return null; } })
     .filter(Boolean)
     .filter(ex => {
-      const content = ex.messages[0].content;
-      return content.includes(subject) || content.includes(classCode);
+      const content = ex.messages[0].content.toLowerCase();
+      const sub = subject.toLowerCase();
+      // Heuristic match
+      return content.includes(sub) || content.includes(classCode.toLowerCase());
     })
+    .sort(() => 0.5 - Math.random()) // Shuffle
     .slice(0, n);
   if (relevant.length === 0) return '';
   let fewShotText = '\n\n--- HIGH QUALITY EXAMPLE LESSON NOTES (mirror this style exactly) ---\n';
@@ -94,14 +112,49 @@ function getCurriculum(classCode, subject, term, week) {
   const subjectData = classData[subject] || [];
   let match = subjectData.find(c => c.term === term && c.week === week);
   if (!match) match = subjectData.find(c => c.term === term) || subjectData[0];
-  if (!match) return {
-    strand: 'Refer to NaCCA Curriculum', subStrand: 'See subject curriculum document',
-    contentStd: `${classCode}.1.1.1`, indicator: `${classCode}.1.1.1.1`,
-    perfIndicator: 'Learners demonstrate understanding of the topic through activities',
-    reference: `NaCCA ${subject} Curriculum for ${classCode}`,
-    duration: '60mins', classSize: '35'
-  };
+  
+  // Basic fallback
+  if (!match) {
+    return {
+      strand: 'Refer to NaCCA Curriculum', subStrand: 'See subject curriculum document',
+      contentStd: `${classCode}.1.1.1`, indicator: `${classCode}.1.1.1.1`,
+      perfIndicator: 'Learners demonstrate understanding of the topic through activities',
+      reference: `NaCCA ${subject} Curriculum for ${classCode}`,
+      duration: '60mins', classSize: '35'
+    };
+  }
+
+  // Attempt to enrich with raw PDF text if available
+  const enrich = getEnrichedCurriculum(classCode, subject, match.indicator);
+  if (enrich) {
+    return { ...match, rawSourceText: enrich };
+  }
+
   return match;
+}
+
+function getEnrichedCurriculum(classCode, subject, indicator) {
+  try {
+    const classFiles = extractedCurriculum[classCode] || [];
+    const sub = subject.toLowerCase().replace(/language/g, '').trim();
+    const match = classFiles.find(f => f.source.toLowerCase().includes(sub)) || classFiles[0];
+    
+    if (match && match.text_file) {
+      const textPath = path.join(__dirname, '../../../training_pipeline/extracted_text', match.text_file);
+      if (fs.existsSync(textPath)) {
+        const fullText = fs.readFileSync(textPath, 'utf-8');
+        // Find section around indicator
+        const idx = fullText.indexOf(indicator);
+        if (idx !== -1) {
+          // Take 2000 characters around the indicator for context
+          return fullText.substring(Math.max(0, idx - 200), Math.min(fullText.length, idx + 1800));
+        }
+      }
+    }
+  } catch (err) {
+    console.error('Curriculum enrichment error:', err);
+  }
+  return null;
 }
 
 function buildPrompt(params, curr) {
@@ -160,6 +213,11 @@ function buildPrompt(params, curr) {
 
 Generate a ${classCode} ${subject} lesson note (Term ${term}, Week ${week}, Style: ${style}).
 Curriculum: ${curr.strand} / ${curr.subStrand} / ${curr.contentStd} / ${curr.indicator} / ${reference}.
+
+${curr.rawSourceText ? `--- RAW CURRICULUM TEXT (Search for exemplars here) ---
+${curr.rawSourceText}
+--- END RAW TEXT ---` : ''}
+
 Textbook Reference: ${textbook}.
 ${daysInstruction}
 ${periods ? `Plan the content length to fit ${periods} periods.` : ''}
@@ -180,17 +238,48 @@ async function validateLesson(lesson, isJHS, targetDays) {
 }
 
 // ── generateLesson ────────────────────────────────────────────────────────────
-// The primary entry point for standard lesson note generation
 async function generateLesson(params) {
-  const { classCode, subject, term, week, teachingDays } = params;
+  let { classCode, subject, term, week, teachingDays, periods, timetableData } = params;
   const isJHS = ['B7','B8','B9'].includes(classCode);
-  const targetDays = teachingDays ? parseInt(teachingDays, 10) : (isJHS ? 1 : 5);
-  const curriculum = getCurriculum(classCode, subject, term, week);
-  const prompt = buildPrompt(params, curriculum);
+  const isPrimary = !isJHS && !classCode.startsWith('KG');
 
-  for (let i = 0; i < 3; i++) {
+  // Intelligent Timetable Mapping
+  if (timetableData && timetableData.schedule) {
+    const subjectEntries = timetableData.schedule.filter(s => 
+      s.subject.toLowerCase().includes(subject.toLowerCase()) || 
+      subject.toLowerCase().includes(s.subject.toLowerCase())
+    );
+    
+    if (subjectEntries.length > 0) {
+      // Use timetable for teaching days
+      teachingDays = subjectEntries.length;
+      // Calculate total periods
+      periods = subjectEntries.reduce((sum, entry) => sum + (entry.periods || 1), 0);
+      console.log(`Timetable detected: ${teachingDays} days, ${periods} periods for ${subject}`);
+    }
+  }
+
+  // Primary Default Logic: 1 lesson = 2 periods (unless timetable says otherwise)
+  if (isPrimary && !periods) {
+    periods = 2; 
+  }
+
+  const targetDays = teachingDays ? parseInt(teachingDays, 10) : (isJHS ? 1 : 5);
+  
+  // Try to get enriched curriculum data
+  let curriculum = getCurriculum(classCode, subject, term, week);
+  
+  // Fallback prompt strategy
+  const prompts = [
+    buildPrompt({ ...params, teachingDays: targetDays, periods }, curriculum),
+    buildPrompt({ ...params, teachingDays: targetDays, periods, extra: (params.extra || '') + "\nKeep it extremely simple and focus on the core indicator." }, curriculum),
+    buildPrompt({ ...params, teachingDays: targetDays, periods, style: 'Standard', extra: "Format as basic structured lesson note." }, curriculum)
+  ];
+
+  for (let i = 0; i < prompts.length; i++) {
     try {
-      const result = await model.generateContent(prompt);
+      console.log(`Attempt ${i+1} for ${subject} (${classCode})...`);
+      const result = await model.generateContent(prompts[i]);
       const lesson = JSON.parse(result.response.text());
       if (await validateLesson(lesson, isJHS, targetDays)) {
         return { lesson, curriculum, isJHS };
@@ -199,7 +288,12 @@ async function generateLesson(params) {
       console.error(`Attempt ${i+1} failed for ${subject}:`, e.message);
     }
   }
-  throw new Error(`Failed to generate ${subject} lesson after 3 attempts.`);
+  
+  // Specific error messages
+  if (subject.toLowerCase().includes('math')) {
+    throw new Error(`Mathematics content unavailable for selected strand ${curriculum.strand}. Check your curriculum settings.`);
+  }
+  throw new Error(`Failed to generate ${subject} lesson after 3 distinct attempts with fallback prompts.`);
 }
 
 // ── generateLessonFromScheme ──────────────────────────────────────────────────

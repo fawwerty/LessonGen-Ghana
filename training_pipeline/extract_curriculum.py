@@ -61,7 +61,7 @@ def process_class_folder(class_code, folder_path):
         return results
 
     for f in files:
-        print(f"  📄 Processing: {f.name}")
+        print(f"  Processing: {f.name}")
         if f.suffix.lower() == '.pdf':
             text = extract_from_pdf(f)
         else:
@@ -75,7 +75,7 @@ def process_class_folder(class_code, folder_path):
                 'text_preview': text[:500],
                 'full_text': text
             })
-            print(f"     ✅ Extracted {len(text):,} characters")
+            print(f"     Extracted {len(text):,} characters")
 
     return results
 
@@ -106,7 +106,7 @@ def main():
 
     for rel_path, class_code in class_map.items():
         folder = upload_root / rel_path
-        print(f"\n📚 {class_code} — {folder}")
+        print(f"\n[Level] {class_code} -- {folder}")
         results = process_class_folder(class_code, folder)
         if results:
             all_results[class_code] = results
@@ -117,7 +117,27 @@ def main():
 
     # Save extracted data
     output_file.parent.mkdir(parents=True, exist_ok=True)
-    save_data = {k: [{'source': r['source'], 'class': r['class'], 'text_length': r['text_length'], 'text_preview': r['text_preview']} for r in v] for k, v in all_results.items()}
+    text_dir = output_file.parent / 'extracted_text'
+    text_dir.mkdir(exist_ok=True)
+
+    save_data = {}
+    for k, v in all_results.items():
+        save_data[k] = []
+        for r in v:
+            # Save full text to a separate file
+            txt_filename = f"{r['class']}_{r['source'].replace('.pdf', '.txt').replace('.docx', '.txt')}"
+            txt_path = text_dir / txt_filename
+            with open(txt_path, 'w', encoding='utf-8') as tf:
+                tf.write(r['full_text'])
+            
+            save_data[k].append({
+                'source': r['source'],
+                'class': r['class'],
+                'text_length': r['text_length'],
+                'text_preview': r['text_preview'],
+                'text_file': txt_filename
+            })
+
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(save_data, f, indent=2, ensure_ascii=False)
 
@@ -133,16 +153,16 @@ def main():
         report.append(f"  - curriculum_upload/ ... /{ef}/")
     report.append("\nNext step: run python training_pipeline/build_training_data.py")
 
-    with open(report_file, 'w') as f:
+    with open(report_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(report))
 
     print(f"\n{'='*60}")
-    print(f"✅ Extraction complete!")
+    print(f"Extraction complete!")
     print(f"   Files: {total_files} | Characters: {total_chars:,}")
     print(f"   Output: {output_file}")
     print(f"   Report: {report_file}")
     if empty_folders:
-        print(f"\n⚠️  Empty folders (no curriculum files yet):")
+        print(f"\nWarning: Empty folders (no curriculum files yet):")
         for ef in empty_folders:
             print(f"   curriculum_upload/.../{ef}/")
     print(f"\n👉 Next: python training_pipeline/build_training_data.py\n")

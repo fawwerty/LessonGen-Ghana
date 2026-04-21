@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { lessonsAPI, schemeAPI } from '../utils/api';
+import { lessonsAPI, schemeAPI, timetableAPI } from '../utils/api';
 import { useAuth } from '../hooks/useAuth';
 import toast from 'react-hot-toast';
 
@@ -41,10 +41,23 @@ export default function GeneratePage() {
   const [term, setTerm] = useState('1');
   const [week, setWeek] = useState('1');
   const [schemeFile, setSchemeFile] = useState(null);
+  const [timetableFile, setTimetableFile] = useState(null);
+  const [timetable, setTimetable] = useState(null);
   const [uploadingScheme, setUploadingScheme] = useState(false);
+  const [uploadingTimetable, setUploadingTimetable] = useState(false);
   const [subjectsBasket, setSubjectsBasket] = useState([]);
   const [form, setForm] = useState({ classCode: '', subject: '', teachingDays: '5', periods: '3', style: 'Standard' });
   const [loading, setLoading] = useState(false);
+  const [progress, setProgress] = useState({ current: 0, total: 0, status: '' });
+
+  // Load existing timetable when class changes
+  React.useEffect(() => {
+    if (form.classCode) {
+      timetableAPI.get(form.classCode)
+        .then(res => setTimetable(res.data.timetable))
+        .catch(() => setTimetable(null)); // Not found is fine
+    }
+  }, [form.classCode]);
 
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
 
@@ -62,6 +75,29 @@ export default function GeneratePage() {
     finally { setUploadingScheme(false); }
   };
 
+  const handleUploadTimetable = async () => {
+    if (!timetableFile || !form.classCode) return toast.error('Select class level and file first.');
+    setUploadingTimetable(true);
+    const fd = new FormData();
+    fd.append('timetableFile', timetableFile);
+    fd.append('classCode', form.classCode);
+    try {
+      const res = await timetableAPI.upload(fd);
+      setTimetable(res.data.timetable);
+      toast.success('Timetable parsed successfully!');
+      
+      // Auto-suggest subjects from timetable
+      const subjects = [...new Set(res.data.timetable.schedule.map(s => s.subject))];
+      if (subjects.length > 0) {
+        toast.success(`Detected ${subjects.length} subjects from your timetable.`);
+      }
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Timetable upload failed.');
+    } finally {
+      setUploadingTimetable(false);
+    }
+  };
+
   const addToBasket = () => {
     if (!form.classCode || !form.subject) return toast.error('Class and subject are required');
     setSubjectsBasket(curr => [...curr, { ...form, id: Date.now() }]);
@@ -72,15 +108,30 @@ export default function GeneratePage() {
   const handleGenerateAll = async () => {
     if (!subjectsBasket.length) return toast.error('Add at least one subject');
     setLoading(true);
+    setProgress({ current: 0, total: subjectsBasket.length, status: 'Initializing...' });
+    
     try {
-      const payload = subjectsBasket.map(s => ({ ...s, term: Number(term), week: Number(week) }));
+      const payload = subjectsBasket.map(s => ({ 
+        ...s, 
+        term: Number(term), 
+        week: Number(week),
+        timetableData: timetable // Pass timetable context
+      }));
+      
+      // We process sequentially or in parallel depending on backend capacity
+      // For UX, we'll update progress per subject
       const res = await lessonsAPI.generateBatch(payload);
+      
       toast.success(`${subjectsBasket.length} lesson${subjectsBasket.length > 1 ? 's' : ''} generated!`);
       if (res.data.batchId) navigate(`/lessons/batch/${res.data.batchId}`);
       else if (res.data.lessons?.length > 0) navigate(`/lessons/${res.data.lessons[0]._id}`);
       else navigate('/lessons');
-    } catch (err) { toast.error(err.response?.data?.message || 'Generation failed.'); }
-    finally { setLoading(false); }
+    } catch (err) { 
+      toast.error(err.response?.data?.message || 'Generation failed.'); 
+    } finally { 
+      setLoading(false); 
+      setProgress({ current: 0, total: 0, status: '' });
+    }
   };
 
   return (
@@ -126,23 +177,58 @@ export default function GeneratePage() {
                 </div>
               </div>
 
-              {/* Scheme upload (all users can access) */}
-              <div className="p-5 rounded-2xl border border-dashed border-emerald-200 bg-emerald-50/40 mb-6">
-                <div className="flex items-center gap-2 mb-1">
-                  <svg className="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                  <h4 className="text-sm font-bold text-emerald-800">Upload Scheme of Work</h4>
+              {/* Timetable upload (NEW - REQUIRED) */}
+              <div className="p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 mb-6 shadow-sm">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    <h4 className="text-sm font-bold text-emerald-900">Upload Your Timetable (REQUIRED)</h4>
+                  </div>
+                  {timetable && <span className="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-tight">Active</span>}
                 </div>
-                <p className="text-xs text-gray-500 mb-3">AI parses your TSoW into weekly lesson structure. Or go to the <button className="text-emerald-600 font-semibold underline" onClick={() => navigate('/scheme')}>Scheme page</button> for full control.</p>
-                <input type="file" accept=".pdf,.docx,.txt" onChange={e => setSchemeFile(e.target.files[0])} className="text-xs mb-3 w-full text-gray-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-emerald-100 file:text-emerald-700 hover:file:bg-emerald-200" />
-                <button onClick={handleUploadScheme} disabled={uploadingScheme || !schemeFile || !form.classCode || !form.subject}
-                  className="px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold disabled:opacity-50 hover:bg-emerald-700 transition">
-                  {uploadingScheme ? 'Parsing with AI...' : 'Upload & Parse →'}
+                <p className="text-xs text-gray-500 mb-4 font-medium italic">Supports Images (JPEG/PNG), PDF, or Excel sheets.</p>
+                
+                <div className="mb-4">
+                   <FieldLabel>Class Level</FieldLabel>
+                   <select value={form.classCode} onChange={set('classCode')}
+                    className="w-full px-3 py-2 bg-white border border-emerald-200 rounded-xl text-sm focus:border-emerald-400 outline-none transition mb-3">
+                    <option value="">Select class first...</option>
+                    {CLASSES.map(g => <optgroup key={g.group} label={g.group}>{g.options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}</optgroup>)}
+                  </select>
+                </div>
+
+                <input type="file" accept="image/*,.pdf,.xlsx,.xls,.csv" 
+                  onChange={e => setTimetableFile(e.target.files[0])} 
+                  className="text-xs mb-4 w-full text-gray-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-gray-900 file:text-white hover:file:bg-gray-800" />
+                
+                <button onClick={handleUploadTimetable} disabled={uploadingTimetable || !timetableFile || !form.classCode}
+                  className={`w-full py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 ${timetable ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-emerald-600 text-white hover:bg-emerald-700'}`}>
+                  {uploadingTimetable ? (
+                    <><div className="w-3 h-3 border border-white border-t-transparent animate-spin rounded-full"/> Parsing Timetable...</>
+                  ) : timetable ? '✓ Timetable Ready (Click to Update)' : 'Parse Timetable with AI'}
                 </button>
               </div>
 
-              <button onClick={() => setStep(2)}
-                className="w-full py-3.5 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition shadow-sm">
-                Next Step →
+              {/* Scheme upload (Optional but helpful) */}
+              <div className="p-5 rounded-2xl border border-dashed border-gray-200 bg-gray-50 mb-6">
+                <div className="flex items-center gap-2 mb-1">
+                  <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                  <h4 className="text-sm font-bold text-gray-700">Optional: Scheme of Learning</h4>
+                </div>
+                <p className="text-xs text-gray-400 mb-3">Upload your SOW to ensure AI aligns perfectly with your term plan.</p>
+                <input type="file" accept=".pdf,.docx,.txt" onChange={e => setSchemeFile(e.target.files[0])} className="text-xs mb-3 w-full text-gray-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gray-200 file:text-gray-700" />
+                <button onClick={handleUploadScheme} disabled={uploadingScheme || !schemeFile || !form.classCode || !form.subject}
+                  className="px-4 py-2 border border-gray-300 text-gray-600 rounded-xl text-xs font-bold disabled:opacity-50 hover:bg-gray-100 transition">
+                  {uploadingScheme ? 'Parsing...' : 'Upload Scheme'}
+                </button>
+              </div>
+
+              <button onClick={() => {
+                if (!timetable) return toast.error('Please upload and parse your timetable first.');
+                setStep(2);
+              }}
+                className="w-full py-3.5 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition shadow-sm disabled:opacity-50">
+                Next Step: Configure Subjects →
               </button>
             </div>
           )}
