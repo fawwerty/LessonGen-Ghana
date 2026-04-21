@@ -292,11 +292,14 @@ export default function SchemePage() {
               <button
                 onClick={handleUpload}
                 disabled={uploading || (tab === 'upload' ? !file : !pasteText.trim()) || !classCode || !subject}
-                className="mt-4 w-full py-3 bg-gray-900 text-white rounded-xl text-sm font-bold hover:bg-gray-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className={`mt-6 w-full py-3.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-sm
+                  ${(tab === 'upload' ? file : pasteText.trim()) && classCode && subject 
+                    ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-emerald-200' 
+                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
               >
                 {uploading ? (
                   <>
-                    <svg className="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent animate-spin rounded-full"/>
                     AI is parsing your scheme...
                   </>
                 ) : 'Parse Scheme with AI →'}
