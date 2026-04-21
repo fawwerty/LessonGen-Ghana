@@ -13,7 +13,7 @@ import {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-black transition-colors">
+    <div className="min-h-screen bg-transparent transition-colors">
       <div className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
           

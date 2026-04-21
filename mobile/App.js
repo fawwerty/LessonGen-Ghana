@@ -20,6 +20,7 @@ import GenerateScreen from './src/screens/GenerateScreen';
 import MyLessonsScreen from './src/screens/MyLessonsScreen';
 import LessonViewScreen from './src/screens/LessonViewScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
+import AboutScreen from './src/screens/AboutScreen';
 import SchemeScreen from './src/screens/SchemeScreen';
 import DashboardScreen from './src/screens/DashboardScreen';
 
@@ -148,6 +149,11 @@ function AppNavigator() {
             component={PaymentScreen}
             options={{ title: 'Upgrade to PRO', headerBackTitle: 'Back' }}
           />
+          <Stack.Screen
+            name="About"
+            component={AboutScreen}
+            options={{ title: 'About LessonGen', headerBackTitle: 'Back' }}
+          />
         </>
       )}
     </Stack.Navigator>
@@ -205,34 +211,74 @@ function PaymentScreen({ navigation }) {
     }
   };
 
-  return (
-    <View style={[pay_s.container, { paddingBottom: insets.bottom + 20 }]}>
-      <Text style={pay_s.title}>Upgrade to PRO</Text>
-      <Text style={pay_s.sub}>Unlock unlimited lesson note exports with DOCX download.</Text>
+  const plans = [
+    {
+      id: 'monthly',
+      title: 'Monthly Plan',
+      price: 'GHS 25/month',
+      features: ['Unlimited DOCX exports', 'Save lesson history forever', 'Priority AI generation'],
+      tag: null
+    },
+    {
+      id: 'annual',
+      title: 'Annual Plan',
+      price: 'GHS 200/year',
+      features: ['Everything in Monthly', 'Priority support', 'Save GHS 100 vs monthly'],
+      tag: '⭐ BEST VALUE — Save GHS 100'
+    }
+  ];
 
-      {[
-        ['monthly', 'Monthly', 'GHS 25 / month'],
-        ['annual', 'Annual', 'GHS 200 / year  ·  Save GHS 100'],
-      ].map(([val, label, price]) => (
+  return (
+    <ScrollView style={[pay_s.container]} contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}>
+      <Text style={pay_s.title}>Upgrade to PRO</Text>
+      <Text style={pay_s.sub}>Unlock unlimited lesson note exports. Pay with Mobile Money or card.</Text>
+
+      {plans.map((p) => (
         <TouchableOpacity
-          key={val}
-          onPress={() => setPlan(val)}
-          style={[pay_s.planCard, plan === val && pay_s.planCardActive]}
+          key={p.id}
+          onPress={() => setPlan(p.id)}
+          style={[pay_s.planCard, plan === p.id && pay_s.planCardActive, p.id === 'annual' && { backgroundColor: colors.gl }]}
         >
-          <View style={[pay_s.planRadio, plan === val && pay_s.planRadioActive]} />
-          <View style={{ flex: 1 }}>
-            <Text style={[pay_s.planLabel, plan === val && { color: colors.g1, fontWeight: '800' }]}>{label}</Text>
-            <Text style={pay_s.planPrice}>{price}</Text>
+          {p.tag && <Text style={pay_s.planTag}>{p.tag}</Text>}
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+            <View style={[pay_s.planRadio, plan === p.id && pay_s.planRadioActive]} />
+            <Text style={[pay_s.planLabel, plan === p.id && { color: colors.g1, fontWeight: '800' }]}>{p.title}</Text>
+          </View>
+          <Text style={pay_s.planPrice}>{p.price}</Text>
+          <View style={s_p.features}>
+            {p.features.map(f => (
+              <View key={f} style={s_p.featureRow}>
+                <Ionicons name="checkmark-circle" size={14} color={colors.g2} />
+                <Text style={s_p.featureText}>{f}</Text>
+              </View>
+            ))}
           </View>
         </TouchableOpacity>
       ))}
 
       <TouchableOpacity style={[pay_s.payBtn, loading && { opacity: 0.6 }]} onPress={pay} disabled={loading}>
-        {loading ? <ActivityIndicator color="#fff" /> : <Text style={pay_s.payBtnText}>Pay with Paystack  →</Text>}
+        {loading ? <ActivityIndicator color="#fff" /> : (
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <Ionicons name="card-outline" size={20} color="#fff" />
+            <Text style={pay_s.payBtnText}>Pay with Paystack (MTN, Vodafone, Card)</Text>
+          </View>
+        )}
       </TouchableOpacity>
-    </View>
+      
+      <TouchableOpacity style={pay_s.backBtn} onPress={() => navigation.goBack()}>
+        <Text style={pay_s.backBtnText}>← Go back</Text>
+      </TouchableOpacity>
+
+      <Text style={pay_s.footerNote}>Secure payment by Paystack. Cancel anytime.</Text>
+    </ScrollView>
   );
 }
+
+const s_p = StyleSheet.create({
+  features: { marginTop: 12, gap: 6 },
+  featureRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  featureText: { fontSize: 13, color: colors.ink3, fontWeight: '500' },
+});
 
 const pay_s = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg, padding: 24, paddingTop: 16 },
@@ -256,4 +302,8 @@ const pay_s = StyleSheet.create({
     shadowColor: '#0099FF', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 10, elevation: 6,
   },
   payBtnText: { color: '#fff', fontSize: 16, fontWeight: '800' },
+  planTag: { position: 'absolute', top: -12, right: 12, backgroundColor: colors.gb, color: colors.white, fontSize: 10, fontWeight: '800', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 12, overflow: 'hidden' },
+  backBtn: { marginTop: 12, alignItems: 'center', padding: 12 },
+  backBtnText: { color: colors.ink3, fontSize: 14, fontWeight: '600' },
+  footerNote: { textAlign: 'center', fontSize: 12, color: colors.ink4, marginTop: 16 },
 });

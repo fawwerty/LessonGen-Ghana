@@ -84,9 +84,13 @@ export default function ProfileScreen({ navigation }) {
             <Text style={s.rowKey}>Generate</Text>
             <Text style={s.rowLink}>New lesson →</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={[s.row, { borderBottomWidth: 0 }]} onPress={() => navigation.navigate('My Lessons')}>
+          <TouchableOpacity style={s.row} onPress={() => navigation.navigate('My Lessons')}>
             <Text style={s.rowKey}>My Lessons</Text>
             <Text style={s.rowLink}>View all →</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={[s.row, { borderBottomWidth: 0 }]} onPress={() => navigation.navigate('About')}>
+            <Text style={s.rowKey}>About LessonGen</Text>
+            <Text style={s.rowLink}>Read story →</Text>
           </TouchableOpacity>
         </View>
       </View>
