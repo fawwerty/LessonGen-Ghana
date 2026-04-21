@@ -274,8 +274,34 @@ async function validateLesson(lesson, isJHS, targetDays) {
 
 // ── generateLesson ────────────────────────────────────────────────────────────
 async function generateLesson(params) {
-  let { classCode, subject, term, week, teachingDays, periods, timetableData } = params;
+  let { classCode, subject, term, week, teachingDays, periods, timetableData, extra, style, level, userId } = params;
   const Lesson = require('../models/Lesson'); // Lazy load to avoid circular dep
+
+  // ── GLOBAL AI CACHE: Check if this exact lesson already exists ──────────────
+  // We only cache if there are no 'extra' custom instructions
+  if (!extra || extra.trim() === '') {
+    try {
+      const cached = await Lesson.findOne({ 
+        classCode, subject, term, week, style, level, 
+        isValid: true 
+      }).sort({ createdAt: -1 });
+
+      if (cached) {
+        console.log(`Cache Hit! Reusing lesson for ${subject} W${week}`);
+        const data = cached.toObject();
+        // Return structured so route can save it as its own
+        return { 
+          lesson: {
+            ...data,
+            days: data.days.map(d => ({ day: d.day, phase1: d.phase1, phase2: d.phase2, phase3: d.phase3 }))
+          }, 
+          curriculum: cached, 
+          isJHS: ['B7','B8','B9'].includes(classCode), 
+          isCached: true 
+        };
+      }
+    } catch (e) { console.error('Cache check error:', e); }
+  }
 
   // ── SEQUENCE AWARENESS: Fetch previous week's lesson for context ────────────
   let previousContext = '';

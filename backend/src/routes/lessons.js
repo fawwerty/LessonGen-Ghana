@@ -4,6 +4,7 @@ const { protect } = require('../middleware/auth');
 const { generateLesson, CLASS_LABEL } = require('../services/aiService');
 const Lesson = require('../models/Lesson');
 const LessonBatch = require('../models/LessonBatch');
+const User = require('../models/User');
 const router = express.Router();
 
 // POST /api/lessons/generate
