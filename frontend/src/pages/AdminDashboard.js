@@ -14,11 +14,19 @@ export default function AdminDashboard() {
     try {
       console.log('🚀 [AdminDashboard] Fetching data...');
       const [statsRes, usersRes] = await Promise.all([
-        adminAPI.stats(),
-        adminAPI.users()
+        adminAPI.stats().catch(e => { console.error('Stats API Error:', e); return { data: {} }; }),
+        adminAPI.users().catch(e => { console.error('Users API Error:', e); return { data: {} }; })
       ]);
-      if (statsRes.data?.stats) setData(statsRes.data.stats);
-      if (usersRes.data?.users) setUsers(usersRes.data.users);
+      
+      if (statsRes.data?.stats) {
+        setData(statsRes.data.stats);
+      } else {
+        console.warn('⚠️ [AdminDashboard] Stats missing in response:', statsRes.data);
+      }
+      
+      if (usersRes.data?.users) {
+        setUsers(usersRes.data.users);
+      }
     } catch (err) {
       toast.error('Failed to sync with system');
       console.error(err);
@@ -57,17 +65,24 @@ export default function AdminDashboard() {
     </div>
   );
 
+  // DEFENSIVE CHECK: Ensure required nested properties exist
+  const stats = data || {};
+  const aiCache = stats.aiCache || { hitRate: 0, hits: 0, misses: 0 };
+  const payments = stats.payments || { recentFailures: [] };
+  const totalUsers = stats.totalUsers || 0;
+  const paidUsers = stats.paidUsers || 0;
+  const totalLessons = stats.totalLessons || 0;
+
   if (!data) return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', padding: '20px' }}>
-      <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '20px', textAlign: 'center', border: '1px solid #e2e8f0', maxWidth: '400px' }}>
-         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Connection Error</h2>
-         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px' }}>Unable to fetch system metrics. Check your internet or admin status.</p>
-         <button onClick={() => { setLoading(true); fetchData(); }} style={{ padding: '10px 20px', backgroundColor: '#0f172a', color: 'white', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>Retry</button>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', padding: '20px', backgroundColor: '#f8fafc' }}>
+      <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '20px', textAlign: 'center', border: '1px solid #e2e8f0', maxWidth: '400px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}>
+         <div style={{ fontSize: '40px', marginBottom: '15px' }}>📡</div>
+         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px', color: '#1e293b' }}>Syncing Data...</h2>
+         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px' }}>Waiting for system metrics. If this takes too long, please check your connection.</p>
+         <button onClick={() => { setLoading(true); fetchData(); }} style={{ padding: '10px 20px', backgroundColor: '#0f172a', color: 'white', borderRadius: '10px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Retry Connection</button>
       </div>
     </div>
   );
-
-  const { totalUsers, paidUsers, totalLessons, aiCache, payments, system } = data;
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f8fafc', color: '#1e293b', fontFamily: 'Inter, sans-serif' }}>
@@ -108,10 +123,10 @@ export default function AdminDashboard() {
 
         {/* KPI Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px', marginBottom: '30px' }}>
-          <MetricCard title="Cache Hit Rate" value={`${aiCache.hitRate}%`} sub={`${aiCache.hits} hits`} color="#6366f1" />
+          <MetricCard title="Cache Hit Rate" value={`${aiCache.hitRate || 0}%`} sub={`${aiCache.hits || 0} hits`} color="#6366f1" />
           <MetricCard title="Total Generations" value={totalLessons} sub="lessons created" color="#10b981" />
-          <MetricCard title="Pro Users" value={paidUsers} sub={`${Math.round((paidUsers/totalUsers)*100)}% conversion`} color="#f59e0b" />
-          <MetricCard title="Payment Failures" value={payments.recentFailures.length} sub="critical events" color="#ef4444" />
+          <MetricCard title="Pro Users" value={paidUsers} sub={`${totalUsers > 0 ? Math.round((paidUsers/totalUsers)*100) : 0}% conversion`} color="#f59e0b" />
+          <MetricCard title="Payment Failures" value={payments.recentFailures?.length || 0} sub="critical events" color="#ef4444" />
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', lgGridTemplateColumns: '2fr 1fr', gap: '30px' }}>
@@ -141,7 +156,7 @@ export default function AdminDashboard() {
           <section style={{ backgroundColor: 'white', padding: '25px', borderRadius: '24px', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.05)' }}>
             <h3 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '20px' }}>System Health</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {payments.recentFailures.length === 0 ? (
+              {!payments.recentFailures || payments.recentFailures.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '40px 0', opacity: 0.5 }}>
                   <p style={{ fontSize: '12px', fontWeight: 'bold' }}>ALL SYSTEMS NORMAL</p>
                 </div>
