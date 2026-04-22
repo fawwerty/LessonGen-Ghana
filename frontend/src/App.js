@@ -25,8 +25,13 @@ function PrivateRoute({ children }) {
 }
 
 function AdminRoute({ children }) {
-  const { user } = useAuth();
-  return user?.role === 'sys_admin' ? children : <Navigate to="/dashboard" />;
+  const { user, loading } = useAuth();
+  if (loading) return <div className="loading-overlay"><div className="spinner" /></div>;
+  if (!user || user.role !== 'sys_admin') {
+    console.warn('🚫 [AdminRoute] Access denied. Role:', user?.role);
+    return <Navigate to="/dashboard" />;
+  }
+  return children;
 }
 
 function AppRoutes() {
