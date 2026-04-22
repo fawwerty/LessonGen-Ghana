@@ -93,4 +93,10 @@ export const dashboardAPI = {
   getStats: () => api.get('dashboard/stats'),
 };
 
+export const timetableAPI = {
+  upload: (formData) => api.post('timetable/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' }, timeout: 120000 }),
+  get: (classCode) => api.get(`timetable/${classCode}`),
+  delete: (classCode) => api.delete(`timetable/${classCode}`),
+};
+
 export default api;

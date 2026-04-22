@@ -21,7 +21,7 @@ const CLASSES = ['KG1','KG2','B1','B2','B3','B4','B5','B6','B7','B8','B9'];
 const SUBJECTS = ['English Language','Mathematics','Science','Our World Our People (OWOP)','Social Studies','Religious and Moral Education (RME)','Creative Arts and Design','Ghanaian Language','Physical Education','Computing (ICT)','Career Technology','French Language','History'];
 
 // ── Small Picker Modal ────────────────────────────────────────────────────────
-function PickerModal({ visible, title, options, value, onSelect, onClose }) {
+function PickerModal({ visible, title, options, value, onSelect, onClose, multi = false }) {
   return (
     <Modal visible={visible} transparent animationType="slide">
       <TouchableOpacity style={ps.backdrop} activeOpacity={1} onPress={onClose}>
@@ -29,13 +29,33 @@ function PickerModal({ visible, title, options, value, onSelect, onClose }) {
           <View style={ps.handle} />
           <Text style={ps.sheetTitle}>{title}</Text>
           <ScrollView showsVerticalScrollIndicator={false}>
-            {options.map(o => (
-              <TouchableOpacity key={o} style={[ps.option, value === o && ps.optionActive]} onPress={() => { onSelect(o); onClose(); }}>
-                <Text style={[ps.optionText, value === o && ps.optionTextActive]}>{o}</Text>
-                {value === o && <Text style={{ color: C.g2, fontWeight: '800' }}>✓</Text>}
-              </TouchableOpacity>
-            ))}
+            {options.map(o => {
+              const isSel = multi ? value?.includes(o) : value === o;
+              return (
+                <TouchableOpacity 
+                  key={o} 
+                  style={[ps.option, isSel && ps.optionActive]} 
+                  onPress={() => { 
+                    if (multi) {
+                      const next = value.includes(o) ? value.filter(x => x !== o) : [...value, o];
+                      onSelect(next);
+                    } else {
+                      onSelect(o); 
+                      onClose(); 
+                    }
+                  }}
+                >
+                  <Text style={[ps.optionText, isSel && ps.optionTextActive]}>{o}</Text>
+                  {isSel && <Text style={{ color: C.g2, fontWeight: '800' }}>✓</Text>}
+                </TouchableOpacity>
+              );
+            })}
           </ScrollView>
+          {multi && (
+            <TouchableOpacity style={[s.primaryBtn, { marginTop: 15 }]} onPress={onClose}>
+              <Text style={s.primaryBtnText}>Done</Text>
+            </TouchableOpacity>
+          )}
         </View>
       </TouchableOpacity>
     </Modal>
@@ -77,7 +97,7 @@ export default function SchemeScreen({ navigation }) {
   // Step 1: Setup
   const [tab, setTab]             = useState('paste'); // 'file' | 'paste'
   const [classCode, setClassCode] = useState('');
-  const [subject, setSubject]     = useState('');
+  const [subjects, setSubjects]   = useState([]);
   const [term, setTerm]           = useState('1');
   const [pickerOpen, setPickerOpen] = useState(null); // 'class' | 'subject'
   const [pasteText, setPasteText] = useState('');
@@ -135,13 +155,14 @@ export default function SchemeScreen({ navigation }) {
   };
 
   const handleParse = async () => {
-    if (!classCode || !subject || !term) { Alert.alert('Missing Info', 'Select class, subject, and term first.'); return; }
+    if (!classCode || subjects.length === 0 || !term) { Alert.alert('Missing Info', 'Select class, at least one subject, and term first.'); return; }
     if (tab === 'paste' && !pasteText.trim()) { Alert.alert('Missing Text', 'Paste your scheme text below.'); return; }
     if (tab === 'file' && !pickedFile) { Alert.alert('No File', 'Pick a file first.'); return; }
 
     setParsing(true);
     setCurrentStep(2);
     try {
+      const subject = subjects[0]; // Primary subject for the backend
       let res;
       if (tab === 'paste') {
         res = await schemeAPI.paste({ classCode, subject, term: Number(term), rawText: pasteText });
@@ -212,7 +233,7 @@ export default function SchemeScreen({ navigation }) {
     <View style={[s.container, { paddingBottom: insets.bottom }]}>
       {/* Picker Modals */}
       <PickerModal visible={pickerOpen === 'class'} title="Class Level" options={CLASSES} value={classCode} onSelect={setClassCode} onClose={() => setPickerOpen(null)} />
-      <PickerModal visible={pickerOpen === 'subject'} title="Subject" options={SUBJECTS} value={subject} onSelect={setSubject} onClose={() => setPickerOpen(null)} />
+      <PickerModal visible={pickerOpen === 'subject'} title="Subjects" options={SUBJECTS} value={subjects} onSelect={setSubjects} onClose={() => setPickerOpen(null)} multi={true} />
 
       {/* Step Indicator */}
       <View style={s.stepBar}>
@@ -240,9 +261,11 @@ export default function SchemeScreen({ navigation }) {
                 <Text style={s.label}>CLASS</Text>
                 <Text style={[s.pickerVal, !classCode && { color: C.ink4 }]}>{classCode || 'Select...'}</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={[s.picker, subject && s.pickerFilled]} onPress={() => setPickerOpen('subject')}>
-                <Text style={s.label}>SUBJECT</Text>
-                <Text style={[s.pickerVal, !subject && { color: C.ink4 }]} numberOfLines={1}>{subject || 'Select...'}</Text>
+              <TouchableOpacity style={[s.picker, subjects.length > 0 && s.pickerFilled]} onPress={() => setPickerOpen('subject')}>
+                <Text style={s.label}>SUBJECTS ({subjects.length})</Text>
+                <Text style={[s.pickerVal, subjects.length === 0 && { color: C.ink4 }]} numberOfLines={1}>
+                  {subjects.length > 0 ? subjects.join(', ') : 'Select...'}
+                </Text>
               </TouchableOpacity>
             </View>
 
