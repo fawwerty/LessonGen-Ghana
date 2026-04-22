@@ -12,7 +12,7 @@ import GeneratePage from './pages/GeneratePage';
 import HomePage from './pages/HomePage';
 import MyLessonsPage from './pages/MyLessonsPage';
 import LessonViewPage from './pages/LessonViewPage';
-import AdminPage from './pages/AdminPage';
+import AdminDashboard from './pages/AdminDashboard';
 import PaymentPage from './pages/PaymentPage';
 import AboutPage from './pages/AboutPage';
 import SchemePage from './pages/SchemePage';
@@ -43,7 +43,7 @@ function AppRoutes() {
         <Route path="/lessons" element={<PrivateRoute><MyLessonsPage /></PrivateRoute>} />
         <Route path="/lessons/:id" element={<PrivateRoute><LessonViewPage /></PrivateRoute>} />
         <Route path="/lessons/batch/:id" element={<PrivateRoute><LessonViewPage isBatch={true} /></PrivateRoute>} />
-        <Route path="/admin" element={<AdminRoute><AdminPage /></AdminRoute>} />
+        <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
         <Route path="/payment" element={<PrivateRoute><PaymentPage /></PrivateRoute>} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/scheme" element={<PrivateRoute><SchemePage /></PrivateRoute>} />

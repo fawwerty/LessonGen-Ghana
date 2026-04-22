@@ -3,6 +3,7 @@ const express = require('express');
 const axios = require('axios');
 const { protect } = require('../middleware/auth');
 const User = require('../models/User');
+const Log = require('../models/Log');
 const router = express.Router();
 
 // Initialize Paystack payment
@@ -47,9 +48,27 @@ router.post('/paystack/verify', protect, async (req, res) => {
 router.post('/paystack/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
   const crypto = require('crypto');
   const hash = crypto.createHmac('sha512', process.env.PAYSTACK_SECRET_KEY).update(req.body).digest('hex');
-  if (hash !== req.headers['x-paystack-signature']) return res.status(400).send('Invalid signature');
+  
+  if (hash !== req.headers['x-paystack-signature']) {
+    await Log.create({
+      type: 'webhook',
+      status: 'failure',
+      message: 'Invalid Paystack signature',
+      payload: { headers: req.headers }
+    });
+    return res.status(400).send('Invalid signature');
+  }
+
   const event = JSON.parse(req.body);
   console.log(`🔔 [Webhook] Received Paystack event: ${event.event}`);
+
+  // Log every event for resilience
+  const webhookLog = await Log.create({
+    type: 'webhook',
+    status: 'success',
+    message: `Received ${event.event}`,
+    payload: event
+  });
 
   if (event.event === 'charge.success') {
     const { metadata, customer, reference } = event.data;
@@ -67,12 +86,21 @@ router.post('/paystack/webhook', express.raw({ type: 'application/json' }), asyn
           paymentExpiry: expiry,
           paymentRef: reference 
         });
-        console.log(`✅ [Webhook] User ${user.email} successfully upgraded to ${plan} via webhook.`);
+        
+        webhookLog.message = `✅ [Webhook] User ${user.email} successfully upgraded to ${plan}.`;
+        await webhookLog.save();
+        console.log(webhookLog.message);
       } else {
-        console.warn(`⚠️ [Webhook] Success event received but user not found: ${customer.email}`);
+        webhookLog.status = 'failure';
+        webhookLog.message = `⚠️ [Webhook] Success event received but user not found: ${customer.email}`;
+        await webhookLog.save();
+        console.warn(webhookLog.message);
       }
     } catch (err) {
-      console.error('🔥 [Webhook] Error processing charge.success:', err.message);
+      webhookLog.status = 'failure';
+      webhookLog.message = `🔥 [Webhook] Error processing charge.success: ${err.message}`;
+      await webhookLog.save();
+      console.error(webhookLog.message);
       return res.status(500).send('Webhook processing failed');
     }
   }

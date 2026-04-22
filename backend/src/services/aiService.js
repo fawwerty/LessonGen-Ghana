@@ -280,6 +280,7 @@ async function generateLesson(params) {
   // ── GLOBAL AI CACHE: Check if this exact lesson already exists ──────────────
   // We only cache if there are no 'extra' custom instructions
   if (!extra || extra.trim() === '') {
+    const startTime = Date.now();
     try {
       const cached = await Lesson.findOne({ 
         classCode, subject, term, week, style, level, 
@@ -288,8 +289,16 @@ async function generateLesson(params) {
 
       if (cached) {
         console.log(`Cache Hit! Reusing lesson for ${subject} W${week}`);
+        
+        // Log Cache Hit
+        const Log = require('../models/Log');
+        await Log.create({
+          type: 'ai_cache_hit',
+          message: `Cache hit for ${subject} (${classCode})`,
+          metadata: { userId, subject, classCode, duration: Date.now() - startTime }
+        });
+
         const data = cached.toObject();
-        // Return structured so route can save it as its own
         return { 
           lesson: {
             ...data,
@@ -360,6 +369,13 @@ async function generateLesson(params) {
       const text = await callGemini(prompts[i]);
       const lesson = JSON.parse(text);
       if (await validateLesson(lesson, isJHS, targetDays)) {
+        // Log Cache Miss (New Generation)
+        const Log = require('../models/Log');
+        await Log.create({
+          type: 'ai_cache_miss',
+          message: `New generation for ${subject} (${classCode})`,
+          metadata: { userId, subject, classCode, duration: Date.now() - (params.startTime || Date.now()) }
+        });
         return { lesson, curriculum, isJHS };
       }
     } catch (e) {
