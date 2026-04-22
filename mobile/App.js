@@ -11,7 +11,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthProvider, useAuth } from './src/utils/AuthContext';
 import { colors } from './src/utils/theme';
-import { paymentAPI } from './src/services/api';
+import { paymentAPI, authAPI } from './src/services/api';
 
 import HomeScreen from './src/screens/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
@@ -267,6 +267,30 @@ function PaymentScreen({ navigation }) {
       
       <TouchableOpacity style={pay_s.backBtn} onPress={() => navigation.goBack()}>
         <Text style={pay_s.backBtnText}>← Go back</Text>
+      </TouchableOpacity>
+
+      <View style={{ height: 1, backgroundColor: colors.bg3, marginVertical: 20 }} />
+      
+      <Text style={[pay_s.footerNote, { marginBottom: 12 }]}>Already paid? Tap below to update your status.</Text>
+      <TouchableOpacity 
+        style={[pay_s.backBtn, { backgroundColor: colors.g4, borderRadius: 12 }]} 
+        onPress={async () => {
+          setLoading(true);
+          try {
+            const res = await authAPI.me();
+            if (res.data.user.plan !== 'free') {
+              Alert.alert('Success!', 'Your PRO plan is active. Please restart the app or go back to the dashboard.');
+            } else {
+              Alert.alert('Not yet', 'We haven\'t received your payment confirmation yet. It may take a minute.');
+            }
+          } catch (e) {
+            Alert.alert('Error', 'Failed to check status.');
+          } finally {
+            setLoading(false);
+          }
+        }}
+      >
+        <Text style={[pay_s.backBtnText, { color: colors.g1 }]}>Check Payment Status</Text>
       </TouchableOpacity>
 
       <Text style={pay_s.footerNote}>Secure payment by Paystack. Cancel anytime.</Text>

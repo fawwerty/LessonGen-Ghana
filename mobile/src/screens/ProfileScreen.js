@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Linking } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuth } from '../utils/AuthContext';
 
@@ -74,6 +74,23 @@ export default function ProfileScreen({ navigation }) {
           </View>
           <Text style={s.upgradeArrow}>→</Text>
         </TouchableOpacity>
+      )}
+
+      {/* Admin Dashboard (Conditional) */}
+      {user?.role === 'sys_admin' && (
+        <View style={s.section}>
+          <Text style={[s.sectionTitle, { color: '#5B21B6' }]}>ADMINISTRATOR PANEL</Text>
+          <View style={[s.card, { borderColor: '#5B21B6', backgroundColor: '#F5F3FF' }]}>
+            <TouchableOpacity style={s.row} onPress={() => Linking.openURL('https://lessongen.com/admin')}>
+              <Text style={[s.rowKey, { color: '#5B21B6' }]}>Open Admin Dashboard</Text>
+              <Text style={[s.rowLink, { color: '#7C3AED' }]}>Launch Web →</Text>
+            </TouchableOpacity>
+            <View style={[s.row, { borderBottomWidth: 0 }]}>
+              <Text style={s.rowKey}>Platform Status</Text>
+              <Text style={[s.rowVal, { color: '#059669' }]}>All Systems Operational</Text>
+            </View>
+          </View>
+        </View>
       )}
 
       {/* Quick Actions */}
