@@ -1,10 +1,13 @@
 import React, { useState, useCallback } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator, useWindowDimensions, RefreshControl } from 'react-native';
+import { 
+  View, Text, StyleSheet, ScrollView, TouchableOpacity, 
+  ActivityIndicator, useWindowDimensions, RefreshControl 
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../utils/AuthContext';
-import { colors } from '../utils/theme';
+import { colors, shadow } from '../utils/theme';
 import { dashboardAPI } from '../services/api';
 
 const C = colors;
@@ -16,7 +19,10 @@ export default function DashboardScreen({ navigation }) {
   
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
-  const [data, setData] = useState({ stats: { lessons: 0, schemes: 0, subscription: 'Free' }, recentLessons: [] });
+  const [data, setData] = useState({ 
+    stats: { lessons: 0, schemes: 0, subscription: 'Free', hitRate: '0%' }, 
+    recentLessons: [] 
+  });
 
   const loadData = async () => {
     try {
@@ -24,7 +30,6 @@ export default function DashboardScreen({ navigation }) {
       setData(res.data);
     } catch (err) {
       console.error('Dashboard Load Error:', err);
-      // Don't crash — show empty state gracefully
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -42,17 +47,7 @@ export default function DashboardScreen({ navigation }) {
     loadData();
   };
 
-  const getGreeting = () => {
-    const hour = new Date().getUTCHours(); // Ghana is UTC+0
-    if (hour < 12) return 'Good Morning';
-    if (hour < 17) return 'Good Afternoon';
-    return 'Good Evening';
-  };
-
-  // Navigate to another tab
   const goToTab = (tabName) => navigation.navigate(tabName);
-
-  // Navigate to a root-level stack screen (LessonView, Payment)
   const goToScreen = (screenName, params) => navigation.getParent()?.navigate(screenName, params);
 
   if (loading && !refreshing) {
@@ -64,77 +59,53 @@ export default function DashboardScreen({ navigation }) {
   }
 
   return (
-    <ScrollView 
-      style={s.container}
-      contentContainerStyle={{ paddingBottom: insets.bottom + 40 }}
-      refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={C.g2} />}
-    >
-      {/* Header / Hero */}
-      <View style={[s.hero, { paddingTop: insets.top + 20 }]}>
-        <View>
-          <Text style={s.greeting}>{getGreeting()},</Text>
-          <Text style={s.userName}>{user?.name?.split(' ')[0] || 'Teacher'} 👋</Text>
-        </View>
-        <TouchableOpacity style={s.avatar} onPress={() => goToTab('Profile')}>
-          <Text style={s.avatarText}>{user?.name?.[0] || 'T'}</Text>
-        </TouchableOpacity>
-      </View>
-
-      {/* Stats Row */}
-      <View style={s.statsGrid}>
-        <View style={[s.statCard, { width: (width - 48) / 2 }]}>
-          <Text style={s.statVal}>{data.stats?.lessons ?? 0}</Text>
-          <Text style={s.statLbl}>Lessons</Text>
-        </View>
-        <View style={[s.statCard, { width: (width - 48) / 2 }]}>
-          <Text style={s.statVal}>{data.stats?.schemes ?? 0}</Text>
-          <Text style={s.statLbl}>Schemes</Text>
-        </View>
-        <TouchableOpacity 
-          style={[s.statCard, s.statCardHighlight, { width: width - 40 }]}
-          onPress={() => goToScreen('Payment')}
-        >
+    <View style={s.container}>
+      {/* Header - Improved Structure */}
+      <View style={[s.header, { paddingTop: insets.top + 20 }]}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <View>
-            <Text style={s.statLblHighlight}>MEMBERSHIP</Text>
-            <Text style={s.statValHighlight}>{data.stats?.subscription ?? 'Free'}</Text>
+            <Text style={s.title}>LessonGen</Text>
+            <Text style={s.subtitle}>Smart Lesson Planning for Ghana</Text>
           </View>
-          <View style={s.badge}>
-            <Text style={s.badgeText}>{data.stats?.subscription === 'PRO' ? 'Active' : 'Upgrade'}</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-
-      {/* Quick Actions */}
-      <View style={s.section}>
-        <Text style={s.sectionTitle}>QUICK ACTIONS</Text>
-        <View style={s.actionRow}>
-          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Generate')}>
-            <View style={[s.actionIcon, { backgroundColor: '#E0F2FE' }]}>
-              <Ionicons name="flash" size={24} color="#0284C7" />
+          <TouchableOpacity style={s.profileTrigger} onPress={() => goToTab('Profile')}>
+            <View style={s.avatarSmall}>
+              <Text style={s.avatarTextSmall}>{user?.name?.[0] || 'T'}</Text>
             </View>
-            <Text style={s.actionBtnText}>New Lesson</Text>
-          </TouchableOpacity>
-          
-          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('Scheme')}>
-            <View style={[s.actionIcon, { backgroundColor: '#F0FDF4' }]}>
-              <Ionicons name="calendar" size={24} color="#16A34A" />
-            </View>
-            <Text style={s.actionBtnText}>Build Scheme</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={s.actionBtn} onPress={() => goToTab('My Lessons')}>
-            <View style={[s.actionIcon, { backgroundColor: '#FEF3C7' }]}>
-              <Ionicons name="book" size={24} color="#D97706" />
-            </View>
-            <Text style={s.actionBtnText}>Archive</Text>
           </TouchableOpacity>
         </View>
       </View>
 
-      {/* Recent Activity */}
-      <View style={s.section}>
+      <ScrollView 
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 40 }}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={C.g2} />}
+      >
+        {/* KPI Cards Grid - 2x2 Structure */}
+        <View style={s.cardRow}>
+          <Card title="Lessons Created" value={data.stats?.lessons ?? 0} />
+          <Card title="Cache Hit Rate" value={data.stats?.hitRate ?? '0%'} />
+        </View>
+
+        <View style={s.cardRow}>
+          <Card title="Saved Schemes" value={data.stats?.schemes ?? 0} />
+          <TouchableOpacity 
+            style={[s.card, { backgroundColor: C.g1, borderColor: C.g1 }]} 
+            onPress={() => goToScreen('Payment')}
+          >
+            <Text style={[s.cardTitle, { color: 'rgba(255,255,255,0.7)' }]}>Active Plan</Text>
+            <Text style={[s.cardValue, { color: C.white }]}>{data.stats?.subscription ?? 'FREE'}</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Primary Generate Button - Styled Like Snippet */}
+        <TouchableOpacity style={s.generateBtn} onPress={() => goToTab('Generate')}>
+          <Text style={s.generateText}>Generate New Lesson</Text>
+          <Ionicons name="flash" size={18} color={C.white} style={{ marginLeft: 8 }} />
+        </TouchableOpacity>
+
+        {/* Recent Activity Section */}
         <View style={s.sectionHeader}>
-          <Text style={s.sectionTitle}>RECENT LESSONS</Text>
+          <Text style={s.sectionTitle}>Recent Activity</Text>
           <TouchableOpacity onPress={() => goToTab('My Lessons')}>
             <Text style={s.viewAll}>View All</Text>
           </TouchableOpacity>
@@ -142,101 +113,237 @@ export default function DashboardScreen({ navigation }) {
 
         {data.recentLessons.length === 0 ? (
           <View style={s.emptyCard}>
-            <Text style={s.emptyText}>No lessons generated yet.</Text>
-            <TouchableOpacity style={s.emptyBtn} onPress={() => goToTab('Generate')}>
-              <Text style={s.emptyBtnText}>Create your first lesson</Text>
-            </TouchableOpacity>
+            <Text style={s.emptyText}>No recent generations found.</Text>
+            <Text style={{ fontSize: 11, color: C.ink4, marginTop: 4 }}>Your lesson history will appear here.</Text>
           </View>
         ) : (
-          data.recentLessons.map((item) => (
+          data.recentLessons.slice(0, 5).map((item) => (
             <TouchableOpacity 
               key={item._id} 
-              style={s.lessonItem}
+              style={s.activityCard}
               onPress={() => goToScreen('LessonView', { lesson: item })}
             >
-              <View style={s.lessonIcon}>
+              <View style={s.activityIconWrap}>
                 <Ionicons name="document-text" size={20} color={C.g2} />
               </View>
               <View style={{ flex: 1 }}>
-                <Text style={s.lessonTitle}>{item.subject}</Text>
-                <Text style={s.lessonSub}>{item.classCode} · {new Date(item.createdAt).toLocaleDateString()}</Text>
+                <Text style={s.activityText} numberOfLines={1}>{item.subject} - Week {item.week}</Text>
+                <Text style={s.activitySub}>{item.classCode} · {new Date(item.createdAt).toLocaleDateString()}</Text>
               </View>
               <Ionicons name="chevron-forward" size={18} color={C.bg3} />
             </TouchableOpacity>
           ))
         )}
-      </View>
-    </ScrollView>
+
+        {/* Membership Promo (Conditional) */}
+        {data.stats?.subscription !== 'PRO' && (
+          <TouchableOpacity style={s.promoCard} onPress={() => goToScreen('Payment')}>
+            <View style={{ flex: 1 }}>
+              <Text style={s.promoTitle}>Upgrade to PRO</Text>
+              <Text style={s.promoSub}>Get unlimited DOCX exports and faster AI generation.</Text>
+            </View>
+            <View style={s.promoBadge}>
+              <Text style={s.promoBadgeText}>UPGRADE</Text>
+            </View>
+          </TouchableOpacity>
+        )}
+      </ScrollView>
+    </View>
+  );
+}
+
+function Card({ title, value }) {
+  return (
+    <View style={s.card}>
+      <Text style={s.cardTitle}>{title}</Text>
+      <Text style={s.cardValue}>{value}</Text>
+    </View>
   );
 }
 
 const s = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  hero: { 
-    paddingHorizontal: 20, 
-    flexDirection: 'row', 
-    justifyContent: 'space-between', 
+  container: {
+    flex: 1,
+    backgroundColor: colors.bg,
+    paddingHorizontal: 20,
+  },
+  center: {
+    flex: 1,
     alignItems: 'center',
-    marginBottom: 24
+    justifyContent: 'center',
+    backgroundColor: colors.bg,
   },
-  greeting: { fontSize: 14, color: C.ink3, fontWeight: '600', textTransform: 'uppercase', letterSpacing: 1 },
-  userName: { fontSize: 28, fontWeight: '900', color: C.g1, marginTop: 4 },
-  avatar: { 
-    width: 48, height: 48, borderRadius: 24, 
-    backgroundColor: C.g4, alignItems: 'center', justifyContent: 'center',
-    borderWidth: 2, borderColor: C.g2
+  header: {
+    marginBottom: 24,
   },
-  avatarText: { fontSize: 20, fontWeight: '900', color: C.g2 },
-  
-  statsGrid: { flexDirection: 'row', flexWrap: 'wrap', paddingHorizontal: 20, gap: 8, marginBottom: 32 },
-  statCard: { 
-    backgroundColor: C.bg, borderRadius: 20, padding: 20,
-    borderWidth: 1, borderColor: C.bg3
+  title: {
+    fontSize: 32,
+    fontWeight: '900',
+    color: colors.g1,
+    letterSpacing: -1,
   },
-  statCardHighlight: {
-    backgroundColor: C.g1, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'
+  subtitle: {
+    fontSize: 14,
+    color: colors.ink3,
+    fontWeight: '700',
+    marginTop: -2,
   },
-  statVal: { fontSize: 24, fontWeight: '900', color: C.ink1 },
-  statLbl: { fontSize: 13, color: C.ink3, marginTop: 4, fontWeight: '600' },
-  statValHighlight: { fontSize: 22, fontWeight: '900', color: C.white, marginTop: 4 },
-  statLblHighlight: { fontSize: 11, color: 'rgba(255,255,255,0.7)', fontWeight: '700', letterSpacing: 1 },
-  badge: { backgroundColor: C.gd, paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10 },
-  badgeText: { fontSize: 11, fontWeight: '900', color: C.g1, textTransform: 'uppercase' },
-
-  section: { paddingHorizontal: 20, marginBottom: 32 },
-  sectionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 },
-  sectionTitle: { fontSize: 13, fontWeight: '800', color: C.ink3, letterSpacing: 1 },
-  viewAll: { fontSize: 13, fontWeight: '700', color: C.g2 },
-  
-  actionRow: { flexDirection: 'row', gap: 12 },
-  actionBtn: { flex: 1, alignItems: 'center' },
-  actionIcon: { 
-    width: '100%', aspectRatio: 1, borderRadius: 20, 
-    alignItems: 'center', justifyContent: 'center', marginBottom: 8
+  profileTrigger: {
+    padding: 2,
   },
-  actionBtnText: { fontSize: 12, fontWeight: '700', color: C.ink2 },
-
-  lessonItem: { 
-    flexDirection: 'row', alignItems: 'center', 
-    backgroundColor: C.white, padding: 14, borderRadius: 16,
-    marginBottom: 10, borderWidth: 1, borderColor: C.bg3,
-    shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.03, shadowRadius: 8, elevation: 2
+  avatarSmall: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    backgroundColor: colors.g4,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1.5,
+    borderColor: colors.g2,
   },
-  lessonIcon: { 
-    width: 44, height: 44, borderRadius: 12, 
-    backgroundColor: C.g4, alignItems: 'center', justifyContent: 'center', marginRight: 14
+  avatarTextSmall: {
+    fontSize: 18,
+    fontWeight: '900',
+    color: colors.g2,
   },
-  lessonIconText: { fontSize: 18, fontWeight: '900', color: C.g2 },
-  lessonTitle: { fontSize: 15, fontWeight: '700', color: C.ink1 },
-  lessonSub: { fontSize: 12, color: C.ink3, marginTop: 2 },
-  arrow: { fontSize: 18, color: C.bg3, fontWeight: '600' },
-
-  emptyCard: { 
-    backgroundColor: C.bg, borderRadius: 20, padding: 30, alignItems: 'center',
-    borderStyle: 'dashed', borderWidth: 2, borderColor: C.bg3
+  cardRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
   },
-  emptyText: { color: C.ink3, fontSize: 14, marginBottom: 20 },
-  emptyBtn: { backgroundColor: C.g2, paddingHorizontal: 20, paddingVertical: 12, borderRadius: 12 },
-  emptyBtnText: { color: C.white, fontWeight: '700', fontSize: 14 }
+  card: {
+    backgroundColor: colors.white,
+    width: '48%',
+    padding: 20,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: colors.bg3,
+    ...shadow,
+  },
+  cardTitle: {
+    fontSize: 11,
+    color: colors.ink4,
+    fontWeight: '800',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  cardValue: {
+    fontSize: 24,
+    fontWeight: '900',
+    color: colors.g1,
+    marginTop: 6,
+  },
+  generateBtn: {
+    marginTop: 15,
+    backgroundColor: colors.g2,
+    padding: 20,
+    borderRadius: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: colors.g2,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.35,
+    shadowRadius: 10,
+    elevation: 8,
+  },
+  generateText: {
+    color: colors.white,
+    fontWeight: '900',
+    fontSize: 17,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 32,
+    marginBottom: 12,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: colors.ink2,
+  },
+  viewAll: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.g2,
+  },
+  activityCard: {
+    backgroundColor: colors.white,
+    padding: 16,
+    borderRadius: 18,
+    marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.bg3,
+    ...shadow,
+  },
+  activityIconWrap: {
+    width: 40,
+    height: 40,
+    borderRadius: 12,
+    backgroundColor: colors.g4,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  activityText: {
+    fontSize: 14,
+    fontWeight: '800',
+    color: colors.ink1,
+  },
+  activitySub: {
+    fontSize: 12,
+    color: colors.ink3,
+    marginTop: 3,
+  },
+  emptyCard: {
+    padding: 40,
+    alignItems: 'center',
+    backgroundColor: colors.white,
+    borderRadius: 24,
+    borderStyle: 'dashed',
+    borderWidth: 2,
+    borderColor: colors.bg3,
+  },
+  emptyText: {
+    color: colors.ink2,
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  promoCard: {
+    marginTop: 20,
+    backgroundColor: colors.gl,
+    padding: 20,
+    borderRadius: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.gd,
+  },
+  promoTitle: {
+    fontSize: 15,
+    fontWeight: '900',
+    color: colors.gb,
+  },
+  promoSub: {
+    fontSize: 12,
+    color: colors.gb,
+    marginTop: 2,
+    opacity: 0.8,
+  },
+  promoBadge: {
+    backgroundColor: colors.gb,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 10,
+    marginLeft: 12,
+  },
+  promoBadgeText: {
+    fontSize: 10,
+    fontWeight: '900',
+    color: colors.white,
+  },
 });
