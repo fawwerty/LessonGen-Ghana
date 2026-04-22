@@ -7,18 +7,32 @@ export default function AdminDashboard() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [error, setError] = useState(null);
 
   const fetchData = async () => {
     try {
+      console.log('Fetching admin stats...');
       const [statsRes, usersRes] = await Promise.all([
         adminAPI.stats(),
         adminAPI.users()
       ]);
-      setData(statsRes.data.stats);
-      setUsers(usersRes.data.users);
+      console.log('Stats received:', statsRes.data);
+      
+      if (statsRes.data && statsRes.data.stats) {
+        setData(statsRes.data.stats);
+      } else {
+        throw new Error('Invalid stats data received');
+      }
+      
+      if (usersRes.data && usersRes.data.users) {
+        setUsers(usersRes.data.users);
+      }
+      
+      setError(null);
     } catch (err) {
+      console.error('Admin Dashboard Fetch Error:', err);
+      setError(err.message || 'Failed to load dashboard data');
       toast.error('Failed to load dashboard data');
-      console.error(err);
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -30,16 +44,31 @@ export default function AdminDashboard() {
     const interval = setInterval(() => {
       setRefreshing(true);
       fetchData();
-    }, 30000); // Polling every 30s
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F8F9FB]">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-12 border-4 border-[#E5E7EB] border-t-black rounded-full animate-spin" />
-          <p className="text-sm font-medium text-gray-500">Initializing Admin Layer...</p>
+      <div className="loading-overlay">
+        <div className="spinner" />
+        <p className="loading-text">Initializing Admin Layer...</p>
+      </div>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <div className="main-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80vh' }}>
+        <div className="card" style={{ maxWidth: '400px', textAlign: 'center' }}>
+          <div style={{ fontSize: '40px', marginBottom: '16px' }}>⚠️</div>
+          <h2 className="card-title" style={{ justifyContent: 'center' }}>Connection Error</h2>
+          <p style={{ color: 'var(--ink3)', fontSize: '14px', marginBottom: '20px' }}>
+            {error || 'Unable to retrieve dashboard metrics.'}
+          </p>
+          <button onClick={() => { setLoading(true); fetchData(); }} className="btn btn-primary btn-full">
+            Retry Connection
+          </button>
         </div>
       </div>
     );
@@ -48,77 +77,75 @@ export default function AdminDashboard() {
   const { totalUsers, paidUsers, totalLessons, aiCache, payments, system } = data;
 
   return (
-    <div className="min-h-screen bg-[#F8F9FB] pb-20">
-      {/* Top Bar */}
-      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white font-bold text-xs">LG</div>
-            <h1 className="text-lg font-semibold text-gray-900 tracking-tight">Admin Console</h1>
-          </div>
-          <div className="flex items-center gap-4">
-            {refreshing && <span className="text-[10px] uppercase tracking-widest text-gray-400 font-bold animate-pulse">Syncing...</span>}
-            <button 
-              onClick={() => { setRefreshing(true); fetchData(); }}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            >
-              <svg className={`w-4 h-4 text-gray-500 ${refreshing ? 'animate-spin' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            </button>
-          </div>
+    <div className="page">
+      {/* Toolbar / Header */}
+      <div className="toolbar">
+        <div className="nav-brand">
+          <div className="nav-dot" />
+          <span>Admin Console</span>
         </div>
+        <div style={{ flex: 1 }} />
+        {refreshing && <span style={{ fontSize: '10px', color: 'var(--ink4)', fontWeight: 'bold', marginRight: '12px' }}>SYNCING...</span>}
+        <button onClick={() => { setRefreshing(true); fetchData(); }} className="icon-btn">
+          <RefreshIcon spinning={refreshing} />
+        </button>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-8">
-        {/* Metric Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <StatCard label="Total Teachers" value={totalUsers} subValue={`${paidUsers} Pro Subscribers`} icon="👥" color="blue" />
-          <StatCard label="AI Cache Hit Rate" value={`${aiCache.hitRate}%`} subValue={`${aiCache.hits} hits / ${aiCache.total} requests`} icon="⚡" color="emerald" />
-          <StatCard label="Total Lessons" value={totalLessons} subValue="Generated to date" icon="📚" color="purple" />
-          <StatCard label="System Uptime" value={formatUptime(system.uptime)} subValue={`Error Rate: ${(system.errorRate * 100).toFixed(2)}%`} icon="⚙️" color="amber" />
+      <div className="main-content">
+        {/* Metric Grid */}
+        <div className="stats-row">
+          <div className="stat-card">
+            <div className="stat-num">{totalUsers}</div>
+            <div className="stat-label">Total Teachers</div>
+            <div style={{ fontSize: '10px', color: 'var(--ink4)', marginTop: '8px' }}>{paidUsers} Pro Subscribers</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num">{aiCache.hitRate}%</div>
+            <div className="stat-label">AI Cache Hit Rate</div>
+            <div style={{ fontSize: '10px', color: 'var(--ink4)', marginTop: '8px' }}>{aiCache.hits} hits / {aiCache.total} req</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num">{totalLessons}</div>
+            <div className="stat-label">Total Lessons</div>
+            <div style={{ fontSize: '10px', color: 'var(--ink4)', marginTop: '8px' }}>Generated to date</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num">{formatUptime(system.uptime)}</div>
+            <div className="stat-label">System Uptime</div>
+            <div style={{ fontSize: '10px', color: 'var(--red)', marginTop: '8px', fontWeight: 'bold' }}>Error Rate: {(system.errorRate * 100).toFixed(1)}%</div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
-          {/* Main Content Area (2/3) */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* User List Table */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-                <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider">User Directory</h2>
-                <span className="text-xs text-gray-400 font-medium">Last 100 active</span>
+        <div className="form-grid">
+          {/* User List (Left) */}
+          <div className="form-full" style={{ gridColumn: 'span 1' }}>
+            <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
+              <div className="card-title" style={{ padding: '1.25rem', marginBottom: 0, borderBottom: '1px solid var(--bg3)' }}>
+                User Directory
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
+              <div style={{ overflowX: 'auto' }}>
+                <table className="data-table">
                   <thead>
-                    <tr className="bg-gray-50/50 text-[11px] font-bold text-gray-400 uppercase tracking-widest">
-                      <th className="px-6 py-4">User</th>
-                      <th className="px-6 py-4">Status</th>
-                      <th className="px-6 py-4">Joined</th>
+                    <tr>
+                      <th>User</th>
+                      <th>Status</th>
+                      <th>Joined</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-50">
+                  <tbody>
                     {users.map(user => (
-                      <tr key={user._id} className="hover:bg-gray-50/80 transition-colors group">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold text-xs uppercase">
-                              {user.name.charAt(0)}
-                            </div>
-                            <div>
-                              <div className="text-sm font-semibold text-gray-900 group-hover:text-black">{user.name}</div>
-                              <div className="text-xs text-gray-400">{user.email}</div>
-                            </div>
-                          </div>
+                      <tr key={user._id}>
+                        <td>
+                          <div style={{ fontWeight: '600' }}>{user.name}</div>
+                          <div style={{ fontSize: '11px', color: 'var(--ink3)' }}>{user.email}</div>
                         </td>
-                        <td className="px-6 py-4">
-                          <div className="flex items-center gap-2">
-                             <span className={`w-1.5 h-1.5 rounded-full ${user.plan !== 'free' ? 'bg-amber-400' : 'bg-emerald-400'}`} />
-                             <span className="text-xs font-bold text-gray-700 uppercase tracking-tight">{user.plan}</span>
-                          </div>
+                        <td>
+                          <span className={`badge ${user.plan !== 'free' ? 'badge-paid' : 'badge-free'}`}>
+                            {user.plan.toUpperCase()}
+                          </span>
                         </td>
-                        <td className="px-6 py-4 text-xs text-gray-400 font-medium">
-                          {new Date(user.createdAt).toLocaleDateString('en-GH')}
+                        <td style={{ color: 'var(--ink4)' }}>
+                          {new Date(user.createdAt).toLocaleDateString()}
                         </td>
                       </tr>
                     ))}
@@ -128,51 +155,46 @@ export default function AdminDashboard() {
             </div>
           </div>
 
-          {/* Sidebar Area (1/3) */}
-          <div className="space-y-8">
-            {/* Payment Resilience Panel */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-red-50/30">
-                <h2 className="text-sm font-bold text-red-900 uppercase tracking-wider">Payment Failures</h2>
-                <div className="p-1 bg-red-100 rounded text-[10px] font-bold text-red-600 px-2">{payments.recentFailures.length}</div>
+          {/* Sidebar (Right) */}
+          <div style={{ gridColumn: 'span 1' }}>
+            {/* Payment Failures */}
+            <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
+              <div className="card-title" style={{ padding: '1.25rem', marginBottom: 0, borderBottom: '1px solid var(--bg3)', background: 'rgba(184, 50, 50, 0.05)' }}>
+                <span style={{ color: 'var(--red)' }}>Payment Failures</span>
               </div>
-              <div className="p-4 space-y-4">
+              <div style={{ padding: '1.25rem' }}>
                 {payments.recentFailures.length === 0 ? (
-                  <div className="py-10 text-center">
-                    <div className="text-3xl mb-2">🎉</div>
-                    <p className="text-xs font-medium text-gray-400">No recent payment issues</p>
+                  <div className="empty-state">
+                    <h3>No recent failures</h3>
+                    <p>Payments are healthy.</p>
                   </div>
                 ) : (
                   payments.recentFailures.map(log => (
-                    <div key={log._id} className="p-3 bg-gray-50 rounded-xl border border-gray-100 group">
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-[10px] font-black text-red-500 uppercase tracking-widest">{log.payload?.event || 'Unknown Error'}</span>
-                        <span className="text-[9px] font-medium text-gray-400">{new Date(log.createdAt).toLocaleTimeString()}</span>
-                      </div>
-                      <p className="text-xs text-gray-600 line-clamp-2">{log.message}</p>
+                    <div key={log._id} style={{ padding: '10px', background: 'var(--bg)', borderRadius: '8px', marginBottom: '8px', borderLeft: '3px solid var(--red)' }}>
+                      <div style={{ fontSize: '10px', fontWeight: '800', color: 'var(--red)' }}>{log.payload?.event || 'ERROR'}</div>
+                      <div style={{ fontSize: '12px', margin: '4px 0' }}>{log.message}</div>
+                      <div style={{ fontSize: '9px', color: 'var(--ink4)' }}>{new Date(log.createdAt).toLocaleString()}</div>
                     </div>
                   ))
                 )}
               </div>
             </div>
 
-            {/* AI Performance Panel */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-               <div className="px-6 py-4 border-b border-gray-100">
-                <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider">Subject Demand</h2>
-              </div>
-              <div className="p-6 space-y-5">
+            {/* Subject Demand */}
+            <div className="card">
+              <div className="card-title">Subject Demand</div>
+              <div style={{ marginTop: '1rem' }}>
                 {(data.subjectStats || []).slice(0, 5).map((subject, idx) => {
                   const max = data.subjectStats[0]?.count || 1;
                   const percentage = (subject.count / max) * 100;
                   return (
-                    <div key={idx} className="space-y-2">
-                      <div className="flex justify-between text-xs font-bold text-gray-600">
+                    <div key={idx} style={{ marginBottom: '15px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', marginBottom: '5px', fontWeight: '600' }}>
                         <span>{subject._id}</span>
-                        <span className="text-gray-400">{subject.count}</span>
+                        <span style={{ color: 'var(--ink4)' }}>{subject.count}</span>
                       </div>
-                      <div className="h-1.5 w-full bg-gray-50 rounded-full overflow-hidden">
-                        <div className="h-full bg-black rounded-full transition-all duration-1000" style={{ width: `${percentage}%` }} />
+                      <div className="progress-bar" style={{ width: '100%', margin: 0 }}>
+                        <div className="progress-fill" style={{ width: `${percentage}%` }} />
                       </div>
                     </div>
                   );
@@ -186,27 +208,14 @@ export default function AdminDashboard() {
   );
 }
 
-function StatCard({ label, value, subValue, icon, color }) {
-  const colors = {
-    blue: 'bg-blue-50 text-blue-600',
-    emerald: 'bg-emerald-50 text-emerald-600',
-    purple: 'bg-purple-50 text-purple-600',
-    amber: 'bg-amber-50 text-amber-600'
-  };
-
+function RefreshIcon({ spinning }) {
   return (
-    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex items-start justify-between mb-4">
-        <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${colors[color]}`}>
-          {icon}
-        </div>
-      </div>
-      <div className="space-y-1">
-        <div className="text-2xl font-bold text-gray-900 tracking-tight">{value}</div>
-        <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">{label}</div>
-        <div className="text-[11px] text-gray-400 font-medium pt-2 border-t border-gray-50 mt-2">{subValue}</div>
-      </div>
-    </div>
+    <svg 
+      style={{ width: '14px', height: '14px', transition: 'transform 0.5s', transform: spinning ? 'rotate(360deg)' : 'none' }} 
+      fill="none" viewBox="0 0 24 24" stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
   );
 }
 
