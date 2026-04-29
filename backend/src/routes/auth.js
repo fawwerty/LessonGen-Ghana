@@ -51,14 +51,19 @@ router.post('/login', [
   body('password').notEmpty()
 ], async (req, res) => {
   try {
+    console.log('🔐 Login attempt:', { email: req.body.email });
     const user = await User.findOne({ email: req.body.email });
-    if (!user || !(await user.comparePassword(req.body.password))) {
+    console.log('👤 User found:', !!user);
+    const passwordMatches = user ? await user.comparePassword(req.body.password) : false;
+    console.log('🔑 Password match:', passwordMatches);
+    if (!user || !passwordMatches) {
       return res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
     user.lastLogin = new Date();
     await user.save();
     res.json({ success: true, token: signToken(user._id), user: user.toSafeJSON() });
   } catch (err) {
+    console.error('Login error:', err);
     res.status(500).json({ success: false, message: err.message });
   }
 });
