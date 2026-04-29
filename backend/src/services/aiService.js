@@ -449,6 +449,7 @@ ${formatHint}`;
       if (await validateLesson(lesson, isJHS, targetDays)) return { lesson, isJHS };
     } catch (e) { console.error('Scheme lesson JSON error:', e); }
   }
+}
 // ── regenerateSection ─────────────────────────────────────────────────────────
 async function regenerateSection(lesson, dayIndex, sectionName) {
   const isJHS = ['B7','B8','B9'].includes(lesson.classCode);
