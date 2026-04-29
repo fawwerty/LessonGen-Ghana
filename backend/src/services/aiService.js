@@ -29,7 +29,7 @@ async function callDeepSeek(prompt, isJson = true) {
     model: DEEPSEEK_MODEL,
     messages: [{ role: "user", content: prompt }],
     temperature: 0.7,
-    max_tokens: 2048,
+    max_tokens: 4096,
     stream: false
   };
   const headers = {
@@ -37,9 +37,29 @@ async function callDeepSeek(prompt, isJson = true) {
     "Content-Type": "application/json"
   };
   const response = await axios.post(DEEPSEEK_ENDPOINT, payload, { headers });
-  const content = response.data?.choices?.[0]?.message?.content;
+  let content = response.data?.choices?.[0]?.message?.content;
   if (!content) throw new Error('DeepSeek returned empty response');
+  
+  if (isJson) {
+    content = cleanJson(content);
+  }
   return content;
+}
+
+/**
+ * Extracts JSON from markdown code blocks if present.
+ */
+function cleanJson(text) {
+  if (!text) return text;
+  // Remove markdown code blocks
+  let cleaned = text.replace(/```json/g, '').replace(/```/g, '').trim();
+  // Find the first '{' and last '}'
+  const start = cleaned.indexOf('{');
+  const end = cleaned.lastIndexOf('}');
+  if (start !== -1 && end !== -1) {
+    cleaned = cleaned.substring(start, end + 1);
+  }
+  return cleaned;
 }
 
 // Alias for backward compatibility
@@ -261,13 +281,35 @@ ${formatHint}`;
 }
 
 async function validateLesson(lesson, isJHS, targetDays) {
-  const req = isJHS ? ['performanceIndicator','phase1','phase2','phase3'] : ['days'];
-  for (const f of req) if (!lesson[f]) return false;
-  
-  if (!isJHS && Array.isArray(lesson.days) && targetDays) {
-     if (lesson.days.length !== parseInt(targetDays, 10)) return false;
+  try {
+    // Check essential headers
+    if (!lesson.strand && !lesson.subject) {
+      console.warn('Validation failed: Missing strand/subject header');
+      return false;
+    }
+
+    // JHS/Primary flexible structure
+    const hasDaysArray = lesson.days && Array.isArray(lesson.days) && lesson.days.length > 0;
+    const hasSingleDayContent = lesson.phase1 && lesson.phase2 && (lesson.day || isJHS);
+
+    if (!hasDaysArray && !hasSingleDayContent) {
+      console.warn('Validation failed: No days array and no single-day content found');
+      return false;
+    }
+
+    // Target days check (Primary only)
+    if (!isJHS && hasDaysArray && targetDays) {
+      if (lesson.days.length !== parseInt(targetDays, 10)) {
+        console.warn(`Validation failed: Days length mismatch (${lesson.days.length} vs ${targetDays})`);
+        return false;
+      }
+    }
+
+    return true;
+  } catch (e) {
+    console.error('Validation error:', e);
+    return false;
   }
-  return true;
 }
 
 // ── generateLesson ────────────────────────────────────────────────────────────
