@@ -6,7 +6,7 @@ const curriculumDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/curriculum/nacca_db.json'), 'utf-8')
 );
 const extractedCurriculum = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../../training_pipeline/extracted_curriculum.json'), 'utf-8')
+  fs.readFileSync(path.join(__dirname, '../shared/ai_data/extracted_curriculum.json'), 'utf-8')
 );
 const textbookDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/textbooks/approved_textbooks.json'), 'utf-8')
@@ -104,8 +104,8 @@ function getTextbook(classCode, subject) {
 }
 
 function loadFewShotExamples(classCode, subject, n = 3) {
-  const datasetPath = path.join(__dirname, '../../../training_pipeline/grandfather_dataset.jsonl');
-  const fallbackPath = path.join(__dirname, '../../../training_pipeline/training_dataset.jsonl');
+  const datasetPath = path.join(__dirname, '../shared/ai_data/grandfather_dataset.jsonl');
+  const fallbackPath = path.join(__dirname, '../shared/ai_data/training_dataset.jsonl');
   
   let lines = [];
   if (fs.existsSync(datasetPath)) {
@@ -169,7 +169,7 @@ function getEnrichedCurriculum(classCode, subject, indicator) {
     const match = classFiles.find(f => f.source.toLowerCase().includes(sub)) || classFiles[0];
     
     if (match && match.text_file) {
-      const textPath = path.join(__dirname, '../../../training_pipeline/extracted_text', match.text_file);
+      const textPath = path.join(__dirname, '../shared/ai_data/extracted_text', match.text_file);
       if (fs.existsSync(textPath)) {
         const fullText = fs.readFileSync(textPath, 'utf-8');
         // Find section around indicator

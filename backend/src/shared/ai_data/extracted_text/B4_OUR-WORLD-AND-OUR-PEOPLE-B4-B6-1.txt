@@ -1,0 +1,5390 @@
+ 
+ 
+ 
+ 
+i 
+ 
+GHANA EDUCATION SERVICE 
+(MINISTRY OF EDUCATION) 
+ 
+ 
+REPUBLIC OF GHANA 
+OUR WORLD AND OUR PEOPLE  
+CURRICULUM FOR PRIMARY SCHOOLS 
+(BASIC 4 - 6) 
+SEPTEMBER 2019 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Our World and Our People Curriculum for Primary Schools 
+ 
+ 
+ 
+ 
+ 
+Enquiries and comments on this Curriculum should be addressed to: 
+The Executive Secretary 
+National Council for Curriculum and Assessment (NaCCA) 
+Ministry of Education 
+P. O. Box CT PM 77 
+Cantonments 
+Accra 
+Telephone: 0302909071, 0302909862 
+Email:        info@nacca.gov.gh  
+Website:   www.nacca.gov.gh  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+ii 
+FOREWORD 
+The new curriculum for Ghana’s primary schools, dubbed ─ curriculum for change and sustainable development ─ is standards-based. It is our demonstration of 
+placing learning at the heart of every classroom and ensuring that every learner receives quality education. Provision of accessible quality education for all is 
+non-negotiable, if we are to meet the human capital needs of our country required for accelerated sustainable national development. It is for this reason that 
+the new curriculum sets out clearly the learning areas that need to be taught, how they should be taught and how they should be assessed. It provides a set of 
+core competencies and standards that learners are to know, understand and demonstrate as they progress through the curriculum from one content standard 
+to the other and from one phase to the next. The curriculum and its related teachers’ manual promote the use of inclusive and gender responsive pedagogy 
+within the context of learning-centred teaching methods so that every learner can participate in every learning process and enjoy learning. It encourages the 
+use of information communication technologies (ICTs) for teaching and learning as teaching and learning material (TLM). 
+The curriculum for change and sustainable development has at its heart the acquisition of skills in the 4Rs of Reading, wRiting, aRithmetic and cReativity by all 
+learners. It is expected that at any point of exit from a formal education, all learners should be equipped with these foundational skills for life, which are also 
+prerequisites for Ghana becoming a learning nation. The graduates from the school system should become functional citizens in the 4Rs and lifelong learners. 
+They should be digital literates, critical thinkers and problem solvers. The education they receive through the study of the learning areas in the curriculum 
+should enable them to collaborate and communicate well with others and be innovative. The graduates from Ghana’s schools should be leaders with high sense 
+of national and global identity. The curriculum therefore provides a good opportunity in its design to develop individuals with the right skills and attitudes to 
+lead the transformation of Ghana into an industrialised learning nation.  
+For this reason, the Ministry of Education expects that learners, as a result of the new knowledge, skills and values they have acquired through the new 
+curriculum, will show a new sense of identity as creative, honest and responsible citizens. These are our core values that underpin the identification and 
+selection of the learning areas for this curriculum.  These core values serve as fundamental building blocks for developing into our learners the spirit of 
+teamwork, respect, resilience and the commitment to achieving excellence.  The Ministry endorses a quality learning experience as an entitlement for each of 
+Ghana’s school-going girl and boy; the curriculum for change and sustainable development has rightly focused on learning and learning progression. The Ministry 
+has also endorsed accountability as a critical domain for effective workings of standards-based curriculum. 
+More importantly, the role of the teacher is to make this curriculum work for the intended purpose to inculcate in learners the core competencies and values 
+and to make learning happen; improve learning outcomes. The support that teachers need is duly recognised and endorsed by my Ministry and support the 
+implementation of the curriculum to include capacity development of all teachers in the new curriculum. This is because teachers matter in the development 
+and delivery of the standards-based curriculum. Therefore, we will continue to support them on this journey that we have started together to put learning at 
+the centre of what we do best; teach! 
+I thank all those who have contributed their time and expertise to the development of this curriculum for change and sustainable development for the primary 
+schools of Ghana. 
+ 
+Dr. Matthew Opoku Prempeh (MP) 
+The Honourable Minister of Education  
+ 
+
+   
+iii 
+ 
+Table of Contents 
+FOREWORD .................................................................................................................................................................................................................. i 
+RATIONALE ................................................................................................................................................................................................................. iv 
+PHILOSOPHY ............................................................................................................................................................................................................... iv 
+GENERAL AIM .............................................................................................................................................................................................................. v 
+SUBJECT SPECIFIC AIMS .............................................................................................................................................................................................. v 
+INSTRUCTIONAL EXPECTATIONS ........................................................................................................................................................................... v 
+CORE COMPETENCIES .............................................................................................................................................................................................. vi 
+KNOWLEDGE UNDERSTANDING AND APPLICATION ....................................................................................................................................... vii 
+VALUES .......................................................................................................................................................................................................................... ix 
+PROCESS SKILLS ........................................................................................................................................................................................................... x 
+ASSESSMENT AND FORMS OF ASSESSMENT ........................................................................................................................................................... xi 
+PEDAGOGICAL APPROACHES .................................................................................................................................................................................. xi 
+ORGANISATION OF THE CURRICULUM ............................................................................................................................................................... xiv 
+SCOPE AND SEQUENCE ........................................................................................................................................................................................... xvi 
+BASIC FOUR ................................................................................................................................................................................................................. 1 
+BASIC FIVE................................................................................................................................................................................................................... 22 
+BASIC SIX .................................................................................................................................................................................................................... 43 
+ACKNOWLEDGEMENTS ............................................................................................................................................. Error! Bookmark not defined. 
+ 
+ 
+
+   
+iv 
+RATIONALE  
+ The subject, Our World and Our People (OWOP), is a body of knowledge that responds to the need to have a dedicated curriculum provision in Ghana’s 
+schools with the aim of nurturing learners into honest, creative and responsible citizens. Learners being exposed to the learning areas within this curriculum, 
+will be imbued with the positive attitudes, values and essential skills to address the contemporary social challenges of sanitation, climate change and 
+environmental degradation, social media and technology misuse, unhealthy living, and non-compliance of civic responsibilities.   OWOP curriculum provides 
+space for learners to further explore their immediate world ─ homes ─ and other worlds – the people and their interconnectedness. It provides opportunity 
+for learners to develop their skills in the 4Rs of Reading, cReativity, wRiting and aRithmetic through thematic and creative approaches of learning. Learning and 
+learning progression are central to the OWOP curriculum. Therefore, OWOP is intentionally introduced to create space within the school curriculum for 
+learners to build on their pre-school experience and by doing so, enhance the learners’ curiosity, critical thinking and problem-solving skills and competences 
+of: personal development and leadership, communication and collaboration, creativity and innovation, cultural identity and digital literacy.  
+PHILOSOPHY 
+Our World and Our People curriculum will enable learners to develop knowledge, understanding, skills and competencies through a combination of social 
+constructivism and social realism. Learners will demonstrate the competencies in making independent and healthy choices regarding personal development and 
+well-being, develop the awareness of the people in their immediate environment and the wider community and society, take responsibility for the climate and 
+the environment, appreciate the richness and the diversity of Ghana’s culture and willingness to take advantage of social changes relating to globalisation, 
+technological advancement and digital literacy. Learners are to be guided to maximise the opportunities offered by new technologies to express their beliefs 
+and further enhance their moral perspectives and values. 
+PHILOSOPHY OF LEARNING OUR WORLD AND OUR PEOPLE  
+The philosophy of learning OWOP is based on the need to nurture citizens who are able to construct new knowledge and ideas, describe, analyse and evaluate 
+environmental issues. Learners should critically trace physical patterns of human activities and communicate their views on how positive and negative practices 
+could influence our immediate environment.   
+In essence, learners will understand that they relate directly to the environment in which they find themselves and from which useful lessons could be drawn. 
+Through the learning of Our World and Our People learners will specifically acquire:  
+1.  critical thinking and problem-solving skills to be able to compare and contrast, analyse, evaluate and apply geographical knowledge with little or no 
+supervision   
+2. creative thinking skills to be able to reconstruct important information confidently  
+3. digital literacy skills to be able to use IT tools and resources efficiently for investigations and project works  
+4. effective communication skills to be able to share information at various levels of interaction  
+5. values to live as global citizens capable of learning about other peoples and cultures of the world.  
+
+   
+v 
+ PHILOSOPHY OF TEACHING OUR WORLD AND OUR PEOPLE  
+OWOP provides opportunity for teachers to adopt thematic and creative pedagogic approaches such as talk for learning, project-based learning, games, 
+modelling, questioning, songs, storytelling and role-play necessary for achieving learning centred classrooms and developing learners into creative, honest and 
+responsible citizens. The OWOP classrooms should be learning-centred where the teacher, acting as a facilitator, introduces the topics for the day and assists 
+learners to describe and analyse issues raised. In addition, the teacher helps learners to interact and share ideas amongst themselves based on their knowledge 
+of Ghana and the world. The class will be encouraged to explore topics through enquiry-based questions. The OWOP curriculum is underpinned by five 
+themes broken into specific learning areas. The teacher should emphasise these important areas in the day-to-day learning as they are aimed at promoting 
+higher order thinking among learners.     
+GENERAL AIM 
+The curriculum, Our World and Our People, aims at producing a morally upright Ghanaian, who is responsible and capable of maintaining a healthy lifestyle 
+and preserving their environment for sustainability.   
+SUBJECT SPECIFIC AIMS 
+The aims of the Our World and Our People curriculum are to enable learners to: 
+1. Develop awareness of their creator and the purpose of their very existence; 
+2. Appreciate themselves as unique individuals. 
+3. Exhibit sense of belonging to the family and community 
+4. Demonstrate responsible citizenship. 
+5. explore and show appreciation of the interaction between, plants, animals and their physical environment;  
+6. show love and care for the environment. 
+7. develop attitudes for a healthy and peaceful lifestyle. 
+8. Appreciate Use ICT as a tool for learning 
+INSTRUCTIONAL EXPECTATIONS 
+Our World and Our People provides opportunity for teachers to: 
+• 
+adopt thematic and creative pedagogic approaches such as talk for learning, project-based learning, games, modelling, questioning, songs, storytelling 
+and role-play necessary for achieving learner-centred classrooms; 
+• 
+nurture and develop learners into creative, honest and responsible citizens;  
+• 
+provide opportunity for learners to develop their skills in the 4Rs of Reading, cReativity, wRiting and aRithmetic through thematic and creative 
+approaches to learning. Learning and learning progression are central to the OWOP curriculum;  
+• 
+adopt collaborative approaches to lesson preparation within and across disciplines and grade levels to develop communities of OWOP learners.  
+• 
+use multiple methods to systematically gather data about learners’ understanding and ability in order to guide the teaching and learning of OWOP.  
+• 
+put necessary arrangements in place to provide feedback to both learners and parents. 
+
+   
+vi 
+CORE COMPETENCIES 
+Through the pedagogy and learning areas envisaged for our OWOP as a body of knowledge in the school curriculum, it is expected that [as is the case for 
+other subjects in the school curriculum] through cross-curriculum strategies, learners will demonstrate the following universal and core competencies: 
+Critical thinking and Problem solving (CP) 
+Develop learners’ cognitive and reasoning abilities to enable them to analyse issues and situations, leading to the resolution of problems. This skill enables 
+learners to draw on and demonstrate what they have learned and from their own experiences to analyse situations and choose the most appropriate out of a 
+number of possible solutions. It requires that learners embrace the problem at hand, persevere and take responsibility for their own learning.  
+ 
+Creativity and Innovation (CI) 
+Learners acquire entrepreneurial skills through their ability to think about new ways of solving problems and developing technologies for addressing the 
+problem at hand. It requires ingenuity of ideas, arts, technology and enterprise. Learners that possess this competency are also able to think independently and 
+creatively. 
+Communication and collaboration (CC) 
+This competency aims to promote in learners the ability to make use of languages, symbols and texts to exchange information about themselves and their live 
+experiences. Learners actively participate in sharing their ideas and engage in dialogue with others by listening to and learning from others in ways that respect 
+and value the multiple perspectives of all persons involved. 
+Cultural identity and Global Citizenship (CG) 
+This competency aims to develop learners who put country and service as foremost through an understanding of what it means to be active citizens, by 
+inculcating in them a strong sense of environmental, and economic awareness. Learners make use of the knowledge, skills, attitudes acquired to contribute 
+meaningfully towards the socio-economic development of the country. They build skills to critically analyse cultural trends, identify and contribute to the global 
+community.  
+Personal Development and Leadership (PL) 
+This means improving self-awareness, self-knowledge, skills and health; building and renewing self-esteem; identifying and developing talents, fulfilling dreams 
+and aspirations and developing other people or meeting other people’s needs. It involves recognising the importance of values such as honesty and empathy; 
+seeking the well-being of others; distinguishing between right and wrong; fostering perseverance, resilience and self-confidence; exploring leadership, self-
+regulation and responsibility, and developing a love for lifelong learning. 
+ Digital Literacy (DL) 
+It involves developing learners to discover, acquire skills in, and communicate through ICT to support their learning and make use of digital media responsibly. 
+
+   
+vii 
+KNOWLEDGE UNDERSTANDING AND APPLICATION 
+Under this domain, learners acquire knowledge through learning experiences. They may also show understanding of concepts by comparing, summarising, re-
+writing etc. in their own words and constructing meaning from instruction. The learner may also apply the knowledge acquired in some new context. At a 
+higher level of learning behaviour, the learner may be required to analyse an issue or a problem.  At a much higher level, the learner may be required to 
+synthesize knowledge by integrating a number of ideas to formulate a plan, solve a problem, compose a story, or a piece of music. Further, the learner may be 
+required to evaluate, estimate and interpret a concept. At the last level, which is the highest, learners may be required to create, invent, compose, design and 
+construct. These learning behaviours “knowledge”, ‘’application’’ “understanding”, “analysis”, “synthesis”, ‘evaluation’ and ‘creation’, fall under the integral 
+domain “Knowledge, Understanding and Application”. 
+In this curriculum, the learning indicators are stated with action verbs to show what the learner should know and be able to do. For example, ‘The learner will 
+be able to describe something’. Being able to “describe” something after teaching and learning has been completed means that the learner has acquired 
+“knowledge”.  Being able to explain, summarise, and give examples etc. means that the learner has understood the concept taught. 
+Similarly, being able to develop, defend, etc. means that the learner can “apply” the knowledge acquired in some new context.  You will note that each of the 
+indicators in the curriculum contains an “action verb” that describes the behaviour the learner will be able to demonstrate after teaching and learning has taken 
+place.  “Knowledge, Understanding and application” is a domain that should be the prime focus of teaching and learning in schools.  Teaching in most cases 
+tends to stress knowledge acquisition to the detriment of other higher-level behaviours such as application, analysis etc. 
+Each action verb in any indicator indicates the underlying expected outcome. Read each indicator carefully to know the learning domain towards which you 
+have to teach. The focus of the new form of teaching and learning, as indicated in this curriculum, is to move teaching and learning from the didactic acquisition 
+of “knowledge” where there is memorisation, heavy reliance on formulae, remembering facts without critiquing them or relating them to real world – surface 
+learning – to a new position called – deep learning. Learners are expected to deepen their knowledge through activities that involve critical thinking to 
+generate creative ideas to solve real life problems in their school lives and later in their adult lives. This is the position where learning becomes beneficial to the 
+learner. 
+The explanation and key words involved in each of the learning domains are as follows: 
+Knowing: 
+This is the ability to remember, recall, identify, define, describe, list, name, match, state principles, facts and concepts.  Knowledge is the 
+ability to remember or recall material already learnt and this constitutes the lowest level of learning. 
+Understanding: The ability to explain, summarise, translate, rewrite, paraphrase, give examples, generalise, estimate or predict consequences based upon a 
+trend.    
+ 
+ 
+Understanding is generally the ability to grasp the meaning of some concept that may be verbal, pictorial or symbolic. 
+Applying:   
+This dimension is also referred to as “Use of Knowledge”.  The ability to use knowledge or apply knowledge, apply rules, methods, principles, 
+theories, etc. to situations that are new and unfamiliar. It also involves the ability to produce, solve, plan, demonstrate, discover among  
+
+   
+viii 
+Analysing: 
+This is the ability to break down material/information into its component parts; to differentiate, compare, distinguish, outline, separate, 
+identify significant points etc.; ability to recognise unstated assumptions and logical fallacies; the ability to recognize inferences from facts etc. 
+Synthesising: 
+It is the ability to put parts or ideas together to form a new whole.  It involves the ability to combine, compile, compose, devise, plan, revise, 
+organize, create, generate new ideas and solutions. 
+Evaluating:  
+It is the ability to appraise, compare features of different things and make comments or judgment, contrast, criticize, justify, support, discuss, 
+conclude, make recommendations etc.  Evaluation refers to the ability to judge the worth or value of some material based on some criteria. 
+Creating:       It is the ability to use information or materials to plan, compose, produce, manufacture or construct other products. 
+From the foregoing, creating is the highest form of thinking and learning and is therefore a very important behaviour.  This, unfortunately, is the area where 
+most learners perform poorly.  In order to get learners to develop critical thinking skills, beginning right from the lower primary level, it is advised that you do 
+your best to help your learners to develop analytical skills as we have said already. 
+ATTITUDES 
+To be effective, competent and reflective citizens, who will be willing and capable of solving personal and societal problems, learners should be exposed to 
+situations that challenge them to raise questions and attempt to solve problems. Learners therefore need to acquire positive attitudes, values and psychosocial 
+skills that will enable them participate in debates and take a stand on issues affecting them and others. Our World and Our People curriculum thus focuses on 
+the development of attitudes, values and skills. Our World Our People curriculum aims at helping learners to acquire the following: 
+(i) 
+Commitment: 
+ 
+the determination to contribute to national development. 
+(ii) 
+Tolerance: 
+ 
+ 
+the willingness to respect the views of others. 
+(iii) 
+Patriotism: 
+ 
+ 
+the readiness to defend the nation. 
+(iv) 
+Flexibility in ideas: 
+ 
+the willingness to change opinion in the face of more plausible evidence. 
+(v) 
+Respect for evidence: 
+the willingness to collect and use data on one’s investigation, and also have respect  
+for data collected by others. 
+ 
+(vi) Reflection: 
+the habit of critically reviewing ways in which an investigation or observation has been carried out to see possible faults and other ways in 
+which the investigation or observation can be improved upon. 
+(vii) 
+Comportment 
+ 
+ 
+the ability to conform to acceptable societal norms. 
+(viii) 
+Co-operation 
+ 
+ 
+the ability to work effectively with others. 
+
+   
+ix 
+(ix)        Responsibility: 
+the ability to act independently and make decisions; morally accountable for one’s action; capable of rational conduct. 
+ 
+(x)         Environmental Awareness: 
+the ability to be conscious of one’s physical and socio-economic surroundings. 
+(xi)        Respect for the Rule of Law: 
+the ability to obey the rules and regulations of the land. 
+ 
+The teacher should ensure that learners cultivate the above attitudes and skills as a basis for living in the nation as effective citizens. 
+ 
+VALUES 
+At the heart of this curriculum is the belief in nurturing honest, creative and responsible citizens. As such, every part of this curriculum, including the related 
+pedagogy should be consistent with the following set of values. 
+ 
+Respect: This includes respect for the nation of Ghana, its institutions, laws, the culture and respect among its citizens and friends of Ghana. 
+ 
+Diversity: Ghana is a multicultural society in which every citizen enjoys fundamental rights and responsibilities. Learners must be taught to respect the 
+views of all persons and to see national diversity as a powerful force for nation development. The curriculum promotes social cohesion.  
+ 
+Equity: The socio-economic development across the country is uneven. Consequently, it is necessary to ensure an equitable distribution of resources based 
+on the unique needs of learners and schools. Ghana’s learners are from diverse backgrounds, which require the provision of equal opportunities to all, 
+and that all strive to care for each other both personally and professionally. 
+ 
+Commitment to achieving excellence: Learners must be taught to appreciate the opportunities provided through the curriculum and persist in doing their 
+best in whatever field of endeavour as global citizens. The curriculum encourages innovativeness through creative and critical thinking and the use of 
+contemporary technology.  
+ 
+Teamwork/Collaboration: Learners are encouraged to become committed to team-oriented working and learning environments. This also means that 
+learners should have an attitude of tolerance to be able to live peacefully with all persons. 
+ 
+Truth and Integrity: The curriculum aims to develop learners into individuals who will consistently tell the truth irrespective of the consequences. In addition, 
+it aims to make them become morally upright with the attitude of doing the right thing even when no one is watching be true to themselves and be 
+willing to live the values of honesty and compassion. Equally important, the ethos or culture of the work place, including integrity and perseverance 
+must underpin the learning processes to allow learners to see and apply skills and competencies in the world of work. 
+
+   
+x 
+PROCESS SKILLS 
+These are specific activities or tasks that indicate performance or proficiency in a given learning area. They are useful benchmarks for planning lessons, 
+developing exemplars and are the core of inquiry-based learning. 
+Observing: This is the skill of using our senses to gather information about objects or events. This also includes the use of instruments to extend the range of 
+our senses. 
+Classifying: This is the skill of grouping objects or events based on common characteristics. 
+Comparing: This is the skill of identifying the similarities and differences between two or more objects, concepts or processes. 
+Communicating/Reporting: This is the skill of transmitting, receiving and presenting information in concise, clear and accurate forms - verbal, written, 
+pictorial, tabular or graphical. 
+Predicting: This is the skill of assessing the likelihood of an outcome based on prior knowledge of how things usually turn out. 
+Analysing: This is the skill of identifying the parts of objects, information or processes and the patterns and relationships between these parts. 
+Generating possibilities: This is the skill of exploring all the options, possibilities and alternatives beyond the obvious or preferred one. 
+Evaluating: This is the skill of assessing the reasonableness, accuracy and quality of information, processes or ideas. It is also the skill of assessing the quality 
+and feasibility of objects 
+Designing: This is the skill of visualising and drawing new objects or gadgets from imagination 
+Interpreting: This is the skill of evaluating data in terms of its worth: good, bad, reliable, unreliable; making inferences and predictions from written or 
+graphical data; extrapolating and deriving conclusions.  Interpretation is also referred to as “Information Handling”. 
+Recording: This is the skill of drawing or making graphical representation boldly and clearly, well labelled and pertinent to the issue at hand. 
+Generalising: This is the skill of being able to use the conclusions arrived at in an activity to what could happen in similar situations 
+The action verbs provided under the various profile dimensions should help you to structure your teaching to achieve desired learning outcomes.  Select from 
+the action verbs provided for your teaching, for evaluation exercises and for test construction.  Check the weights of the profile dimensions to ensure that you 
+have given the required emphasis to each of the dimensions in your teaching and assessment. 
+
+   
+xi 
+ASSESSMENT AND FORMS OF ASSESSMENT 
+Assessment is a process of collecting and evaluating information about learners and using the information to make decisions to improve their learning. 
+In this curriculum, it is suggested that assessment is used to promote learning. Its purpose is to identify the strengths and weaknesses of learners to enable 
+teachers ascertain their learner’s response to instruction. 
+Assessment is both formative and summative. Formative assessment is viewed in terms of Assessment as learning and Assessment for learning. 
+Assessment as learning: Assessment as learning relates to engaging learners to reflect on the expectations of their learning. Information that learners 
+provide forms the basis for refining teaching-learning strategies. Learners are assisted to play their roles and to take responsibility of their own learning to 
+improve performance.  Learners are assisted to set their own goals and monitor their progress. 
+Assessment for learning:  It is an approach used to monitor learner’s progress and achievement. This occurs throughout the learning process. 
+The teacher employs assessment for learning to seek and interpret evidence which serves as timely feedback to refine their teaching strategies and improve 
+learners’ performance. With assessment for learning learners become actively involved in the learning process and gain confidence in what they are expected to 
+learn. 
+Assessment of learning: This is summative assessment.  It evaluates the level learners have attained in the learning, what they know and can do over a 
+period of time. The emphasis is to evaluate the learner’s cumulative progress and achievement. 
+It must be emphasised that all forms of assessment should be based on the domains of learning. In developing assessment procedures, try to select indicators in 
+such a way that you will be able to assess a representative sample from a given strand. Each indicator in the curriculum is considered a criterion to be achieved 
+by the learners.  When you develop assessment items or questions that are based on a representative sample of the indicators taught, the assessment is 
+referred to as a “Criterion-Referenced Assessment”. In many cases, a teacher cannot assess all the indicators taught in a term or year.  The assessment 
+procedure you use i.e. class assessments, homework, projects etc. must be developed in such a way that the various procedures complement one another to 
+provide a representative sample of indicators taught over a period. 
+PEDAGOGICAL APPROACHES 
+These include the approaches, methods, strategies, appropriate relevant teaching and learning resources for ensuring that every learner benefits from 
+teaching and learning process. The curriculum emphasises the:  
+1. 
+creation of learning-centred classrooms through the use of creative approaches to ensure learner empowerment and independent learning;  
+2. 
+positioning of inclusion and equity at the centre of quality teaching and learning;  
+3. 
+use of differentiation and scaffolding as teaching and learning strategies for ensuring that no learner is left behind; 
+4. 
+use of Information Communications Technology (ICT) as a pedagogical tool; 
+5. 
+identification of subject specific instructional expectations needed for making learning in the subject relevant to learners; 
+
+   
+xii 
+6. 
+integration of assessment as learning, for learning and of learning into the teaching and learning processes and as an accountability strategy; and  
+7. 
+questioning techniques that promote deep learning. 
+LEARNING-CENTRED PEDAGOGY 
+The learner is at the centre of learning. At the heart of the national curriculum for change and sustainable development is the learning progression and 
+improvement of learning outcomes for Ghana’s young people with a focus on the 4Rs – Reading, wRiting, aRithmetic and cReativity. It is expected that at 
+each curriculum phase, learners would be offered the essential learning experiences to progress seamlessly to the next phase. Where there are indications 
+that a learner is not sufficiently ready for the next phase, a compensatory provision through differentiation should be provided to ensure that such a 
+learner is ready to progress with his/her cohort. At the primary school, the progression phases are B1 to B2 and B1 to B6. 
+ 
+The Curriculum encourages the creation of a learning centred classroom with the opportunity for learners to engage in meaningful “hands-on” activities that 
+bring home to the learner what they are learning in school and what they know from outside of school. The learning centred classroom is a place for the 
+learners to discuss ideas through the inspiration of the teacher. The learners then become actively engaged in looking for answers, working in groups to solve 
+problems. They also research for information, analyse and evaluate information. The aim of the learning-centred classroom is to enable learners to take 
+ownership of their learning. It provides the opportunity for deep and profound learning to take place.  
+ 
+The teacher as a facilitator needs to create a learning environment that: 
+1. 
+makes learners feel safe and accepted; 
+2. 
+helps learners to interact with varied sources of information in a variety of ways; 
+3. 
+helps learners to identify a problem suitable for investigation through project work; 
+4. 
+connects the problem with the context of the learners’ world so that it presents realistic opportunities for learning; 
+5. 
+organises the subject matter around the problem, not the subject; 
+6. 
+gives learners responsibility for defining their learning experience and planning to solve the problem; 
+7. 
+encourages learners to collaborate in learning; and 
+8. 
+expects all learners to demonstrate the results of their learning through a product or performance. 
+ 
+It is more productive for learners to find answers to their own questions rather than teachers providing the answers and their opinions in a learning-
+centred classroom.  
+ 
+INCLUSION 
+Inclusion is ensuring access and learning for all learners especially those disadvantaged. All learners are entitled to a broad and balanced curriculum in every 
+school in Ghana. The daily learning activities to which learners are exposed should ensure that the learners’ right to equal access and accessibility to quality 
+education is met. The Curriculum suggests a variety of approaches that address learners’ diversity and their special needs in the learning process.  When 
+
+   
+xiii 
+these approaches are effectively used in lessons, they will contribute to the full development of the learning potential of every learner. Learners have 
+individual needs and learning experiences and different levels of motivation for learning. Planning, delivery and reflection on daily learning experiences 
+should take these differences into consideration. The curriculum therefore promotes:  
+1. learning that is linked to the learner’s background and to their prior experiences, interests, potential and capacities 
+2. learning that is meaningful because it aligns with learners’ ability (e.g. learning that is oriented towards developing general capabilities and 
+solving the practical problems of everyday life); and 
+3. the active involvement of the learners in the selection and organisation of learning experiences, making them aware of their importance 
+and also enabling them to assess their own learning outcomes. 
+ 
+DIFFERENTIATION AND SCAFFOLDING 
+Differentiation is a process by which differences (learning styles, interest and readiness to learn) between learners are accommodated so that all learners 
+in a group have the best possible chance of learning. Differentiation could be by task, support and outcome.  Differentiation as a way of ensuring each 
+learner benefits adequately from the delivery of the curriculum can be achieved in the classroom through i) task ii) support from the Guidance and 
+Counselling Unit and iii) learning outcomes.  
+Differentiation by task involves teachers setting different tasks for learners of different abilities. E.g. in sketching the plan and shape of their classroom some 
+learners could be made to sketch with free hand while others would be made to trace the outline of the plan. 
+Differentiation by support involves the teacher giving the needed support and referring weak learners to the Guidance and Counselling Unit for academic 
+support. 
+Differentiation by outcome involves the teacher allowing learners to respond at different levels. Weaker learners are allowed more time for complicated 
+tasks. 
+Scaffolding in education refers to the use of variety of instructional techniques aimed at moving learners progressively towards stronger understanding and 
+ultimately greater independence in the learning process.  
+It involves breaking up the learning task, experience or concepts into smaller parts and then providing learners with the support they need to learn each 
+part.  The process may require a teacher assigning an excerpt of a longer text to learners to read and engaging them to discuss the excerpt to improve 
+comprehension. The teacher goes ahead to guide them through the key words/vocabulary to ensure learners have developed a thorough understanding of 
+the text before engaging them to read the full text.  Common scaffolding strategies available to the teacher are:  
+1. giving learners a simplified version of a lesson, assignment, or reading, and then gradually increases the complexity, difficulty, or sophistication over 
+time; 
+2. describing or illustrating a concept, problem, or process in multiple ways to ensure understanding; 
+
+   
+xiv 
+3. giving learners an exemplar or a model of an assignment, they will be asked to complete; 
+4. giving learners a vocabulary lesson before they read a difficult text; 
+5. describing the purpose of a learning activity clearly and the learning goals they are expected to achieve; and 
+6. describing explicitly how the new lesson builds on the knowledge and skills learners were taught in a previous lesson. 
+ 
+ORGANISATION OF THE CURRICULUM 
+There are five integrated learning areas organised under five themes. The learning areas are: 
+• 
+Citizenship Education 
+• 
+Geography  
+• 
+Agricultural Science  
+The thematic areas are organised under five strands: 
+• 
+ First Theme:  All About Us 
+• 
+Second Theme: All Around Us 
+• 
+Third Theme: Our Beliefs and Values 
+• 
+Fourth Theme: Our Nation Ghana 
+• 
+Fifth Theme: My Global Community 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+xv 
+CURRICULUM REFERENCE NUMBERS 
+The curriculum has been structured into four columns which are Strands, Sub-strands, Content standards and Indicators and exemplars. A unique annotation is 
+used for numbering the learning indicators in the curriculum for the purpose of easy referencing. The notation is indicated in Table 2. 
+ 
+Table 1: Interpretation of Curriculum Reference Numbers 
+Example: OWOP: B1.2.3.4.1 
+ 
+ANNOTATION 
+MEANING / REPRESENTATION 
+         B1. 
+Basic Year 1 / Class1/ Primary 1 
+           2. 
+Strand Number 
+           3. 
+Sub-Strand Number. 
+           4. 
+Content Standard Number 
+           1. 
+Learning / Performance Indicator Number 
+ 
+• 
+Strands are the broad areas/sections of Our World and Our People curriculum to be studied.  
+• 
+Sub-strands are larger groups of related indicators. Indicators from sub-strands may sometimes be closely related. 
+• 
+Content Standards indicate what all learners should know, understand and be able to do. 
+• 
+Indicators are clear statements of specific things learners should know and be able to do within each content standard. 
+• 
+Exemplars refer to support and guidance, which clearly explain the expected outcomes of an indicator and suggest what teaching and learning 
+activities could take to support the facilitators/teachers in the delivery of the curriculum. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+xvi 
+SCOPE AND SEQUENCE 
+ 
+ 
+ 
+ 
+ 
+ 
+STRAND 
+SUB-STRAND 
+B1 
+B2 
+B3 
+B4 
+B5 
+B6 
+ALL ABOUT US 
+Nature of God 
+ 
+  
+  
+  
+  
+  
+Myself 
+ 
+  
+  
+  
+  
+  
+My Family and the Community 
+ 
+  
+  
+  
+  
+  
+Home and School 
+ 
+  
+  
+  
+  
+  
+ALL AROUND US  
+The Environment and the Weather 
+ 
+  
+  
+  
+  
+  
+Plants and Animals 
+ 
+  
+  
+  
+  
+  
+Map Making and Land Marks 
+ 
+  
+  
+  
+  
+  
+Population and Settlement 
+ 
+  
+  
+  
+  
+  
+OUR BELIEFS AND 
+VALUES 
+Worship 
+ 
+  
+  
+  
+  
+  
+Festivals 
+ 
+  
+  
+  
+  
+  
+Basic Human Rights 
+ 
+  
+  
+  
+  
+  
+Being a Leader 
+ 
+  
+  
+  
+  
+  
+OUR NATION GHANA 
+Being a Citizen  
+ 
+  
+  
+  
+  
+  
+Authority and Power 
+ 
+  
+  
+  
+  
+  
+Responsible use of Resources 
+ 
+  
+  
+  
+  
+  
+Farming in Ghana 
+ 
+  
+  
+  
+  
+  
+MY GLOBAL 
+COMMUNITY 
+Our Neighbouring Countries 
+ 
+  
+  
+  
+  
+  
+Introduction to Computing  
+ 
+  
+  
+ 
+ 
+ 
+Sources of Information 
+ 
+  
+  
+ 
+ 
+ 
+Technology in Communication 
+ 
+  
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BASIC 4 
+ 
+ 
+
+   
+2 
+ 
+BASIC 4 
+ 
+Strand 1: ALL ABOUT US 
+Sub-strand 1: Nature of God 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+B4.1.1.1.  
+Demonstrate understanding 
+of the Nature of God as the 
+Creator of human beings 
+ 
+ 
+B4.1.1.1.1.  
+Explain how special each individual is 
+ 
+In groups, learners discuss how each person is 
+created as unique and different from one another:  
+some are short, tall, dull, intelligent, fair in 
+complexion, black in complexion, etc. 
+Learners demonstrate the uniqueness of each 
+individual e.g. 
+My name is Esi, I am black and beautiful, there is no 
+one like me, I’m special for who I am, how I look 
+and where I live. I am a Ghanaian. I am proud to be 
+a Ghanaian. 
+ 
+Use pictures/video clips to demonstrate the effects 
+of destroying our bodies. 
+ 
+Put learners into groups according to: height, 
+colour, mass, intelligence, etc. 
+ 
+Learners write how different they are from one 
+another. 
+ 
+Learners in groups discuss how they can use their 
+God-given unique qualities: Serve God and human 
+beings, protect and preserve the environment, live 
+together in harmony, contribute to development. 
+ 
+Learners talk about their aspiration and how they 
+want to achieve that. 
+ 
+Communication and 
+Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Responsibility, 
+stewardship, Love 
+ 
+
+   
+3 
+ 
+Sub-strand 2: Myself 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B4.1.2.1.  
+Demonstrate 
+understanding of self-
+awareness and living 
+peacefully with others 
+ 
+ 
+B4.1.2.1.1.  
+Identify one’s strengths 
+and weaknesses and how 
+to promote interpersonal 
+relations 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about their abilities and weaknesses, e.g. of strengths: 
+friendliness, kindness, confidence: 
+e.g. of weaknesses: selfishness, shyness, timidity, lack of confidence. 
+ 
+Learners talk about ways of initiating good interpersonal 
+relationships, e.g. greetings, respect, tolerance, caring, showing 
+appreciation, etc. 
+ 
+Learners talk about ways of improving their abilities and 
+overcoming their weaknesses e.g. education, constant, practice, 
+training, counseling. 
+ 
+Learners use their assertive skills to express their feelings about 
+what disturbs/hurts the e.g. being polite to people, being respectful, 
+being firm. 
+ 
+ 
+Communication and 
+Collaboration   
+Critical Thinking,  
+Cultural Identity 
+Global Citizenship 
+ 
+ 
+Responsibility, Love, Sharing 
+Commitment, Obedience, 
+Respect, Humility, Honesty 
+Trust 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B4.1.2.1. 2.  
+Mention reasons to live in 
+harmony with one another 
+as a responsible citizen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners mention ways of living in harmony with one another, e. g. 
+to promote peace and unity, law and order, growth and 
+development, etc. 
+ 
+In a think-pair-share session, learners talk about attitudes and 
+behaviours that promote harmonious living at home, school, 
+community, etc.  
+ 
+ 
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+Critical thinking and  
+Problem solving 
+ 
+Trust, Commitment, Loyalty 
+Respect, Obedience 
+Humility, Unity 
+Responsibility, Togetherness 
+ 
+ 
+
+   
+4 
+ 
+Sub-strand 3: My Family and the Community 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B4.1.3.1. 
+Demonstrate 
+understanding of 
+family relationships 
+ 
+B4.1.3.1.1.  
+Explain and appreciate 
+the importance of being a 
+committed member of 
+the family 
+ 
+Learners talk about family members e.g. mother, father, siblings, 
+uncles, aunties, grandparents. 
+ 
+Learners talk about behaviours expected of committed members of 
+the family e.g. obedience, respect, dedication e.g. taking part in 
+family activities, obedience to elders of the family, respect for family 
+members, accepting responsibility (performing assigned duties), 
+taking initiatives, helping needy relatives. 
+ 
+ 
+Learners talk about the importance of being a committed family 
+member e.g. to promote unity, to gain respect, to be considered a 
+trustworthy person. 
+ 
+Learners draw and colour a family member e.g. father, mother. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance 
+B4.1.3.2. Recognise 
+and appreciate people 
+in the community 
+B4.1.3.2.1. Identify 
+people in the community  
+ 
+Learners talk about various people in the community e.g. Parents, 
+Teachers, Pastors, Imams, Chiefs, Queens, Police, Traders, Drivers. 
+ 
+Learners role play to bring out the characteristics of different 
+people in the community, e.g. strangers, drug addicts, drunkards and 
+people with questionable character and talk about people who are 
+likely to help or harm people. 
+ 
+Learners draw and colour different people in the community. 
+ 
+Learners talk about how they can become good people in the 
+community. 
+ 
+Personal Development and 
+Leadership  
+Critical thinking and problem 
+solving 
+ 
+Honesty  
+Trustworthiness 
+ 
+ 
+ 
+
+   
+5 
+ 
+Sub-Strand 4: Home and School 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+ B4.1.4.1. 
+Demonstrate understanding of 
+work as a civic responsibility   
+ 
+B4.1.4.1. 1.  
+Explain importance of education 
+and work as a responsible citizen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners in groups talk about the importance 
+of work at home, school and the community 
+ 
+Learners talk about how education is linked 
+to work e.g. 
+Education opens avenues to get work to do 
+Education opens minds to set up work 
+Education provides skills to manage work 
+ 
+Learners compose a song on the importance 
+of education 
+Learners tell stories of individuals who have 
+been able to create their own jobs 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+6 
+ 
+STRAND 2: ALL AROUND US 
+        Sub-Strand 1: The Environment and the Weather 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+B4.2.1.1 Demonstrate 
+knowledge of 
+environmental safety  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B4.2.1.1 .1. Explain ways of 
+making the environment safe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about ways of ensuring safety in the 
+environment e.g. keeping the environment clean, 
+planting trees, good sanitation, good roads, safe 
+drinking water, reduce usage of chemicals, reduce 
+burning of things. 
+ 
+Show pictures and video clips on human activities that 
+do not make the environment safe: illegal mining 
+(galamsey), indiscriminate cutting down of trees 
+(deforestation), pollution of the air and water bodies, 
+throwing plastic bags around. 
+ 
+Learners in groups play games or engage in 
+activities/projects that teach ways of ensuring safety in 
+the community e.g. preventing flooding, preventing 
+drowning, preventing fire outbreaks by putting off 
+electrical gadget after use, make fire extinguisher 
+available in homes, preventing road accidents, keeping 
+the home and classroom or school clean, planting 
+trees, recycling waste paper and plastics. 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+7 
+ 
+ 
+ 
+ 
+ 
+ 
+Content Stand 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B4.2.1.2.  
+Demonstrate knowledge of reducing 
+environmental pollution  
+  
+B4.2.1.2 .1.  
+Prevent pollution on the environment 
+by performing simple activities, 
+ 
+ 
+ 
+ 
+Learners discuss human activities which 
+pollute the land, water and air such us 
+bush burning, smoke from vehicles and 
+factories and dust from quarry and 
+construction sites. 
+ 
+Learners in groups talk about the effects 
+of pollution on the environment e.g.  
+i. Heat 
+ii. Health hazards 
+iii. Depletion of natural habitats for 
+animals 
+iv. Flooding 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners play games or do activities that 
+teach the importance of reducing air, 
+water of land pollution. 
+ 
+ 
+ 
+Collaboration  
+Critical Thinking and Problem 
+Solving 
+Analysing  
+Applying 
+Pollution 
+Land 
+Water 
+Air 
+
+   
+8 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B4.2.1.3.  
+Recognise the sun as 
+an important body in 
+our global 
+environment.  
+  
+ 
+B4.2.1.3 .1.  
+Describe the sun as the 
+source of light and heat to 
+the earth 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners discuss the sun as the ultimate source of energy and 
+life on earth and learn more facts about the sun: it is a star, it is 
+at the centre of the solar system, the earth moves round the 
+sun, the sun is 149.6 kilometers from the earth, it is over one 
+million times bigger than the earth.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners conduct the above experiment or engage in other 
+activities to show how we get light and heat from the sun. 
+ 
+Learners talk about some of the ways they can protect 
+themselves against sun rays: use umbrella, do not wear heavy 
+clothes, do not wear black and red cloths, wear white, cream, 
+sea blue clothes on sunny days to reflect the heat. 
+ 
+Learners reflect on human activities that can lead to increase in 
+the sun’s heat on the earth. 
+ 
+ 
+ 
+ 
+Critical Thinking and Problem-
+Solving Presentation 
+Observation 
+Collaboration  
+Demonstration 
+Applying 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Reflec
+Earth 
+(Learner 
+holds out)
+Moon            
+(Round Object) 
+ 
+Sun 
+(Torchlight) 
+
+   
+9 
+ 
+ 
+Sub-Strand 2: Plants and Animals 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competences and 
+Subject Specific Practices 
+  
+B4.2.2.1.  
+Demonstrate 
+understanding of how 
+living and non-living things 
+in the environment are 
+related. 
+ 
+ 
+B4.2.2.1.1.  
+Explore the relationship 
+between living and non-living 
+things in the environment 
+ 
+ 
+ 
+ 
+ 
+ 
+B4.2.2.1.2.  
+Recognise the need to preserve 
+living and non-living things in the 
+environment as a responsible 
+ 
+ 
+Learners in groups, discuss the relationship between the 
+following living and non-living things: 
+i. Plants and soil 
+ii. Plants and sunlight 
+iii. Plants and water 
+iv. Humans and air 
+v. Humans and water 
+vi. Humans and land  
+ 
+ 
+Through group work guide learners to play games and 
+use specific examples to talk about the importance of 
+living and non-living things to humans. e.g. Plants provide 
+oxygen, food, medicine, fuel wood, clothes.   Animals 
+provide food, medicine, manure, clothes.                     
+Water is used for drinking, washing, cooking, river 
+transport, manufacturing of industrial goods. 
+ 
+ 
+ 
+ 
+Communication 
+ 
+ 
+Critical Thinking and Collaboration  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+10 
+ 
+Sub-Strand 3: Map Making and Land Marks 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B4.2.3.1.  
+Demonstrate knowledge of the 
+physical features of the school 
+ 
+B4.2.3.1.1.  
+Map the school environment  
+ 
+Learners identify the key features of 
+the school environment e.g. 
+classroom blocks, canteen, library, 
+playground, computer laboratory  
+ 
+Learners draw a sketch map of the 
+school and indicate key features on 
+it  
+ 
+Creativity and innovation 
+Collaboration  
+Critical thinking and problem solving 
+Applying 
+ 
+Sub-Strand 4: Population and Settlement 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B4.2.4.1.  
+Demonstrate 
+understanding 
+settlements patterns in 
+Ghana 
+ 
+B4.2.4.1.1.  
+Describe the nature of 
+settlements in Ghana. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners discuss the importance of settlements e.g. 
+people live with other people, we do not live in 
+vacuum, for protection, for pooling resources together 
+etc. 
+ 
+ 
+Learners discuss and write about features that they will 
+consider in choosing a good settlement that would 
+make life easier and comfortable such areas free of 
+floods, access to local raw materials, local water supply 
+for drinking and washing and access to roads and 
+transportation. 
+ 
+Learners engage in activities that teach them to help 
+keep their settlements safe, peaceful and clean.  
+ 
+ 
+ 
+Creativity and innovation 
+Collaboration  
+Critical thinking and  
+problem solving 
+Applying 
+ 
+
+   
+11 
+STRAND 3: OUR BELIEFS AND VALUES  
+Sub-Strand 1: Worship 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+.   
+B4.3.1.1.  
+Recognise the importance of prayer, 
+worship and other acts of worship  
+ 
+   
+B4.3.1.1.1.  
+Show obedience and respect to a 
+supreme being. through prayer and 
+worship 
+ 
+ 
+Learners talk about why we worship 
+God: to draw closer to God, to 
+communicate with God, to show 
+obedience to God, etc.  
+ 
+Learners talk about the forms of 
+worship in the three main religious 
+groups in Ghana: Christianity, Islam 
+and Traditional: praying, singing, 
+pouring libation, reading scriptures, 
+etc. 
+ 
+Learners engage in activities: role 
+play, play games, recite prayers, read 
+scriptures, watch videos, or look at 
+pictures/videos – that teach ways of 
+worship to show respect and 
+obedience to God among the three 
+major religious groups. 
+ 
+Learners draw and model a worship 
+scene. 
+ 
+ 
+Communication and Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+and Global Citizenship 
+Digital Literacy  
+ 
+ 
+Faithfulness, Obedience  
+Respect, Commitment, Humility, 
+Unity, Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+12 
+Sub-Strand 2: Festivals 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B4.3.2.1.  
+Explore the Significance of cultural 
+practices, traditions and celebrations 
+in Ghana 
+ 
+B4.3.2.1.1.  
+Identify celebrations, positive 
+cultural practices and traditions of 
+different cultures in Ghana 
+ 
+ 
+ 
+Learners talk about celebrations and 
+traditions of different cultures  
+in the community: Christmas, Easter, 
+Eid-Ul-Fitr, Eid-Ul-Adha, Odwira, 
+Aboakyir, etc. 
+ 
+Learners use pictures, charts or 
+video clips to demonstrate activities 
+of celebrations and traditions of 
+different cultures. 
+ 
+Learners create stories, songs, 
+poems, that teach them about the 
+importance of celebrations and 
+traditions different cultures of where 
+they come from. e.g. Christmas 
+teach us about the birth of Christ. 
+Ohum festival teach us about the 
+time for harvesting yam. 
+Some celebrations remind us where 
+our ancestors came from: 
+Hogbetsotso. 
+ 
+Learners prepare traditional foods 
+such as kenkey and fried fish, banku 
+and okro stew, fufu and palm soup, 
+tuo-zafi  or sew traditional clothing 
+for celebration for display or reflect 
+and write about traditions their 
+parents have passed down to them. 
+ 
+ 
+Communication and Collaboration, 
+Personal Development and 
+Leadership 
+Creativity and Innovation  
+Global Citizenship 
+Digital literacy 
+ 
+ 
+Faithfulness, Obedience  
+Respect, Commitment, Humility, 
+Unity, Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+
+   
+13 
+Sub-Strand 3:  Basic Human Rights 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B4.3.3.1.  
+Demonstrate understanding of 
+human rights a citizen 
+ 
+B4.3.3.1.1.  
+Explain fundamental human 
+rights of a child 
+ 
+Learners explain human rights e.g. human rights 
+are rights that acknowledge the dignity and 
+worth of an individual and ensure that equal right 
+and opportunities are available to all without 
+discrimination. 
+ 
+Learners discuss their rights under equality e.g. 
+right to life, right to family, right to protection. 
+ 
+Learners compose songs and rhymes on 
+fundamental human rights in Ghana. 
+Learners develop posters describing fundamental 
+human rights of a child using pictures and 
+internet. 
+ 
+ 
+Communication and  
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation  
+Global Citizenship 
+Digital literacy 
+ 
+ 
+Faithfulness, Obedience  
+Respect, Commitment, Humility 
+Unity, Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+14 
+Sub-Strand 4: Being a Leader 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B4 3.4.1.  
+Recognise leadership as an 
+important value and civic duty 
+ 
+B4 3.4.1.1.  
+Describe leadership as a 
+valuable skill 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Learners recall leaders in the community and 
+others they know of (Jesus Christ, Mohammed, -
+Okomfo 
+Anokye, 
+Togbui 
+Tsali, 
+President 
+Mahama, Kwame Nkrumah, Edward Akuffo-
+Addo, Jerry John Rawlings, John Kofi Agyekum 
+Kufour, John Evan Atta-Mills Yaa Asanteman etc.) 
+and talk about their good leadership qualities:  
+ Setting good examples, inspiring people to be 
+better, 
+having 
+clear 
+vision, 
+ability 
+to 
+communicate and understand, maintain positive 
+attitude, take risks responsibly, make good 
+decisions, encourage team activities. 
+ 
+Learners role play or engage in other leaders’ 
+activities that teach good leadership skills in the 
+home, school and community such as developing 
+self- confidence to needed to lead class 
+members, making decisions about food to eat, as 
+telling stories about Jesus and Mohammed.  
+ 
+Learners 
+discuss 
+stories 
+about 
+religious 
+personalities and other community leaders who 
+show examples of good leadership. 
+ 
+ 
+ 
+Communication and  
+Collaboration,   
+Critical thinking 
+Creativity 
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Respect, Trust, Obedience, 
+Commitment, Responsibility,  
+Personal Development and 
+Leadership 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+15 
+STRAND 4: OUR NATION GHANA 
+Sub-Strand 1: Being a Citizen 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and Subject 
+Specific Practices 
+ 
+ B4.4.1.1.  
+Demonstrate good manners at 
+appropriate places 
+ 
+   
+ 
+ 
+ 
+B4.4.1.1.1.  
+Show good manners in the home, 
+school and community 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about the importance of 
+observing good manners or etiquette in the 
+home such as observing good table manners, 
+greetings, helping others, showing respect and 
+obedience 
+to 
+parents, 
+teachers, 
+school 
+authorities, elders and rulers, respect for the 
+elderly, obedience to authority, respect the 
+Constitution of Ghana. 
+ 
+Learners play games, role play or engage in 
+other activities that teach good manners and 
+etiquette in the home, school and the 
+community. 
+ 
+Learners talk about the importance of good 
+manners: 
+It ensures law and order in society. 
+It helps everyone develop good moral life. 
+It encourages hardworking. 
+It encourages people to be patriotic etc. 
+ 
+Learners think-pair-share to write essays on 
+good deeds:  
+• 
+Why should I be courteous? 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Trust, Commitment, Loyalty  
+Respect, Obedience, Humility, Unity 
+Responsibility, Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+16 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B4.4.1.2.    
+Demonstrate understanding of who 
+a citizen is  
+  
+ 
+B4.4.1.2.1.   
+Identify the characteristics of a 
+responsible citizen 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Discuss with learners the types of citizens 
+e.g. 
+i. 
+Active citizen 
+An active citizen is an individual who 
+contributes to the well-being of his or 
+her community. 
+ 
+ii. 
+Passive citizen 
+A passive citizen is an individual who 
+does not contribute to the well-being 
+of his or her community. 
+ 
+Learners through think-pair-share to talk 
+about the characteristics of a responsible 
+citizen, e.g. 
+i. obey rules and regulations 
+ii. diligence 
+iii. patriotism 
+iv. honesty 
+v. respect 
+vi. hard work 
+vii. commitment 
+viii. listening/tolerance 
+to 
+other 
+view 
+points 
+ 
+Learners, in groups, identify the 
+characteristics of a good citizen. 
+Case study 
+Teacher uses case study approach to raise a 
+variety of issues, e.g. A pupil finds money in 
+the classroom and keeps it instead of finding 
+the owner. Pupils to react and state their 
+views on this issue. 
+ 
+ 
+Communication and Collaboration, 
+ 
+Critical Thinking and Problem 
+Solving 
+ 
+ 
+ 
+ 
+ 
+Appreciation, Truth 
+Caring, Protection 
+ Love, Cleanliness, Responsibility 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+17 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+ B4.4.1.3.  
+Demonstrate understanding of 
+commitment as a civic value and 
+responsibility 
+ 
+ 
+ B4.4.1.3.1.  
+Become committed to duties and 
+responsibilities 
+ 
+• Learners explain commitment: A promise, 
+agreement, or understanding you make 
+to/with someone or something. 
+ 
+• Learners mention the ways by which they 
+are expected to show commitment.  
+• For example: 
+• Show commitment to God such as praying 
+everyday and reading scriptures, helping 
+others showing charity. 
+• Show commitment to the family duties such 
+as keeping room clean and taking care of 
+pets. 
+• Showing commitment to school work by 
+doing homework, keeping the classroom 
+neat, and coming to school everyday. 
+ 
+• Learners role play scenarios or engage in 
+other activities that show the benefits for 
+showing commitment.  
+• We show respect to God, teachers, 
+parents and leaders. 
+• We develop positive self-identity. 
+• We develop good relationships etc. 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Trust, Commitment, Loyalty 
+Respect, Obedience, Humility 
+Unity, Responsibility 
+Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+18 
+ 
+Sub-strand 2: Authority and Power 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and Subject 
+Specific Practices 
+   
+B4.4.2.1.  
+Demonstrate respect for 
+people with authority and 
+power 
+ 
+ 
+ 
+ 
+B4.4.2.1.1.  
+Show respect and obedience to 
+those in authority  
+ 
+ 
+Learners identify people (can use films and 
+pictures) with authority and power in the 
+community: parents, e.g.  
+Home: parents, grandparents uncles, aunties 
+School: headteacher, teachers, prefects  
+ Community: chiefs, pastors, Imams, 
+Assembly members, police    
+State: President, Speaker of Parliament, 
+Members of Parliament. 
+ 
+Learners talk about why they should respect 
+and obey people in authority: e.g. to promote 
+unity, 
+peace 
+and 
+harmony, 
+to 
+avoid 
+punishment. 
+ 
+In groups, learners talk and write about why 
+they should obey authority. 
+ 
+Learners present their work for class 
+discussion. 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Trust, Commitment, Loyalty, 
+Respect, Obedience, Humility, Unity, 
+Responsibility, Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+19 
+ 
+Sub-Strand 3: Responsible use of Resources  
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and Subject 
+Specific Practices 
+B4.4.3.1.  
+Demonstrate understanding of 
+responsible use of water 
+B4.4.3.1.1.  
+Identify ways to use water 
+responsibly  
+Using pictures/videos, learners 
+discuss ways to use water responsibly 
+e.g. close the tap after fetching water, 
+do not use treated water for 
+watering plants 
+ 
+Learners compose songs and play 
+games on how to use water 
+responsibly 
+ 
+Learners draw people using water 
+responsibly  
+ 
+Learners form clubs to serve as 
+ambassadors for responsible use of 
+water 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Trust, Commitment, Loyalty  
+Respect, Obedience, Humility, Unity 
+Responsibility, Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+20 
+ 
+ 
+Sub-Strand 4: Farming in Ghana 
+ 
+                        
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and Subject 
+Specific Practices 
+  
+ B4.4.4.1.  
+Know about gardening basics 
+such as preparing healthy soil 
+and nursing activities for crop 
+production (seed bed 
+preparation)  
+ 
+B4.4.4.1.1.  
+Prepare nursery beds nurse seeds, 
+transplant seedlings and maintain 
+small gardens 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+Learners talk about the importance of 
+gardening. 
+ 
+Learners undertake visits to vegetable 
+gardens of farms or look at pictures of 
+vegetable and fruit farms and talk about 
+different vegetables farmers in Ghana grow.  
+ 
+Learners undertake practical activities in the 
+home or school that will teach them how to 
+prepare healthy soil for nursing seeds and 
+prepare seedbeds, how to nurse and 
+transplant seedlings, and how to care for 
+small gardens of eggs, pepper, onion, cabbage, 
+lettuce, okro, etc. 
+ 
+Note: learners use the opportunity to learn 
+good agricultural practices such as:  
+Using the right tools in preparing nursery 
+beds/bags. 
+ 
+Filling nursery beds/boxes/poly bags with 
+fertile soil in preparation for nursing seeds. 
+ 
+Nursing the seeds in the soil at the required 
+depth and water them. 
+ 
+ 
+Communication and Collaboration 
+Personal Development and Leadership 
+Creativity and Innovation 
+Critical Thinking and Problem Solving 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+21 
+ 
+ 
+STRAND 5: MY GLOBAL COMMUNITY 
+Sub-strand 1: Our Neighbouring Countries 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and Subject 
+Specific Practices 
+B4.5.1.1.  
+Demonstrate knowledge of the 
+cultural exchanges between Ghana 
+and her neighbours 
+B4.5.1.1.1.  
+Describe cultural exchanges 
+between Ghana and her neighbours  
+Learners mention common cultural 
+practices between Ghana and her 
+neighbours e.g. language, food, 
+farming  
+ 
+Learners in groups describe 
+common festivals and other cultural 
+activities between Ghana and her 
+neighbours e.g. Christmas, Eid-ul- 
+Adha 
+Food: gari, cassava, yam 
+Dressing: kaba and slit, smock 
+ 
+Communication 
+Personal Development 
+Cultural identity 
+  
+B4.5.1.2.  
+Demonstrate knowledge of rocks 
+ 
+B4.5.1.2.1.  
+Explain the uses of rocks 
+ 
+Learners discuss the importance of 
+rocks e.g. building houses and 
+constructing roads 
+ 
+Learners role play some of the uses 
+of rocks 
+ 
+ 
+Observation 
+Critical Thinking and Problem 
+Solving 
+ 
+Research 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+22 
+ 
+ 
+ 
+ 
+ 
+BASIC 5 
+ 
+ 
+ 
+
+   
+23 
+ 
+BASIC 5 
+ 
+STRAND 1: ALL ABOUT US 
+Strand 1: Nature of God 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific 
+Practices 
+ 
+ B5.1.1.1.  
+Demonstrate 
+understanding of the 
+uniqueness of human 
+beings among God’s 
+creation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+B5.1.1.1.1.  
+Explain that human beings 
+are unique compared to 
+other creatures 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners recall and retell stories about Creation. They talk about 
+the nature of God as the Creator, the all-knowing, powerful and 
+creator of all things. 
+ 
+Learners look at themselves, pictures of different human beings, 
+and animals and reflect on how they are different from animals and 
+present their findings to the class for discussion. 
+ 
+Learners in groups reflect and make a poster on the characteristics 
+of human beings that make them different from other creatures 
+e.g. having a unique personality, ability to be creative and think 
+rationally, ability to communicate and collaborate, ability to 
+exercise judgement and make choices between right and wrong, 
+ability to learn. 
+ 
+Learners display their posters for class discussion and peer-review. 
+ 
+Learners reflect on why God created human beings and why God 
+made man different from other creatures. 
+Learners debate on the topic ‘animals do not reason’. 
+ 
+ 
+Critical Thinking 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+ Respect 
+ Caring 
+ Responsibility 
+ Stewardship 
+ Love 
+ Leadership 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+24 
+ 
+Sub-Strand 2: Myself 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B5.1.2.1.  
+Demonstrate 
+understanding of 
+positive attitudes 
+towards the changes 
+that occur during 
+adolescence 
+ 
+B5.1.2.1.1.  
+Describe changes that 
+occur during 
+adolescence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners brainstorm on the term, Adolescence e.g. 
+Young people are people within the ages 10 -24 and 
+the adolescent falls within this group. Adolescence is a 
+period of transition between childhood and adulthood. It occurs 
+between the ages of 10 and 19 years (WHO, 1968). 
+ 
+Group learners in their sex groups to discuss the changes that take 
+place in their own sex during adolescence and present to class e.g. 
+ 
+Physical changes in boys 
+e.g. breaking of voice, broadening of the chest, enlargement of testes 
+and penis, growth of armpit, facial and pubic hair, acquisition of 
+excess energy, acne (pimples) may develop on the face, growth in 
+height and weight, 
+ 
+Some physical changes in girls 
+ e.g. development of breast, broadening of hips, growth of armpit 
+and pubic hair, onset of ovulation and menstruation, acquisition of 
+excess energy, growth in height and weight, acne (pimples) on the 
+face. 
+ 
+Some emotional and psychological changes in both 
+boys and girls e.g. easily irritated (anger), worry/fear, love (strong 
+attachment to the opposite sex), shyness, excitement, 
+happiness/sadness, adventurous 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience 
+Commitment, Responsibility 
+ 
+ 
+ 
+
+   
+25 
+ 
+Sub-strand 3: My Family and the Community 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.1.3.1.  
+Demonstrate understanding 
+of how to be committed to 
+one’s Family 
+  
+B5.1.3.1.1.  
+Explain the need to be a committed 
+member of the family 
+ 
+Learners mention behaviours and attitudes 
+needed to be a committed family member 
+e.g. taking part in family activities, obedience 
+to elders of the family, respect for family 
+members, accepting responsibility 
+(performing assigned duties), taking 
+initiatives, helping needy relatives, be present 
+at family meetings, respond to family needs, 
+etc. 
+ 
+Learners talk about the need to be a 
+committed family member e.g. to promote 
+unity, to gain respect, to bring unity and 
+peace in the family, to strengthen the family 
+support system, to be considered a 
+trustworthy person, etc. 
+ 
+ 
+Learners role play commitment to the family. 
+The role play should have as a climax reward 
+for being committed.  
+ 
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Trust, Commitment, Loyalty 
+Respect, Obedience, Humility, Unity 
+Responsibility, Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+26 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B5.1.3.2.  
+Show understanding of 
+staying safe on the road 
+ 
+B5.1.3.2.1.  
+Identify things to do to stay 
+safe on roads 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about the things they need to know to stay 
+safe on the road e.g. traffic light, road signs, stick to the 
+pavement, do not walk on the road, crossing road only 
+at the pedestrian crossing 
+ 
+Learners visit the nearest traffic light/ lollipop or watch 
+pictures/video clips of the use of traffic lights/lollipop 
+ 
+Learners in groups discuss and present their findings on 
+the use of the traffic lights/lollipop 
+ 
+Learners demonstrate the use of traffic lights/lollipop e.g. 
+yellow means get ready to stop, red means stop, and 
+green means go 
+ 
+Learners draw and colour the traffic light 
+ 
+  
+Communication and 
+Collaboration   
+Cultural 
+Identity 
+and 
+Global 
+Citizenship 
+ 
+Respect, Responsibility 
+Stewardship, Love 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+27 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B5.1.3.3.  
+Demonstrate understanding of 
+gender related issues in the 
+environment 
+ 
+B5.1.3.3.1.  
+Explain how gender equity can be 
+promoted 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In groups learners work to elicit gender 
+stereotypes in their community. 
+ 
+Learners, in groups identify roles that are 
+to be performed by the sexes. Learners 
+discuss and cross out responses the class 
+considers as stereotypes. 
+ 
+Learners discuss some gender issues in the 
+community and how they affect the: 
+i. Individual 
+ii. Community 
+iii. Nation building e.g. 
+widowhood rites, trokosi, 
+witch camps etc. 
+ 
+Learners find out from parents and other 
+people in the community some of the 
+customs they consider discriminatory. 
+In groups, learners discuss and present 
+their findings in class. 
+ 
+Learners in groups discuss how they will 
+promote 
+gender 
+equity 
+in 
+their 
+community. e.g. women empowerment 
+ 
+ 
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Responsibility 
+Stewardship, Love  
+Communication and 
+Collaboration   
+  
+ 
+ 
+ 
+ 
+ 
+
+   
+28 
+ 
+Sub-Strand 4: Home and School 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.1.4.1.  
+Demonstrate understanding of skills 
+for using peer groups for the benefit 
+of the community  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B5.1.4.1.1.  
+Describe skills for dealing with 
+peer pressure 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about the benefits of 
+belonging to good peer groups e.g. 
+learning new things, respectfulness, 
+obedience, achieving goals, being 
+courteous 
+ 
+ 
+Learners discuss the dangers of belonging  
+to bad peer groups e.g. drink alcohol, 
+take drugs, have pre marital sex 
+ 
+Learners role play a scenario in which an 
+older pupil is putting pressure on a 
+younger one to do any of the following: 
+i. drink alcohol 
+ii. take drugs 
+iii. have pre marital sex 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration  
+ 
+Trust, Commitment, Loyalty 
+Respect, Obedience, Humility 
+Unity, Responsibility, Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+29 
+ 
+STRAND 2: ALL AROUND US 
+Sub-Strand 1: The Environment and the Weather 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.2.1.1.  
+Demonstrate understanding of 
+human activities that contribute to 
+abundant greenhouse gases in the 
+atmosphere 
+ 
+ 
+B5.2.1.1.1.  
+Record human activities that cause 
+over concentration of greenhouse 
+gases and climate change 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners explain climate change and 
+human adaptations. 
+ 
+Learner list human activities in their 
+community 
+that 
+contribute 
+to 
+the 
+emission 
+of 
+greenhouse 
+gases 
+e.g. 
+deforestation, application of fertilizers, 
+smoke from vehicles, bush burning, 
+burning of refuse and charcoal, smoke 
+from industries. 
+ 
+Learners talk about how the atmosphere 
+can be preserved for the provision of 
+quality air, e.g. tree planting, do not cut 
+trees, do not burn refuse etc. 
+ 
+ 
+Critical Thinking and Problem 
+Solving 
+ 
+Communication  
+Cultural Identity  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+30 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B5.2.1.2.  
+Demonstrate 
+understanding of how to 
+care for the environment 
+ 
+B5.2.1.2 .1.  
+Explain ways to care for the 
+environment 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Learners talk about the human activities in the 
+environment. 
+ 
+Show pictures and video clips on human activities that 
+destroy the environment: illegal mining (galamsey), 
+indiscriminate cutting down of trees (deforestation), 
+pollution of water bodies, air pollution, etc. 
+ 
+Learners write the effects of human activities on the 
+environment: climate change – heat, floods, rain storms, 
+less rainfall, famine, draught, etc. 
+ 
+Using Think-Pair-Share, learners talk about ways of 
+caring for the environment through: tree planting, 
+proper disposal of waste, legal mining, clean-up 
+exercises, avoiding environmental pollution, etc. 
+ 
+Learners in groups do a project on any of the following: 
+clearing a rubbish dump in the school, planting trees, 
+checking erosion, clearing choked gutters, etc. 
+ 
+Learners discuss the importance of caring for the 
+environment: It helps to improve climatic conditions 
+such as oxygen, balanced temperature on earth, etc. 
+ 
+Let learners present their work in class for discussion. 
+ 
+Learners design posters and flyers in groups to create 
+awareness on cleanliness in their school. 
+ 
+Communication and 
+Collaboration,   
+Cultural 
+Identity 
+and 
+Global 
+Citizenship 
+ 
+Respect, Caring, Responsibility, 
+stewardship, Love  
+ 
+ 
+ 
+ 
+
+   
+31 
+ 
+Content Standard 
+ 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+ B5.2.1.3.  
+Demonstrate knowledge of 
+the shape of the earth 
+ 
+B5.2.1.3.1.  
+Describe the shape of the 
+earth 
+ 
+Learners use the globe to study the shape of the earth 
+Learners watch pictures/videos illustrating the shape of 
+the earth–picture and video of an approaching ship  
+Learners sketch the globe to illustrate the shape and 
+angle of the earth on its axis 
+ 
+ 
+Collaboration 
+Cultural Identity  
+Presentation 
+Applying 
+Critical Thinking and Problem 
+Solving 
+ 
+ 
+Sub-Strand 2: Plants and Animals 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.2.2.1.  
+Demonstrate knowledge 
+of animal housing and how 
+to care for pets 
+ 
+ 
+ B5.2.2.1.1.  
+Design and make a simple 
+animal house and keep a pet  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners watch pictures/films on different housing for 
+domestic animals and pets or visit farms in the 
+community to observe different types of housing for 
+animals e.g. sheep, goats, rabbits, poultry and pigs.  
+ 
+Learners engage in practical activities to design and 
+make simple animal houses such as: 
+pens for goats and sheep 
+coop for hen 
+cage for dog 
+ 
+Learners sketch domestic animals and their housing 
+Learners talk about values of keeping animals such as 
+learning to become responsible and committed to 
+hardwork, etc. 
+ 
+ 
+Creativity and Problem Solving 
+Communication 
+Creativity and Problem Solving 
+Personal Development 
+Problem Solving 
+Innovation 
+ 
+ 
+ 
+
+   
+32 
+Sub-Strand 3: Map Making and Land Marks 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.2.3.1.  
+Demonstrate knowledge 
+of major landmarks in the 
+community 
+ 
+B5.2.3.1.1.  
+Locate major land marks on a 
+sketch map of the community 
+ 
+Learners identify major land marks in the 
+community e.g. the school, post office, police 
+station church, mosque 
+ 
+Using landmarks, learners take turns in showing 
+directions to places in the community  
+ 
+Learners sketch a map of the community 
+indicating major landmarks 
+ 
+ 
+Communication and Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+ 
+Sub-Strand 4: Population and Settlement 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.2.4.1.  
+Demonstrate knowledge 
+of the features of rural 
+settlements 
+ 
+B5.2.4.1.1.  
+Explain the features of rural 
+settlements  
+ 
+Learners talk about the features of rural and 
+urban settlements e.g. in rural settlements there is 
+small population, few buildings, people living far 
+apart. 
+ In urban settlements the population is large, 
+there is large market.  
+ 
+Learners in groups talk about the main activities in 
+the rural and urban settlements of Ghana.  
+What can do to get food and money e.g.  rural 
+settlement: crop farming, animal rearing, hunting 
+ 
+Learners draw a rural and urban settlements, 
+showing some features.  
+ 
+ 
+ 
+Creativity and Innovation 
+Critical thinking and problem-solving  
+Application 
+ 
+Team work, Tolerance, 
+Responsibility, Observation and 
+Application 
+ 
+
+   
+33 
+STRAND 3: OUR BELIEFS AND VALUES 
+Sub-Strand 1: Worship 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+ B5. 3.1.1.  
+Appreciate the importance of 
+prayer, worship and other 
+acts of worship 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B5. 3.1.1. 1.  
+Identify the moral significance 
+of Sacred Passages and Oral 
+Traditions in the three main 
+religions 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners recall the modes of worship (charity, 
+prayer, song ministration, evangelism,) and give 
+reasons why we worship: human beings are under 
+the authority of the Creator, we demonstrate that 
+we depend on God for survival, etc. 
+ 
+Learners listen to and sing religious songs of the 
+three major religions in Ghana. 
+ 
+Learners recite selected passages and, or oral 
+traditions e.g.: The Ten Commandments (Exodus 20), 
+Al-Fathiha’, Folktales, etc., and show how they can 
+apply them in their daily lives. 
+ 
+Learners relate the moral values they have learned to 
+their 
+lives 
+e.g. 
+honesty, 
+sacrifice, 
+dedication, 
+commitment, forgiveness, etc. 
+ 
+Communication and 
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Faithfulness, Obedience  
+Respect, Commitment  
+Humility, Togetherness, Unity 
+Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+34 
+Sub-Strand 2: Festivals 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B5.3.2.1.  
+Demonstrate knowledge of 
+Celebrations in Ghana 
+ 
+B5.3.2.1.1.  
+Describe various 
+celebrations in Ghana 
+ 
+Learners talk about types of celebrations in Ghana  
+e.g.  Birthday, Indolence Day, Naming babies, festivals 
+ 
+Learners talk about importance of celebrations in 
+Ghana: teaches about love and sacrifice, unity, 
+brotherliness, appreciation, generosity, kindness, 
+forgiveness, bravery, reconciliation 
+ 
+Learners role play various celebrations, showing 
+important activities like sharing, reconciliation, unity 
+and brotherliness, etc. 
+ 
+Learners write essay on any of the celebrations 
+ 
+Communication and  
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+and Global Citizenship 
+ 
+ 
+ 
+Sub-Strand 3:  Basic Human Rights 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.3.3.1.  
+Demonstrate understanding of how 
+to respect human rights as a citizen 
+ 
+B5.3.3.1.1.  
+Describe fundamental 
+human rights in the 
+family 
+ 
+Learners describe fundamental human rights as a 
+family member e.g. right to live with family, right to 
+guardianship, right to education, right to health 
+ 
+Learners compose songs and rhymes on the right to 
+belong to a family 
+ 
+Learners develop posters describing the right to 
+education using pictures or the internet 
+ 
+Communication and 
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation  
+Global Citizenship 
+ 
+ 
+Obedience  
+Respect, Commitment, Humility 
+Unity 
+ 
+ 
+
+   
+35 
+Sub-Strand 4: Being a Leader 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.3.4.1.  
+Show Understanding of the Ministry 
+of the major religious leaders 
+ 
+ 
+ 
+ 
+ 
+  
+B5.3.4.1.1.  
+Describe the key events in the 
+Ministry of the leaders of the three 
+religions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners 
+describe 
+the 
+key 
+events 
+associated with the ministry of the 
+leaders of the three main religions: 
+i. The Lord Jesus Christ–Baptism, 
+temptation, call of the disciples, 
+teaching, etc. 
+ii. The Holy Prophet Muhammad 
+(S.A.W.) –call, triumphant entry to 
+Makkah etc.  
+iii. Traditional Leader–training, 
+teaching, etc. 
+In groups, learners role-play some 
+aspects of the Ministry of: 
+a. 
+The Lord Jesus Christ 
+b. 
+The Holy Prophet Muhammad  
+c.  A Traditional Religious Leader 
+ 
+Learners in groups to identify the 
+significant roles by the religious leaders 
+their ministries:  obedience; 
+commitment; patience, leadership, 
+sacrifice etc. 
+ 
+In groups, learners dramatise portions of 
+the scripture that depict moral lessons, 
+e.g. submissiveness, humility, loyalty, 
+etc., and how they can emulate such 
+values as individuals. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration,   
+Creativity and Innovation 
+Digital Literacy 
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience, 
+Commitment, Responsibility,  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+36 
+STRAND 4: OUR NATION GHANA 
+Sub-Strand 1: Being a Citizen 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.4.1.1.  
+Show understanding of 
+attitudes needed for effective 
+citizenship 
+ 
+ 
+B5.4.1.1.1.   
+Describe the attitudes needed for 
+effective citizenship 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners identify attitudes necessary for effective 
+citizenship, e.g. compromise, tolerance, 
+collaboration, dialogue,  teamwork, etc. 
+ 
+Learners role play the importance of living in 
+harmony with others, e.g. peaceful coexistence, 
+unity, love, respect. 
+ 
+Communication and 
+Collaboration   
+Critical Thinking and Problem 
+Solving 
+ 
+Appreciation, Truth 
+Caring, Protection 
+ Love, Responsibility 
+ 
+B5.4.1.2.  
+Demonstrate an 
+understanding of how 
+responsible citizens, can 
+contribute to national 
+development 
+ 
+B5.4.1.2.1.  
+Discuss the importance of being a 
+responsible citizen in the nation 
+ 
+ 
+ 
+Learners describe attitudes and behaviours that 
+show that a person is responsible e.g. 
+obedience to rules and regulations, respect others, 
+accepting 
+responsibility 
+(performing 
+assigned 
+duties), taking initiatives, helping needy people. 
+ 
+Learners discuss the importance of being a 
+responsible citizen e.g. to promote unity, to gain 
+respect, to be considered a reliable person, etc. 
+ 
+Learners role-play activities of responsible citizens. 
+Learners identify and talk about what they can do 
+to help the country to develop. 
+ 
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance.  
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+37 
+STRAND 4: OUR NATION GHANA  
+Sub-Strand 1: Being a Citizen 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+   
+B5.4.1.3.  
+Demonstrate 
+understanding of unity in 
+diversity 
+ 
+B5.4.1.3. 1.  
+Demonstrate how diversity can promote 
+national development 
+ 
+ 
+ 
+ 
+Learners describe how ethnic diversity can 
+promote national development e.g. promotion 
+of tourism, sale of artefacts, inter-ethnic 
+marriage  
+ 
+Learners role play a scenario depicting cultural 
+diversity e.g. display of various cultural activities 
+at national gatherings  
+ 
+ 
+ 
+Communication and 
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+and Global Citizenship 
+ 
+Faithfulness, Obedience  
+Respect, Commitment, Humility 
+Togetherness, Unity 
+Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+38 
+Sub-Strand 2: Authority and Power 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.4.2.1. 
+Demonstrate knowledge of the need 
+to obey and submit to authority 
+  
+ 
+ 
+B5.4.2.1.1.  
+Recognise parents as source of 
+discipline and character formation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners 
+talk 
+about 
+rules 
+and 
+regulations they are expected to 
+follow at home  
+ 
+Learners discuss why it is important 
+to obey rules and regulations at home 
+ 
+Learners identify ways by which they 
+can be responsible:  
+• 
+be a good child to avoid 
+punishment 
+• 
+emulate parents and other 
+family members, etc. 
+ 
+Learners role play responsible 
+behaviours as parents and children at 
+home. 
+ 
+Learners write essays on how to 
+become responsible adults. 
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+39 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+  
+B5.4.2.2.  
+Demonstrate 
+understanding of the 
+need for good 
+governance  
+ 
+ 
+B5.4.2.2 .1.  
+Explain and appreciate the 
+importance of democratic 
+governance 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+Learners identify various persons and bodies who are 
+responsible in governing their school e.g. headteacher, 
+teachers, school prefects. 
+ 
+Learners discuss the importance of good governance in 
+their school. 
+ 
+Learners in groups suggest ways in which 
+school governance could be improved. 
+ 
+Groups present their report in class. 
+ 
+Class mock election 
+Learners demonstrate how to elect a leader in a 
+democratic way. 
+ 
+Learners discuss why good governance is 
+important for national development. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance  
+ 
+ 
+ 
+Sub-Strand 3: Responsible Use of Resources  
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+   
+B5.4.3.1. 
+Demonstrate 
+understanding of 
+responsible use of water 
+ 
+B5.4.3.1.1.  
+Identify ways of keeping water 
+bodies safe 
+ 
+Learners discuss ways of keeping water bodies safe  
+e.g. Do not throw rubbish into water bodies, do not wash 
+in water bodies, do not defecate in water bodies 
+ 
+Learners compose slogans and create poster on how to 
+keep water bodies safe. 
+ 
+Learners compose songs and rhymes on ways to keep 
+water bodies safe. 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togethernes, 
+Tolerance  
+ 
+
+   
+40 
+Sub-strand 4: Farming in Ghana 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.4.4.1. 
+Demonstrate 
+understanding of 
+basic farming 
+practices 
+(transplanting) 
+ 
+ 
+B5.4.4.1.1.  
+Participate in 
+transplanting seedlings  
+ 
+ 
+ 
+ 
+Learners prepare plant house or garden boxes/pots/trays, containers or 
+garden beds for transplanting. Fill with fertile soil or plant medium; make 
+holes at correct spacing and water ready for seedlings. 
+Ensure that seedlings are ready for transplanting.  
+Water seedlings before transplanting. 
+ 
+Use the right tools e.g. hand trowel to lift seedlings from seedbed, use 
+dibber to make holes at the right depth.   Transplant seedlings in 
+boxes/pots/trays, containers or garden beds.  
+ 
+Visit transplanted seedlings daily to record number of leaves and height 
+(growth) of transplanted seedlings. Use record to write weekly report 
+ 
+ 
+Critical Thinking and Problem 
+Solving 
+Communication  and 
+Collaboration 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+41 
+STRAND 5: MY GLOBAL COMMUNITY 
+Sub-strand 1: Our Neighbouring Countries 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B5.5.1.1. 
+Demonstrate 
+knowledge of the 
+economic exchanges 
+between Ghana and 
+her neighbours 
+ 
+B5.5.1.1.1. 
+Describe the economic 
+exchanges between 
+Ghana and her 
+neighbours 
+ 
+Learners watch picture/videos of economic exchanges between Ghana 
+and her neighbours e.g. trade, work 
+ 
+Learners describe the types of goods exchanged between Ghana and 
+her neighbours e.g. tomatoes, onions, clothes 
+ 
+Learners write essays on the importance of the exchange of goods e.g. 
+for food, clothes 
+ 
+ 
+Communication and 
+Collaboration 
+Creativity and Innovation 
+Digital Literacy  
+Critical thinking and Problem 
+Solving 
+ 
+ 
+Analysing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+42 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B5.5.1.2.  
+Demonstrate 
+knowledge of the 
+Rotation and 
+Revolution of the 
+Earth  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B5.5.1.2.1.  
+Describe the rotation 
+and revolution of the 
+Earth 
+ 
+Learners explain rotation and revolution of the Earth 
+ 
+Learners undertake activities describing the rotation of the earth on its 
+axis and revolution of the earth round the sun. 
+ 
+Learners demonstrate the solar and lunar eclipses. 
+i. 
+Use learners to represent the sun, moon and earth.  
+ii. 
+Have the moon (learner 1) walk in circles around the earth 
+(learner 2). 
+iii. 
+Have the earth (learner 2) walk around the sun (learner 3) 
+while the moon (learner 1) maintains its orbit. 
+iv. 
+When the moon (learner 1) passes between the sun (learner 3) 
+and the earth (learner 2) to create a shadow, solar eclipse is 
+formed.  
+ 
+Discuss their findings on the experiment in groups. 
+ 
+Present group findings to the class. 
+ 
+ 
+Communication and 
+Collaboration 
+Personal Development and 
+Leadership 
+ 
+ 
+Observations 
+Organisation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+43 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BASIC 6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+44 
+BASIC 6 
+ 
+STRAND 1: ALL ABOUT US 
+Sub-Strand 1: Nature of God 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B6.1.1.1.  
+Demonstrate understanding 
+of the Nature of God as the 
+Creator 
+ 
+B6.1.1.1 .1  
+Describe the attributes of 
+God 
+ 
+ 
+Learners in groups discuss the attributes of God e.g. love, 
+patience, merciful, Omniscient- All-knowing. 
+ 
+Learners role play scenarios to reflect the attributes of 
+God in their lives.  
+ 
+Learners write essays on the attributes of God in 
+relations to themselves. 
+ 
+ 
+ 
+Communication and Collaboration   
+Cultural 
+Identity 
+and 
+Global 
+Citizenship 
+ 
+Respect, Responsibility 
+Stewardship, Love 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+45 
+Sub-strand 2: Myself 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+ B6.1.2.1.  
+Demonstrate 
+understanding of 
+challenges that occur 
+during adolescence 
+ 
+ 
+B6.1.2.1. 1.  
+Explain problems 
+associated with 
+adolescence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B6.1.2.1.2.  
+Explain how to 
+manage the problems 
+that occur during 
+adolescence. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about and list changes that occur during adolescence 
+ 
+Learners think-pair-share on challenges associated with adolescence  
+ 
+Learners illustrate challenges facing adolescence using the Future’s 
+Wheel e.g. 
+i. engaging in sexual activity can result in 
+ii. acquiring sexually transmitted infections 
+  (STIs) including HIV 
+iii. teenage pregnancy and parenthood 
+iv. streetism and poverty 
+v. drug use and abuse 
+vi. negative peer pressure leading to criminal activities 
+ 
+ 
+Learners in groups discuss how to manage the challenges that come 
+with changes during adolescence. e.g.  
+ 
+i. counselling from a responsible adult 
+ii. discussing problems with peers and siblings 
+iii. dressing in a modest way to avoid enticing the 
+iv. opposite sex 
+v. being assertive (self-confidence to say ‘NO’ to premarital 
+vi. sex and other actions which may destroy 
+vii. your future plans) 
+viii. respecting the sexual rights of others 
+ix. not forcing to have sex with pupils, etc. 
+ 
+Groups to present reports for class discussion  
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration  
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience 
+Commitment, Responsibility 
+ 
+ 
+ 
+
+   
+46 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B6.1.2.2.  
+Demonstrate 
+understanding of 
+personal hygiene during 
+adolescence 
+  
+B6.1.2.2 .1.   
+Explain how to 
+maintain personal 
+hygiene during 
+adolescence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners think-pair-share on how to maintain personal hygiene 
+during adolescence e.g. 
+i. keeping their teeth clean 
+ii. bathing regularly and using lime/deodorant 
+iii. keeping their clothes clean 
+iv. keeping their rooms and environment clean 
+v. taking good health care of their genital organs 
+vi. changing their pads regularly during menstruation 
+vii. Keeping healthy and happy 
+ 
+Learners discuss how adolescent problems affect national 
+development e.g. 
+i. The most active segment of the population 
+   (between 15-45 years) can be affected by STIs 
+ii. Productivity decreases 
+iii. Increase in cost of health care 
+iv. Increases the number of people in the poverty 
+   bracket 
+v. Increase in crime wave due to drug abuse resulting in 
+insecurity in community 
+vi. Educate the young people to be responsible 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience 
+Commitment, Responsibility  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+47 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B6.1.2.3.  
+Demonstrate how 
+adolescents can harness 
+their potentials to 
+achieve their goals in life  
+ 
+ 
+B6.1.2.3.1.   
+Explain how to prepare and 
+accomplish  
+aspirations in life 
+  
+ 
+Learners identify what they want to become in life and 
+discuss why they chose particular vocations. 
+ 
+Learners share their views about how they intend to 
+prepare themselves towards achieving their aspirations. 
+ 
+Learners in groups discuss things that could prevent 
+them from achieving their goal e.g. HIV/AIDS, early 
+pregnancy and motherhood or fatherhood, loss of a 
+parent etc. 
+ 
+Learners role play scenarios on how to overcome 
+challenges that could prevent them from accomplishing 
+their aspirations. 
+ 
+Learners write essay on skills necessary for achieving 
+aspirations 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+48 
+ 
+Sub-Strand 3: My Family and the Community 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.1.3.1.  
+Demonstrate 
+understanding of 
+attitudes and behaviours 
+of a responsible family 
+member 
+ 
+B6.1.3.1.1.   
+Explain the need for 
+cordial relationships 
+among family members 
+ 
+Learners in groups, discuss attitudes and behaviours of a 
+responsible family member: 
+i. taking part in family activities responsibly 
+ii. obedience to elders of the family 
+iii. respect for family members 
+iv. accepting responsibility (performing assigned duties) 
+v. taking initiatives 
+vi. helping needy relatives 
+ 
+Learners discuss the importance of being committed to the 
+family: 
+i. to promote unity 
+ii. to gain respect 
+iii. to be considered a trustworthy person 
+iv. to uplift family image etc. 
+ 
+Learners engage in role-play and other activities that will 
+teach them to become family members who are committed 
+e.g. mock family meetings, naming ceremonies 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+49 
+Sub-Strand 4: Home and School 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+   
+B6.1.4.1.  
+Demonstrate 
+knowledge of food 
+safety practices 
+ 
+B6.1.4.1.1.  
+Identify ways of 
+promoting food safely  
+ 
+ 
+Learners discuss ways of ensuring food safely e.g. wash hands well, 
+cover food well, serve in clean plates, serve cooked food hot 
+ 
+Learners demonstrate how to cook and serve hot food safely  
+ 
+Note 
+Teacher uses the lesson as an opportunity to engage learners in 
+food safety practices and table manners  
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Trust, Commitment, Loyalty 
+Respect, Obedience, Humility 
+Unity, Responsibility 
+Togetherness 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+50 
+STRAND 2: ALL AROUND US 
+Sub-Strand 1: The Environment and the Weather 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.2.1.1. 
+Demonstrate understanding 
+of the importance of trees in 
+our environment   
+ 
+B6.2.1.1.1. 
+Plant trees in their communities 
+as a civic duty  
+ 
+Learners discuss the importance of trees in their 
+communities e.g. clean air, shade 
+ 
+Project 
+Learners undertake a tree planting project in the 
+school to check erosion or provide shade 
+ 
+Project activities include: 
+ a visit to the forestry commission for seedlings 
+ 
+Planting the seedlings and take care of them in the 
+school   
+ 
+Write down the processes about their project e.g. 
+daily watering, measuring the height of the trees 
+weekly, number of leaves 
+ 
+Communication and 
+Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Responsibility, 
+Stewardship, Love  
+ 
+ 
+ 
+Sub-Strand 2: Plants and Animals 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+B6.2.2.1. 
+Demonstrate understanding 
+of the importance of animals 
+to plants in the environment 
+B6.2.2.1.1  
+Explain the importance of animal 
+waste to plants 
+ 
+ 
+  
+ 
+ 
+ 
+Learners watch pictures/videos of manure and 
+discuss the importance of manure e.g.  soil fertility  
+ 
+Obtain different plant and animal waste from the 
+community and use such materials to prepare 
+manure.  
+Communication and 
+Collaboration 
+Critical Thinking and Problem 
+Solving 
+Creativity and Innovation 
+Personal Development and 
+Leadership 
+ 
+ 
+
+   
+51 
+Sub-Strand 3: Map Making and Land Marks 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ B6.2.3.1.  
+Demonstrate understanding of the 
+map of Ghana 
+B6.2.3.1.1.  
+Identify the political regions on a 
+sketch map of Ghana 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners talk about the political regions 
+of Ghana e.g. the sixteen regions, their 
+names and capitals. 
+ 
+Learners show the locations of the 
+political regions on a sketch map of 
+Ghana. 
+ 
+Observe a map of Africa and write out 
+the countries, which border Ghana to 
+the North, East and West. 
+ 
+Compose a song that locates the 
+position of Ghana in relation to other 
+countries along the Coast of West 
+Africa. “From Senegal to Gambia…Benin 
+to Nigeria”. 
+ 
+ 
+Creativity and Innovation 
+Critical Thinking and Problem 
+Solving 
+ 
+Observation 
+Planning, Applying 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+52 
+Sub-Strand 4: Population and Settlement 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B6.2.4.1. 
+ Show understanding 
+of internal migration in 
+Ghana 
+ 
+B6.2.4.1.1.  
+Describe internal migration 
+in Ghana 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners explain migration as the movement of people from one 
+place to another with the intention of settling there. Migration 
+may be individual, family units or large groups. 
+ 
+Learners in groups discuss the patterns of internal migration in 
+Ghana e. g. movement from the north to the south, movement 
+from the south to the north, movement to commercial and 
+industrial towns, movement to cash crop farming areas. 
+ 
+Learners brainstorm the reasons for migration Ghana e.g. better 
+living conditions, to find work, for marriage, Inadequate road 
+networks, lack or inadequate social amenities (hospital, portable 
+drinking water, schools and electricity). 
+ 
+Learners show the migration pattern on a sketch map of Ghana. 
+ 
+Learners brainstorm and come out with challenges associated 
+with urban settlements: 
+a) poor sanitation 
+b) environmental pollution 
+c) traffic congestion 
+ 
+In groups discuss measures that can be taken to solve challenges 
+associated with rural and urban settlements. E.g. provision of 
+social amenities in the rural areas, creation of job opportunities 
+for both rural and urban areas. 
+ 
+ 
+Critical Thinking and  
+Problem solving 
+Communication  and 
+Collaboration  
+Digital literacy 
+Cultural identity and Global 
+Citizenship 
+ 
+ 
+ 
+ 
+Observation  
+Applying 
+ 
+ 
+ 
+ 
+ 
+
+   
+53 
+STRAND 3: OUR BELIEFS AND VALUES  
+Sub-Strand 1:  Worship 
+Content Standard 
+Indicator 
+Exemplars 
+Core 
+Competencies 
+and 
+Subject Specific Practices 
+ 
+B6.3.1.1.  
+Demonstrate 
+understanding of the 
+importance of prayer, 
+worship and other acts of 
+worship 
+ 
+ 
+B6.3.1.1.1.  
+Describe the importance 
+of prayer in our lives 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners discuss the meaning of prayer: a 
+communication between the worshipper and the object 
+of worship. 
+ 
+Learners talk about the types of prayer: 
+Christianity– thanksgiving, intercession, 
+supplication, confession, etc. 
+Islam– Salat (five daily compulsory prayers), 
+congregational (Ju`mah), etc. 
+Traditional– thanksgiving, intercession, 
+supplication, confession, etc.   
+Learners discuss the importance of prayer: 
+• 
+brings us closer to God 
+• 
+It shows our dependence on God, etc. 
+Learners demonstrate how prayer is done in the three 
+major religions. 
+ 
+ 
+ 
+Communication and 
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+Cultural Identity and Global 
+Citizenship 
+ 
+Faithfulness, Obedience  
+Respect, Commitment, Humility 
+Togetherness  
+Cultural Identity, Gratitude  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+54 
+ 
+Sub-Strand 2: Festivals 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.3.2.1.  
+Demonstrate knowledge of 
+the significance of celebrations 
+in Ghana 
+ 
+B6.3.2.1.1.   
+Identify two ways of making 
+festivals beneficial to the 
+communities 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Learners talk about ways of making celebrations of 
+festivals beneficial to the communities e.g. use festival 
+occasions to plan for development, encourage youth 
+participation, gender and inclusivity, settle disputes, 
+honour hardworking people, showcasing the culture 
+of the people 
+ 
+Learners draw a durbar of chiefs during festival 
+celebrations 
+ 
+Communication and  
+Collaboration 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+Cultural Identity and Global 
+Citizenship 
+ 
+Sub-Strand 3:  Basic Human Rights 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B6.3.3.1. 
+Demonstrate understanding 
+of fundamental human rights 
+ 
+B6.3.3.1.1.  
+Identify sources of help 
+ 
+Learners discuss human rights abuses against children 
+e.g. neglect, emotional abuse, physical and sexual 
+abuse, child labour  
+ 
+Learners discuss how to get help in case of abuse e.g. 
+responsible adults, police (DOVVSU), Social Welfare, 
+CHRAJ 
+ 
+Learners discuss how to speak e.g. speak out and not 
+keep quiet over an abuse 
+ 
+Learners create posters speaking against child abuse 
+and also show where to go for help in case of abuse 
+ 
+ 
+Communication and 
+Collaboration, 
+Personal Development and 
+Leadership 
+Creativity and Innovation 
+Cultural Identity and Global 
+Citizenship 
+
+   
+55 
+Sub-Strand 4: Being a Leader 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.3.4.1.  
+Demonstrate 
+understanding of the 
+latter lives of the leaders 
+of the three major 
+religions in Ghana 
+ 
+B6.3.4.1.1.  
+Narrate the story of the 
+latter lives of the leaders 
+of the major religions 
+ 
+Learners discuss the latter lives of the religious leaders: 
+i. 
+Jesus Christ– triumphant entry to Jerusalem (Palm Sunday), 
+Last Supper, Prayer at Gethsemane, arrest and trial, 
+crucifixion, death and resurrection 
+ii. 
+The Holy Prophet Muhammad (S.A.W.) – triumphant entry 
+into Makkah, farewell message, sickness and death 
+iii. 
+Traditional leader (e.g. Okomfo Anokye)–priesthood, 
+miracles and other activities and death  
+ 
+Show pictures or video clips on the latter lives of Jesus Christ and a 
+traditional leader to learners 
+ 
+Learners in groups explore moral lessons in the latter lives of the 
+religious leaders which they can relate to their lives in nation 
+building e.g. humility, forgiveness, faithfulness, obedience, 
+perseverance, patriotism 
+ 
+Learners role play the moral lessons they have learnt in the latter 
+lives of the religious leaders 
+ 
+Communication and 
+Collaboration,   
+Creativity and Innovation 
+Digital Literacy 
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience, 
+Commitment, Responsibility  
+Personal Development and 
+Leadership 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+56 
+STRAND 4: OUR NATION GHANA 
+Sub-Strand 1: Being a Citizen 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.4.1.1.  
+Demonstrate 
+understanding of 
+behaviours and attitudes 
+for peaceful living 
+ 
+B6.4.1.1.1.  
+Describe activities for peaceful 
+living  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B6.4.1.1.2.  
+Describe skills for resolving 
+conflict in the 
+ 
+ 
+Learners discuss ways of living peacefully with each other 
+e.g. love, tolerance, forgiveness, self-control 
+ 
+Learners discuss the importance of peaceful living e.g. 
+togetherness, security, development 
+ 
+ 
+ Learners engage in a role -play and other activities to 
+demonstrate peaceful living people of different ethnic 
+groups celebrating together 
+ 
+ 
+ 
+Learners explain domestic violence and conflict 
+ 
+Learners discuss the causes of domestic violence and 
+conflict in the family 
+ 
+Learners share experiences of domestic violence and 
+conflict in the community 
+ 
+Discuss the effects of domestic violence on the family 
+ 
+ 
+Learners role play peaceful resolution of conflict in the 
+school, family and community 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance 
+ 
+ 
+ 
+ 
+ 
+
+   
+57 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.4.1.2 . 
+Demonstrate 
+understanding of the 
+importance of social 
+accountability 
+ 
+B6.4.1.2.1.  
+Explain the 
+importance of public 
+accountability 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners explain public accountability e.g. Public Accountability is a 
+process by which people are held responsible for their actions and 
+activities in the society  
+ 
+Learners discuss the importance of public accountability in 
+promoting social justice e.g.  
+i. Peace building avoids conflicts. 
+ii. When there are no conflicts people work together. 
+iii. People see themselves as one people. 
+iv. Everybody contributes to development. 
+ 
+In groups learners identify ways by which people can be held 
+accountable for their stewardship e.g. 
+i. development of self-consciousness about accountability 
+ii. ensuring compliance to rules and regulations 
+iii. awareness that there are societal institutions to ensure your 
+compliance e.g. court action, report to the police, etc. 
+ 
+ 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration   
+Creativity and Innovation 
+Digital Literacy 
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience, 
+Commitment, Responsibility 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+58 
+Sub-Strand 2: Authority and Power 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.4.2.1.  
+Demonstrate understanding 
+of the need to obey and 
+submit to authority 
+ 
+B6.4.2.1.1.  
+Identify the role of children 
+in promoting harmony with 
+other family members 
+ 
+ 
+Learners discuss what it takes to live in harmony. 
+ 
+Learners in pairs, list roles they can play to promote 
+harmony in the family: 
+e.g. Children must be respectful, obedient, humble, etc. 
+ 
+Let learners in pairs, list roles other family members can 
+play to ensure harmony in the family.  
+e.g. Relatives must be respectful, obedient, caring, 
+protective, defensive, humble, etc. 
+ 
+Ask learners to role-play the duties of their 
+grandparents, uncles, cousins, aunts, etc., in moulding 
+their character. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and  
+Collaboration   
+Cultural Identity and Global 
+ 
+Commitment, Loyalty, Respect, 
+Obedience, Humility, Unity 
+Responsibility and  Togetherness 
+Tolerance.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+59 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.4.2.2. 
+Demonstrate 
+understanding of the need 
+for good governance  
+ 
+ 
+B6.4.2.2. 1. 
+Explain and appreciate the 
+importance of democratic 
+governance 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+Learners identify various persons and bodies who 
+are responsible in governing their school e.g. 
+headteacher, teachers, school prefects. 
+ 
+Learners discuss the importance of good 
+governance in their school. 
+ 
+Learners in groups suggest ways in which 
+school governance could be improved. 
+ 
+Groups present their report in class. 
+ 
+Class mock election 
+Learners demonstrate how to elect a leader in a 
+democratic way. 
+ 
+Learners discuss why good governance is 
+important for national development. 
+  
+Learners discuss the features of democratic 
+governance in Ghana e.g. tolerance, election of 
+leaders, transparency. 
+ 
+Learners discuss how individuals can 
+promote democratic governance. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and 
+Collaboration,   
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Commitment, Loyalty, Respect, 
+Obedience, Humility, Unity, 
+Responsibility, Togetherness, 
+Tolerance  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+60 
+Sub-Strand 3: Responsible use of Resources  
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B6.4.3.1. 
+Demonstrate understanding 
+of individual responsibilities in 
+protecting water bodies 
+ 
+B6.4.3.1.1.  
+Identify individual responsibilities 
+in protecting water bodies 
+ 
+Learners watch pictures/videos on strategies to 
+protect water bodies. 
+Learners discuss the pictures/videos and suggest 
+individual responsibilities for protecting water 
+bodies. 
+ 
+Project  
+Learners form protecting water bodies clubs to 
+demonstrate their responsibilities in protecting 
+water bodies. 
+Learners undertake tree planting exercise along 
+water bodies. 
+ 
+ 
+Personal Development and 
+Leadership 
+Communication and Collaboration   
+Cultural Identity and Global 
+Citizenship 
+ 
+ 
+Commitment, Loyalty, Respect 
+Obedience, Humility, Unity 
+Responsibility, Togetherness 
+Tolerance  
+ 
+ 
+ 
+Sub-Strand 4: Farming in Ghana 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.4.6.1.  
+Demonstrate knowledge of 
+job opportunities in the 
+agricultural value chain  
+ 
+ 
+ 
+B6.4.4.1.1.  
+Describe the agricultural value 
+chain and the job opportunities  
+ 
+ 
+ 
+  
+ 
+Learners discuss the meaning of agricultural 
+value chain 
+ 
+Learners talk about job opportunities in the 
+agricultural value chain e.g. crop farming, 
+livestock, fisheries 
+Agro-chemicals industry, meat processing 
+ 
+Learners write essays on their choice of job 
+opportunities in the agricultural value chain. 
+ 
+ 
+Critical Thinking and  
+Problem Solving 
+Personal Development and 
+Leadership 
+ 
+ 
+ 
+ 
+ 
+
+   
+61 
+STRAND 5: MY GLOBAL COMMUNITY 
+Sub-strand 1: Our Neighbouring Countries 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+ 
+B6.5.1.1.  
+Demonstrate 
+understanding of how 
+Ghana cooperates with 
+other nations 
+  
+ 
+ 
+B6.5.1.1.1.  
+Explain how Ghana 
+co-operates with 
+other nations 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Learners recall countries that surround Ghana e.g. Togo, La Cote 
+D’Ivoire, Burkina Faso. 
+ 
+Learners identify countries surrounding Ghana on a map of West Africa. 
+ 
+Learners discuss how Ghana co-operates with her neighbours e.g. trade, 
+sports, political 
+ 
+Learners talk about the reasons why Ghana should continue to  
+co-operate with other nations e.g. 
+i. 
+Some ethnic groups cut across political boundaries. 
+E.g. Ewes in Ghana, Togo and Benin; Sissalas in 
+Ghana and Burkina Faso. 
+ii. 
+She cannot supply all her needs. As a developing 
+nation, Ghana gets many goods and services from 
+other nations e.g. petroleum from Nigeria, tomato 
+from Burkina Faso, eggs from La Cote D’Ivoire. 
+iii.  Ghana also trades with some of her neighbours. 
+e.g. Ghana used to sell electricity to Togo and Cote D’Ivoire. 
+ 
+ Learners dramatise the processes to follow in accepting help from other 
+nations e.g. 
+ 
+i. Be wise so that the help will not be used as way to 
+control your country. 
+ii. Find out whether the help will not lead to negative 
+effects on individuals or the country. 
+iii. Find out if there is a hidden motive. 
+iv. Decide on whether your nation is willing to be a 
+friend to the nation giving the help or not. 
+Accept the help if it will not have negative effects 
+on the nation. 
+ 
+ 
+Communication and 
+Collaboration   
+Creativity and Innovation 
+Digital Literacy 
+Cultural Identity and Global 
+Citizenship 
+ 
+Respect, Trust, Obedience, 
+Commitment, Responsibility  
+ 
+ 
+
+   
+62 
+ 
+Content Standard 
+Indicator 
+Exemplars 
+Core Competencies and 
+Subject Specific Practices 
+  
+B6.5.1.2.  
+Demonstrate 
+understanding of climate 
+change  
+ 
+B6.5.1.2.1.  
+Investigate the effects climate 
+change on the environment 
+ 
+Use video clips, field trips and pictures to help 
+learners identify the effects of over concentration 
+of greenhouse gases and climate change on the 
+environment e.g. change in rainfall pattern, change 
+in temperature, agriculture, health. 
+ 
+Discuss human activities (e.g. bush burning, fumes 
+from vehicles) in their community that contribute 
+to the emission of greenhouse gases (e.g. carbon 
+dioxide, methane, water vapour and nitrous oxide) 
+(Whole-class discussion). 
+ 
+Learners in groups suggest ways by which human 
+beings can adapt to climate change  
+ 
+ 
+Digital Literacy 
+Communication and Collaboration 
+Cultural Identity and Global 
+Citizenship 
+Critical thinking and problem  
+Solving 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+   
+63 
+ 
+OUR WORLD AND OUR PEOPLE SUBJECT PANEL AND REVIEWERS 
+ 
+ 
+ 
+ 
+SN 
+NAME 
+INSTITUTION 
+WRITING PANEL 
+1 
+Mrs. Felicia Boakye-Yiadom 
+NaCCA,  Former  Executive Secretary   
+2 
+Alhaji Seidu Mahama 
+NaCCA 
+3 
+Mrs. Joana Vanderpuije 
+NaCCA 
+4 
+Mr. William Asamoah 
+Tema Metro Education Office 
+5 
+Dr. Dzigbodi Ama Banini 
+Educationist (Rtd.) 
+6 
+Apostle Prof. Samuel Asuming-
+Brempong  
+Dept of Agricultural Econs and Business, UG 
+7 
+Dr. Osei Owusu 
+Rel. & Human Values, UCC 
+8 
+Dr. Charles Annobil 
+Basic Edu Dept, UEW 
+9 
+Owusu Afriyie 
+Offinso College of Education 
+10 
+Dr. Braimah Imurana Awaisu 
+Dept. of Political Science, UEW 
+11 
+Mrs. Geogina Afer 
+Okwapeman Secondary School 
+12 
+Prof. Quashigah 
+Social Science Faculty, UEW 
+13 
+Mr. Frederick Wisly Armah 
+St John’s Grammar 
+14 
+George Amponsah Tabi 
+St John’s Grammar 
+15 
+Jacob Kwame Bernasco 
+Achimota School 
+
+   
+64 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 
+Dr. Obeng Mensah  
+PHD Agric Ed 
+17 
+Mr. Isaac Asiegbor 
+Retired, NaCCA 
+18 
+Dr Seth Boateng 
+Dept. of Agric Ext, UG 
+19 
+Dr. Kofi Ayebi-Arthur  
+College of Education, UCC 
+20 
+Frank Appoh 
+NaCCA 
+21 
+Callistus Nakpih 
+St. John Bosco’s, College of Education 
+22 
+Mark Anibrika 
+Wesley Grammar School 
+23 
+Samuel Kwame Arthur 
+Achimota School 
+EXPERT REVIEWERS 
+ 
+24 
+Prof. Kankam Boadu 
+Vice Dean, Graduate School, UCC 
+25 
+Dr. Lucy Effeh Attom 
+ 
+Department of Social Studies, UEW 
+CURRICULUM ADVISOR 
+26 
+Dr. Sam Awuku 
+OPM (Oxford Policy Management) 
+SUPERVISORS 
+27 
+Felicia Boakye-Yiadom (Mrs) 
+NaCCA,  Former  Executive Secretary   
+28 
+Dr. Prince H. Armah 
+NaCCA,  Acting Executive Secretary   
+GRAPHIC DESIGNERS 
+29 
+Eugene Offei Tettey 
+NaCCA 
+30 
+Frank Appoh 
+NaCCA 
+
+   
+65 
+ 
