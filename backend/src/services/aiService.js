@@ -21,6 +21,9 @@ const DEEPSEEK_MODEL = "deepseek-ai/deepseek-v4-pro";
  * Helper to call DeepSeek API with optional streaming (stream disabled for simplicity).
  * Returns the generated text response.
  */
+/**
+ * Robust wrapper for AI calls to handle 429 (Rate Limit) errors with retries.
+ */
 async function callDeepSeek(prompt, isJson = true) {
   const payload = {
     model: DEEPSEEK_MODEL,
@@ -34,18 +37,13 @@ async function callDeepSeek(prompt, isJson = true) {
     "Content-Type": "application/json"
   };
   const response = await axios.post(DEEPSEEK_ENDPOINT, payload, { headers });
-  // DeepSeek returns { choices: [{ message: { content: "..." } }] }
   const content = response.data?.choices?.[0]?.message?.content;
   if (!content) throw new Error('DeepSeek returned empty response');
   return content;
 }
 
-
-/**
- * Robust wrapper for AI calls to handle 429 (Rate Limit) errors with retries.
- */
+// Alias for backward compatibility
 async function callGemini(prompt, isJson = true) {
-  // Alias kept for compatibility; forwards to DeepSeek.
   return await callDeepSeek(prompt, isJson);
 }
 
@@ -366,7 +364,7 @@ async function generateLesson(params) {
   for (let i = 0; i < prompts.length; i++) {
     try {
       console.log(`Attempt ${i+1} for ${subject} (${classCode})...`);
-      const text = await callGemini(prompts[i]);
+      const text = await callDeepSeek(prompts[i]);
       const lesson = JSON.parse(text);
       if (await validateLesson(lesson, isJHS, targetDays)) {
         // Log Cache Miss (New Generation)
@@ -444,7 +442,7 @@ ${formatHint}`;
 
   for (let i = 0; i < 3; i++) {
     try {
-      const text = await callGemini(prompt);
+      const text = await callDeepSeek(prompt);
       const lesson = JSON.parse(text);
       if (await validateLesson(lesson, isJHS, targetDays)) return { lesson, isJHS };
     } catch (e) { console.error('Scheme lesson JSON error:', e); }
@@ -485,7 +483,7 @@ RULES:
 
 Output the new content for ${sectionName} as PLAIN TEXT:`;
 
-  const text = await callGemini(prompt, false);
+  const text = await callDeepSeek(prompt, false);
   return text.trim();
 }
 

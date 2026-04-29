@@ -324,7 +324,7 @@ export default function SchemePage() {
 
               {uploading && (
                 <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-xl">
-                  <p className="text-xs text-amber-700 font-medium text-center">This may take 30–60 seconds. Gemini is reading and structuring your scheme.</p>
+                  <p className="text-xs text-amber-700 font-medium text-center">This may take 30–60 seconds. AI is reading and structuring your scheme.</p>
                 </div>
               )}
             </div>

@@ -30,7 +30,7 @@ async function callVisionWithRetry(parts) {
 
 /**
  * visionService.js
- * Uses Gemini Vision models to extract structured data from images of printed or handwritten schemes.
+ * Uses DeepSeek Vision models (via NVIDIA API) to extract structured data from images of printed or handwritten schemes.
  */
 async function extractTextFromImage(imageBuffer, mimeType = 'image/jpeg') {
   const prompt = `Perform high-fidelity OCR on this image of a Ghanaian Basic School Scheme of Work (SOW). 

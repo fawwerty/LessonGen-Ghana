@@ -119,7 +119,7 @@ router.post('/upload', protect, upload.single('schemeFile'), async (req, res) =>
 });
 
 // ── POST /api/scheme/camera ─────────────────────────────────────────────────
-// Process a photo of a scheme using Gemini Vision
+// Process a photo of a scheme using DeepSeek Vision
 router.post('/camera', protect, upload.single('image'), async (req, res) => {
   const { classCode, subject, term } = req.body;
   if (!req.file || !classCode || !subject || !term) {
