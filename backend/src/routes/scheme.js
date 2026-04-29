@@ -4,7 +4,7 @@ const multer  = require('multer');
 const { protect } = require('../middleware/auth');
 const Scheme  = require('../models/Scheme');
 const Lesson  = require('../models/Lesson');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { callDeepSeek } = require('../services/aiService');
 const { generateLessonFromScheme, CLASS_LABEL } = require('../services/aiService');
 const { extractTextFromImage } = require('../services/visionService');
 
@@ -17,11 +17,7 @@ let mammoth  = null;
 try { pdfParse = require('pdf-parse'); } catch {}
 try { mammoth  = require('mammoth');   } catch {}
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({
-  model: 'gemini-2.5-flash',
-  generationConfig: { responseMimeType: 'application/json' },
-});
+// DeepSeek client is used via callDeepSeek helper
 
 // ── Shared: AI parses raw text into weekly breakdown ─────────────────────────
 async function parseSchemeText(rawText, classCode, subject, term) {

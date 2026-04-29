@@ -1,7 +1,6 @@
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { callDeepSeek } = require('../services/aiService');
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+// DeepSeek client is used via callDeepSeek helper
 
 /**
  * Shared retry wrapper for vision tasks

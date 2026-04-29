@@ -1,4 +1,4 @@
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const axios = require('axios');
 const path = require('path');
 const fs = require('fs');
 
@@ -12,41 +12,41 @@ const textbookDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../shared/textbooks/approved_textbooks.json'), 'utf-8')
 );
 
-// Initialize Gemini
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ 
-  model: 'gemini-1.5-flash', // Use 1.5-flash for higher stability on free tier
-  generationConfig: { 
-    responseMimeType: 'application/json' 
-  }
-});
+// Initialize DeepSeek client
+const NV_API_KEY = process.env.NV_API_KEY;
+const DEEPSEEK_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions";
+const DEEPSEEK_MODEL = "deepseek-ai/deepseek-v4-pro";
+
+/**
+ * Helper to call DeepSeek API with optional streaming (stream disabled for simplicity).
+ * Returns the generated text response.
+ */
+async function callDeepSeek(prompt, isJson = true) {
+  const payload = {
+    model: DEEPSEEK_MODEL,
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.7,
+    max_tokens: 2048,
+    stream: false
+  };
+  const headers = {
+    Authorization: `Bearer ${NV_API_KEY}`,
+    "Content-Type": "application/json"
+  };
+  const response = await axios.post(DEEPSEEK_ENDPOINT, payload, { headers });
+  // DeepSeek returns { choices: [{ message: { content: "..." } }] }
+  const content = response.data?.choices?.[0]?.message?.content;
+  if (!content) throw new Error('DeepSeek returned empty response');
+  return content;
+}
+
 
 /**
  * Robust wrapper for AI calls to handle 429 (Rate Limit) errors with retries.
  */
 async function callGemini(prompt, isJson = true) {
-  let attempts = 0;
-  const maxAttempts = 3;
-  const delay = (ms) => new Promise(res => setTimeout(res, ms));
-
-  while (attempts < maxAttempts) {
-    try {
-      const result = await model.generateContent(prompt);
-      const response = await result.response;
-      return response.text();
-    } catch (err) {
-      attempts++;
-      const isRateLimit = err.message?.includes('429') || err.message?.includes('Quota');
-      
-      if (isRateLimit && attempts < maxAttempts) {
-        const waitTime = attempts * 15000; // 15s, 30s...
-        console.warn(`Gemini Rate Limit (429) hit. Attempt ${attempts}/${maxAttempts}. Waiting ${waitTime/1000}s...`);
-        await delay(waitTime);
-        continue;
-      }
-      throw err;
-    }
-  }
+  // Alias kept for compatibility; forwards to DeepSeek.
+  return await callDeepSeek(prompt, isJson);
 }
 
 const CLASS_LABEL = {
